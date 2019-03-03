@@ -40,7 +40,7 @@ body {
   background: none;
   font-size: 20px;
   padding: 3px 10px;
-  margin: 20px 10px 0px 10px;
+  margin: 20px 50px 0px 50px;
   color: white;
   -webkit-transition-duration: .5s;
   -o-transition-duration: .5s;
@@ -136,14 +136,24 @@ body {
   border-radius: 15px;
 }
 
+.intro .intro-wrapper .intro-mask .intro-card .photo-person {
+  -webkit-box-shadow: 0 0 30px #000;
+  box-shadow: 0 0 30px #000;
+  border-radius: 100%;
+  width: 16rem;
+  margin: 0 auto;
+}
+
 .intro .intro-wrapper .intro-mask .intro-card .photo-person img {
   height: 16rem;
   border-radius: 100%;
 }
 
 .intro .intro-wrapper .intro-mask .intro-card .name {
-  font-size: 20px;
+  font-size: 25px;
   font-family: "Kanit";
+  padding-top: 15px;
+  padding-bottom: 10px;
 }
 
 .intro .intro-wrapper .intro-mask .intro-card a {
@@ -212,4 +222,38 @@ body {
 .intro .intro-wrapper .intro-mask .MouseOver-Position-Aware:focus .LeavePoint {
   width: 400%;
   height: 400%;
+}
+
+.skill-wrapper .skill-slider-nav {
+  width: 70%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.skill-wrapper .skill-slider-nav .slider-tab {
+  text-align: center;
+}
+
+.skill-wrapper .skill-slider-nav .slider-tab img {
+  height: 110px;
+  border-radius: 15px;
+  cursor: pointer;
+  -webkit-transition-duration: .5s;
+  -o-transition-duration: .5s;
+  transition-duration: .5s;
+}
+
+.skill-wrapper .skill-slider-nav .slider-tab img:hover {
+  -webkit-filter: brightness(1.4);
+  filter: brightness(1.4);
+}
+
+.skill-wrapper .skill-slider-nav .slider-tab .title {
+  font-family: "Kanit";
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.skill-wrapper .slick-slide img {
+  display: inline-block;
 }

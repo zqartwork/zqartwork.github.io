@@ -66,7 +66,7 @@ body {
             background: none;
             font-size: 20px;
             padding: 3px 10px;
-            margin: 20px 10px 0px 10px;
+            margin: 20px 50px 0px 50px;
             color: white;
             transition-duration: .5s;
             &:hover {
@@ -142,13 +142,21 @@ body {
                 background-color: $glassBlack;
                 padding: 2.5rem 3rem 1.5rem 3rem;
                 border-radius: 15px;
+                .photo-person {
+                    box-shadow: 0 0 30px #000;
+                    border-radius: 100%;
+                    width: 16rem;
+                    margin: 0 auto;
+                }
                 .photo-person img {
                     height: 16rem;
                     border-radius: 100%;
                 }
                 .name {
-                    font-size: 20px;
+                    font-size: 25px;
                     font-family: $en-font;
+                    padding-top: 15px;
+                    padding-bottom: 10px;
                 }
                 a {
                     font-size: 30px;
@@ -218,4 +226,34 @@ body {
 }
 
 // 技能樹 Slide Show
-.skill-wrapper {}
+.skill-wrapper {
+    .skill-slider-nav {
+        width: 70%;
+        margin: 50px auto;
+        text-align: center;
+        .slider-tab {
+            text-align: center;
+            img {
+                height: 110px;
+                border-radius: 15px;
+                cursor: pointer;
+                transition-duration: .5s;
+                &:hover {
+                    filter: brightness(1.4);
+                }
+            }
+            .title {
+                font-family: $en-font;
+                font-size: 20px;
+                padding: 10px 0;
+            }
+        }
+    }
+    // Fix conflix with Slick Theme
+    .slick-slide img {
+        display: inline-block;
+    }
+    .skill-slider-for {
+        .slider-show {}
+    }
+}
