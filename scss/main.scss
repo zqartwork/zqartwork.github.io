@@ -1,0 +1,221 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url(https://fonts.googleapis.com/css?family=Kanit);
+// setting-basic stuff
+//
+//
+$cn-font: 'Noto Sans TC';
+$en-font:'Kanit';
+$DeepBlue: rgb(0, 43, 71);
+$LightBLue: rgb(60, 105, 139);
+$lightGray: rgba(211, 211, 211, 0.44);
+$glassBlack: rgba(0, 0, 0, 0.44);
+$glassDeepBlue: rgba(0, 43, 71, 0.2);
+%center {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+@mixin transition($property) {
+    transition: $property;
+    -webkit-transition: $property;
+    -moz-transition: $property;
+    -ms-transition: $property;
+    -o-transition: $property;
+}
+
+@mixin transform($property) {
+    transform: $property;
+    -webkit-transform: $property;
+    -ms-transform: $property;
+}
+
+* {
+    font-family: $cn-font;
+    letter-spacing: 1px;
+    color: white;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+// 捲軸主題樣式
+ ::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: #000;
+    letter-spacing: 1px;
+}
+
+// 置頂名字條
+.name-bar {
+    text-align: center;
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: $en-font;
+    background: $DeepBlue;
+}
+
+// Nav-bar設置
+.nav-wrapper {
+    height: 90px;
+    .nav-tab {
+        a {
+            display: inline-block;
+            background: none;
+            font-size: 20px;
+            padding: 3px 10px;
+            margin: 20px 10px 0px 10px;
+            color: white;
+            transition-duration: .5s;
+            &:hover {
+                font-weight: 700;
+                color: black;
+                background-color: white;
+                text-decoration: none;
+                border-radius: 10px;
+                span {
+                    transition-duration: .5s;
+                    color: black;
+                }
+            }
+        }
+        .tab-en {
+            display: block;
+            font-size: 12px;
+            font-weight: 300;
+        }
+    }
+}
+
+//Sticky Nav-bar
+.nav-bar-start {
+    z-index: 1;
+    background: none;
+    @extend .nav-wrapper;
+    text-align: center;
+    width: 100%;
+    transition-duration: .5s;
+    &.nav-bar-sticky {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: 100;
+        border-top: 0;
+        height: 80px;
+        background: $DeepBlue;
+        a {
+            margin-top: 12px;
+        }
+    }
+    .split-line {
+        display: inline-block;
+        background-color: $lightGray;
+        width: 1px;
+        height: 0;
+        transition-duration: .5s;
+        &.show {
+            height: 35px;
+        }
+    }
+}
+
+// 首頁 Banner 區塊設置
+.intro {
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position-x: 80%;
+    .intro-wrapper {
+        position: relative;
+        background-image: linear-gradient(to left, #000, #000 13%, rgba(0, 0, 0, 0.247) 50%, #000);
+        padding-top: 80px;
+        padding-bottom: 85px;
+        .intro-mask {
+            text-align: center;
+            .intro-card {
+                @extend %center;
+                text-align: center;
+                color: $DeepBlue;
+                background-color: $glassBlack;
+                padding: 2.5rem 3rem 1.5rem 3rem;
+                border-radius: 15px;
+                .photo-person img {
+                    height: 16rem;
+                    border-radius: 100%;
+                }
+                .name {
+                    font-size: 20px;
+                    font-family: $en-font;
+                }
+                a {
+                    font-size: 30px;
+                    margin: 0px 5px;
+                    i {
+                        transition-duration: .5s;
+                    }
+                    &:hover {
+                        i {
+                            color: $LightBLue;
+                        }
+                    }
+                }
+                .description {
+                    p {
+                        padding-top: 10px;
+                        font-size: 15px;
+                        font-weight: 300;
+                        color: white;
+                    }
+                }
+            }
+            .MouseOver-Position-Aware {
+                width: 30%;
+                background: $glassBlack;
+                display: block;
+                text-align: center;
+                outline: none;
+                position: relative;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                overflow: hidden;
+                z-index: 1;
+                transition: all .5s cubic-bezier(0.54, 0.09, 0.29, 0.9);
+                -webkit-transition: all .5s cubic-bezier(0.54, 0.09, 0.29, 0.9);
+                -moz-transition: all .5s cubic-bezier(0.54, 0.09, 0.29, 0.9);
+                -ms-transition: all .5s cubic-bezier(0.54, 0.09, 0.29, 0.9);
+                -o-transition: all .5s cubic-bezier(0.54, 0.09, 0.29, 0.9);
+                .LeavePoint {
+                    position: absolute;
+                    display: block;
+                    width: 0%;
+                    height: 0%;
+                    border-radius: 100%;
+                    background-color: $glassDeepBlue;
+                    -webkit-transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                    transition: width .5s cubic-bezier(0.54, 0.09, 0.29, 0.9), height .5s cubic-bezier(0.54, 0.09, 0.29, 0.9);
+                    -webkit-transition: width .5s cubic-bezier(0.54, 0.09, 0.29, 0.9), height .5s cubic-bezier(0.54, 0.09, 0.29, 0.9);
+                    -moz-transition: width .5s cubic-bezier(0.54, 0.09, 0.29, 0.9), height .5s cubic-bezier(0.54, 0.09, 0.29, 0.9);
+                    -ms-transition: width .5s cubic-bezier(0.54, 0.09, 0.29, 0.9), height .5s cubic-bezier(0.54, 0.09, 0.29, 0.9);
+                    -o-transition: width .5s cubic-bezier(0.54, 0.09, 0.29, 0.9), height .5s cubic-bezier(0.54, 0.09, 0.29, 0.9);
+                    z-index: -1;
+                }
+                &:hover .LeavePoint {
+                    width: 400%;
+                    height: 400%;
+                }
+                &:focus .LeavePoint {
+                    width: 400%;
+                    height: 400%;
+                }
+            }
+        }
+    }
+}
+
+// 技能樹 Slide Show
+.skill-wrapper {}

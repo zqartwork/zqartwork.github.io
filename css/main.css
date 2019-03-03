@@ -1,0 +1,215 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url(https://fonts.googleapis.com/css?family=Kanit);
+.intro .intro-wrapper .intro-mask .intro-card {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+* {
+  font-family: "Noto Sans TC";
+  letter-spacing: 1px;
+  color: white;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: #000;
+  letter-spacing: 1px;
+}
+
+.name-bar {
+  text-align: center;
+  font-size: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: "Kanit";
+  background: #002b47;
+}
+
+.nav-wrapper, .nav-bar-start {
+  height: 90px;
+}
+
+.nav-wrapper .nav-tab a, .nav-bar-start .nav-tab a {
+  display: inline-block;
+  background: none;
+  font-size: 20px;
+  padding: 3px 10px;
+  margin: 20px 10px 0px 10px;
+  color: white;
+  -webkit-transition-duration: .5s;
+  -o-transition-duration: .5s;
+  transition-duration: .5s;
+}
+
+.nav-wrapper .nav-tab a:hover, .nav-bar-start .nav-tab a:hover {
+  font-weight: 700;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.nav-wrapper .nav-tab a:hover span, .nav-bar-start .nav-tab a:hover span {
+  -webkit-transition-duration: .5s;
+  -o-transition-duration: .5s;
+  transition-duration: .5s;
+  color: black;
+}
+
+.nav-wrapper .nav-tab .tab-en, .nav-bar-start .nav-tab .tab-en {
+  display: block;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.nav-bar-start {
+  z-index: 1;
+  background: none;
+  text-align: center;
+  width: 100%;
+  -webkit-transition-duration: .5s;
+  -o-transition-duration: .5s;
+  transition-duration: .5s;
+}
+
+.nav-bar-start.nav-bar-sticky {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0;
+  height: 80px;
+  background: #002b47;
+}
+
+.nav-bar-start.nav-bar-sticky a {
+  margin-top: 12px;
+}
+
+.nav-bar-start .split-line {
+  display: inline-block;
+  background-color: rgba(211, 211, 211, 0.44);
+  width: 1px;
+  height: 0;
+  -webkit-transition-duration: .5s;
+  -o-transition-duration: .5s;
+  transition-duration: .5s;
+}
+
+.nav-bar-start .split-line.show {
+  height: 35px;
+}
+
+.intro {
+  background-image: url(../img/banner.png);
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position-x: 80%;
+}
+
+.intro .intro-wrapper {
+  position: relative;
+  background-image: -webkit-gradient(linear, right top, left top, from(#000), color-stop(13%, #000), color-stop(50%, rgba(0, 0, 0, 0.247)), to(#000));
+  background-image: -webkit-linear-gradient(right, #000, #000 13%, rgba(0, 0, 0, 0.247) 50%, #000);
+  background-image: -o-linear-gradient(right, #000, #000 13%, rgba(0, 0, 0, 0.247) 50%, #000);
+  background-image: linear-gradient(to left, #000, #000 13%, rgba(0, 0, 0, 0.247) 50%, #000);
+  padding-top: 80px;
+  padding-bottom: 85px;
+}
+
+.intro .intro-wrapper .intro-mask {
+  text-align: center;
+}
+
+.intro .intro-wrapper .intro-mask .intro-card {
+  text-align: center;
+  color: #002b47;
+  background-color: rgba(0, 0, 0, 0.44);
+  padding: 2.5rem 3rem 1.5rem 3rem;
+  border-radius: 15px;
+}
+
+.intro .intro-wrapper .intro-mask .intro-card .photo-person img {
+  height: 16rem;
+  border-radius: 100%;
+}
+
+.intro .intro-wrapper .intro-mask .intro-card .name {
+  font-size: 20px;
+  font-family: "Kanit";
+}
+
+.intro .intro-wrapper .intro-mask .intro-card a {
+  font-size: 30px;
+  margin: 0px 5px;
+}
+
+.intro .intro-wrapper .intro-mask .intro-card a i {
+  -webkit-transition-duration: .5s;
+  -o-transition-duration: .5s;
+  transition-duration: .5s;
+}
+
+.intro .intro-wrapper .intro-mask .intro-card a:hover i {
+  color: #3c698b;
+}
+
+.intro .intro-wrapper .intro-mask .intro-card .description p {
+  padding-top: 10px;
+  font-size: 15px;
+  font-weight: 300;
+  color: white;
+}
+
+.intro .intro-wrapper .intro-mask .MouseOver-Position-Aware {
+  width: 30%;
+  background: rgba(0, 0, 0, 0.44);
+  display: block;
+  text-align: center;
+  outline: none;
+  position: relative;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.5s cubic-bezier(0.54, 0.09, 0.29, 0.9);
+  -webkit-transition: all 0.5s cubic-bezier(0.54, 0.09, 0.29, 0.9);
+  -moz-transition: all 0.5s cubic-bezier(0.54, 0.09, 0.29, 0.9);
+  -ms-transition: all 0.5s cubic-bezier(0.54, 0.09, 0.29, 0.9);
+  -o-transition: all 0.5s cubic-bezier(0.54, 0.09, 0.29, 0.9);
+}
+
+.intro .intro-wrapper .intro-mask .MouseOver-Position-Aware .LeavePoint {
+  position: absolute;
+  display: block;
+  width: 0%;
+  height: 0%;
+  border-radius: 100%;
+  background-color: rgba(0, 43, 71, 0.2);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  transition: width 0.5s cubic-bezier(0.54, 0.09, 0.29, 0.9), height 0.5s cubic-bezier(0.54, 0.09, 0.29, 0.9);
+  -webkit-transition: width 0.5s cubic-bezier(0.54, 0.09, 0.29, 0.9), height 0.5s cubic-bezier(0.54, 0.09, 0.29, 0.9);
+  -moz-transition: width 0.5s cubic-bezier(0.54, 0.09, 0.29, 0.9), height 0.5s cubic-bezier(0.54, 0.09, 0.29, 0.9);
+  -ms-transition: width 0.5s cubic-bezier(0.54, 0.09, 0.29, 0.9), height 0.5s cubic-bezier(0.54, 0.09, 0.29, 0.9);
+  -o-transition: width 0.5s cubic-bezier(0.54, 0.09, 0.29, 0.9), height 0.5s cubic-bezier(0.54, 0.09, 0.29, 0.9);
+  z-index: -1;
+}
+
+.intro .intro-wrapper .intro-mask .MouseOver-Position-Aware:hover .LeavePoint {
+  width: 400%;
+  height: 400%;
+}
+
+.intro .intro-wrapper .intro-mask .MouseOver-Position-Aware:focus .LeavePoint {
+  width: 400%;
+  height: 400%;
+}
