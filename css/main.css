@@ -1,10 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900|Open+Sans:300,400,700,800&amp;subset=chinese-traditional,japanese);
-* {
-  font-family: 'Noto Sans TC';
-  letter-spacing: 1px;
-  color: black;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box; }
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900);
+/* ~~~~~~~~~~~~ GLOBAL SETTINGS ~~~~~~~~~~~~ */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  --inv: #fff; }
+
+html {
+  font-family: 'Playfair Display', serif; }
 
 ::-webkit-scrollbar {
   display: none; }
@@ -14,7 +19,9 @@ body {
   background-image: -o-linear-gradient(115deg, #616161 0%, #96B7C4 100%);
   background-image: linear-gradient(-25deg, #616161 0%, #96B7C4 100%);
   letter-spacing: 1px;
-  font-family: 'Noto Sans TC'; }
+  font-family: 'Noto Sans TC';
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
 
 .name-bar {
   text-align: center;
@@ -30,8 +37,6 @@ body {
     display: inline-block;
     background: none;
     font-size: 20px;
-    padding: 3px 10px;
-    margin: 20px 50px 0px 50px;
     color: black;
     -webkit-transition-duration: .5s;
     -o-transition-duration: .5s;
@@ -48,7 +53,9 @@ body {
   .nav-wrapper .nav-tab .tab-en, .nav-bar-start .nav-tab .tab-en {
     display: block;
     font-size: 12px;
-    font-weight: 300; }
+    font-weight: 700;
+    font-family: 'Playfair Display';
+    letter-spacing: 1rem; }
 
 .nav-bar-start {
   z-index: 1;
@@ -68,7 +75,7 @@ body {
     height: 80px;
     background: #E3E3E3; }
     .nav-bar-start.nav-bar-sticky a {
-      margin-top: 12px; }
+      margin-top: .3rem; }
   .nav-bar-start .split-line {
     display: inline-block;
     background-color: #00000027;
@@ -78,17 +85,65 @@ body {
     -o-transition-duration: .5s;
     transition-duration: .5s; }
     .nav-bar-start .split-line.show {
-      height: 35px; }
+      height: 35px;
+      position: relative;
+      top: .5rem; }
 
 .intro .intro-wrapper {
   position: relative; }
+  .intro .intro-wrapper .intro-mask .intro-card {
+    color: black;
+    padding: 1rem 0; }
+    .intro .intro-wrapper .intro-mask .intro-card .name {
+      font-weight: 700;
+      font-size: 0px;
+      cursor: default; }
+      .intro .intro-wrapper .intro-mask .intro-card .name span {
+        font-size: 30px;
+        -webkit-transition: .5s;
+        -o-transition: .5s;
+        transition: .5s; }
+        .intro .intro-wrapper .intro-mask .intro-card .name span:hover {
+          color: white; }
+    .intro .intro-wrapper .intro-mask .intro-card a {
+      color: black;
+      font-size: 30px;
+      margin: 0 5px;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+      .intro .intro-wrapper .intro-mask .intro-card a:hover {
+        color: white; }
+    .intro .intro-wrapper .intro-mask .intro-card .description {
+      padding: .5rem 0;
+      cursor: default; }
 
 .intro .personal-photo {
-  margin: 0 auto; }
+  display: inline-block;
+  margin: 0 auto;
+  position: relative; }
   .intro .personal-photo img {
+    border: 1px solid white;
+    padding: 1rem;
     border-radius: 100%;
     width: 100%;
-    max-width: 500px; }
+    max-width: 350px; }
+  .intro .personal-photo::before {
+    content: '';
+    position: absolute;
+    top: 175px;
+    left: -40%;
+    background: #fff;
+    width: 100px;
+    height: 1px; }
+  .intro .personal-photo::after {
+    content: '';
+    position: absolute;
+    top: 175px;
+    right: -40%;
+    background: #fff;
+    width: 100px;
+    height: 1px; }
 
 .skill-wrapper .skill-slider-nav {
   width: 70%;
@@ -117,7 +172,9 @@ body {
 /* ~~~~~~~ INIT. BTN ~~~~~~~ */
 .btn {
   position: relative;
-  padding: 1.4rem 4.2rem;
+  padding: .5rem 2.2rem;
+  padding-right: 1.5rem;
+  margin: 1rem 1rem;
   font-size: 1.4rem;
   color: var(--inv);
   letter-spacing: 1rem;
@@ -264,16 +321,72 @@ body {
 .from-bottom:hover:after {
   height: 100%; }
 
-/* ~~~~~~~~~~~~ GLOBAL SETTINGS ~~~~~~~~~~~~ */
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+.title {
+  color: #000;
+  font-size: 25px;
+  font-weight: 500; }
 
-body {
-  --inv: #fff; }
+.sub-title {
+  font-size: 55px;
+  font-family: 'Playfair Display', serif;
+  color: #0000004f;
+  font-weight: 700; }
 
-html {
-  font-family: 'Playfair Display', serif; }
+.skicon {
+  background: #000;
+  padding: .5rem 1rem;
+  margin: 1rem .3rem;
+  font-size: 25px;
+  color: white;
+  font-family: 'Open Sans';
+  font-weight: 700; }
 
-div:last-child {
-  margin-bottom: 0; }
+.table-wrapper {
+  text-align: center; }
+  .table-wrapper table {
+    display: inline-block;
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    position: relative;
+    border-left: 4px double #ffffff77;
+    border-right: 4px double #ffffff77; }
+    .table-wrapper table thead {
+      font-weight: 700; }
+    .table-wrapper table::before {
+      content: '';
+      height: 1px;
+      width: 100px;
+      background: #ffffff77;
+      position: absolute;
+      top: 50%;
+      left: -100px; }
+    .table-wrapper table::after {
+      content: '';
+      height: 1px;
+      width: 100px;
+      background: #ffffff77;
+      position: absolute;
+      top: 50%;
+      right: -100px; }
+
+.work-form {
+  padding: 1rem;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1150px; }
+  .work-form .thumbnail {
+    border-radius: 10px;
+    max-height: 277px;
+    overflow: hidden;
+    margin: 1rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
