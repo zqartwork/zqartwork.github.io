@@ -1,10 +1,8 @@
-@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
-@import url(https://fonts.googleapis.com/css?family=Kanit);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900|Open+Sans:300,400,700,800&amp;subset=chinese-traditional,japanese);
 // setting-basic stuff
 //
 //
-$cn-font: 'Noto Sans TC';
-$en-font:'Kanit';
+
 $DeepBlue: rgb(0, 43, 71);
 $LightBLue: rgb(60, 105, 139);
 $lightGray: rgba(211, 211, 211, 0.44);
@@ -30,9 +28,9 @@ $glassDeepBlue: rgba(0, 43, 71, 0.2);
 }
 
 * {
-    font-family: $cn-font;
+    font-family: 'Noto Sans TC';
     letter-spacing: 1px;
-    color: white;
+    color: black;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
@@ -43,8 +41,9 @@ $glassDeepBlue: rgba(0, 43, 71, 0.2);
 }
 
 body {
-    background-color: #000;
+    background-image: linear-gradient(-25deg, #616161 0%, #96B7C4 100%);
     letter-spacing: 1px;
+    font-family: 'Noto Sans TC';
 }
 
 // 置頂名字條
@@ -53,8 +52,8 @@ body {
     font-size: 25px;
     padding-top: 20px;
     padding-bottom: 20px;
-    font-family: $en-font;
-    background: $DeepBlue;
+    font-family: 'Open Sans';
+    background: black;
 }
 
 // Nav-bar設置
@@ -67,14 +66,14 @@ body {
             font-size: 20px;
             padding: 3px 10px;
             margin: 20px 50px 0px 50px;
-            color: white;
+            color: black;
             transition-duration: .5s;
+
             &:hover {
-                font-weight: 700;
                 color: black;
-                background-color: white;
                 text-decoration: none;
                 border-radius: 10px;
+
                 span {
                     transition-duration: .5s;
                     color: black;
@@ -105,14 +104,15 @@ body {
         z-index: 100;
         border-top: 0;
         height: 80px;
-        background: $DeepBlue;
+        background: #E3E3E3;
+
         a {
             margin-top: 12px;
         }
     }
     .split-line {
         display: inline-block;
-        background-color: $lightGray;
+        background-color: #00000027;
         width: 1px;
         height: 0;
         transition-duration: .5s;
@@ -124,103 +124,21 @@ body {
 
 // 首頁 Banner 區塊設置
 .intro {
-    background-image: url(../img/banner.png);
-    background-repeat: no-repeat;
-    background-size: 90%;
-    background-position-x: 80%;
+    
     .intro-wrapper {
         position: relative;
-        background-image: linear-gradient(to left, #000, #000 13%, rgba(0, 0, 0, 0.247) 50%, #000);
-        padding-top: 80px;
-        padding-bottom: 85px;
-        .intro-mask {
-            text-align: center;
-            .intro-card {
-                @extend %center;
-                text-align: center;
-                color: $DeepBlue;
-                background-color: $glassBlack;
-                padding: 2.5rem 3rem 1.5rem 3rem;
-                border-radius: 15px;
-                .photo-person {
-                    box-shadow: 0 0 30px #000;
-                    border-radius: 100%;
-                    width: 16rem;
-                    margin: 0 auto;
-                }
-                .photo-person img {
-                    height: 16rem;
-                    border-radius: 100%;
-                }
-                .name {
-                    font-size: 25px;
-                    font-family: $en-font;
-                    padding-top: 15px;
-                    padding-bottom: 10px;
-                }
-                a {
-                    font-size: 30px;
-                    margin: 0px 5px;
-                    i {
-                        transition-duration: .5s;
-                    }
-                    &:hover {
-                        i {
-                            color: $LightBLue;
-                        }
-                    }
-                }
-                .description {
-                    p {
-                        padding-top: 10px;
-                        font-size: 15px;
-                        font-weight: 300;
-                        color: white;
-                    }
-                }
-            }
-            .MouseOver-Position-Aware {
-                width: 30%;
-                background: $glassBlack;
-                display: block;
-                text-align: center;
-                outline: none;
-                position: relative;
-                letter-spacing: 1px;
-                text-transform: uppercase;
-                overflow: hidden;
-                z-index: 1;
-                transition: all .5s cubic-bezier(0.54, 0.09, 0.29, 0.9);
-                -webkit-transition: all .5s cubic-bezier(0.54, 0.09, 0.29, 0.9);
-                -moz-transition: all .5s cubic-bezier(0.54, 0.09, 0.29, 0.9);
-                -ms-transition: all .5s cubic-bezier(0.54, 0.09, 0.29, 0.9);
-                -o-transition: all .5s cubic-bezier(0.54, 0.09, 0.29, 0.9);
-                .LeavePoint {
-                    position: absolute;
-                    display: block;
-                    width: 0%;
-                    height: 0%;
-                    border-radius: 100%;
-                    background-color: $glassDeepBlue;
-                    -webkit-transform: translate(-50%, -50%);
-                    -ms-transform: translate(-50%, -50%);
-                    transform: translate(-50%, -50%);
-                    transition: width .5s cubic-bezier(0.54, 0.09, 0.29, 0.9), height .5s cubic-bezier(0.54, 0.09, 0.29, 0.9);
-                    -webkit-transition: width .5s cubic-bezier(0.54, 0.09, 0.29, 0.9), height .5s cubic-bezier(0.54, 0.09, 0.29, 0.9);
-                    -moz-transition: width .5s cubic-bezier(0.54, 0.09, 0.29, 0.9), height .5s cubic-bezier(0.54, 0.09, 0.29, 0.9);
-                    -ms-transition: width .5s cubic-bezier(0.54, 0.09, 0.29, 0.9), height .5s cubic-bezier(0.54, 0.09, 0.29, 0.9);
-                    -o-transition: width .5s cubic-bezier(0.54, 0.09, 0.29, 0.9), height .5s cubic-bezier(0.54, 0.09, 0.29, 0.9);
-                    z-index: -1;
-                }
-                &:hover .LeavePoint {
-                    width: 400%;
-                    height: 400%;
-                }
-                &:focus .LeavePoint {
-                    width: 400%;
-                    height: 400%;
-                }
-            }
+    }
+    * {
+        // border: 1px solid red;
+    }
+    .personal-photo {
+        
+        margin: 0 auto;
+
+        img {
+            border-radius: 100%;
+            width: 100%;
+            max-width: 500px;
         }
     }
 }
@@ -243,7 +161,7 @@ body {
                 }
             }
             .title {
-                font-family: $en-font;
+                font-family: 'Open Sans';
                 font-size: 20px;
                 padding: 10px 0;
             }
@@ -257,3 +175,190 @@ body {
         .slider-show {}
     }
 }
+
+//nav 按鈕特效
+/* ~~~~~~~ INIT. BTN ~~~~~~~ */
+
+.btn {		
+	position: relative;	
+	padding: 1.4rem 4.2rem;
+	font-size: 1.4rem;
+    color: var(--inv);
+    letter-spacing: 1rem;
+
+	text-transform: uppercase;
+	transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);	
+	cursor: pointer;
+    user-select: none;
+    
+    text-align: center;
+}
+
+.btn:before, .btn:after {
+	content: '';
+	position: absolute;	
+	transition: inherit;
+	z-index: -1;
+}
+
+.btn:hover {
+	color: var(--def);
+	transition-delay: .6s;
+}
+
+.btn:hover:before {
+	transition-delay: 0s;
+}
+
+.btn:hover:after {
+	background: var(--inv);
+	transition-delay: .4s;
+}
+
+/* From Top */
+
+.from-top:before, 
+.from-top:after {
+	left: 0;
+	height: 0;
+	width: 100%;
+}
+
+.from-top:before {
+	bottom: 0;	
+	border: 1px solid var(--inv);
+	border-top: 0;
+	border-bottom: 0;
+}
+
+.from-top:after {
+	top: 0;
+	height: 0;
+}
+
+.from-top:hover:before,
+.from-top:hover:after {
+	height: 100%;
+}
+
+/* From Left */
+
+.from-left:before, 
+.from-left:after {
+	top: 0;
+	width: 0;
+	height: 100%;
+}
+
+.from-left:before {
+	right: 0;
+	border: 1px solid var(--inv);
+	border-left: 0;
+	border-right: 0;	
+}
+
+.from-left:after {
+	left: 0;
+}
+
+.from-left:hover:before,
+.from-left:hover:after {
+	width: 100%;
+}
+
+/* From Right */
+
+.from-right:before, 
+.from-right:after {
+	top: 0;
+	width: 0;
+	height: 100%;
+}
+
+.from-right:before {
+	left: 0;
+	border: 1px solid var(--inv);
+	border-left: 0;
+	border-right: 0;	
+}
+
+.from-right:after {
+	right: 0;
+}
+
+.from-right:hover:before,
+.from-right:hover:after {
+	width: 100%;
+}
+
+/* From Middle */
+
+.from-middle:before {
+	top: 0;
+	left: 50%;
+	height: 100%;
+	width: 0;
+	border: 1px solid var(--inv);
+	border-left: 0;
+	border-right: 0;
+}
+
+.from-middle:after {
+	bottom: 0;
+	left: 0;
+	height: 0;
+	width: 100%;
+	background: var(--inv);
+}
+
+.from-middle:hover:before {
+	left: 0;
+	width: 100%;
+}
+
+.from-middle:hover:after {
+	top: 0;
+	height: 100%;
+}
+
+/* From Bottom */
+
+.from-bottom:before, 
+.from-bottom:after {
+	left: 0;
+	height: 0;
+	width: 100%;
+}
+
+.from-bottom:before {
+	top: 0;	
+	border: 1px solid var(--inv);
+	border-top: 0;
+	border-bottom: 0;
+}
+
+.from-bottom:after {
+	bottom: 0;
+	height: 0;
+}
+
+.from-bottom:hover:before,
+.from-bottom:hover:after {
+	height: 100%;
+}
+
+
+/* ~~~~~~~~~~~~ GLOBAL SETTINGS ~~~~~~~~~~~~ */
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+body {
+	--inv: #fff;
+}
+html {
+	font-family: 'Playfair Display', serif;
+}
+
+div:last-child {margin-bottom: 0;}
