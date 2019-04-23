@@ -390,3 +390,18 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
+
+.contact {
+  position: relative; }
+  .contact::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 150%;
+    height: 580px;
+    background: #ffffff55;
+    top: -340%;
+    left: -10%;
+    -webkit-transform: rotate(-6deg);
+    -ms-transform: rotate(-6deg);
+    transform: rotate(-6deg); }
