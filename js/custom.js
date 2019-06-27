@@ -23,13 +23,13 @@ $(window).scroll(function () {
 
     if ($(this).scrollTop() > 800) {
         $('#top').fadeIn();
-    }
-    else {
+    } else {
 
         $('#top').fadeOut();
     }
 
 });
+
 $(window).scroll(function () {
 
     var nav = $('.navbar_wrapper');
