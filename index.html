@@ -5,92 +5,226 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta content="og:image" src="[本網站的縮圖顯示請放置此處]">
-    <title>ZQ ARTWORK</title>
+    <meta property="og:image" content="[本網站的縮圖顯示請放置此處]">
+    <meta property="og:description" content="結合電腦插畫繪圖、專業UIUX設計與前端開發人員">
+    <title>ZQARTWORK</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
-    <!-- 基礎設定 -->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
-    <!-- 輪播設定 -->
-    <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
-    <!-- 個人STYLE -->
+    <!-- 基礎歸零設置 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <!-- materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/3530f29c86.js" crossorigin="anonymous"></script>
+    <!-- owlCarousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <!-- 自訂設置 -->
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/rwd.css">
 
 </head>
 
 <body>
-    <div id="wrapper">
-        <div class="bktop" id="top">
-            <a class="chevron">
-                <i class="fas fa-chevron-circle-up"></i>
-            </a>
+    <div class="wrapper" id="app">
+        <!-- Navbar -->
+        <div class="preload-section">
+            <img src="img/preload.svg" alt="">
+            LOADING
         </div>
-        <nav class="navbar_wrapper">
-            <div class="nav_container">
-                <div class="flex_wrapper">
-                    <div class="flex_wrapper just_left nav_left">
-                        <a class="logo_container" href="#main">
-                            ZQARTWORK
-                        </a>
+        <nav>
+            <div class="nav-wrapper container">
+                <a href="#!" class="brand-logo" @click='page=0'>ZQARTWORK</a>
+                <ul class="right hide-on-med-and-down">
+                    <li :class='{active:page==1}'><a href="#" @click='page=1'>ABOUT</a></li>
+                    <li :class='{active:page==2}'><a href="#" @click='page=2'>WORKS</a></li>
+                    <li><a href="collapsible.html">EXPERIENCE</a></li>
+                    <li><a href="mobile.html">CONTACT</a></li>
+                </ul>
+                <a href="#" data-target="mobile-demo" class="right sidenav-trigger"><i class="fas fa-bars"></i></a>
+            </div>
+        </nav>
+
+        <!-- Sidenav -->
+        <ul class="sidenav" id="mobile-demo">
+            <li :class='{active:page==1}'><a href="#" @click='page=1'>ABOUT</a></li>
+            <li :class='{active:page==2}'><a href="#" @click='page=2'>WORKS</a></li>
+            <li><a href="collapsible.html">EXP</a></li>
+            <li><a href="mobile.html">CONTACT</a></li>
+        </ul>
+
+        <!-- 主要內容區域 -->
+        <div class="">
+            <div class="section section-index" id="index" v-if="page==0">
+                <div class="flex-wrapper">
+                    <div class="zq-pic flex-wrapper">
+                        <img src="img/official/zq-pic.png" alt="" class="lazyload">
                     </div>
-                    <div class="flex_wrapper just_right nav_right">
-                        <div class="nav_btns flex_wrapper space-between">
-                            <a href="#about" class="about">ABOUT</a>
-                            <a href="#works" class="">WORKS</a>
-                            <a href="#exp" class="">EXPERIENCE</a>
-                            <a href="#contact" class="">CONTACT</a>
+                    <div class="bg-title">
+                        <img src="img/official/svg/logo_title.svg" alt="" class="animated fadeInRight">
+                        <div class="zq-d-content">
+                            <div class="animated fadeInLeft delay-1s">
+                                Web / APP - UI / UX Designer
+                            </div>
+                            <div class="animated fadeInLeft delay-2s">
+                                Front-end Designer <br>
+                            </div>
+                            <div class="animated fadeInLeft delay-3s">
+                                Illustrator <br>
+                            </div>
+                            <div class="animated fadeInLeft delay-4s">
+                                Graphic Designer <br>
+                            </div>
+                        </div>
+                        <div class="zq-more flex-wrapper align-start just-right animated fadeIn delay-5s"
+                            @click="page=1">MORE
                         </div>
                     </div>
                 </div>
             </div>
-        </nav>
-        <div class="section section_A" id="main">
-            <div class="container">
-                <div class="flex_wrapper">
-                    <div class="career-title">
-                        Web / APP - UI / UX Designe <br>
-                        Front-end Designer <br>
-                        Illustrator <br>
-                        Graphic Designer <br>
+            <div class="section section-about" id="about" v-if="page==1">
+                <div class="flex-wrapper just-left">
+                    <div class="clip-work-part">
+                        <div class="about-clip-a animated fadeInLeft delay-3s ">
+                            <div class="mask">- Illustration</div>
+                            <div class="pic-a"></div>
+                        </div>
+                        <div class="about-clip-b animated fadeInLeft delay-3500 ">
+                            <div class="mask">- UIUX Design</div>
+                            <div class="pic-b"></div>
+                        </div>
+                        <div class="about-clip-c animated fadeInLeft delay-4s slow">
+                            <div class="mask">- Graphic Design</div>
+                            <div class="pic-c"></div>
+                        </div>
+                        <div class="about-clip-d animated fadeInLeft delay-4500 slow">
+                            <div class="mask">- Front-end Dev</div>
+                            <div class="pic-d"></div>
+                        </div>
                     </div>
-                    <div class="potrait">
-                        <img src="img/official/main_portrait.png" alt="">
-                        <div class="bg_title"><img src="img/official/svg/logo_title.svg" alt=""></div>
+                    <div class="about-description-part animated">
+                        <p>
+                            <span>
+                                我是梁占青，西元 1996 年生，應屆畢業於 國立台灣大學 經濟學系。<br>
+                                個性積極開朗，好奇且樂於學習，時時更新自己的能力。<br>
+                                <br>
+                                大三暑假進入企業半工半讀，<br>
+                                畢業時因為能力受到肯定，獲得企業正職工作證明 1 年，<br>
+                                累積 B2B 工作經驗、作品以及專業設計流程、技術。<br>
+                                <br>
+                                有別於一般設計人才，結合前端開發經驗，以及在學時金融分析訓練，<br>
+                                語言能力 多益 890 分，我是個 跨領域且善於溝通的人才。<br>
+                                出社會後嘗試各個領域挑戰自己，累積實力。<br>
+                            </span>
+                        </p>
                     </div>
-                    <a class="more" href="#about">MORE</a>
+                </div>
+            </div>
+            <div class="section section-works" id="works" v-if="page==2">
+                <div class="flex-wrapper gallery-wrapper">
+                    <a class="gallery-item" :href="work.href" v-for="work in works">
+                        <div class="gallery-item-head">
+                            <div class="gallery-item-head-img-wrapper">
+                                <img :src="work.link" alt="">
+                            </div>
+                            <div class="tags">
+                                <div class="rwd-tag" v-if="work.isRWD == true">RWD</div>
+                                <div class="multi-browser-tag" v-if="work.multiBrowser == true">跨瀏覽器</div>
+                            </div>
+                        </div>
+                        <div class="gallery-item-body">
+                            <div class="gallery-item-title">
+                                {{work.title}}
+                            </div>
+                            <div class="gallery-item-content">
+                                <div class="gallery-item-content-des">{{work.content}}</div>
+                                <div class="gallery-item-content-time">{{work.time}}</div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="section section_B" id="about">
-            <div class="container">
-                <div class="about_left_slide">
-                </div>
-                <div class="about_right_content"></div>
-            </div>
-        </div>
-        <div class="section section_C"></div>
-        <div class="section section_D-a" id="works"></div>
-        <div class="section section_D-b"></div>
-        <div class="section section_D-c"></div>
-        <div class="section section_D-d"></div>
-        <div class="section section_D-e"></div>
-        <div class="section section_D-f"></div>
-        <div class="section section_E" id="exp"></div>
-        <div class="section section_F" id="contact"></div>
-        <footer class="section section_footer"></footer>
+
     </div>
 
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/node_modules/jquery/dist/jquery.js"></script>
-    <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <!-- 3.4.1 jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
     <script src="js/custom.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                page: 2,
+                works: [
+                    {
+                        title: '財團法人青馬影藝學院網站',
+                        content: '線上影藝教學網站',
+                        time: '2018 / 07',
+                        link: 'img/work/wk_qm.jpg',
+                        href: 'qing-ma.html',
+                        isRWD: true,
+                        multiBrowser: false,
+                    },
+                    {
+                        title: '恆星網路科技公司官網',
+                        content: 'Solertech Official',
+                        time: '2018 / 07',
+                        link: 'img/work/wk_solart.jpg',
+                        href: 'solartninc.html',
+                        isRWD: true,
+                        multiBrowser: true,
+                    },
+                    {
+                        title: '赞星直播平台管理後臺',
+                        content: 'BestCast TV Dashboard',
+                        time: '2018 / 07',
+                        link: 'img/work/wk_solart.jpg',
+                        href: 'solartninc.html',
+                        isRWD: true,
+                        multiBrowser: true,
+                    },
+                    {
+                        title: '2019 英雄聯盟 ECS 宣傳網站',
+                        content: '聯賽官方網站 UI 切版製作',
+                        time: '2018 / 07',
+                        link: 'img/work/wk_ecs.png',
+                        href: 'ecs.html',
+                        isRWD: false,
+                        multiBrowser: false,
+                    },
+                    {
+                        title: '英雄聯盟 S8 季前活動網站',
+                        content: '遊戲開季前獎勵網站 UI 切版',
+                        time: '2018 / 07',
+                        link: 'img/work/wk_preseason.jpg',
+                        href: 'S8preseason.html',
+                        isRWD: false,
+                        multiBrowser: false,
+                    },
+                    
 
+                ]
+            },
+            methods: {},
+        })
+    </script>
+    <script>
+        $(".lazyload").lazyload();
+        $(document).ready(function () {
+            $(".section-index").hide();
+            setTimeout(function () {
+                $('.preload-section').fadeOut();
+                $('.section-index').fadeIn(1000);
+            }, 000);
+            $('.sidenav').sidenav({
+                edge: 'right',
+            });
+        });
+    </script>
 </body>
-
 
 </html>

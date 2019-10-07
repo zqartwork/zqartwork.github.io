@@ -1,0 +1,835 @@
+/* Tab 控制
+   ========================================================================= */
+/* 選中不要框 */
+.tab_team a:focus,
+.competition a:focus,
+.tab_compete a,
+.tab_final a,
+.allInfoList a {
+	outline: none;
+}
+
+/* 選中/未選中透明度 */
+#tab_teamList .ui-state-default,
+#tab_schedule .ui-state-default,
+#tab_allInfo .ui-state-default {
+	opacity: 0.5;
+}
+
+#tab_teamList .ui-state-active,
+#tab_schedule .ui-state-active,
+#tab_allInfo .ui-state-active {
+	opacity: 1;
+}
+
+/* 選中時 */
+#tab_groupMatch .ui-state-active,
+#tab_knockout .ui-state-active {
+	background: #0e4754;
+}
+
+#tab_allSchedule .ui-state-active {
+	background: #0e4754;
+}
+
+#tab_finalInfo .ui-state-active {
+	background: #0e4754;
+}
+
+#tab_finalInfo .ui-state-active a {
+	color: #000;
+}
+
+/* 觸碰變色 */
+.tab_final a:hover {
+	background: #09fffd;
+	color: #000;
+}
+
+/* Page 1 首頁
+   ========================================================================= */
+
+.index .col2>div,
+.award,
+.sponsorBox .col3>div {
+	border: 1px solid #00ffff;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	background: #1c282d;
+	padding: 1em;
+	margin: 0 0 2em;
+}
+
+.index .col2:first-child>div,
+.bonus .col2:first-child>a {
+	margin-right: 1.5em;
+}
+
+.index .col2:last-child>div,
+.bonus .col2:last-child>a {
+	margin-left: 1.5em;
+}
+
+.index iframe {
+	width: 100%;
+	height: 300px;
+	border: 1px solid #626262;
+	display: block;
+}
+
+/* 新聞Tab
+------------------*/
+#tab_newsList {
+	margin-bottom: 2em;
+	display: inline-block;
+}
+
+.newsPic,
+.news {
+	float: left;
+}
+
+.newsPic {
+	width: 65%;
+}
+
+.news {
+	width: 35%;
+}
+
+.newsPic>div,
+.news>div {
+	border: 1px solid #09fffd;
+}
+
+.news>div {
+	margin-left: 0.5em;
+	overflow-y: auto;
+	height: 345px;
+	background: #2a3c43;
+}
+
+.news span {
+	height: 25px;
+	display: block;
+	background: #ccc;
+	margin-left: 0.5em;
+}
+
+.newsPic>div {
+	margin-right: 0.5em;
+	overflow-y: hidden;
+	height: 395px;
+}
+
+.news li a {
+	font-size: 1em;
+	color: #fff;
+	text-align: center;
+	display: block;
+	padding: 1em 0.5em;
+}
+
+.news li a:hover {
+	background: linear-gradient(to right, #1faaa5, #206465, #1faaa5);
+}
+
+.news li:nth-child(odd) {
+	background: #1c282d;
+}
+
+.news li:nth-child(even) {
+	background: #214649;
+}
+
+.about {
+	margin: 2em auto 5em;
+	width: 960px;
+}
+
+/* Page 2 隊伍
+   ========================================================================= */
+/*----------------隊伍標籤----------------*/
+.team1 {
+	background: url(../images/team-taipei-1.png) no-repeat;
+}
+
+.team2 {
+	background: url(../images/team-tainan-1.png) no-repeat;
+}
+
+.team3 {
+	background: url(../images/team-taichung-1.png) no-repeat;
+}
+
+.team4 {
+	background: url(../images/team-newtaipei-1.png) no-repeat;
+}
+
+.team5 {
+	background: url(../images/team-kaosiung-1.png) no-repeat;
+}
+
+.team6 {
+	background: url(../images/team-taoyuan-1.png) no-repeat;
+}
+
+.tab_team {
+	display: table;
+	margin: 1em auto 2em;
+}
+
+.tab_team li {
+	display: inline-block;
+}
+
+.tab_team a {
+	width: 180px;
+	height: 150px;
+	color: #fff;
+	text-align: center;
+	display: block;
+	cursor: pointer;
+}
+
+
+/*----------------隊伍資訊----------------*/
+
+#tab_teamList {
+	margin-bottom: 4em;
+	overflow: auto;
+}
+
+.team .col4>div {
+	background: rgba(22, 47, 52, .5);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding: 0.5em;
+	margin: 1em;
+}
+
+.team .col4 ul {
+	height: 233px;
+	padding: 1em 1em 2.5em 1em;
+	border: 1px solid #09fffd;
+	background: url(../images/dec-06.png) no-repeat center 90%;
+}
+
+/* Page 3 資訊
+   ========================================================================= */
+.allInfoList {
+	display: table;
+	margin: 3em auto 4em;
+}
+
+.allInfoList li {
+	display: inline-block;
+	border-bottom: 2px solid;
+	border-top: 2px solid;
+}
+
+.allInfoList li a {
+	display: block;
+	width: 250px;
+	text-align: center;
+}
+
+.allInfoList li h2 {
+	cursor: pointer;
+}
+
+#tab_schedule {
+	margin-bottom: 4em;
+}
+
+.score,
+.competition {
+	margin: 4em 0;
+	overflow: auto;
+}
+
+.score .col3>div {
+	padding: 0.5em 1em;
+	font-size: 1.2em;
+	border: 1px solid #38d7ff;
+	margin: 0.5em;
+}
+
+.score span {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.score span:first-child {
+	font-size: 1.2em;
+}
+
+.score span:nth-child(2) {
+	width: 70px;
+}
+
+.score span:nth-child(3) {
+	font-size: 1.2em;
+}
+
+.score span:last-child {
+	background: #72e3ff;
+	color: #000;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding: 0.2em 0.4em;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.tab_compete li {
+	float: left;
+	text-align: center;
+}
+
+.tab_compete li a {
+	padding: 1em 0;
+	display: block;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.tab_compete.as li a {
+	padding: 0.5em 0;
+}
+
+.tab_compete.as li a:hover {
+	background: #0e4754;
+}
+
+.gp li {
+	width: 25%;
+	border: 1px solid #0e4754;
+}
+
+.ko li {
+	width: 50%;
+	border: 1px solid #0e4754;
+}
+
+.as li {
+	width: 14.28%;
+	border-top: 10px solid #0e4754;
+	border-bottom: 10px solid #0e4754;
+}
+
+.gpContent table {
+	width: 100%;
+}
+
+.gpContent table tr {
+	border-bottom: 1px dotted #0e4754;
+	font-size: 1.8em;
+	text-align: center;
+}
+
+.gpContent table td {
+	padding: 0.8em 0;
+}
+
+.gm-win {
+	text-shadow: 0 0 20px #fff;
+}
+
+.gm-lose {
+	color: #666;
+}
+
+.gpContent table td:nth-child(2),
+.gpContent table td:nth-child(4) {
+	width: 300px;
+}
+
+.gpContent table td:first-child,
+.gpContent table td:nth-child(3) {
+	width: 100px;
+}
+
+.gpContent table td:nth-child(5) {
+	width: 50px;
+}
+
+.gpContent table div {
+	display: inline-block;
+	margin: 0 2em;
+	vertical-align: middle;
+}
+
+/* VS */
+.gpContent table div span {
+	display: block;
+	font-size: 1em;
+}
+
+.gpContent table div span:first-child {
+	font-size: 0.8em;
+}
+
+/* VS */
+.gpContent .tl1 {
+	content: "";
+	background: url(../images/team_taipei.png);
+	width: 50px;
+	height: 50px;
+}
+
+/* Page 4 線下賽
+   ========================================================================= */
+.finalInfo,
+.ff {
+	padding-bottom: 5em;
+}
+
+.finalInfo .col2 {
+	float: none;
+	display: table-cell;
+	vertical-align: top;
+}
+
+.finalInfo .col2>div {
+	margin: 0 1.5em;
+}
+
+#tab_finalInfo>ul li {
+	float: left;
+	width: 14.28%;
+	text-align: center;
+	border-top: 10px solid #007a8a;
+	border-bottom: 10px solid #007a8a;
+}
+
+#tab_finalInfo>ul li a {
+	padding: 1em 0;
+	display: block;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.fDetail-1 {
+	border-top: 1px solid #09fffd;
+	border-bottom: 1px solid #09fffd;
+	padding: 1em 0;
+	line-height: 2em;
+	font-size: 1em;
+	display: block;
+}
+
+.fDetail-1 .keyinfo {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #09fffd;
+}
+
+.fDetail-1 .keyinfo th {
+	width: 100px;
+}
+
+.fDetail-1 td span {
+	display: inherit;
+	background: #ffecb7;
+	color: #000;
+	padding: 5px 8px;
+	line-height: 1em;
+}
+
+.ff {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.ff h2+img {
+	margin-top: 2em;
+}
+
+.ff .fDetail-1 {
+	font-size: 1.2em;
+}
+
+.ff .fDetail-1 th {
+	width: 130px;
+}
+
+.fDetail-1 th {
+	width: 80px;
+	text-align: left;
+	vertical-align: top;
+}
+
+/* 來賓 */
+.guest {
+	display: table;
+	margin: 1em auto;
+	overflow: auto;
+}
+
+.ff .guest {
+	margin: 3em 0;
+}
+
+.offline .guest p {
+	text-align: center;
+	font-size: 0.8em;
+}
+
+.ff .guest p {
+	font-size: 1.3em;
+	margin-top: 1em;
+}
+
+.finalInfo .col2:first-child img {
+	margin-bottom: 1em;
+}
+
+.bonus {
+	margin: 2em auto;
+}
+
+/* Page 5 規章
+   ========================================================================= */
+.rules .longArticle {
+	border: 1px solid #38d7ff;
+}
+
+/* 教學 */
+.tutorial {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.tutorial>div {
+	margin-bottom: 5em;
+}
+
+/* Page 6 報導
+   ========================================================================= */
+.reportAll {
+	height: 500px;
+	padding: 1em;
+	margin: 0 auto;
+	background: rgba(0, 0, 0, .3);
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	overflow-y: scroll;
+}
+
+.reportBox {
+	display: block;
+	border: 1px solid #00e09e;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	border-radius: 40px;
+	padding: 2em;
+	margin: 0 auto 1em;
+	overflow: auto;
+}
+
+.reportBox:hover {
+	background: rgba(21, 56, 58, 0.5);
+}
+
+a.reportBox img {
+	width: 550px;
+	float: left;
+	border-right: 1px solid #ffbf11;
+	padding-right: 3em;
+	display: block;
+}
+
+.reportBox>div {
+	margin-left: 550px;
+	padding-left: 2.5em;
+}
+
+.reportBox span {
+	display: block;
+}
+
+.video {
+	margin: 3em 0 5em;
+}
+
+
+/* Page 7 報名
+   ========================================================================= */
+/* 時間軸
+-----------------------------*/
+.event {
+	text-align: center;
+	margin: 3em 0;
+}
+
+.event ul li {
+	display: inline-block;
+}
+
+.eventDate li {
+	margin: 0 97px;
+	font-size: 1.5em;
+	padding: 0.5em;
+	width: 100px;
+	color: #fff;
+	border: 1px solid #09fffd;
+	position: relative;
+}
+
+.timeline {
+	width: 600px;
+	height: 5px;
+	position: relative;
+	top: 0;
+	left: 0;
+	margin: 40px auto 30px;
+	background: #09fffd;
+}
+
+.timeline li {
+	width: 24px;
+	height: 24px;
+	border-radius: 100%;
+	border: 5px solid #09fffd;
+	background: #fff;
+	position: absolute;
+	margin-left: -12px;
+}
+
+.timeline .first {
+	top: -10px;
+	left: 0;
+}
+
+.timeline .middle {
+	top: -10px;
+}
+
+.timeline .last {
+	top: -10px;
+	right: -12px;
+}
+
+.time {
+	font-size: 1.5em;
+	margin: 0 73px;
+	width: 150px;
+	vertical-align: top;
+}
+
+.longArticle {
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	padding: 2em;
+	height: 500px;
+	overflow-y: scroll;
+}
+
+.signup .longArticle {
+	border: 1px solid #09fffd;
+}
+
+.allSchedule {
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	border: 1px solid #09fffd;
+	padding: 2em;
+}
+
+.allSchedule table {
+	width: 100%;
+	font-size: 1.5em;
+}
+
+.allSchedule table tr {
+	border-bottom: 2px solid #333;
+}
+
+.allSchedule table td:first-child {
+	text-align: center;
+}
+
+.allSchedule table td:nth-child(4) {
+	text-align: left;
+}
+
+.allSchedule table tr:last-child {
+	border-bottom: none;
+}
+
+.allSchedule table td {
+	padding: 1em 0;
+}
+
+.allSchedule table td:last-child {
+	text-align: right;
+	color: #808080;
+}
+
+.allSchedule table a {
+	float: right;
+}
+
+.live-1 {
+	background: url(../images/live-1.png) no-repeat;
+	width: 100px;
+	height: 34px;
+}
+
+.live-2 {
+	background: url(../images/live-2.png) no-repeat;
+	width: 136px;
+	height: 34px;
+}
+
+.faqBox {
+	margin-bottom: 5em;
+}
+
+/* Page 7-1 報名表單
+   ========================================================================= */
+
+form {
+	margin-bottom: 5em;
+}
+
+.sign-box-item {
+	margin: 1.5em 0;
+}
+
+.sign-box {
+	padding: 1em 2em;
+}
+
+.col2:nth-child(even) .sign-box-item {
+	margin-right: 1.5em;
+}
+
+.col2:nth-child(odd) .sign-box-item {
+	margin-left: 1.5em;
+}
+
+.signupForm h3 {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #09fffd;
+	padding: 0.5em;
+	text-align: center;
+	border-bottom: 1px solid #09fffd;
+}
+
+.sign-box-item {
+	border: 1px solid #09fffd;
+}
+
+.signupForm input:focus {
+	outline: 2px solid #09fffd;
+}
+
+.sign-box.leader label {
+	width: 20%;
+}
+
+.sign-box.leader input[type=text],
+.sign-box.leader input[type=email] {
+	width: 80%;
+}
+
+.form-group label {
+	margin: 1em 0;
+	width: 30%;
+	float: left;
+}
+
+.form-group input[type=text],
+.form-group input[type=email],
+.form-group select {
+	padding: 0.5em;
+	border: none;
+	width: 70%;
+	float: left;
+	margin: 0.5em 0;
+}
+
+.form-group input[type=file] {
+	margin: 1em 0;
+}
+
+.signupForm input,
+.signupForm label,
+.signupForm select {
+	font-size: 1.1em;
+}
+
+input#myelement {
+	background: #09fffd;
+	color: #fff;
+	border: none;
+	padding: 0.5em 1em;
+	margin: 0.5em 0;
+	width: 15%;
+	cursor: pointer;
+}
+
+.readAll {
+	text-align: center;
+}
+
+.readAll input {
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+}
+
+.readAll label {
+	font-size: 1.3em;
+	vertical-align: middle;
+}
+
+/* Page 8 Sponsor
+   ========================================================================= */
+.sponsorBox .col3>div {
+	margin: 1em;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	padding: 0;
+}
+
+.sponsorBox {
+	overflow: auto;
+	margin-bottom: 5em;
+}
+
+.togallery {
+	position: absolute;
+	left: 14px;
+	top: 14px;
+	padding: 15px 35px;
+	border-radius: 40px;
+	color: #b2b2b2;
+	border: 1px solid #b2b2b2;
+	transition: .3s;
+}
+
+  
+.togallery:hover {
+		background: rgba(178, 178, 178, 0.2);
+}
+
+.backer {
+	color: #b2b2b2;
+	margin-right: 10px;
+	font-size: 16px;
+}
+  

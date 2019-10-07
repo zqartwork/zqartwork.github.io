@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:image" content="[本網站的縮圖顯示請放置此處]">
+    <meta property="og:description" content="結合電腦插畫繪圖、專業UIUX設計與前端開發人員">
+    <title>ZQARTWORK</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+
+    <!-- 基礎歸零設置 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <!-- materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/3530f29c86.js" crossorigin="anonymous"></script>
+    <!-- owlCarousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <!-- 自訂設置 -->
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+    <div class="wrapper" id="app">
+        <!-- Navbar -->
+        <div class="preload-section">
+            <img src="../img/preload.svg" alt="">
+            LOADING
+        </div>
+        <nav>
+            <div class="nav-wrapper container">
+                <a href="../index.html" class="brand-logo">ZQARTWORK</a>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a href="../index.html" class="flex-wrapper">
+                            <i class="fas fa-arrow-circle-left backer"></i>
+                            BACK TO WORKS
+                        </a>
+                    </li>
+                </ul>
+                <a href="#" data-target="mobile-demo" class="right sidenav-trigger"><i class="fas fa-bars"></i></a>
+            </div>
+        </nav>
+
+        <!-- Sidenav -->
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="mobile.html">CONTACT</a></li>
+        </ul>
+
+        <!-- 主要內容區域 -->
+        <div class="container">
+            <div class="banner-section">
+                <div class="banner-img-wrapper">
+                    <div class="banner-title">直播平台管理後台</div>
+                    <img src="../img/work/wk_solart.jpg" alt="">
+                </div>
+            </div>
+            <div class="work-content-section">
+                <div class="work-content-title">
+                    作品與活動概述
+                </div>
+                <div class="work-content-details">
+                    Solartech 恆星網路科技公司，B2B體育直播平台量身訂製，公司官方網站製作。
+                </div>
+                <div class="flex-wrapper">
+                    <a class="work-static-website" href="http://www.solartninc.com" target="_blank">
+                        查看官方網站
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 3.4.1 jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+    <script src="../js/custom.js"></script>
+    <script>
+
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".section-index").hide();
+            setTimeout(function () {
+                $('.preload-section').fadeOut();
+                $('.section-index').fadeIn(1000);
+            }, 000);
+            $('.sidenav').sidenav({
+                edge: 'right',
+            });
+        });
+    </script>
+</body>
+
+</html>
