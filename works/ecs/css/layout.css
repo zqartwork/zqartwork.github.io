@@ -171,7 +171,8 @@ footer {
    ========================================================================= */
 header {
 	background: url(../images/logo-bg.jpg) no-repeat center;
-	background-size: cover;
+	background-size: 160%;
+    background-position: center -20px;
 	height: 610px;
 	text-align: center;
 }
