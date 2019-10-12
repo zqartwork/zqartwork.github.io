@@ -369,6 +369,7 @@ nav a.sidenav-trigger i {
   align-items: center;
 
   padding: 0 14px;
+  cursor: default;
 
   p {
     position: relative;
@@ -445,6 +446,9 @@ a.gallery-item {
 
   &:hover {
     background: $c;
+  }
+  &:nth-child(5n) {
+    margin-right: 0;
   }
 }
 
@@ -576,35 +580,35 @@ nav .nav-wrapper i.backer, .backer {
   display: flex;
 }
 .rwd-tag,.multi-browser-tag {
-  padding: 5px 15px;
   color: $bg;
   font-weight: 500;
   margin-right: 5px;
   font-family: $cnfont, $enfont;
-  font-size: 14px
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  padding: 0 10px;
+  border-radius: 3px;
 }
 
 .rwd-tag {
-  background: rgba(239,49,124,1);
-  background: -moz-linear-gradient(left, rgba(239,49,124,1) 0%, rgba(254,112,103,1) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(239,49,124,1)), color-stop(100%, rgba(254,112,103,1)));
-  background: -webkit-linear-gradient(left, rgba(239,49,124,1) 0%, rgba(254,112,103,1) 100%);
-  background: -o-linear-gradient(left, rgba(239,49,124,1) 0%, rgba(254,112,103,1) 100%);
-  background: -ms-linear-gradient(left, rgba(239,49,124,1) 0%, rgba(254,112,103,1) 100%);
-  background: linear-gradient(to right, rgba(239,49,124,1) 0%, rgba(254,112,103,1) 100%);
-
+  background: $topic;
 }
 
 .multi-browser-tag {
-  background: rgb(49, 163, 239);
-  background: -moz-linear-gradient(left, rgba(49, 163, 239,1) 0%, rgb(157, 121, 255) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(49, 163, 239,1)), color-stop(100%, rgba(157, 121, 255,1)));
-  background: -webkit-linear-gradient(left, rgba(49, 163, 239,1) 0%, rgba(157, 121, 255,1) 100%);
-  background: -o-linear-gradient(left, rgba(49, 163, 239,1) 0%, rgba(157, 121, 255,1) 100%);
-  background: -ms-linear-gradient(left, rgba(49, 163, 239,1) 0%, rgba(157, 121, 255,1) 100%);
-  background: linear-gradient(to right, rgba(49, 163, 239,1) 0%, rgba(157, 121, 255,1) 100%);
+  background: #31a3ef;
 }
-
+.gallert-sub-title {
+  font-size: 24px;
+  font-family: $topichover;
+  color: $topichover;
+  font-weight: 700;
+  padding: 14px 0;
+  border-bottom: 1px solid $d;
+  margin-bottom: 14px;
+}
 
 /* RWD */
 @media (max-width: 1366px) {
