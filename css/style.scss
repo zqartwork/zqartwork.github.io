@@ -31,6 +31,20 @@ $f: #505050;
 $topic: #1e150b;
 $topichover: #4c3e31;
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  margin:80px 0 5px 0;
+}
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background: rgb(219,219,219);
+}
+
 // 基礎設定
 html,
 body {
@@ -434,9 +448,9 @@ nav a.sidenav-trigger i {
 
 a.gallery-item {
   display: block;
-  flex: 0.25;
+  flex: 0.2;
 
-  max-width: 20%;
+  min-width: calc(20% - 14px * 5 / 4);
   overflow: hidden;
 
   border-radius: 5px;
@@ -616,6 +630,24 @@ nav .nav-wrapper i.backer, .backer {
   width: auto;
 
   transform: rotate(-15deg);
+}
+.bcicons-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.bcicons {
+  max-width: 800px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+.bcicons-txt {
+  margin-left: 24px;
+  padding: 14px;
+  line-height: 32px;
+  position: relative;
 }
 .work-static-website,
 .work-static-website:active,

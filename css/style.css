@@ -7,6 +7,20 @@
   font-style: normal;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  margin: 80px 0 5px 0;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: #dbdbdb;
+}
+
 html,
 body {
   -webkit-box-sizing: border-box;
@@ -455,10 +469,10 @@ nav a.sidenav-trigger i {
 
 a.gallery-item {
   display: block;
-  -webkit-box-flex: 0.25;
-      -ms-flex: 0.25;
-          flex: 0.25;
-  max-width: 20%;
+  -webkit-box-flex: 0.2;
+      -ms-flex: 0.2;
+          flex: 0.2;
+  min-width: calc(20% - 14px * 5 / 4);
   overflow: hidden;
   border-radius: 5px;
   padding: 14px;
@@ -653,6 +667,34 @@ nav .nav-wrapper i.backer, .backer {
   width: auto;
   -webkit-transform: rotate(-15deg);
           transform: rotate(-15deg);
+}
+
+.bcicons-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bcicons {
+  max-width: 800px;
+  border-radius: 20px;
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.bcicons-txt {
+  margin-left: 24px;
+  padding: 14px;
+  line-height: 32px;
+  position: relative;
 }
 
 .work-static-website,
