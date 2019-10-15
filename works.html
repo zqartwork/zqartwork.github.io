@@ -55,8 +55,8 @@
         <!-- 主要內容區域 -->
         <div class="">
             <div class="section section-works" id="works">
-                <div class="gallert-sub-title">Front-end and Website UI/UX</div>
-                <div class="flex-wrapper gallery-wrapper">
+                <div class="gallert-sub-title">Front-end Develope and Website UI/UX</div>
+                <div class="gallery-wrapper">
                     <a class="gallery-item" :href="work.href" v-for="work in works">
                         <div class="gallery-item-head">
                             <div class="gallery-item-head-img-wrapper">
@@ -78,6 +78,30 @@
                         </div>
                     </a>
                 </div>
+                <div class="gallert-sub-title">APP UI/UX</div>
+                <div class="gallery-wrapper">
+                    <a class="gallery-item" :href="UI.href" v-for="UI in UIs">
+                        <div class="gallery-item-head">
+                            <div class="gallery-item-head-img-wrapper">
+                                <img :src="UI.link" alt="">
+                            </div>
+                            <div class="tags">
+                                <div class="rwd-tag" v-if="UI.isRWD == true">RWD</div>
+                                <div class="multi-browser-tag" v-if="UI.multiBrowser == true">跨瀏覽器</div>
+                            </div>
+                        </div>
+                        <div class="gallery-item-body">
+                            <div class="gallery-item-title">
+                                {{UI.title}}
+                            </div>
+                            <div class="gallery-item-content">
+                                <div class="gallery-item-content-des">{{UI.content}}</div>
+                                <div class="gallery-item-content-time">{{UI.time}}</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
             </div>
         </div>
 
@@ -143,6 +167,17 @@
                     },
                     
 
+                ],
+                UIs: [
+                    {
+                        title: '贊星TV 體育直播平台',
+                        content: 'Sports Live',
+                        time: '2019 / 05',
+                        link: 'img/work/wk_bc_banner.png',
+                        href: 'assets/bc.html',
+                        isRWD: false,
+                        multiBrowser: false,
+                    }
                 ]
             },
             methods: {},

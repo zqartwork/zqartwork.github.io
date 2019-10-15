@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:image" content="[本網站的縮圖顯示請放置此處]">
+    <meta property="og:description" content="結合電腦插畫繪圖、專業UIUX設計與前端開發人員">
+    <title>ZQARTWORK</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+
+    <!-- 基礎歸零設置 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <!-- materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/3530f29c86.js" crossorigin="anonymous"></script>
+    <!-- owlCarousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <!-- 自訂設置 -->
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+    <div class="wrapper" id="app">
+        <!-- Navbar -->
+        <div class="preload-section">
+            <img src="../img/preload.svg" alt="">
+            LOADING
+        </div>
+        <nav>
+            <div class="nav-wrapper container">
+                <a href="../index.html" class="brand-logo">ZQARTWORK</a>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a href="../works.html" class="flex-wrapper">
+                            <i class="fas fa-arrow-circle-left backer"></i>
+                            BACK TO WORKS
+                        </a>
+                    </li>
+                </ul>
+                <a href="#" data-target="mobile-demo" class="right sidenav-trigger"><i class="fas fa-bars"></i></a>
+            </div>
+        </nav>
+
+        <!-- Sidenav -->
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="mobile.html">CONTACT</a></li>
+        </ul>
+
+        <!-- 主要內容區域 -->
+        <div class="container">
+            <div class="banner-section">
+                <div class="banner-img-wrapper">
+                    <div class="banner-title">贊星直播APP</div>
+                    <img src="../img/work/wk_bc_banner.png" alt="">
+                </div>
+            </div>
+            <div class="work-content-section">
+                <div class="work-content-title">
+                    作品與活動概述
+                </div>
+                <div class="work-content-details">
+                    贊星TV是致力於技術驅動娛樂的彈幕式互動直播影音分享平台。提供各類體育賽事節目，以綜效互動、資源整合、品牌創價為主的運營宗旨，建立專業高效的經營模式，力圖為每位觀眾帶來最精采的體育賽事。
+                </div>
+                <img src="../img/work/wk_bc_UIUX.png" alt="">
+                <div class="gif-description-wrapper">
+                    <div class="gif-txt">
+                        使用 AdobeXD 專業SOP製作清晰明瞭的Prototype，<br>
+                        From Low-fidelity to High-fidelity，<br>
+                        帶給企業最專業的UIUX服務。
+                        <img src="../img/official/svg/ic_adobe_xd.svg" alt="" class="adobe-xd">
+                        <img src="../img/official/protopie_logo.png" alt="" class="protopie">
+                        <img src="../img/official/zeplin_logo.png" alt="" class="zeplin">
+                        <img src="../img/official/sketch.png" alt="" class="sketch">
+                    </div>
+                    <div class="gif-wrapper">
+                        <img src="../video/wk_bc.gif" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 3.4.1 jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+    <script src="../js/custom.js"></script>
+    <script>
+
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".section-index").hide();
+            setTimeout(function () {
+                $('.preload-section').fadeOut();
+                $('.section-index').fadeIn(1000);
+            }, 000);
+            $('.sidenav').sidenav({
+                edge: 'right',
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -425,16 +425,18 @@ nav a.sidenav-trigger i {
 /* WORKS */
 
 .gallery-wrapper {
+  display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: flex-start;
+  margin-bottom: 14px;
 }
 
 a.gallery-item {
   display: block;
   flex: 0.25;
 
-  max-width: 100%;
+  max-width: 20%;
   overflow: hidden;
 
   border-radius: 5px;
@@ -455,7 +457,7 @@ a.gallery-item {
 .gallery-item-head {
   width: 100%;
   padding-top: 56.25%;
-  background: gold;
+  // background: gold;
   position: relative;
 }
 
@@ -554,7 +556,67 @@ nav .nav-wrapper i.backer, .backer {
   padding: 14px 0;
   line-height: 24px;
 }
+.gif-description-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 50px auto;
+  .gif-txt {
+    max-width: 400px;
+    padding: 14px;
+    line-height: 32px;
+    position: relative;
+  }
+  .gif-wrapper {
+    max-width: 375px;
+    max-height: 815px;
+    border-radius: 20px;
+    overflow: hidden;
 
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    img {
+      height: 100%;
+    }
+  }
+}
+.adobe-xd {
+  position: absolute;
+  left: -50px;
+  top: -80px;
+  height: 50px;
+  width: auto;
+
+  transform: rotate(-15deg);
+}
+.protopie {
+  position: absolute;
+  left: 20%;
+  top: -150px;
+  height: 100px;
+  width: auto;
+
+  transform: rotate(5deg);
+}
+.zeplin {
+  position: absolute;
+  right: 15%;
+  top: -120px;
+  height: 80px;
+  width: auto;
+
+  transform: rotate(0deg);
+}
+.sketch {
+  position: absolute;
+  right: 15%;
+  bottom: -80px;
+  height: 80px;
+  width: auto;
+
+  transform: rotate(-15deg);
+}
 .work-static-website,
 .work-static-website:active,
 .work-static-website:visited,
