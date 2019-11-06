@@ -26,6 +26,7 @@
 
 <body>
     <div class="wrapper" id="app">
+        <div class="zq-cursor"></div>
         <!-- Navbar -->
         <div class="preload-section">
             <img src="img/preload.svg" alt="">
@@ -98,6 +99,12 @@
                 page: 0,
             },
             methods: {},
+            mounted: function() {
+            const cursor = document.querySelector('.zq-cursor');
+            document.addEventListener('mousemove', e => {
+                cursor.setAttribute('style', 'top: ' + (e.pageY - 10) + 'px; left: ' + (e.pageX - 10) + 'px;')
+            })
+    },
         })
     </script>
     <script>
