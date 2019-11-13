@@ -51,16 +51,6 @@ a:visited {
   border: 0;
   font-family: "Open Sans";
   color: #4c3e31;
-  cursor: none !important;
-}
-
-.zq-cursor {
-  height: 20px;
-  width: 20px;
-  border: 1px solid #222;
-  border-radius: 50%;
-  position: absolute;
-  z-index: 100;
 }
 
 .wrapper {
@@ -555,7 +545,8 @@ a.gallery-item:nth-child(5n) {
   font-family: "Open Sans";
 }
 
-nav .nav-wrapper i.backer, .backer {
+nav .nav-wrapper i.backer,
+.backer {
   color: #b2b2b2;
   margin-right: 10px;
   font-size: 16px;
@@ -735,7 +726,8 @@ nav .nav-wrapper i.backer, .backer {
   display: flex;
 }
 
-.rwd-tag, .multi-browser-tag {
+.rwd-tag,
+.multi-browser-tag {
   color: #f4f4f4;
   font-weight: 500;
   margin-right: 5px;
