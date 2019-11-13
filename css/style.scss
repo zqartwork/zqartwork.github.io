@@ -78,18 +78,6 @@ a:visited {
   border: 0;
   font-family: $enfont;
   color: $topichover;
-  cursor: none !important;
-}
-.zq-cursor {
-  height: 20px;
-  width: 20px;
-  border: 1px solid #222;
-  border-radius: 50%;
-  position: absolute;
-  z-index: 100;
-  // transition-duration: 200ms;
-  // transition-timing-function: ease-out;
-
 }
 .wrapper {
   width: 100%;
