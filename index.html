@@ -37,8 +37,8 @@
                 <ul class="right hide-on-med-and-down">
                     <li :class='{active:page==1}'><a href="about.html" @click='page=1'>ABOUT</a></li>
                     <li :class='{active:page==2}'><a href="works.html" @click='page=2'>WORKS</a></li>
-                    <li><a href="collapsible.html">EXPERIENCE</a></li>
-                    <li><a href="mobile.html">CONTACT</a></li>
+                    <li><a href="https://www.cakeresume.com/zqartwork">EXPERIENCE</a></li>
+                    <li><a href="https://www.cakeresume.com/zqartwork">CONTACT</a></li>
                 </ul>
                 <a href="#" data-target="mobile-demo" class="right sidenav-trigger"><i class="fas fa-bars"></i></a>
             </div>
@@ -48,8 +48,8 @@
         <ul class="sidenav" id="mobile-demo">
             <li :class='{active:page==1}'><a href="about.html" @click='page=1'>ABOUT</a></li>
             <li :class='{active:page==2}'><a href="works.html" @click='page=2'>WORKS</a></li>
-            <li><a href="collapsible.html">EXP</a></li>
-            <li><a href="mobile.html">CONTACT</a></li>
+            <li><a href="https://www.cakeresume.com/zqartwork">EXP</a></li>
+            <li><a href="https://www.cakeresume.com/zqartwork">CONTACT</a></li>
         </ul>
 
         <!-- 主要內容區域 -->
@@ -98,12 +98,13 @@
                 page: 0,
             },
             methods: {},
-            mounted: function() {
-            const cursor = document.querySelector('.zq-cursor');
-            document.addEventListener('mousemove', e => {
-                cursor.setAttribute('style', 'top: ' + (e.pageY - 10) + 'px; left: ' + (e.pageX - 10) + 'px;')
-            })
-    },
+            mounted: function () {
+                const cursor = document.querySelector('.zq-cursor');
+                document.addEventListener('mousemove', e => {
+                    cursor.setAttribute('style', 'top: ' + (e.pageY - 10) + 'px; left: ' + (e
+                        .pageX - 10) + 'px;')
+                })
+            },
         })
     </script>
     <script>
