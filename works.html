@@ -104,7 +104,6 @@
                 <div class="gallert-sub-title">Digital Paintings</div>
                 <div class="gallery-wrapper owl-carousel owl-theme">
                     <div v-for="dp in dps" class="item">
-                        <img :src="dp.link" alt="">
                     </div>
                 </div>
             </div>
@@ -124,8 +123,7 @@
             el: '#app',
             data: {
                 page: 2,
-                works: [
-                    {
+                works: [{
                         title: '財團法人青馬影藝學院網站',
                         content: '線上影藝教學',
                         time: '2019 / 04',
@@ -170,22 +168,19 @@
                         isRWD: false,
                         multiBrowser: false,
                     },
-                    
+
 
                 ],
-                UIs: [
-                    {
-                        title: '贊星TV 體育直播平台',
-                        content: 'Sports Live',
-                        time: '2019 / 05',
-                        link: 'img/work/wk_bc_banner.png',
-                        href: 'assets/bc.html',
-                        isRWD: false,
-                        multiBrowser: false,
-                    },
-                ],
-                dps: [
-                    {
+                UIs: [{
+                    title: '贊星TV 體育直播平台',
+                    content: 'Sports Live',
+                    time: '2019 / 05',
+                    link: 'img/work/wk_bc_banner.png',
+                    href: 'assets/bc.html',
+                    isRWD: false,
+                    multiBrowser: false,
+                }, ],
+                dps: [{
                         title: '自畫像',
                         content: 'Self Portrait',
                         time: '2018 / 05',
@@ -249,23 +244,6 @@
             $('.sidenav').sidenav({
                 edge: 'right',
             });
-            $(".owl-carousel").owlCarousel({
-                loop:true,
-                margin:10,
-                nav:true,
-                responsive:{
-                    0:{
-                        items:1
-                    },
-                    600:{
-                        items:3
-                    },
-                    1000:{
-                        items:5
-                    }
-                }
-            });
-            
         });
     </script>
 </body>
