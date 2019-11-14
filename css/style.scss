@@ -365,10 +365,10 @@ nav a.sidenav-trigger i {
     background: rgba(0, 0, 0, 0);
   }
 
-  &:hover+.pic-a,
-  &:hover+.pic-b,
-  &:hover+.pic-c,
-  &:hover+.pic-d {
+  &:hover + .pic-a,
+  &:hover + .pic-b,
+  &:hover + .pic-c,
+  &:hover + .pic-d {
     filter: blur(0px);
   }
 }
@@ -458,12 +458,14 @@ a.gallery-item {
   border-radius: 5px;
   padding: 14px;
   margin: 0 14px 0 0;
-  border: 1px solid $c;
+  // border: 1px solid $c;
+  background: #fff;
 
   transition: 0.5s;
 
   &:hover {
-    background: $c;
+    // background: $c;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
 
   &:nth-child(5n) {
@@ -677,7 +679,7 @@ nav .nav-wrapper i.backer,
   font-size: 16px;
   margin: 14px 0;
 
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .work-static-website:hover {
@@ -720,7 +722,7 @@ nav .nav-wrapper i.backer,
   color: $topichover;
   font-weight: 700;
   padding: 14px 0;
-  border-bottom: 1px solid $d;
+  // border-bottom: 1px solid $d;
   margin-bottom: 14px;
 }
 
