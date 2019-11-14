@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900|Open+Sans:300,400,700,800&display=swap&subset=chinese-traditional");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900|Montserrat:300,400,700,800&display=swap&subset=chinese-traditional");
 /* @font-face kit by Fonts2u (https://fonts2u.com) */
 @font-face {
   font-family: "Zilap";
@@ -25,7 +25,7 @@ html,
 body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "Noto Sans TC", "Open Sans";
+  font-family: "Noto Sans TC", "Montserrat";
   font-size: 16px;
   font-weight: 400;
   background: #f4f4f4;
@@ -49,7 +49,7 @@ a:visited {
   text-decoration: none;
   outline: none;
   border: 0;
-  font-family: "Open Sans";
+  font-family: "Montserrat";
   color: #4c3e31;
 }
 
@@ -146,7 +146,7 @@ a:visited {
 .section-works {
   max-width: 1366px;
   margin: 0 auto;
-  padding-top: 120px;
+  padding: 120px 14px 0 14px;
 }
 
 .animated {
@@ -242,7 +242,7 @@ nav a.sidenav-trigger i {
   line-height: 32px;
   padding-top: 14px;
   cursor: default;
-  font-family: "Open Sans";
+  font-family: "Montserrat";
   font-weight: 500;
 }
 
@@ -344,7 +344,7 @@ nav a.sidenav-trigger i {
 
 .mask {
   color: #fff;
-  font-family: "Open Sans";
+  font-family: "Montserrat";
   font-size: 20px;
   font-weight: 700;
   text-shadow: 0 0px 6px rgba(0, 0, 0, 0.8);
@@ -472,23 +472,73 @@ a.gallery-item {
   -webkit-box-flex: 0.2;
       -ms-flex: 0.2;
           flex: 0.2;
-  min-width: calc(20% - 14px * 5 / 4);
+  min-width: calc(20% - 14px * 4 / 5);
   overflow: hidden;
   border-radius: 5px;
   padding: 14px;
-  margin: 0 14px 0 0;
+  margin: 0px 14px 14px 0;
   background: #fff;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 a.gallery-item:hover {
-  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 a.gallery-item:nth-child(5n) {
   margin-right: 0;
+}
+
+@media (max-width: 1400px) {
+  a.gallery-item {
+    min-width: calc(25% - 14px * 3 / 4);
+  }
+  a.gallery-item:nth-child(5n) {
+    margin-right: 14px;
+  }
+  a.gallery-item:nth-child(4n) {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 1092px) {
+  a.gallery-item {
+    min-width: calc(33.333% - 14px * 2 / 3);
+  }
+  a.gallery-item:nth-child(4n) {
+    margin-right: 14px;
+  }
+  a.gallery-item:nth-child(3n) {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  a.gallery-item {
+    min-width: calc(50% - 14px * 1 / 2);
+  }
+  a.gallery-item:nth-child(3n) {
+    margin-right: 14px;
+  }
+  a.gallery-item:nth-child(2n) {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  a.gallery-item {
+    min-width: calc(100%);
+  }
+  a.gallery-item:nth-child(2n) {
+    margin-right: 14px;
+  }
+  a.gallery-item:nth-child(1n) {
+    margin-right: 0px;
+  }
 }
 
 .gallery-item-head {
@@ -543,7 +593,7 @@ a.gallery-item:nth-child(5n) {
 }
 
 .gallery-item-content-time {
-  font-family: "Open Sans";
+  font-family: "Montserrat";
 }
 
 nav .nav-wrapper i.backer,
@@ -732,7 +782,7 @@ nav .nav-wrapper i.backer,
   color: #f4f4f4;
   font-weight: 500;
   margin-right: 5px;
-  font-family: "Noto Sans TC", "Open Sans";
+  font-family: "Noto Sans TC", "Montserrat";
   font-size: 14px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -757,8 +807,8 @@ nav .nav-wrapper i.backer,
 }
 
 .gallert-sub-title {
-  font-size: 24px;
-  font-family: #4c3e31;
+  font-size: 18px;
+  font-family: "Montserrat";
   color: #4c3e31;
   font-weight: 700;
   padding: 14px 0;
