@@ -820,6 +820,68 @@ nav .nav-wrapper i.backer,
   margin-bottom: 14px;
 }
 
+.section-contact {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Montserrat";
+}
+
+.center-panel {
+  height: 100%;
+  width: 100%;
+  max-width: 500px;
+  max-height: 300px;
+  background: #f4f4f4;
+  -webkit-box-shadow: 0 2px 5px #00000030;
+          box-shadow: 0 2px 5px #00000030;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-title {
+  font-size: 24px;
+  margin-bottom: 17px;
+}
+
+.contact-body {
+  text-align: center;
+}
+
+.contact-body ul li {
+  margin: 16px 0;
+}
+
+.cake span {
+  font-weight: 900;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.cake span:hover {
+  color: #999;
+}
+
 /* RWD */
 @media (max-width: 1366px) {
   .section {
