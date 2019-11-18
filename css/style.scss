@@ -844,6 +844,19 @@ nav .nav-wrapper i.backer,
   opacity: 0;
   // display: none;
   transition: 0.2s;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7.5px 7.5px 0 7.5px;
+    border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+
+    bottom: -7.5px;
+    left: calc(50% - 7.5px);
+  }
 }
 a.gallery-item:hover .ex-tooltips {
   z-index: 10;
