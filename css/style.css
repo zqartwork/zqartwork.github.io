@@ -469,12 +469,12 @@ nav a.sidenav-trigger i {
 
 a.gallery-item {
   display: block;
+  position: relative;
   -webkit-box-flex: 0.2;
       -ms-flex: 0.2;
           flex: 0.2;
   max-width: calc(20% - 14px * 4 / 5);
   min-width: calc(20% - 14px * 4 / 5);
-  overflow: hidden;
   border-radius: 5px;
   padding: 14px;
   margin: 0px 14px 14px 0;
@@ -880,6 +880,35 @@ nav .nav-wrapper i.backer,
 
 .cake span:hover {
   color: #999;
+}
+
+.explain-for-section {
+  font-family: "Montserrat", "Noto Sans TC";
+  font-size: 14px;
+  padding: 0 14px;
+}
+
+.ex-tooltips {
+  font-size: 12px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  font-family: "Noto Sans TC";
+  line-height: 16px;
+  position: absolute;
+  z-index: -10;
+  width: 100%;
+  bottom: calc(100% + 10px);
+  left: 0;
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+a.gallery-item:hover .ex-tooltips {
+  z-index: 10;
+  opacity: 1;
 }
 
 /* RWD */
