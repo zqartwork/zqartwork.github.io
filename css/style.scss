@@ -790,8 +790,6 @@ nav .nav-wrapper i.backer,
 .center-panel {
   height: 100%;
   width: 100%;
-  max-width: 500px;
-  max-height: 300px;
   background: #f4f4f4;
   box-shadow: 0 2px 5px #00000030;
   border-radius: 10px;
@@ -862,6 +860,9 @@ a.gallery-item:hover .ex-tooltips {
   z-index: 10;
   opacity: 1;
   // display: block;
+}
+.fb_iframe_widget {
+  left: 24px;
 }
 /* RWD */
 @media (max-width: 1366px) {
