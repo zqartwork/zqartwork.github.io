@@ -58,7 +58,7 @@
             <div class="section-works" id="works">
                 <div class="gallert-sub-title">Front-end Development and UIUX</div>
                 <div class="gallery-wrapper">
-                    <a class="gallery-item" :href="work.href" v-for="work in works">
+                    <a class="gallery-item" :href="work.href" v-for="work in works" target="_blank">
                         <div class="gallery-item-head">
                             <div class="gallery-item-head-img-wrapper">
                                 <img :src="work.link" alt="">
@@ -152,6 +152,15 @@
                     link: 'img/work/wk_qm.jpg',
                     href: 'https://zqartwork.github.io/qing-ma.academy/',
                     isRWD: true,
+                    multiBrowser: false,
+                },
+                {
+                    title: 'MSG BOX Design',
+                    content: 'MSG BOX',
+                    time: '2019 / 11',
+                    link: 'img/shrink/030.jpg',
+                    href: 'https://drive.google.com/file/d/1A1L9S9ago8At4Tluy798qgK7VC2lK4wu/view?usp=sharing',
+                    isRWD: false,
                     multiBrowser: false,
                 },
                 {
