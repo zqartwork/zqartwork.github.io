@@ -143,6 +143,16 @@ a:visited {
   margin: 0 auto;
 }
 
+@media (max-width: 1100px) {
+  .section-about {
+    height: unset;
+    overflow: unset;
+  }
+  .toVerti {
+    display: block;
+  }
+}
+
 .section-works {
   max-width: 1366px;
   margin: 0 auto;
@@ -449,6 +459,28 @@ nav a.sidenav-trigger i {
   animation-fill-mode: both;
   -webkit-animation-name: slideInRight;
   animation-name: slideInRight;
+}
+
+@media (max-width: 1100px) {
+  .clip-work-part {
+    padding-top: 70px;
+    height: 50vh;
+  }
+  .about-clip-a,
+  .about-clip-b,
+  .about-clip-c,
+  .about-clip-d {
+    -webkit-clip-path: unset;
+            clip-path: unset;
+    height: 25%;
+  }
+  .about-description-part {
+    padding-top: 60px;
+  }
+  p::before,
+  p::after {
+    display: none;
+  }
 }
 
 /* WORKS */
