@@ -852,6 +852,11 @@ nav .nav-wrapper i.backer,
   margin-bottom: 14px;
 }
 
+.gallert-sub-title .fas {
+  color: #707070;
+  cursor: pointer;
+}
+
 .section-contact {
   height: 100vh;
   width: 100%;
