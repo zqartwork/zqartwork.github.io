@@ -56,8 +56,9 @@
         <!-- 主要內容區域 -->
         <div class="">
             <div class="section-works" id="works">
-                <div class="gallert-sub-title">Front-end Development and UIUX <i class="fas fa-chevron-down"></i> </div>
-                <div class="gallery-wrapper">
+                <div class="gallert-sub-title" @click="toggleWorks">Front-end Development and UIUX <i
+                        class="fas fa-chevron-down wk"></i> </div>
+                <div class="gallery-wrapper wk">
                     <a class="gallery-item" :href="work.href" v-for="work in works" target="_blank">
                         <div class="gallery-item-head">
                             <div class="gallery-item-head-img-wrapper">
@@ -79,13 +80,14 @@
                         </div>
                     </a>
                 </div>
-                <div class="gallert-sub-title">DP and Graphic Design</div>
+                <div class="gallert-sub-title" @click="toggleDps">DP and Graphic Design<i
+                        class="fas fa-chevron-down dp"></i></div>
                 <div class="explain-for-section">
                     GD = Graphic Design, 平面設計<br><br>
                     OFP = Outdoor Format Printing, 戶外大型輸出物 ‧ FP = Format Printing, 一般輸出物 <br><br>
                     DP = Digital Painting, 電腦繪圖 <br><br>
                 </div>
-                <div class="gallery-wrapper">
+                <div class="gallery-wrapper dp">
                     <a v-for="dp in dps" class="gallery-item" :href="dp.href" target="_blank">
                         <div class="ex-tooltips">
                             {{dp.tt}}
@@ -126,6 +128,8 @@
         new Vue({
             el: '#app',
             data: {
+                isWorks: true,
+                isDps: true,
                 page: 2,
                 works: [{
                         title: '山貓直播 主播列表, 直播間',
@@ -512,7 +516,40 @@
                     },
                 ],
             },
-            methods: {},
+            methods: {
+                toggleWorks() {
+                    this.isWorks = !this.isWorks;
+                    if (this.isWorks) {
+                        $(".gallery-wrapper.wk").slideDown();
+                        $(".fa-chevron-down.wk").css({
+                            transition: '.2s',
+                            transform: 'rotate(0deg)',
+                        })
+                    } else {
+                        $(".gallery-wrapper.wk").slideUp();
+                        $(".fa-chevron-down.wk").css({
+                            transition: '.2s',
+                            transform: 'rotate(-90deg)',
+                        })
+                    }
+                },
+                toggleDps() {
+                    this.isDps = !this.isDps;
+                    if (this.isDps) {
+                        $(".gallery-wrapper.dp").slideDown();
+                        $(".fa-chevron-down.dp").css({
+                            transition: '.2s',
+                            transform: 'rotate(0deg)',
+                        })
+                    } else {
+                        $(".gallery-wrapper.dp").slideUp();
+                        $(".fa-chevron-down.dp").css({
+                            transition: '.2s',
+                            transform: 'rotate(-90deg)',
+                        })
+                    }
+                }
+            },
         })
     </script>
     <script>
