@@ -60,6 +60,9 @@
                         class="fas fa-chevron-down wk"></i> </div>
                 <div class="gallery-wrapper wk">
                     <a class="gallery-item" :href="work.href" v-for="work in works" target="_blank">
+                        <div class="ex-tooltips">
+                            {{work.tt}}
+                        </div>
                         <div class="gallery-item-head">
                             <div class="gallery-item-head-img-wrapper">
                                 <img :src="work.link" alt="">
@@ -133,12 +136,13 @@
                 page: 2,
                 works: [{
                         title: '山貓直播 主播列表, 直播間',
-                        content: 'smzb.io',
+                        content: 'UI規劃、切版',
                         time: '2019 / 05',
                         link: 'https://static03.zanstartv.com/bocatsports/uploads/banner/1/upBGsUHUisggX6du.jpeg',
                         href: 'https://smzb.io/anchorList',
                         isRWD: true,
                         multiBrowser: true,
+                        tt: '此產品UIUX規劃獨立完成、切版製作與同事分工'
                     },
                     {
                         title: '贊星直播 APP',
@@ -148,6 +152,7 @@
                         href: 'assets/bc.html',
                         isRWD: false,
                         multiBrowser: false,
+                        tt: 'APP UIUX 規劃獨立完成'
                     },
                     {
                         title: '財團法人青馬影藝學院網站',
@@ -157,6 +162,7 @@
                         href: 'https://zqartwork.github.io/qing-ma.academy/',
                         isRWD: true,
                         multiBrowser: false,
+                        tt: 'UIUX 與 前端切版獨立完成，並且與後端PHP合作。'
                     },
                     {
                         title: '學院網站個人中心',
@@ -166,6 +172,7 @@
                         href: 'https://drive.google.com/open?id=1FBEVUhuPj6rD1Ka9ItV9A16UbO4wzQyT',
                         isRWD: false,
                         multiBrowser: false,
+                        tt: 'UIUX 與 前端切版獨立完成，並且與後端PHP合作。'
                     },
                     {
                         title: 'MSG BOX Design',
@@ -175,6 +182,7 @@
                         href: 'https://drive.google.com/file/d/1A1L9S9ago8At4Tluy798qgK7VC2lK4wu/view?usp=sharing',
                         isRWD: false,
                         multiBrowser: false,
+                        tt: 'UIUX 獨立完成。'
                     },
                     {
                         title: '恆星網路科技公司官網',
@@ -184,6 +192,7 @@
                         href: 'http://www.solartninc.com',
                         isRWD: true,
                         multiBrowser: true,
+                        tt: 'UIUX 與 前端切版獨立完成，並且與後端PHP合作。'
                     },
                     {
                         title: '直播平台統計管理後臺',
@@ -193,6 +202,7 @@
                         href: 'assets/dashboard.html',
                         isRWD: true,
                         multiBrowser: true,
+                        tt: 'UIUX 與 前端切版獨立完成，並且與後端PHP合作。'
                     },
                     {
                         title: '特效首屏 - 浮動背景',
@@ -202,6 +212,7 @@
                         href: 'https://zqartwork.github.io/10MinutesProject',
                         isRWD: true,
                         multiBrowser: false,
+                        tt: 'UIUX 與 前端切版獨立完成。'
                     },
                     {
                         title: '特效首屏 - 滾動影片',
@@ -211,6 +222,7 @@
                         href: 'https://zqartwork.github.io/ScrollVideo',
                         isRWD: true,
                         multiBrowser: false,
+                        tt: 'UIUX 與 前端切版獨立完成。'
                     },
                     {
                         title: '2019 英雄聯盟 ECS 宣傳網站',
@@ -220,6 +232,7 @@
                         href: 'assets/ecs.html',
                         isRWD: false,
                         multiBrowser: false,
+                        tt: 'UIUX 與 前端切版獨立完成，並且與後端PHP合作。'
                     },
                     {
                         title: '英雄聯盟 S8 季前活動網站',
@@ -229,6 +242,7 @@
                         href: 'assets/S8preseason.html',
                         isRWD: false,
                         multiBrowser: false,
+                        tt: 'UIUX 與 前端切版獨立完成。'
                     },
 
                 ],
