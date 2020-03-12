@@ -25,28 +25,62 @@
 </head>
 
 <body>
-    <div id="app">
-        <div class="mail-section">
-            <div class="inner-wrapper">
-                <input type="button" value="send" onclick="sendMail()">
+    <div class="wrapper" id="app">
+        <!-- Navbar -->
+        <div class="preload-section">
+            <img src="img/preload.svg" alt=""> LOADING
+        </div>
+        <nav>
+            <div class="nav-wrapper container">
+                <a href="index.html" class="brand-logo" @click='page=0'>ZQARTWORK</a>
+                <ul class="right hide-on-med-and-down">
+                    <li :class='{active:page==1}'><a href="about.html" @click='page=1'>ABOUT</a></li>
+                    <li :class='{active:page==2}'><a href="works.html" @click='page=2'>WORKS</a></li>
+                    <li><a href="https://www.cakeresume.com/zqartwork">EXPERIENCE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                <a href="#" data-target="mobile-demo" class="right sidenav-trigger"><i class="fas fa-bars"></i></a>
+            </div>
+        </nav>
+
+        <!-- Sidenav -->
+        <ul class="sidenav" id="mobile-demo">
+            <li :class='{active:page==1}'><a href="about.html" @click='page=1'>ABOUT</a></li>
+            <li :class='{active:page==2}'><a href="works.html" @click='page=2'>WORKS</a></li>
+            <li><a href="https://www.cakeresume.com/zqartwork">EXP</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+
+        <!-- 主要內容區域 -->
+        <div class="">
+            <div class="section section-contact">
+                <div class="center-panel">
+                    <div class="contact-title">CONTACT</div>
+                    <div class="contact-body">
+                        <ul>
+                            <li>zqartworkofficial@gmail.com</li>
+                            <li>
+                                <a href="https://www.cakeresume.com/zqartwork" class="cake" target="_blank">
+                                    <span>【CakeResume】</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/zqartwork" class="cake" target="_blank">
+                                    <span>【GitHub】</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/zqartwork" class="cake" target="_blank">
+                                    <span>【Facebook】</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contact-footer"></div>
+                </div>
             </div>
         </div>
     </div>
-    <script src="https://smtpjs.com/v3/smtp.js">
-    </script>
-    <script>
-        function sendMail() {
-            Email.send({
-                SecureToken: "1e08db6b-50d0-4a2c-b015-26134aa904f4",
-                To: 'zqartworkofficial@gmail.com',
-                From: "zqartworkofficial@gmail.com",
-                Subject: "test",
-                Body: "test",
-            }).then(
-                message => alert(message)
-            );
-        }
-    </script>
 
     <!-- 3.4.1 jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
