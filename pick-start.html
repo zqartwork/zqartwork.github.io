@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{Tournament Page}選擇先發隊員 - House of Gamers</title>
+    <!--google plus info-->
+    <meta itemprop="name" content="{網頁標題}">
+    <meta itemprop="image" content="[網頁縮圖_1200x628]">
+    <meta name="description" content="{網頁內容敘述}" />
+    <!--FB info-->
+    <meta property="og:title" content="{網頁標題}" />
+    <meta property="og:site_name" content="[網站名稱]" />
+    <meta property="og:url" content="[網頁網址_URL]">
+    <meta property="og:image" content="[網頁縮圖_1200x628]">
+    <meta property="og:description" content="{網頁內容敘述}">
+    <meta property="og:type" content="website" />
+    <!--Favicon-->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <!-- wow animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- owl-default-theme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jquery-bracket/0.11.1/jquery.bracket.min.css" />
+    <!-- main-style -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div id="app" data-simplebar>
+        <!-- 主選單 Tapbar -->
+        <div class="nav">
+            <div class="nav-wrap">
+                <div class="nav-item-wrap">
+                    <a href="index.html" class="nav-item">
+                        <span class="pic logo"></span>
+                    </a>
+                    <a href="index.html" class="nav-item active">
+                        <div class="ic-wrap vt">
+                            <span class="icon-ic_home size-32"></span>
+                            <span>首頁</span>
+                        </div>
+                    </a>
+                    <a href="#!" class="nav-item">
+                        <div class="ic-wrap vt">
+                            <span class="icon-ic_cup size-32"></span>
+                            <span>賽事</span>
+                        </div>
+                    </a>
+                    <a href="#!" class="nav-item">
+                        <div class="ic-wrap vt">
+                            <span class="icon-ic_announce size-32"></span>
+                            <span>公告</span>
+                        </div>
+                    </a>
+                    <a href="#!" class="nav-item">
+                        <div class="ic-wrap vt">
+                            <span class="icon-ic_team size-32"></span>
+                            <span>隊伍</span>
+                        </div>
+                    </a>
+                    <a href="#!" class="nav-item">
+                        <div class="ic-wrap vt">
+                            <span class="icon-ic_my size-32"></span>
+                            <span>我的</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper ">
+            <!-- 主要內容 Content -->
+            <div class="container">
+                <!-- Toolbar -->
+                <section class="section toolbar">
+                    <div class="space-between-wrap">
+                        <div class="backer-wrap">
+                            <a href="#!" onclick="goBack()" class="ic-wrap size-32">
+                                <i class="fas fa-chevron-left" ic></i>
+                                <!-- <span>返回</span> -->
+                            </a>
+                        </div>
+                        <div class="toolbar-title">
+                            <span>選擇先發隊員</span>
+                        </div>
+                        <!-- 此外框一定要留著 -->
+                        <div class="func-wrap">
+                            <a href="tutorial.html">
+                                <span class="icon-ic_tutorial size-32 mr-10" badge></span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-- 選擇隊伍（只會顯示符合此遊戲且人數足夠之隊伍） -->
+                <section class="section tournament-signup">
+                    <div class="sep-item custom-radio-wrap ic-wrap">
+                        <div class="simple-title" ic><span>隊長是否上場比賽</span></div>
+                        <label class="custom-radio">
+                            <span>是</span>
+                            <input type="radio" name="teamleaderForTournament" value="1">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="custom-radio">
+                            <span>否</span>
+                            <input type="radio" name="teamleaderForTournament" value="0">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="sep-item">
+                        <div class="item-subtitle">
+                            <span>隊員列表</span>
+                        </div>
+                        <div class="member-list-wrap">
+                            <div class="custom-checkbox-wrap">
+                                <input class="pick-start" type="checkbox" id="checkboxOne" value="user001">
+                                <label class="btn btn__user box__select" disabled for="checkboxOne">
+                                    <div class="btn-left ic-wrap">
+                                        <div class="user-thumb">
+                                            <div class="ratio ratio__1-1">
+                                                <img src="img/pic_preset_thumbnail.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="btn-title">隊員一號</div>
+                                    </div>
+                                    <div class="btn-right ic-wrap">
+                                        <!-- 錯誤訊息 -->
+                                        <div class="systxt err txt-right"><span>已達先發人數上限</span></div>
+                                    </div>
+                                </label>
+                                <input class="pick-start" type="checkbox" id="checkboxTwo" value="user002">
+                                <label class="btn btn__user box__select" disabled for="checkboxTwo">
+                                    <div class="btn-left ic-wrap">
+                                        <div class="user-thumb">
+                                            <div class="ratio ratio__1-1">
+                                                <img src="img/pic_preset_thumbnail.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="btn-title">隊員二號</div>
+                                    </div>
+                                    <div class="btn-right ic-wrap">
+                                        <!-- 錯誤訊息 -->
+                                        <div class="systxt err txt-right"><span>{錯誤訊息}</span></div>
+                                    </div>
+                                </label>
+                                <input class="pick-start" type="checkbox" id="checkboxThree" value="user003">
+                                <label class="btn btn__user box__select" disabled for="checkboxThree">
+                                    <div class="btn-left ic-wrap">
+                                        <div class="user-thumb">
+                                            <div class="ratio ratio__1-1">
+                                                <img src="img/pic_preset_thumbnail.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="btn-title">隊員三號</div>
+                                    </div>
+                                    <div class="btn-right ic-wrap">
+                                        <!-- 錯誤訊息 -->
+                                        <div class="systxt err txt-right"><span>{錯誤訊息}</span></div>
+                                    </div>
+                                </label>
+                                <input class="pick-start" type="checkbox" id="checkboxFour" value="user004">
+                                <label class="btn btn__user box__select" disabled for="checkboxFour">
+                                    <div class="btn-left ic-wrap">
+                                        <div class="user-thumb">
+                                            <div class="ratio ratio__1-1">
+                                                <img src="img/pic_preset_thumbnail.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="btn-title">隊員四號</div>
+                                    </div>
+                                    <div class="btn-right ic-wrap">
+                                        <!-- 錯誤訊息 -->
+                                        <div class="systxt err txt-right"><span>{錯誤訊息}</span></div>
+                                    </div>
+                                </label>
+                                <input class="pick-start" type="checkbox" id="checkboxFive" value="user005">
+                                <label class="btn btn__user box__select" disabled for="checkboxFive">
+                                    <div class="btn-left ic-wrap">
+                                        <div class="user-thumb">
+                                            <div class="ratio ratio__1-1">
+                                                <img src="img/pic_preset_thumbnail.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="btn-title">隊員五號</div>
+                                    </div>
+                                    <div class="btn-right ic-wrap">
+                                        <!-- 錯誤訊息 -->
+                                        <div class="systxt err txt-right"><span>{錯誤訊息}</span></div>
+                                    </div>
+                                </label>
+                                <input class="pick-start" type="checkbox" id="checkboxSix" value="user006">
+                                <label class="btn btn__user box__select" disabled for="checkboxSix">
+                                    <div class="btn-left ic-wrap">
+                                        <div class="user-thumb">
+                                            <div class="ratio ratio__1-1">
+                                                <img src="img/pic_preset_thumbnail.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="btn-title">隊員六號</div>
+                                    </div>
+                                    <div class="btn-right ic-wrap">
+                                        <!-- 錯誤訊息 -->
+                                        <div class="systxt err txt-right"><span>{錯誤訊息}</span></div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="submit-zone txt-center container">
+            <a href="upload-data.html" class="btn btn__normal round disabled submit">送出</a>
+            <div class="systxt err"><span>{錯誤訊息}</span></div>
+        </div>
+        <footer class="">
+            <div class="container">
+                <div class="copyright">
+                    <span>© 2020 Taiwan Mobile all right reserved.</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Alert Box -->
+    <div class="alert-box" id="teamleaderForTournament">
+        <div class="box-container">
+            <div class="box-wrap">
+                <div class="box-header">
+                    <div class="item-title">警告</div>
+                </div>
+                <div class="box-body">
+                    <div class="msg">請先選擇隊長是否要上場比賽。</div>
+                </div>
+                <div class="box-footer">
+                    <a href="#!" class="btn-simple alert-confirm">確認</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="alert-box" id="teamleaderNotOnBoard">
+        <div class="box-container">
+            <div class="box-wrap">
+                <div class="box-header">
+                    <div class="item-title">隊長不上場 注意事項</div>
+                </div>
+                <div class="box-body">
+                    <div class="msg">
+                        <p>隊伍之重要功能 仍須 由隊長負責：</p><br>
+                        <ol>
+                            <li>接收比賽通知</li>
+                            <li>比賽報到</li>
+                            <li>更改比賽名單</li>
+                            <li>隊伍管理</li>
+                        </ol><br>
+                        <p>不上場之隊長若無能力履行以上責任，且未在時間內轉移隊長至有能力履行責任之其他隊員，因而失去比賽資格，我方已盡警告義務，則一概不負責。</p>
+                    </div>
+                </div>
+                <div class="box-footer">
+                    <a href="#!" class="btn-simple alert-confirm">確認</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="alert-box" id="pickStartOverQuant">
+        <div class="box-container">
+            <div class="box-wrap">
+                <div class="box-header">
+                    <div class="item-title">先發數量限制</div>
+                </div>
+                <div class="box-body">
+                    <div class="msg">
+                        <p>最多只能Ｎ人</p>
+                    </div>
+                </div>
+                <div class="box-footer">
+                    <a href="#!" class="btn-simple alert-confirm">確認</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <!-- simplebar -->
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.min.css" />
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+    <!-- jquery bracket -->
+    <script src="js/jquery-bracket.js"></script>
+    <!-- FontAwesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <!-- wow.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- owlCarousel2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- owlCarousel2 progressbar -->
+    <script src="https://unpkg.com/owlcarousel2-progressbar"></script>
+    <!-- custom.js -->
+    <script src="js/custom.js"></script>
+
+    <!-- JQ 掛載點 -->
+    <script>
+        $(document).ready(function () {
+            new WOW().init();
+        });
+    </script>
+
+</body>
+
+</html>

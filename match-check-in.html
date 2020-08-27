@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{Tournament Page}比賽報到 - House of Gamers</title>
+    <!--google plus info-->
+    <meta itemprop="name" content="{網頁標題}">
+    <meta itemprop="image" content="[網頁縮圖_1200x628]">
+    <meta name="description" content="{網頁內容敘述}" />
+    <!--FB info-->
+    <meta property="og:title" content="{網頁標題}" />
+    <meta property="og:site_name" content="[網站名稱]" />
+    <meta property="og:url" content="[網頁網址_URL]">
+    <meta property="og:image" content="[網頁縮圖_1200x628]">
+    <meta property="og:description" content="{網頁內容敘述}">
+    <meta property="og:type" content="website" />
+    <!--Favicon-->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <!-- wow animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- owl-default-theme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jquery-bracket/0.11.1/jquery.bracket.min.css" />
+    <!-- main-style -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div id="app" data-simplebar>
+        <!-- 主選單 Tapbar -->
+        <div class="nav">
+            <div class="nav-wrap">
+                <div class="nav-item-wrap">
+                    <a href="index.html" class="nav-item">
+                        <span class="pic logo"></span>
+                    </a>
+                    <a href="index.html" class="nav-item active">
+                        <div class="ic-wrap vt">
+                            <span class="icon-ic_home size-32"></span>
+                            <span>首頁</span>
+                        </div>
+                    </a>
+                    <a href="#!" class="nav-item">
+                        <div class="ic-wrap vt">
+                            <span class="icon-ic_cup size-32"></span>
+                            <span>賽事</span>
+                        </div>
+                    </a>
+                    <a href="#!" class="nav-item">
+                        <div class="ic-wrap vt">
+                            <span class="icon-ic_announce size-32"></span>
+                            <span>公告</span>
+                        </div>
+                    </a>
+                    <a href="#!" class="nav-item">
+                        <div class="ic-wrap vt">
+                            <span class="icon-ic_team size-32"></span>
+                            <span>隊伍</span>
+                        </div>
+                    </a>
+                    <a href="#!" class="nav-item">
+                        <div class="ic-wrap vt">
+                            <span class="icon-ic_my size-32"></span>
+                            <span>我的</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper ">
+
+            <!-- 主要內容 Content -->
+            <div class="container">
+                <!-- Toolbar -->
+                <section class="section toolbar">
+                    <div class="space-between-wrap">
+                        <div class="backer-wrap">
+                            <a href="#!" onclick="goBack()" class="ic-wrap size-32">
+                                <i class="fas fa-chevron-left" ic></i>
+                                <!-- <span>返回</span> -->
+                            </a>
+                        </div>
+                        <div class="toolbar-title">
+                            <span>{ TournamentName } 比賽報到</span>
+                        </div>
+                        <!-- 此外框一定要留著 -->
+                        <div class="func-wrap">
+                            <a href="tutorial.html">
+                                <span class="icon-ic_tutorial size-32 mr-10" badge></span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-- 比賽狀態 -->
+                <section class="section tournament-check-in">
+                    <div class="item-extitle txt-center"><span> Ａ組 對戰 #{MatchNum} </span></div>
+                    <div class="item-subtitle sm txt-center"><span>BO3, 第一場</span></div>
+                    <div class="sep-item">
+                        <div class="match-icon-wrap space-between-wrap">
+                            <a href="match-teaminfo.html" class="match-team-item left flex-column-wrap">
+                                <div class="match-thumb">
+                                    <div class="ratio ratio__1-1"><img src="img/pic_preset_thumbnail.svg" alt=""></div>
+                                </div>
+                                <div class="item-title sep"><span>戰隊名稱</span></div>
+                                <!-- <div class="status-tag" disabled>未報到</div> -->
+                                <div class="status-tag active">已報到</div>
+                            </a>
+                            <div class="match-team-score-wrap flex-column-wrap">
+                                <div class="score-part space-between-wrap">
+                                    <div class="score left item-extitle"><span>0</span></div>
+                                    <div class="item-subtitle">VS</div>
+                                    <div class="score right item-extitle"><span>0</span></div>
+                                </div>
+                                <!-- <div class="status-tag" disabled>尚未開放報到</div> -->
+                                <div class="status-tag middle">開放報到中</div>
+                                <!-- <div class="status-tag active">比賽進行中</div> -->
+                            </div>
+                            <a href="match-teaminfo.html" class="match-team-item right flex-column-wrap">
+                                <div class="match-thumb">
+                                    <div class="ratio ratio__1-1"><img src="img/pic_preset_thumbnail.svg" alt=""></div>
+                                </div>
+                                <div class="item-title sep"><span>戰隊名稱</span></div>
+                                <div class="status-tag" disabled>未報到</div>
+                                <!-- <div class="status-tag active">已報到</div> -->
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 比賽須知 -->
+                    <div class="item-subtitle sm"><span>比賽須知</span></div>
+                    <article>
+                        <ol class="">
+                            <li>
+                                比賽會在 <span class="green">30分鐘</span> 前開始接受報到，各隊隊長必須按下「報到比賽」進行報到。
+                            </li>
+                            <li>
+                                當雙方皆完成報到後，比賽會立即開始。
+                            </li>
+                            <li>
+                                過預定比賽時間 <span class="green">10分鐘</span> 後，沒有報到的隊伍對被系統自動判作棄權。
+                            </li>
+                            <li>
+                                比賽不允許選手更改遊戲帳戶，選手須使用自己登記之遊戲帳戶進行比賽。
+                            </li>
+                            <li>
+                                雙方隊長報到後自行在遊戲內依照遊戲設定進行比賽，沒有轉播之比賽一般由藍方開設遊戲房間進行比賽。
+                            </li>
+                            <li>
+                                每場賽事完畢後 <span class="green"> 勝方 </span> 須上傳比賽結果。<a href="#!"
+                                    class="green"><span>【上傳範例】</span></a>
+                            </li>
+                        </ol>
+                    </article>
+                </section>
+                <!-- 比賽報到、上傳結果 -->
+                <div class="btn-bot-posi-wrap">
+                    <!-- <a href="#!" class="btn btn__primary"><span>比賽報到</span></a> -->
+                    <a href="#!" class="btn btn__primary alert-opener" alert-to="matchResult"><span>勝方上傳結果</span></a>
+                </div>
+            </div>
+        </div>
+        <footer class="">
+            <div class="container">
+                <div class="copyright">
+                    <span>© 2020 Taiwan Mobile all right reserved.</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Alert Box 上傳結果成功-->
+    <div class="alert-box" id="matchResult">
+        <div class="box-container">
+            <div class="box-wrap">
+                <div class="box-header">
+                    <div class="btn-title">上傳比賽結果成功</div>
+                </div>
+                <div class="box-body">
+                    <div class="msg">
+                        <p>上傳成功，審核通過後將在「 <span class="simple-line">比賽結果</span> 」中看到此場賽事紀錄。</p>
+                    </div>
+                </div>
+                <div class="box-footer">
+                    <a href="#!" class="btn-simple alert-closer">確認</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <!-- simplebar -->
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.min.css" />
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+    <!-- jquery bracket -->
+    <script src="js/jquery-bracket.js"></script>
+    <!-- FontAwesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <!-- wow.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- owlCarousel2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- owlCarousel2 progressbar -->
+    <script src="https://unpkg.com/owlcarousel2-progressbar"></script>
+    <!-- custom.js -->
+    <script src="js/custom.js"></script>
+
+    <!-- JQ 掛載點 -->
+    <script>
+        $(document).ready(function () {
+            new WOW().init();
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{Tournament Page}先發名單資料上傳 - House of Gamers</title>
+    <!--google plus info-->
+    <meta itemprop="name" content="{網頁標題}">
+    <meta itemprop="image" content="[網頁縮圖_1200x628]">
+    <meta name="description" content="{網頁內容敘述}" />
+    <!--FB info-->
+    <meta property="og:title" content="{網頁標題}" />
+    <meta property="og:site_name" content="[網站名稱]" />
+    <meta property="og:url" content="[網頁網址_URL]">
+    <meta property="og:image" content="[網頁縮圖_1200x628]">
+    <meta property="og:description" content="{網頁內容敘述}">
+    <meta property="og:type" content="website" />
+    <!--Favicon-->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <!-- wow animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- owl-default-theme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jquery-bracket/0.11.1/jquery.bracket.min.css" />
+    <!-- main-style -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div id="app" data-simplebar>
+        <!-- 主選單 Tapbar -->
+        <div class="nav">
+            <div class="nav-wrap">
+                <div class="nav-item-wrap">
+                    <a href="index.html" class="nav-item">
+                        <span class="pic logo"></span>
+                    </a>
+                    <a href="index.html" class="nav-item active">
+                        <div class="ic-wrap vt">
+                            <span class="icon-ic_home size-32"></span>
+                            <span>首頁</span>
+                        </div>
+                    </a>
+                    <a href="#!" class="nav-item">
+                        <div class="ic-wrap vt">
+                            <span class="icon-ic_cup size-32"></span>
+                            <span>賽事</span>
+                        </div>
+                    </a>
+                    <a href="#!" class="nav-item">
+                        <div class="ic-wrap vt">
+                            <span class="icon-ic_announce size-32"></span>
+                            <span>公告</span>
+                        </div>
+                    </a>
+                    <a href="#!" class="nav-item">
+                        <div class="ic-wrap vt">
+                            <span class="icon-ic_team size-32"></span>
+                            <span>隊伍</span>
+                        </div>
+                    </a>
+                    <a href="#!" class="nav-item">
+                        <div class="ic-wrap vt">
+                            <span class="icon-ic_my size-32"></span>
+                            <span>我的</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper ">
+            <!-- 主要內容 Content -->
+            <div class="container">
+                <!-- Toolbar -->
+                <section class="section toolbar">
+                    <div class="space-between-wrap">
+                        <div class="backer-wrap">
+                            <a href="#!" onclick="goBack()" class="ic-wrap size-32">
+                                <i class="fas fa-chevron-left" ic></i>
+                                <!-- <span>返回</span> -->
+                            </a>
+                        </div>
+                        <div class="toolbar-title">
+                            <span>先發名單資料上傳</span>
+                        </div>
+                        <!-- 此外框一定要留著 -->
+                        <div class="func-wrap">
+                            <a href="tutorial.html">
+                                <span class="icon-ic_tutorial size-32 mr-10" badge></span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-- 比賽名稱 -->
+                <section class="section tounament-title">
+                    <div class="tournament-title-wrap">
+                        <div class="item-subtitle sm"><span>VALORANT 特戰英豪</span></div>
+                        <div class="item-extitle">
+                            <div class="ic-wrap">
+                                <span ic>Sea Invitational 東南亞邀請賽</span>
+                                <div class="status-tag active">開放報名中</div>
+                            </div>
+                        </div>
+                        <div class="item-date">
+                            <div class="ic-wrap">
+                                <span class="icon-ic_calendar" ic></span>
+                                <span class="date"> 07.24 (五) ~ 10.01 (四)</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- 比賽主視覺 -->
+                <section class="section bn-stage">
+                    <div class="banner-wrap">
+                        <div class="bn-img-frame ratio ratio__24-7">
+                            <img src="https://via.placeholder.com/1024x300" alt="">
+                        </div>
+                    </div>
+                </section>
+                <!-- 選擇隊伍（只會顯示符合此遊戲且人數足夠之隊伍） -->
+                <section class="section tournament-file-upload">
+
+                    <!-- 隊伍名稱 -->
+                    <div class="sep-item frame">
+                        <div class="item-subtitle">
+                            <div class="ic-wrap">
+                                <span ic>隊伍名稱</span>
+                                <a href="#!" alert-to="properNoun" class="alert-opener">
+                                    <i class="fas fa-question-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <a href="#!" class="btn btn__chevron-txt" err>
+                            <div class="btn-left ic-wrap">
+                                <div class="btn-title">隊伍名稱</div>
+                            </div>
+                            <div class="btn-right ic-wrap">
+                                <span ic class="item-subtitle">隊伍名稱顯示區域</span>
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <div class="systxt err"><span>{錯誤訊息}</span></div>
+                        </a>
+                    </div>
+                    <!-- 隊長名稱 (隊長上場的 Case) -->
+                    <div class="sep-item frame">
+                        <div class="item-subtitle">
+                            <div class="ic-wrap">
+                                <span ic>隊長資料</span>
+                                <a href="#!" alert-to="properNoun" class="alert-opener">
+                                    <i class="fas fa-question-circle"></i></a>
+                            </div>
+                        </div>
+                        <a href="pick-start.html" class="btn btn__chevron-txt">
+                            <div class="btn-left ic-wrap">
+                                <div class="btn-title">隊長名稱</div>
+                            </div>
+                            <div class="btn-right ic-wrap">
+                                <span ic class="item-subtitle">隊長名稱顯示區域</span>
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <div class="systxt err"><span>{錯誤訊息}</span></div>
+                        </a>
+                        <div class="riot-id-wrap">
+                            <a href="#!" class="btn btn__riotid" ic disabled>
+                                <div class="btn-left">
+                                    <div class="btn-title">Riot ID</div>
+                                </div>
+                                <div class="btn-right">
+                                    <input class="item-subtitle" placeholder="RiotID顯示"></input>
+                                </div>
+                                <div class="systxt err"><span>{錯誤訊息}</span></div>
+                            </a>
+                            <a href="#!" class="btn btn__riotidcode" ic disabled>
+                                <div class="btn-left ic-wrap">
+                                    <div class="btn-title">ID 編號</div>
+                                </div>
+                                <div class="btn-right">
+                                    <input class="item-subtitle" placeholder="#0000"></input>
+                                </div>
+                                <div class="systxt err"><span>{錯誤訊息}</span></div>
+                            </a>
+                        </div>
+                        <div class="file-upload-wrap">
+                            <input type="file" name="uploadFile" id="uploadFile001" class="upload-file"
+                                data-multiple-caption="已上傳">
+                            <label for="uploadFile001" class="btn btn__chevron-txt">
+                                <div class="btn-left ic-wrap">
+                                    <div class="btn-title">認證資料上傳</div>
+                                </div>
+                                <div class="btn-right ic-wrap">
+                                    <span ic class="item-subtitle">尚未上傳</span>
+                                    <i class="fas fa-chevron-right"></i>
+                                </div>
+                                <div class="systxt err"><span>{錯誤訊息}</span></div>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- 隊員名稱 -->
+                    <div class="sep-item frame">
+                        <div class="item-subtitle">
+                            <div class="ic-wrap">
+                                <span ic>隊員資料 #1</span>
+                                <a href="#!" alert-to="properNoun" class="alert-opener">
+                                    <i class="fas fa-question-circle"></i></a>
+                            </div>
+                        </div>
+                        <a href="pick-start.html" class="btn btn__chevron-txt">
+                            <div class="btn-left ic-wrap">
+                                <div class="btn-title">隊員名稱</div>
+                            </div>
+                            <div class="btn-right ic-wrap">
+                                <span ic class="item-subtitle">隊員名稱顯示區域</span>
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <div class="systxt err"><span>{錯誤訊息}</span></div>
+                        </a>
+                        <div class="riot-id-wrap">
+                            <a href="#!" class="btn btn__riotid" ic disabled>
+                                <div class="btn-left">
+                                    <div class="btn-title">Riot ID</div>
+                                </div>
+                                <div class="btn-right">
+                                    <input class="item-subtitle" placeholder="RiotID顯示"></input>
+                                </div>
+                                <div class="systxt err"><span>{錯誤訊息}</span></div>
+                            </a>
+                            <a href="#!" class="btn btn__riotidcode" ic disabled>
+                                <div class="btn-left ic-wrap">
+                                    <div class="btn-title">ID 編號</div>
+                                </div>
+                                <div class="btn-right">
+                                    <input class="item-subtitle" placeholder="#0000"></input>
+                                </div>
+                                <div class="systxt err"><span>{錯誤訊息}</span></div>
+                            </a>
+                        </div>
+                        <input type="file" name="uploadFile" id="uploadFile002" class="upload-file"
+                            data-multiple-caption="已上傳">
+                        <label for="uploadFile002" class="btn btn__chevron-txt" err>
+                            <div class="btn-left ic-wrap">
+                                <div class="btn-title">認證資料上傳</div>
+                            </div>
+                            <div class="btn-right ic-wrap">
+                                <span ic class="item-subtitle">上傳失敗</span>
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <div class="systxt err"><span>{錯誤訊息}</span></div>
+                        </label>
+                    </div>
+                    <!-- 隊員名稱 -->
+                    <div class="sep-item frame">
+                        <div class="item-subtitle">
+                            <div class="ic-wrap">
+                                <span ic>隊員資料 #2</span>
+                            </div>
+                        </div>
+                        <a href="pick-start.html" class="btn btn__chevron-txt">
+                            <div class="btn-left ic-wrap">
+                                <div class="btn-title">隊員名稱</div>
+                            </div>
+                            <div class="btn-right ic-wrap">
+                                <span ic class="item-subtitle">隊員名稱顯示區域</span>
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <div class="systxt err"><span>{錯誤訊息}</span></div>
+                        </a>
+                        <div class="riot-id-wrap">
+                            <a href="#!" class="btn btn__riotid" ic disabled>
+                                <div class="btn-left">
+                                    <div class="btn-title">Riot ID</div>
+                                </div>
+                                <div class="btn-right">
+                                    <input class="item-subtitle" placeholder="RiotID顯示"></input>
+                                </div>
+                                <div class="systxt err"><span>{錯誤訊息}</span></div>
+                            </a>
+                            <a href="#!" class="btn btn__riotidcode" ic disabled>
+                                <div class="btn-left ic-wrap">
+                                    <div class="btn-title">ID 編號</div>
+                                </div>
+                                <div class="btn-right">
+                                    <input class="item-subtitle" placeholder="#0000"></input>
+                                </div>
+                                <div class="systxt err"><span>{錯誤訊息}</span></div>
+                            </a>
+                        </div>
+                        <input type="file" name="uploadFile" id="uploadFile003" class="upload-file"
+                            data-multiple-caption="已上傳">
+                        <label for="uploadFile003" class="btn btn__chevron-txt">
+                            <div class="btn-left ic-wrap">
+                                <div class="btn-title">認證資料上傳</div>
+                            </div>
+                            <div class="btn-right ic-wrap">
+                                <span ic class="item-subtitle">尚未上傳</span>
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <div class="systxt err"><span>{錯誤訊息}</span></div>
+                        </label>
+                    </div>
+                    <!-- 必須閱讀 -->
+                    <div class="sep-item frame">
+                        <div class="sep-item frame custom-radio-wrap">
+                            <label class="custom-radio">
+                                <span>
+                                    我已明白
+                                    <a class="green"><span>比賽規則</span></a>
+                                    與
+                                    <a class="green"><span>相關條款</span></a>
+                                </span>
+                                <input type="checkbox" name="teamleaderForTournament" value="1">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+        <div class="submit-zone txt-center container">
+            <a href="#!" class="btn btn__normal round submit alert-opener" alert-to="signupSuccess">送出</a>
+            <div class="systxt err"><span>{錯誤訊息}</span></div>
+        </div>
+        <footer class="">
+            <div class="container">
+                <div class="copyright">
+                    <span>© 2020 Taiwan Mobile all right reserved.</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Alert Box 資料上傳失敗-->
+    <div class="alert-box" id="uploadFail">
+        <div class="box-container">
+            <div class="box-wrap">
+                <div class="box-header">
+                    <div class="item-title">上傳認證失敗</div>
+                </div>
+                <div class="box-body">
+                    <div class="msg">
+                        <p>隊員資料 #1, 隊員資料 #2，認證資料上傳失敗，請重新嘗試。</p>
+                    </div>
+                </div>
+                <div class="box-footer">
+                    <a href="#!" class="btn-simple alert-closer">確認</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Alert Box 報名發生錯誤-->
+    <div class="alert-box" id="signupFail">
+        <div class="box-container">
+            <div class="box-wrap">
+                <div class="box-header">
+                    <div class="item-title">發生錯誤</div>
+                </div>
+                <div class="box-body">
+                    <div class="msg">
+                        <p>報名過程中發生未知錯誤，請重新操作。</p>
+                    </div>
+                </div>
+                <div class="box-footer">
+                    <a href="#!" class="btn-simple alert-closer">確認</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Alert Box 報名成功-->
+    <div class="alert-box" id="signupSuccess">
+        <div class="box-container">
+            <div class="box-wrap">
+                <div class="box-header">
+                    <div class="item-title">報名成功</div>
+                </div>
+                <div class="box-body">
+                    <div class="msg">
+                        <p>報名成功，請隊長隨時注意比賽通知推播。</p>
+                    </div>
+                </div>
+                <div class="box-footer">
+                    <a href="pre-match.html" class="btn-simple alert-closer">確認</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Question Circle Box 名詞說明 -->
+    <div class="alert-box" id="properNoun">
+        <div class="box-container">
+            <div class="box-wrap">
+                <div class="box-header">
+                    <div class="item-title">名詞區域</div>
+                </div>
+                <div class="box-body">
+                    <div class="msg">
+                        <p>專有名詞解說，可以放置圖片。</p>
+                        <img class="sep-item" src="https://via.placeholder.com/400x300" alt="">
+                    </div>
+                </div>
+                <div class="box-footer">
+                    <a href="#!" class="btn-simple alert-closer">確認</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <!-- simplebar -->
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.min.css" />
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+    <!-- jquery bracket -->
+    <script src="js/jquery-bracket.js"></script>
+    <!-- FontAwesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <!-- wow.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- owlCarousel2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- owlCarousel2 progressbar -->
+    <script src="https://unpkg.com/owlcarousel2-progressbar"></script>
+    <!-- custom.js -->
+    <script src="js/custom.js"></script>
+
+    <!-- JQ 掛載點 -->
+    <script>
+        $(document).ready(function () {
+            new WOW().init();
+        });
+    </script>
+
+</body>
+
+</html>

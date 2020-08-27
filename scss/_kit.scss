@@ -1,0 +1,821 @@
+/*
+----------------
+Font Download
+----------------
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto&display=swap');
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?qp1bmp');
+    src: url('../fonts/icomoon.eot?qp1bmp#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf') format('truetype'),
+        url('../fonts/icomoon.woff?qp1bmp') format('woff'),
+        url('../fonts/icomoon.svg?qp1bmp#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+/*
+----------------
+Main Color Set
+----------------
+*/
+
+$green: #00ffb5;
+$green-secondary-hover: rgba(0, 122, 87, 0.8);
+$green-secondary: rgba(0, 122, 87, 0.5);
+$red: #ff6b44;
+$red-secondary: rgba(129, 36, 11, 0.5);
+$blue: #9d8dff;
+$blue-secondary: rgba(48, 37, 116, 0.5);
+$pink: #ff4399;
+$pink-secondary: rgba(134, 38, 82, 0.5);
+$yellow: #ffdf41;
+$yellow-secondary: rgba(147, 126, 21, 0.5);
+$bk: #1a1a1a;
+$bk60: rgba(26, 26, 26, 0.6);
+$bk40: rgba(26, 26, 26, 0.4);
+$bk15: rgba(26, 26, 26, 0.15);
+$w: #ffffff;
+$w10: rgba(255, 255, 255, 0.1);
+$w20: rgba(255, 255, 255, 0.2);
+$w30: rgba(255, 255, 255, 0.3);
+$w40: rgba(255, 255, 255, 0.4);
+$w60: rgba(255, 255, 255, 0.6);
+$trans: rgba(255, 255, 255, 0);
+$divi: rgba(255, 255, 255, 0.15);
+
+/*
+----------------
+Icon Set
+----------------
+*/
+
+$ic_announce: url(../img/ic_announce.svg);
+$ic_approved: url(../img/ic_approved.svg);
+$ic_close: url(../img/ic_close.svg);
+$ic_delete: url(../img/ic_delete.svg);
+$ic_detail: url(../img/ic_detail.svg);
+$ic_disapproved: url(../img/ic_disapproved.svg);
+$ic_zoomin: url(../img/ic_zoomin.svg);
+$ic_zoomout: url(../img/ic_zoomout.svg);
+
+
+/*
+----------------
+Picture Set
+----------------
+*/
+
+$pic_ig: url(../img/pic_ig.svg);
+$pic_link: url(../img/pic_link.svg);
+$pic_preset_thumbnail: url(../img/pic_preset_thumbnail.svg);
+$pic_reddit: url(../img/pic_reddit.svg);
+$pic_twitter: url(../img/pic_twitter.svg);
+$pic_bg_deco: url(../img/pic_background_deco.svg);
+$pic_nocontent: url(../img/pic_nocontent.svg);
+$pic_bg_lg: url(../img/background_2560x2560.jpg);
+$pic_bg_md: url(../img/background_1200x918.jpg);
+$pic_bg_sm: url(../img/background_500x918.jpg);
+$pic_logo: url(../img/pic_logo.png);
+$pic_logo_w: url(../img/logo_w.svg);
+
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    position: relative;
+
+    &.size-48 {
+        font-size: 48px;
+    }
+
+    &.size-44 {
+        font-size: 44px;
+    }
+
+    &.size-40 {
+        font-size: 40px;
+    }
+
+    &.size-36 {
+        font-size: 36px;
+    }
+
+    &.size-32 {
+        font-size: 32px;
+        height: 32px;
+        width: 32px;
+    }
+
+    &.size-24 {
+        font-size: 24px;
+    }
+
+    &.size-16 {
+        font-size: 16px;
+    }
+
+    &.size-12 {
+        font-size: 12px;
+    }
+
+    &[badge]::after {
+        content: '';
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        background-color: $red;
+        z-index: 1;
+    }
+}
+
+.icon-ic_tutorial.active::after {
+    right: 1px
+}
+
+.icon-ic_tutorial:before {
+    content: "\e900";
+    color: #fff;
+}
+
+.icon-ic_home:before {
+    content: "\e901";
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.icon-ic_cup:before {
+    content: "\e902";
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.icon-ic_announce:before {
+    content: "\e903";
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.icon-ic_team:before {
+    content: "\e904";
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.icon-ic_my:before {
+    content: "\e905";
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.icon-ic_forum:before {
+    content: "\e906";
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.icon-ic_calendar:before {
+    content: "\e90f";
+}
+
+.icon-ic_crown:before {
+    content: "\e910";
+    color: #ffba0d;
+}
+
+.icon-ic_drag:before {
+    content: "\e911";
+    color: #fff;
+}
+
+.icon-ic_invitation:before {
+    content: "\e912";
+    color: #fff;
+}
+
+.icon-ic_notice:before {
+    content: "\e914";
+    color: #fff;
+}
+
+.icon-ic_search:before {
+    content: "\e915";
+    color: #fff;
+}
+
+.icon-ic_share:before {
+    content: "\e916";
+    color: #fff;
+}
+
+.icon-logo_w:before {
+    content: "\e919";
+    color: #fff;
+}
+
+$font: 'Noto Sans TC',
+'Roboto',
+'icomoon';
+
+/*
+----------------
+UI Kit Presets
+----------------
+*/
+
+.tapbar-item {
+    margin: 0 32px 0 0;
+    transition: .2s;
+
+    &.active {
+        color: $w;
+        font-size: 20px;
+        font-weight: 500;
+
+        &:hover {
+            color: $w
+        }
+    }
+
+    &:hover {
+        color: $w60;
+    }
+}
+
+.playoff-nav-tab-wrap {
+    margin: 0 10px 10px 10px;
+    font-weight: 300;
+
+    .tapbar-item {
+        font-size: 14px;
+        margin: 0 5px 0 0;
+        padding: 2px 10px;
+        border: 1px solid $w40;
+        background-color: $trans;
+        border-radius: 20px;
+        transition: .2s;
+
+        &.active {
+            color: $w;
+            border-color: $green;
+            background-color: $green-secondary;
+            // font-size: 20px;
+            // font-weight: 500;
+
+            &:hover {
+                color: $w
+            }
+        }
+
+        &:hover {
+            color: $w60;
+        }
+    }
+}
+
+.status-tag {
+    padding: 4px 12px;
+    font-size: 12px;
+    border-radius: 20px;
+    cursor: default;
+
+    white-space: nowrap;
+
+    &.cor {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 2;
+    }
+
+    &.active {
+        border: 1px solid $green;
+        background-color: $green-secondary;
+        color: $w;
+    }
+
+    &.middle {
+        border: 1px solid $yellow;
+        background-color: $yellow-secondary;
+        color: $w;
+    }
+
+    &[disabled] {
+        border: 1px solid $w40;
+        background-color: $bk40;
+        color: $w40;
+    }
+}
+
+[disabled] {
+    color: $w40 !important;
+}
+
+/*
+---------------
+預設比例(等比縮放)
+---------------
+*/
+
+.ratio {
+    position: relative;
+
+    width: 100%;
+    height: 0;
+
+    overflow: hidden;
+    border-radius: 10px;
+
+    &__24-7 {
+        padding-top: calc((7 / 24) * 100%);
+    }
+
+    &__16-9 {
+        padding-top: calc((9 / 16) * 100%);
+    }
+
+    &__1-1 {
+        padding-top: calc((1 / 1) * 100%);
+    }
+
+    img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.bd-r {
+    overflow: hidden;
+    &__10px {
+        border-radius: 10px;
+    }
+}
+
+/*
+---------------
+預設顏色
+---------------
+*/
+
+
+/*
+---------------
+預設寬度
+---------------
+*/
+.inline-block {
+    display: inline-block !important;
+}
+
+.W-10 {
+    width: 10% !important;
+}
+
+.W-20 {
+    width: 20% !important;
+}
+
+.W-30 {
+    width: 30% !important;
+}
+
+.W-40 {
+    width: 40% !important;
+}
+
+.W-50 {
+    width: 50% !important;
+}
+
+.W-60 {
+    width: 60% !important;
+}
+
+.W-70 {
+    width: 70% !important;
+}
+
+.W-80 {
+    width: 80% !important;
+}
+
+.W-90 {
+    width: 90% !important;
+}
+
+.W-100 {
+    width: 100% !important;
+}
+
+/*
+---------------
+區域區隔 20px
+---------------
+*/
+
+.sep-item {
+    margin: 0px auto;
+
+    &.frame {
+        display: block;
+        width: 100%;
+        max-width: calc((1024px - 14px) / 2);
+    }
+
+    &:not(:first-child) {
+        margin: 20px auto;
+    }
+}
+
+
+/*
+------------
+Button 按鈕
+------------
+*/
+.btn-bot-posi-wrap {
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    z-index: 100;
+
+    width: 100vw;
+    height: auto;
+    padding: 0 15px 20px 15px;
+
+    text-align: center;
+}
+
+.filter-btn {
+    font-size: 12px;
+    padding: 4px 12px;
+
+    border: 1px solid $w40;
+    border-radius: 25px;
+    color: $w40;
+
+    margin: 5px 10px;
+    margin-left: 0px;
+
+    transition: .2s;
+
+    &.active {
+        background-color: $w;
+        color: $bk40;
+
+        &:hover {
+            background-color: $w;
+        }
+    }
+
+    &:hover {
+        background-color: $w20;
+    }
+}
+
+a.btn-square {
+    background-color: $w10;
+    border-radius: 5px;
+
+    height: 32px;
+    width: 32px;
+    font-size: 16px;
+    color: $w20;
+
+    backdrop-filter: blur(5px) brightness(1);
+
+    &:hover {
+        color: $w;
+    }
+}
+
+a.btn,
+label.btn {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    max-width: calc((1024px - 14px) / 2);
+
+    background-color: $w20;
+    color: $w;
+    backdrop-filter: blur(5px) brightness(1);
+    border-radius: 5px;
+    padding: 12px 16px;
+
+    display: inline-flex;
+    align-items: center;
+
+    margin: 5px 5px 5px 0;
+    transition: .2s;
+
+    cursor: pointer;
+
+    .user-thumb {
+        height: 24px;
+        width: 24px;
+        border-radius: 50%;
+        overflow: hidden;
+
+        margin-right: 10px;
+    }
+
+    svg {
+        color: $w;
+    }
+
+    &:hover,
+    &:active,
+    &:focus,
+    &:visited {
+        background-color: $w30;
+        color: $w;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    &:active,
+    &:focus,
+    &:visited {
+        background-color: $w20;
+    }
+
+    &[disabled] {
+        color: $w40;
+        pointer-events: none;
+
+        .user-thumb {
+            opacity: .4;
+        }
+
+        .btn-title {
+            color: $w40;
+            white-space: nowrap;
+        }
+
+        svg {
+            color: $w40;
+        }
+    }
+
+    &[badge] {
+        .btn-title {
+            position: relative;
+            width: auto;
+            display: inline-flex;
+
+            &::before {
+                content: '';
+                display: inline-flex;
+                position: absolute;
+
+                top: 0;
+                left: calc(100% + 5px);
+
+                height: 8px;
+                width: 8px;
+                border-radius: 50%;
+
+                background-color: $red;
+            }
+        }
+    }
+
+    &[err] {
+        border: 1px solid $red;
+        margin-bottom: 25px;
+
+        .systxt {
+            display: inline-flex;
+        }
+    }
+
+    .item-title,
+    .item-subtitle,
+    .item-extitle {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .btn-left,
+    .btn-right {
+        width: 100%;
+        flex: 1;
+        text-align: left;
+        justify-content: flex-start;
+    }
+
+    .btn-right {
+        text-align: right;
+        justify-content: flex-end;
+    }
+
+    &__normal {
+        justify-content: center;
+
+        &.round {
+            border-radius: 30px;
+        }
+    }
+
+    &__user {
+        justify-content: space-between;
+
+        &:hover,
+        &:active,
+        &:focus,
+        &:visited {
+            justify-content: space-between;
+        }
+
+        &.box__select {
+            position: relative;
+
+            .corner-num {
+                position: absolute;
+                height: 22px;
+                width: 22px;
+                right: 15px;
+                top: 18px;
+
+                display: none;
+                justify-content: center;
+                align-items: center;
+
+                font-size: 12px;
+
+                background-color: $w40;
+                border: 1px solid $w;
+                border-radius: 50%;
+                color: $w;
+            }
+
+            &.picked {
+                border: 1px solid $w;
+                background-color: $w30;
+
+                .corner-num {
+                    display: inline-flex;
+                }
+            }
+
+            .systxt {
+                position: initial;
+            }
+        }
+    }
+
+    &__primary {
+        background-color: $green-secondary;
+        border: 1px solid $green;
+        border-radius: 30px;
+
+        &:active,
+        &:focus,
+        &:visited {
+            background-color: $green-secondary;
+            color: $w;
+        }
+
+        transition: .2s;
+
+        &:hover {
+            transform-origin: center;
+            transform: translateY(-5px);
+            background-color: $green-secondary-hover;
+        }
+
+        &[disabled] {
+            background-color: $w20;
+            border: none;
+        }
+    }
+
+    &__chevron-txt {
+        justify-content: space-between;
+        max-width: 100%;
+
+        &:hover,
+        &:active,
+        &:focus,
+        &:visited {
+            justify-content: space-between;
+        }
+
+        .btn-left {
+            max-width: 80px;
+            margin-right: 20px;
+        }
+
+        .btn-right {
+            max-width: calc(100% - 100px);
+            overflow: hidden;
+        }
+    }
+
+    &__riotid,
+    &__riotidcode,
+    &__txt,
+    &__combo {
+        justify-content: flex-start;
+        width: calc(55% - 10px);
+
+        &:hover,
+        &:active,
+        &:focus,
+        &:visited {
+            justify-content: flex-start;
+        }
+
+        input {
+            background-color: $trans;
+            border: 0;
+            color: $w;
+            width: 100%;
+            text-align: left;
+            white-space: wrap;
+
+            &:focus {
+                border: 0;
+                outline: none;
+            }
+        }
+
+        .btn-left {
+            max-width: 80px;
+            margin-right: 20px;
+        }
+    }
+
+    &__riotid {
+        margin-right: 5px;
+
+        .btn-left {
+            max-width: 40px;
+        }
+    }
+
+    &__riotidcode {
+        width: calc(45%);
+        margin: 0;
+
+        .btn-left {
+            max-width: 40px;
+        }
+    }
+
+    &__combo {
+        width: calc(50% - 5px);
+
+        &:first-child {
+            margin-left: 0;
+            margin-right: 10px;
+        }
+
+        &:last-child {
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+    }
+
+    &__txt {
+        width: 100%;
+    }
+
+    &.date-time-picker.active {
+        border: 1px solid $w;
+    }
+
+    &__trans {
+        display: inline-flex;
+        width: auto;
+        font-size: 12px;
+        padding: 4px 12px;
+
+        border: 1px solid $w40;
+        border-radius: 25px;
+        color: $w;
+
+        margin-left: 10px;
+
+        transition: .2s;
+    }
+}

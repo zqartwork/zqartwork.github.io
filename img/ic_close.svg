@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="ic_close" width="44" height="44" viewBox="0 0 44 44">
+    <circle id="Oval" cx="15" cy="15" r="15" fill="rgba(255,255,255,0.15)" transform="translate(7 7)"/>
+    <g id="Group_58" data-name="Group 58" transform="translate(-1378.743 -480.443)">
+        <path id="Union_1" fill="rgba(255,255,255,0.4)" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" d="M-5473-9862.888l-3.774-3.773-3.774 3.773a.989.989 0 0 1-.707.293.989.989 0 0 1-.706-.293 1 1 0 0 1 0-1.415l3.773-3.772-3.775-3.775a1 1 0 0 1 0-1.412 1 1 0 0 1 1.415 0l3.774 3.773 3.774-3.773a1 1 0 0 1 1.415 0 1 1 0 0 1 0 1.412l-3.775 3.775 3.775 3.775a1 1 0 0 1 0 1.412 1 1 0 0 1-.709.295.994.994 0 0 1-.706-.295z" data-name="Union 1" transform="translate(6878 10371)"/>
+    </g>
+</svg>

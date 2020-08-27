@@ -1,0 +1,1685 @@
+html,
+body {
+    background-color: $bk;
+    color: $w40;
+    font-size: 14px;
+    user-select: none;
+
+}
+
+body {
+    position: relative;
+    overflow: hidden;
+}
+
+#app {
+    position: relative;
+
+    height: 100vh;
+    width: 100vw;
+
+    overflow-x: hidden;
+
+    z-index: 0;
+
+    background-image: $pic_bg_lg;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    position: relative;
+    min-height: calc(100vh - 60px);
+
+    //sticky footer
+    &.ex {
+        min-height: calc(100vh - 163px);
+    }
+}
+
+[disabled] {
+    color: $w40 !important;
+}
+
+/*
+---------------
+Custom scrollbar 
+---------------
+*/
+
+//IE11
+
+body {
+    scrollbar-base-color: $bk15;
+    scrollbar-base-color: $bk15;
+    scrollbar-3dlight-color: $bk15;
+    scrollbar-highlight-color: $bk15;
+    scrollbar-track-color: $bk15;
+    scrollbar-arrow-color: $bk15;
+    scrollbar-shadow-color: $bk15;
+    scrollbar-dark-shadow-color: $bk15;
+}
+
+//moz
+@-moz-document url-prefix() {
+    scrollbar {
+        -moz-appearance: none !important;
+        background: $w20 !important;
+    }
+
+    thumb,
+    scrollbarbutton {
+        -moz-appearance: none !important;
+        background-color: $w20 !important;
+    }
+
+    thumb:hover,
+    scrollbarbutton:hover {
+        -moz-appearance: none !important;
+        background-color: $w20 !important;
+    }
+
+    scrollbarbutton {
+        display: none !important;
+    }
+
+    scrollbar[orient="vertical"] {
+        min-width: 1px !important;
+    }
+}
+
+//Chrome
+::-webkit-scrollbar-corner {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    background: $trans;
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: solid $trans 1px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/*
+----------------
+Input Placeholder
+----------------
+*/
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: $w40;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: $w40;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: $w40;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: $w40;
+}
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    border: 0;
+    -webkit-text-fill-color: $w;
+    -webkit-box-shadow: $trans;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+/*
+------------------------------
+Input (type=number) Arrow Hide
+------------------------------
+*/
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/*
+--------------------
+For Solid Color Font
+--------------------
+*/
+
+.simple-title {
+    color: $w;
+}
+
+.simple-line {
+    color: $w;
+}
+
+.green {
+    color: $green;
+}
+
+a.green {
+    color: $green;
+
+    &:hover,
+    &:active,
+    &:visited,
+    &:focus {
+        color: $green;
+    }
+}
+/*
+---------------
+系統字
+---------------
+*/
+
+.systxt {
+    font-size: 14px;
+    display: none;
+
+    position: absolute;
+    right: 0;
+    top: calc(100% + 5px);
+
+    color: $w;
+
+    &.err {
+        color: $red;
+    }
+
+    &.pass {
+        color: $green;
+    }
+
+    &.subtitle {
+        color: $w;
+    }
+
+}
+
+/*
+---------------
+預設背景 Blur
+---------------
+*/
+.blur {
+    backdrop-filter: blur(5px) brightness(1);
+    background-color: $w20;
+}
+/*
+-----------------------
+Custom Radio 自訂單選按鈕
+-----------------------
+*/
+.custom-radio-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.custom-radio {
+    display: inline-flex;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    align-items: center;
+    margin-right: 10px;
+    color: $w;
+}
+
+/* Hide the browser's default radio button */
+.custom-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    background-color: $w20;
+    border-radius: 5px;
+}
+
+/* On mouse-over, add a grey background color */
+.custom-radio:hover input~.checkmark {
+    background-color: $w30;
+}
+
+/* When the radio button is checked, add a blue background */
+.custom-radio input:checked~.checkmark {
+    background-color: $w40;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.custom-radio input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.custom-radio .checkmark:after {
+    top: 3.5px;
+    left: 4px;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    background: $green;
+}
+
+/*
+-----------------------
+Custom Checkbox 自訂多選
+-----------------------
+*/
+.custom-checkbox-wrap {
+    list-style: none;
+    // padding: 20px;
+}
+
+.custom-checkbox-wrap label {
+    border: 1px solid $trans;
+}
+
+.custom-checkbox-wrap input[type="checkbox"]:checked+label {
+    border: 1px solid $w;
+    background-color: $w30;
+    color: $w;
+
+    .btn-title {
+        color: $w;
+        white-space: nowrap;
+    }
+}
+
+.custom-checkbox-wrap input[disable]+label {
+    margin-bottom: 25px;
+}
+
+.custom-checkbox-wrap input[type="checkbox"] {}
+
+.custom-checkbox-wrap input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.pick-start {
+    cursor: pointer;
+}
+
+/*
+--------------------
+Custom Alert 自訂彈窗
+--------------------
+*/
+/* 固定底座 */
+.alert-box {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-color: $bk40;
+}
+/* 對齊容器 */
+.box-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* 彈窗底版 */
+.box-wrap {
+    height: auto;
+    width: calc(100% - 40px);
+    // margin: 0 auto;
+    // margin-top: 30vh;
+    max-width: 500px;
+    padding: 20px 0;
+
+    background-color: $bk;
+    border-radius: 15px;
+}
+
+a.btn-simple {
+    color: $blue;
+
+    &:hover,
+    &:active,
+    &:visited,
+    &:focus {
+        color: $blue;
+    }
+}
+
+.box-header,
+.box-body,
+.box-footer {
+    padding: 0 20px;
+}
+
+.box-body {
+    margin: 10px 0;
+}
+
+.box-footer {
+    text-align: right;
+}
+
+.box-closer {
+    height: 44px;
+    width: 44px;
+}
+
+.box-divi {
+    height: 1px;
+    background-color: $w10;
+    width: 100%;
+
+    margin: 20px 0;
+}
+
+.share-icon {
+    height: 50px;
+    width: 50px;
+}
+
+.share-item {
+    display: inline-flex;
+    flex-direction: column;
+    margin: 0 15px;
+
+    opacity: 0.8;
+    transition: 0.2s;
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+/*
+--------------------
+Custom Upload Files
+--------------------
+*/
+
+.upload-file {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+/*
+-----------------------
+Custom Date Time Picker
+-----------------------
+*/
+
+#timeCustom {
+    width: 0.1px;
+    height: 65px;
+    border: 0;
+    left: calc(50% - 170px);
+    background-color: $trans;
+    position: absolute;
+    z-index: -5;
+
+    outline: none;
+}
+
+.date-time-remove {
+    display: none;
+}
+
+/*
+-----------------------------
+Global Settings (Origin tag)
+-----------------------------
+*/
+
+a,
+a:visited,
+a:active,
+a:focus {
+    display: inline-flex;
+    color: $w40;
+    text-decoration: none;
+
+    justify-content: center;
+    align-items: center;
+}
+
+ol {
+    list-style-type: decimal;
+    padding-left: 15px;
+
+    li {
+        line-height: 2;
+    }
+}
+
+th,
+td {
+    border: 1px solid $w40;
+    padding: 12px 24px;
+}
+
+th {
+    background-color: $w20;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.ic-wrap {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+
+    &.vt {
+        flex-direction: column;
+    }
+
+    *[ic] {
+        margin-right: 10px;
+    }
+
+    .fa-question-circle {
+        cursor: pointer;
+
+        &:hover {
+            color: $w60;
+        }
+    }
+}
+
+.space-between-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-left,
+.header-right {
+    width: 100%;
+    flex: 1;
+}
+
+.header-left {
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.header-right {
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.flex-column-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: calc(100vw - 40px);
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 16px 0;
+
+    &.toolbar {
+        padding-top: 32px;
+    }
+
+    &[class*="stage"] {
+        padding: 0;
+    }
+
+    &.index-contents {
+        padding-top: 0;
+    }
+
+    &.tounament-title {
+        padding: 0 0 20px 0;
+    }
+}
+
+article {
+    color: $w;
+    font-weight: 100;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    em,
+    img,
+    video {
+        margin: 20px 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    a,
+    a:visited,
+    a:active,
+    a:focus {
+        color: $green;
+    }
+
+    em {
+        font-style: italic;
+        font-weight: 500;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    *:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.toolbar-title {
+    color: $w;
+    font-weight: 700;
+}
+
+/*
+----------------
+Nav
+----------------
+*/
+
+.nav {
+    position: fixed;
+
+    left: 0;
+    top: 0;
+
+    z-index: 100;
+
+    width: 100px;
+    height: 100vh;
+
+    // background-color: $w;
+
+    backdrop-filter: brightness(0.8) blur(10px);
+    background-color: $w40;
+}
+
+.pic {
+    display: inline-block;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &.logo {
+        background-image: $pic_logo_w;
+        height: 32px;
+        width: 36px;
+    }
+}
+
+.nav-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.nav-item-wrap {
+    padding: 32px 0;
+}
+
+.nav-item {
+    color: $w40;
+    padding: 24px 0;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+
+    &:hover {
+        color: $w60;
+
+        [class^="icon-"]:before,
+        [class*=" icon-"]:before {
+            color: $w60;
+        }
+    }
+
+    &.active {
+        color: $w;
+
+        [class^="icon-"]:before,
+        [class*=" icon-"]:before {
+            color: $w;
+        }
+    }
+}
+
+.btn-title {
+    color: $w;
+    white-space: nowrap;
+
+    &:active {}
+}
+
+.index-thumb {
+    height: 32px;
+    width: 32px;
+}
+
+.match-thumb {
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+}
+
+.slide-stage .owl-carousel {
+    margin-bottom: 32px;
+
+    .item {
+        border-radius: 20px;
+        overflow: hidden;
+    }
+}
+
+/*
+-----------------
+Custom Timer Slider
+-----------------
+*/
+.active .slide-progress .thumb {
+    width: 0;
+    transition: width 5000ms ease 0s;
+}
+
+.slide-progress {
+    position: relative;
+
+    width: 50px;
+
+    // 進度條粗度
+    height: 5px;
+    border-radius: 4px;
+
+    max-width: 50px;
+    overflow: hidden;
+
+    background-color: rgba(255, 255, 255, 0.15);
+
+    padding: 0;
+    margin: 0 5px;
+
+    .thumb {
+        content: "";
+        position: absolute;
+
+        display: block;
+        top: 0;
+        left: 0;
+
+        width: 0;
+        height: 100%;
+
+        margin: 0;
+
+        background-color: $w;
+    }
+}
+
+/*
+-----------------
+首頁列表按鈕
+-----------------
+*/
+
+.mid-tapbar-wrap,
+.filter-btn-wrap,
+.playoff-nav-tab-wrap {
+    margin: 0;
+    padding-bottom: 10px;
+    white-space: nowrap;
+    max-width: 100%;
+    overflow-y: hidden;
+    cursor: default;
+}
+
+.index-item-wrap {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.playoff-nav-tab-wrap {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 10px;
+}
+
+.index-item {
+    width: 95%;
+    max-width: calc((100% - 2 * 34px) / 3);
+
+    // overflow: hidden;
+    display: inline-block;
+    line-height: 1.5;
+
+    margin: 10px;
+    position: relative;
+
+    &[disabled] {
+        .item-date,
+        .item-title {
+            color: $w40;
+        }
+    }
+}
+
+.inner-wrap,
+.item-header,
+.item-img-frame {
+    width: 100%;
+    position: relative;
+}
+
+.item-img-frame {
+    height: 0;
+
+    padding-top: 56.25%;
+    margin: 0;
+
+    border-radius: 10px;
+    overflow: hidden;
+
+    box-shadow: 1px 1px 2px $bk40;
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: 0.5s;
+        transform-origin: center;
+    }
+
+    &:hover {
+        img {
+            top: -5%;
+            left: -5%;
+            width: 110%;
+            height: 110%;
+        }
+    }
+
+    [disabled] {
+        filter: brightness(0.3);
+        pointer-events: none;
+
+        &:hover {
+            img {
+                top: 0%;
+                left: 0%;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.item-date {
+    color: $green;
+    margin: 5px 0;
+    font-size: 14px;
+
+    [disabled] {
+        color: $w40;
+
+        *[ic]::before {
+            color: $w40;
+        }
+    }
+}
+
+.item-title,
+.item-extitle,
+.item-subtitle {
+    color: $w;
+    margin: 5px 0;
+    font-size: 16px;
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+    // white-space: nowrap;
+
+    &.sep {
+        margin: 10px 0;
+    }
+}
+
+.item-title {
+    max-height: 48px;
+    overflow: hidden;
+    &.sm {
+        font-size: 12px;
+    }
+}
+
+.item-subtitle {
+    color: $w40;
+
+    &.sm {
+        font-size: 12px;
+    }
+}
+
+.item-extitle {
+    font-size: 20px;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.txt-left {
+    text-align: left;
+}
+
+.txt-right {
+    text-align: right;
+}
+
+.dragscroll {
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+/*
+-----------------
+Tournament
+-----------------
+*/
+
+.backer-wrap {
+    font-size: 24px;
+
+    .ic-wrap {
+        color: $w;
+    }
+
+    span {
+        font-size: 16px;
+    }
+}
+
+.ct-item {
+    color: $w;
+    position: relative;
+    display: none;
+    width: 100%;
+
+    &:first-child {
+        display: inline-block;
+    }
+}
+
+.bn-img-frame {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.share-thumb {
+    height: 44px;
+    width: 44px;
+    border-radius: 10px;
+
+    margin-right: 10px;
+}
+
+.share-title-wrap {
+
+    .item-subtitle,
+    .item-title {
+        margin: 0;
+    }
+}
+
+/*
+---------------------
+jQuery Bracket
+---------------------
+*/
+
+/* jQuery Bracket | Copyright (c) Teijo Laine 2011-2018 | Licenced under the MIT licence */
+div.jQBracket {
+    font-size: 14px;
+    position: relative;
+}
+
+div.jQBracket .tools {
+    position: absolute;
+    top: 0;
+    color: $w;
+}
+
+div.jQBracket .tools span {
+    cursor: pointer;
+    margin: 5px;
+    display: block;
+    text-align: center;
+    width: 18px;
+    height: 18px;
+    background-color: $bk60;
+}
+
+div.jQBracket .tools span:hover {
+    background-color: $w40;
+}
+
+div.jQBracket .finals {
+    float: right;
+    right: 0;
+    clear: right;
+    position: relative;
+}
+
+div.jQBracket .bracket {
+    float: right;
+    clear: left;
+}
+
+div.jQBracket .loserBracket {
+    float: right;
+    clear: left;
+    position: relative;
+}
+
+div.jQBracket .round {
+    position: relative;
+    float: left;
+}
+
+div.jQBracket .match {
+    position: relative;
+    cursor: pointer;
+}
+
+div.jQBracket .editable {
+    cursor: pointer;
+}
+
+div.jQBracket .team {
+    position: relative;
+    z-index: 1;
+    float: left;
+    background-color: #eee;
+    cursor: pointer;
+}
+
+div.jQBracket .team:first-child {
+    border-bottom: 1px solid $w40;
+}
+
+div.jQBracket .team input {
+    font-size: 14px;
+    padding: 0;
+    width: 100%;
+    border: 0;
+    margin: 0;
+    outline: 0;
+}
+
+div.jQBracket .team div.label {
+    padding: 3px;
+    position: absolute;
+    height: 22px;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+div.jQBracket .team div.label[disabled] {
+    cursor: default;
+}
+
+div.jQBracket .team div.score {
+    float: right;
+    padding: 3px;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+div.jQBracket .team div.score input {
+    text-align: center;
+}
+
+div.jQBracket .team div.score[disabled] {
+    color: $w40;
+    cursor: default;
+}
+
+div.jQBracket .team div.label input.error,
+div.jQBracket .team div.score input.error {
+    background-color: $red;
+}
+
+div.jQBracket .team.np {
+    background-color: $bk60;
+    color: $w60;
+}
+
+div.jQBracket .team.na {
+    background-color: $w40;
+    color: $w60;
+}
+
+div.jQBracket .team.win {
+    color: $w;
+}
+
+div.jQBracket .team.win div.score {
+    color: $green-secondary;
+}
+
+div.jQBracket .team.lose div.score {
+    color: $red;
+}
+
+div.jQBracket .team.lose {
+    background-color: #ddd;
+    color: $w40;
+}
+
+div.jQBracket .team.tie div.score {
+    color: $blue;
+}
+
+div.jQBracket .team.highlightWinner {
+    background-color: $yellow;
+    color: $bk;
+}
+
+div.jQBracket .team.highlightLoser {
+    background-color: $w60;
+    color: $bk;
+}
+
+div.jQBracket .team.highlight {
+    background-color: $green;
+    color: $bk;
+}
+
+div.jQBracket .team.bye {
+    background-color: $w40;
+    color: $w60;
+}
+
+div.jQBracket .teamContainer {
+    z-index: 1;
+    position: relative;
+    float: left;
+    cursor: pointer;
+
+    .teamTag {
+        display: none;
+        position: absolute;
+        top: -100%;
+        left: 0;
+
+        height: auto;
+        width: 100%;
+
+        background-color: $bk;
+        padding: 10px;
+    }
+
+    &:hover {
+        .teamTag {
+            display: inline-block;
+        }
+    }
+}
+
+div.jQBracket .connector {
+    border: 2px solid $bk60;
+    border-left-style: none;
+    position: absolute;
+    z-index: 1;
+}
+
+div.jQBracket .connector div.connector {
+    border: 0;
+    border-bottom: 2px solid $bk60;
+    height: 0;
+    position: absolute;
+}
+
+div.jQBracket .connector.highlightWinner,
+div.jQBracket .connector div.connector.highlightWinner {
+    border-color: $yellow;
+}
+
+div.jQBracket .connector.highlightLoser,
+div.jQBracket .connector div.connector.highlightLoser {
+    border-color: $w60;
+}
+
+div.jQBracket .connector.highlight,
+div.jQBracket .connector div.connector.highlight {
+    border-color: $green;
+}
+
+div.jQBracket .np .connector,
+div.jQBracket .np .connector div.connector {
+    border-color: $w40;
+}
+
+div.jQBracket .bubble {
+    height: 22px;
+    line-height: 22px;
+    width: 30px;
+    right: -35px;
+    position: absolute;
+    text-align: center;
+    font-size: 11px;
+}
+
+div.jQBracket .bubble:after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid $trans;
+    border-left: 5px solid $trans;
+    border-right: 5px solid $trans;
+    border-bottom: 5px solid $trans;
+}
+
+div.jQBracket .bubble:after {
+    left: -5px;
+    border-left: 0;
+}
+
+div.jQBracket .win .bubble {
+    background-color: $yellow;
+    color: $pink;
+}
+
+div.jQBracket .win .bubble:after {
+    border-right-color: $yellow;
+}
+
+div.jQBracket .win .bubble.third {
+    background-color: $pink;
+    color: $w;
+}
+
+div.jQBracket .win .bubble.third:after {
+    border-right: 6px solid $pink;
+}
+
+div.jQBracket .lose .bubble {
+    background-color: $w60;
+    color: #333;
+}
+
+div.jQBracket .lose .bubble:after {
+    border-right-color: $w60;
+}
+
+div.jQBracket .lose .bubble.fourth {
+    background-color: #678;
+    color: #ccd;
+}
+
+div.jQBracket .lose .bubble.fourth:after {
+    border-right: 6px solid #678;
+}
+
+div.jQBracket.rl .finals {
+    float: left;
+    left: 0;
+    clear: left;
+}
+
+div.jQBracket.rl .bracket {
+    float: left;
+    clear: right;
+}
+
+div.jQBracket.rl .loserBracket {
+    float: left;
+    clear: right;
+}
+
+div.jQBracket.rl .round {
+    margin-right: 0;
+    float: right;
+}
+
+div.jQBracket.rl .team {
+    float: right;
+}
+
+div.jQBracket.rl .team div.label {
+    right: 0;
+}
+
+div.jQBracket.rl .team div.score {
+    float: left;
+}
+
+div.jQBracket.rl .teamContainer {
+    float: right;
+}
+
+div.jQBracket.rl .connector {
+    border-left-style: solid;
+    border-right-style: none;
+    border-width: 2px;
+}
+
+div.jQBracket.rl .connector.highlightWinner,
+div.jQBracket.rl .connector div.connector.highlightWinner {
+    border-color: $yellow;
+}
+
+div.jQBracket.rl .connector.highlightLoser,
+div.jQBracket.rl .connector div.connector.highlightLoser {
+    border-color: $w60;
+}
+
+div.jQBracket.rl .connector.highlight,
+div.jQBracket.rl .connector div.connector.highlight {
+    border-color: $green;
+}
+
+div.jQBracket.rl .bubble {
+    left: -35px;
+}
+
+div.jQBracket.rl .bubble.third {
+    background-color: $pink;
+    color: #310;
+}
+
+div.jQBracket.rl .bubble.fourth {
+    background-color: #678;
+    color: #ccd;
+}
+
+div.jQBracket.rl .bubble:after {
+    left: auto;
+    right: -5px;
+    border-left: 5px solid $trans;
+    border-right: 0;
+}
+
+div.jQBracket.rl .bubble.third:after {
+    border-right: 0;
+    border-left: 6px solid $pink;
+}
+
+div.jQBracket.rl .bubble.fourth:after {
+    border-right: 0;
+    border-left: 6px solid #678;
+}
+
+div.jQBracket.rl .highlightWinner .bubble:after {
+    border-left-color: $yellow;
+}
+
+div.jQBracket.rl .highlightLoser .bubble:after {
+    border-left-color: $w60;
+}
+
+.bracket-container {
+    position: relative;
+    height: auto;
+    min-height: 300px;
+    max-height: 500px;
+    max-width: 100%;
+    overflow: auto;
+
+    padding: 16px 16px 32px 50px;
+    background-color: $bk15;
+    background-blend-mode: multiply;
+    border-radius: 5px;
+
+    font-weight: 300;
+}
+
+.bracket-wrap {
+    transform-origin: left;
+}
+
+/*
+----------------------
+jQuery Bracket Custom
+----------------------
+*/
+div.jQBracket .team,
+div.jQBracket .team.win,
+div.jQBracket .team.na,
+div.jQBracket .team.lose {
+    background-color: $w20;
+    backdrop-filter: blur(5px) brightness(1);
+    border-radius: 3px;
+}
+
+div.jQBracket .team.highlight {
+    background-color: $w20;
+    backdrop-filter: blur(5px) brightness(1);
+    color: $green;
+}
+
+div.jQBracket .team.na {
+    color: $w40;
+    pointer-events: none;
+}
+
+div.jQBracket .connector,
+div.jQBracket .connector div.connector,
+div.jQBracket .np .connector,
+div.jQBracket .np .connector div.connector {
+    border-color: $w20;
+
+    &.highlight {
+        border-color: $green;
+    }
+}
+
+div.jQBracket .team div.score,
+div.jQBracket .team.win div.score,
+div.jQBracket .team.lose div.score,
+div.jQBracket .team.na div.score {
+    background-color: $bk60;
+    background-blend-mode: darken;
+    border-radius: 0 3px 3px 0;
+    backdrop-filter: blur(5px) brightness(1);
+    color: $w;
+}
+
+div.jQBracket .team.win div.score {
+    background-color: $green-secondary;
+    backdrop-filter: blur(5px) brightness(1);
+    border: 1px solid $green;
+    border-radius: 0 3px 3px 0;
+    background-blend-mode: multiply;
+}
+
+div.jQBracket .team:first-child {
+    border-color: $bk40;
+    background-blend-mode: multiply;
+}
+
+.team-sm-thumb {
+    height: 16px;
+    width: 16px;
+    margin: 0 5px;
+}
+
+div.jQBracket .team div.label {
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+}
+
+.func-btn-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.zoomin,
+.zoomout {
+    margin: 5px;
+}
+
+/*
+-----------------
+參賽者
+-----------------
+*/
+.list-inner {
+    display: none;
+}
+
+/*
+-----------------
+直播間
+-----------------
+*/
+
+/*
+---------------
+直播預設
+---------------
+*/
+
+#twitch-embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/*
+-----------------
+Files Upload Zone
+-----------------
+*/
+
+.riot-id-wrap {
+    width: 100%;
+    position: relative;
+    max-width: calc((1024px - 14px) / 2);
+}
+
+.btn-combo-wrap {
+    width: 100%;
+    position: relative;
+    max-width: calc((1024px - 14px) / 2);
+}
+
+/*
+-----------------
+Match Time
+-----------------
+*/
+
+.caption {
+    padding: 16px;
+    border-radius: 10px;
+    background-color: $w10;
+}
+
+/*
+-----------------
+Match Check In
+-----------------
+*/
+
+.match-icon-wrap {
+    width: 100%;
+    max-width: 600px;
+
+    margin: 0 auto;
+}
+
+.match-team-score-wrap,
+.match-team-item {
+    width: calc(100% / 3);
+    margin: 0 20px;
+}
+
+.match-team-item {
+    &.win {
+        .item-title {
+            color: $yellow;
+        }
+
+        .match-thumb {
+            border: 3px solid $yellow;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                z-index: 1;
+
+                top: -24px;
+                left: calc(50% - 16px);
+
+                height: 32px;
+                width: 32px;
+
+                background-image: url(../img/ic_crown.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+        }
+    }
+
+    &.lose {
+        opacity: 0.5;
+
+        .match-thumb {
+            opacity: 0.5;
+        }
+    }
+}
+
+.score-part {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.score-status-part {
+    margin-top: 10px;
+}
+
+/*
+-----------------
+Footer
+-----------------
+*/
+
+footer {
+    text-align: center;
+    color: $w40;
+    padding: 32px 0;
+    font-size: 12px;
+    padding-top: 0;
+
+    cursor: default;
+
+    &.ex {
+        padding-bottom: 100px;
+    }
+}

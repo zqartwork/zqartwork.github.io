@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="ic_drag" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-3{fill:#fff}
+        </style>
+    </defs>
+    <path id="Rectangle_165" fill="rgba(255,255,255,0)" d="M0 0H24V24H0z" data-name="Rectangle 165"/>
+    <g id="Group_8535" data-name="Group 8535" opacity="0.4" transform="translate(-328 -131)">
+        <rect id="Rectangle_163" width="2" height="16" class="cls-3" data-name="Rectangle 163" rx="1" transform="translate(343 135)"/>
+        <rect id="Rectangle_164" width="2" height="16" class="cls-3" data-name="Rectangle 164" rx="1" transform="translate(336 135)"/>
+    </g>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="ic_search" width="32" height="32" viewBox="0 0 32 32">
+    <path id="Rectangle_90" fill="rgba(255,255,255,0)" d="M0 0H32V32H0z" data-name="Rectangle 90"/>
+    <g id="ic_search-2" data-name="ic_search" transform="translate(8 8)">
+        <path id="ic_search-3" fill="#fff" d="M-593.327 15.09l-3.144-3.15a6.9 6.9 0 0 0 1.283-4.019A6.914 6.914 0 0 0-602.094 1 6.914 6.914 0 0 0-609 7.921a6.914 6.914 0 0 0 6.906 6.921 6.864 6.864 0 0 0 4.05-1.315l3.138 3.145a1.115 1.115 0 0 0 1.579 0 1.12 1.12 0 0 0 0-1.582zm-8.767-2.472a4.693 4.693 0 0 1-4.687-4.7 4.693 4.693 0 0 1 4.687-4.7 4.693 4.693 0 0 1 4.688 4.7 4.693 4.693 0 0 1-4.688 4.701z" data-name="ic_search" transform="translate(609 -1)"/>
+    </g>
+</svg>

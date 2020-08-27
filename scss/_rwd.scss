@@ -1,0 +1,160 @@
+@media(max-width: 1366px) {
+
+    .ratio__24-7 {
+        padding-top: calc((9 / 16) * 100%)
+    }
+
+    .nav {
+        top: calc(100% - 75px);
+        width: 100vw;
+        height: 75px;
+
+        border-radius: 15px 15px 0 0;
+    }
+
+    .nav-wrap {
+        flex-direction: row;
+        height: 100%;
+    }
+
+    .nav-item-wrap {
+        width: calc(100% - 20px);
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 0 32px;
+        padding-top: 5px;
+        height: 100%;
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .nav-item {
+        padding: 0;
+        width: auto;
+        transform: scale(.8);
+
+        &:first-child {
+            display: none;
+        }
+    }
+
+    .index-item {
+        max-width: calc((100% - 20px) / 2);
+        margin: 5px;
+    }
+
+    .index-item {
+        .item-date,
+        .item-title,
+        article {
+            transform-origin: left;
+            transform: scale(calc(10 / 12));
+        }
+        .item-date {
+            margin-bottom: 0;
+        }
+        .item-title, .item-subtitle {
+            margin: 0
+        }
+    }
+
+    .item-date {
+        *[ic] {
+            margin-right: 5px;
+        }
+    }
+
+    .ct-item {
+        font-size: 14px;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+
+    th,
+    td {
+        border: 1px solid $w40;
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 16px !important;
+    }
+
+    .section.toolbar {
+        padding-top: 20px;
+    }
+
+    .btn-bot-posi-wrap {
+        bottom: 75px;
+    }
+
+    .wrapper {
+        min-height: calc(100vh - 155px);
+    }
+
+    footer {
+        padding: 0px 0;
+        padding-bottom: 87px;
+    }
+
+    footer.ex {
+        padding-bottom: 175px;
+    }
+
+    .match-team-item {
+        margin: 0;
+
+        .item-title {
+            font-size: 12px;
+        }
+    }
+
+    .tapbar-item {
+        transform: scale(calc(10 / 12));
+        margin-right: 15px;
+    }
+
+    .filter-btn {
+        margin-right: 5px;
+    }
+
+}
+
+;
+
+@media(max-width: 1024px) {
+    .status-tag {
+        transform: scale(calc(10 / 12));
+
+        &.cor {
+            left: 0px;
+            top: 5px;
+        }
+    }
+
+    .sep-item:not(:first-child) {
+        margin: 15px auto;
+    }
+}
+
+;
+
+@media(max-width: 768px) {}
+
+;
+
+@media(max-width: 500px) {}
+
+;
+
+@media(max-width: 375px) {}
+
+;
+/* Safari 10.1+ (alternate method) */
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) {
+}}
