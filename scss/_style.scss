@@ -29,11 +29,11 @@ body {
 
 .wrapper {
     position: relative;
-    min-height: calc(100vh - 60px);
+    min-height: calc(100vh - 44px);
 
     //sticky footer
     &.ex {
-        min-height: calc(100vh - 163px);
+        min-height: calc(100vh - 144px);
     }
 }
 
@@ -196,6 +196,7 @@ a.green {
         color: $green;
     }
 }
+
 /*
 ---------------
 系統字
@@ -235,6 +236,7 @@ a.green {
     backdrop-filter: blur(5px) brightness(1);
     background-color: $w20;
 }
+
 /*
 -----------------------
 Custom Radio 自訂單選按鈕
@@ -368,6 +370,7 @@ Custom Alert 自訂彈窗
 
     background-color: $bk40;
 }
+
 /* 對齊容器 */
 .box-container {
     position: relative;
@@ -377,6 +380,7 @@ Custom Alert 自訂彈窗
     align-items: center;
     justify-content: center;
 }
+
 /* 彈窗底版 */
 .box-wrap {
     height: auto;
@@ -850,6 +854,7 @@ Custom Timer Slider
     position: relative;
 
     &[disabled] {
+
         .item-date,
         .item-title {
             color: $w40;
@@ -947,6 +952,7 @@ Custom Timer Slider
 .item-title {
     max-height: 48px;
     overflow: hidden;
+
     &.sm {
         font-size: 12px;
     }
@@ -1673,7 +1679,7 @@ Footer
 footer {
     text-align: center;
     color: $w40;
-    padding: 32px 0;
+    padding: 66px 0;
     font-size: 12px;
     padding-top: 0;
 
