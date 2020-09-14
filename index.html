@@ -5,443 +5,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>House of Gamers</title>
-    <!--google plus info-->
-    <meta itemprop="name" content="{網頁標題}">
-    <meta itemprop="image" content="[網頁縮圖_1200x628]">
-    <meta name="description" content="{網頁內容敘述}" />
-    <!--FB info-->
-    <meta property="og:title" content="{網頁標題}" />
-    <meta property="og:site_name" content="[網站名稱]" />
-    <meta property="og:url" content="[網頁網址_URL]">
-    <meta property="og:image" content="[網頁縮圖_1200x628]">
-    <meta property="og:description" content="{網頁內容敘述}">
-    <meta property="og:type" content="website" />
-    <!--Favicon-->
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
-    <!--CSS-->
+    <meta property="og:image" content="https://i.imgur.com/mtLaUxx.png">
+    <meta property="og:description" content="結合電腦插畫繪圖、專業UIUX設計與前端開發人員">
+    <title>ZQARTWORK</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- 基礎歸零設置 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <!-- wow animate -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <!-- owl-default-theme -->
+    <!-- materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/3530f29c86.js" crossorigin="anonymous"></script>
+    <!-- owlCarousel -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <!-- main-style -->
-    <link rel="stylesheet" href="css/main.css">
+    <!-- 自訂設置 -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
-    <div id="app" data-simplebar>
-        <div class="wrapper">
-            <!-- 主選單 Tapbar -->
-            <dis class="nav">
-                <div class="nav-wrap">
-                    <div class="nav-item-wrap">
-                        <a href="index.html" class="nav-item">
-                            <span class="pic logo"></span>
-                        </a>
-                        <a href="index.html" class="nav-item active">
-                            <div class="ic-wrap vt">
-                                <span class="icon-ic_home size-32"></span>
-                                <span>首頁</span>
-                            </div>
-                        </a>
-                        <a href="#!" class="nav-item">
-                            <div class="ic-wrap vt">
-                                <span class="icon-ic_cup size-32"></span>
-                                <span>賽事</span>
-                            </div>
-                        </a>
-                        <a href="#!" class="nav-item">
-                            <div class="ic-wrap vt">
-                                <span class="icon-ic_announce size-32"></span>
-                                <span>公告</span>
-                            </div>
-                        </a>
-                        <a href="#!" class="nav-item">
-                            <div class="ic-wrap vt">
-                                <span class="icon-ic_team size-32"></span>
-                                <span>隊伍</span>
-                            </div>
-                        </a>
-                        <a href="#!" class="nav-item">
-                            <div class="ic-wrap vt">
-                                <span class="icon-ic_my size-32"></span>
-                                <span>我的</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </dis>
-            <div class="container"><!-- 容器限制最寬1024px -->
-                <!-- Toolbar -->
-                <section class="section toolbar">
-                    <div class="space-between-wrap">
-                        <div class="btn-title-wrap">
-                            <a href="#!" class="ic-wrap">
-                                <img src="img/pic_preset_thumbnail.svg" alt="" ic class="index-thumb">
-                                <span class="btn-title">Hi, 使用者名稱</span>
-                            </a>
-                        </div>
-                        <!-- func-wrap 此外框一定要留著 -->
-                        <div class="func-wrap">
-                            <!-- 通知 -->
-                            <a href="#!">
-                                <span class="icon-ic_notice size-32 active mr-10"></span>
-                            </a>
-                            <!-- 搜尋 -->
-                            <a href="#!">
-                                <span class="icon-ic_search size-32"></span>
-                            </a>
-                        </div>
-                    </div>
-                </section>
-                <!-- 主題 Banner 輪播 -->
-                <section class="section slide-stage">
-                    <div class="owl-carousel owl-theme">
-                        <div class="item ratio ratio__24-7"
-                            data-dot="<div class='slide-progress'><div class='thumb'></div></div>">
-                            <div class="status-tag cor active">
-                                <span>開放報名中</span>
-                            </div>
-                            <img src="https://via.placeholder.com/1024x300">
-                        </div>
-                        <div class="item ratio ratio__24-7"
-                            data-dot="<div class='slide-progress'><div class='thumb'></div></div>">
-                            <div class="status-tag cor active">
-                                <span>開放報名中</span>
-                            </div>
-                            <img src="https://via.placeholder.com/1024x300">
-                        </div>
-                        <div class="item ratio ratio__24-7"
-                            data-dot="<div class='slide-progress'><div class='thumb'></div></div>">
-                            <div class="status-tag cor active">
-                                <span>開放報名中</span>
-                            </div>
-                            <img src="https://via.placeholder.com/1024x300">
-                        </div>
-                        <div class="item ratio ratio__24-7"
-                            data-dot="<div class='slide-progress'><div class='thumb'></div></div>">
-                            <div class="status-tag cor active">
-                                <span>開放報名中</span>
-                            </div>
-                            <img src="https://via.placeholder.com/1024x300">
-                        </div>
-                    </div>
-                </section>
-                <!-- - -->
-                <section class="section index-contents">
-                    <div class="index-content-item-wrap">
-                        <!-- Mid Tapbar -->
-                        <div class="mid-tapbar-wrap">
-                            <a href="#!" class="tapbar-item active"><span>電競賽事</span></a>
-                            <a href="#!" class="tapbar-item"><span>官方公告</span></a>
-                            <a href="#!" class="tapbar-item"><span>玩家論壇</span></a>
-                        </div>
-                        <!-- Filter Tag -->
-                        <div class="filter-btn-wrap dragscroll">
-                            <a class="filter-btn active"><span>All 全部遊戲</span></a>
-                            <a class="filter-btn"><span>VALORANT 特戰英豪</span></a>
-                            <a class="filter-btn"><span>Legends of Runeterra 符文大地傳說</span></a>
-                        </div>
-                        <!-- 首頁文章列表 index-item -->
-                        <div class="index-item-wrap">
-                            <!-- 開放報名中 -->
-                            <a href="tournament.html" class="index-item">
-                                <div class="inner-wrap">
-                                    <div class="status-tag cor active">
-                                        <span>開放報名中</span>
-                                    </div>
-                                    <div class="item-header">
-                                        <div class=" item-img-frame ratio ratio__16-9">
-                                            <img src="https://s.newtalk.tw/album/news/430/5efc652cb111e.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="item-body">
-                                        <div class="item-date">
-                                            <div class="ic-wrap">
-                                                <span class="icon-ic_calendar" ic></span>
-                                                <span class="date"> 07.24 (五) ~ 10.01 (四)</span>
-                                            </div>
-                                        </div>
-                                        <div class="item-title">
-                                            <span>Legends of Runeterra 符文大地傳說 - 夏日競技場</span>
-                                        </div>
-                                        <div class="item-subtitle sm">
-                                            <span>Taiwan Mobile</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="tournament.html" class="index-item">
-                                <div class="inner-wrap">
-                                    <div class="status-tag cor active">
-                                        <span>開放報名中</span>
-                                    </div>
-                                    <div class="item-header">
-                                        <div class=" item-img-frame ratio ratio__16-9">
-                                            <img src="https://www.talkesport.com/wp-content/uploads/ValorantSEAInvitational.jpg"
-                                                alt="">
-                                        </div>
-                                    </div>
-                                    <div class="item-body">
-                                        <div class="item-date">
-                                            <div class="ic-wrap">
-                                                <span class="icon-ic_calendar" ic></span>
-                                                <span class="date"> 07.24 (五) ~ 10.01 (四)</span>
-                                            </div>
-                                        </div>
-                                        <div class="item-title">
-                                            <span>VALORANT 特戰英豪 - </span>
-                                            <span>Sea Invitational 東南亞邀請賽，開放報名中！獎勵豐富千萬不要錯過！還有很多</span>
-                                        </div>
-                                        <div class="item-subtitle sm">
-                                            <span>Riot Games & CGA</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <!-- 報名截止，等待比賽開始 -->
-                            <a href="#!" class="index-item">
-                                <div class="inner-wrap">
-                                    <div class="status-tag cor middle">
-                                        <span>報名截止</span>
-                                    </div>
-                                    <div class="item-header">
-                                        <div class=" item-img-frame ratio ratio__16-9">
-                                            <img src="https://firebasestorage.googleapis.com/v0/b/battlefy-2f59d.appspot.com/o/user-imgs%2F5eb6db77281ad918e84a3c5e%2F1596356451226.jpg?alt=media&token=bafb5173-118f-4e1c-9c88-655c5608cc4a"
-                                                alt="">
-                                        </div>
-                                    </div>
-                                    <div class="item-body">
-                                        <div class="item-date" disabled>
-                                            <div class="ic-wrap">
-                                                <span class="icon-ic_calendar" ic></span>
-                                                <span class="date"> 07.24 (五) ~ 10.01 (四)</span>
-                                            </div>
-                                        </div>
-                                        <div class="item-title">
-                                            <span>VALORANT 特戰英豪 - </span>
-                                            <span>MCOPS VALORANT CUP</span>
-                                        </div>
-                                        <div class="item-subtitle sm">
-                                            <span>Modelling Cops</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <!-- 比賽進行中 -->
-                            <a href="#!" class="index-item">
-                                <div class="inner-wrap">
-                                    <div class="status-tag cor active">
-                                        <span>比賽進行中</span>
-                                    </div>
-                                    <div class="item-header">
-                                        <div class=" item-img-frame ratio ratio__16-9">
-                                            <img src="https://firebasestorage.googleapis.com/v0/b/battlefy-2f59d.appspot.com/o/user-imgs%2F5edc6a89723c1b0648142c4f%2F1596751743060.png?alt=media&token=74e4da0e-63d3-4338-a3ac-80dd5ce02102"
-                                                alt="">
-                                        </div>
-                                    </div>
-                                    <div class="item-body">
-                                        <div class="item-date" disabled>
-                                            <div class="ic-wrap">
-                                                <span class="icon-ic_calendar" ic></span>
-                                                <span class="date"> 07.24 (五) ~ 10.01 (四)</span>
-                                            </div>
-                                        </div>
-                                        <div class="item-title">
-                                            <span>VALORANT 特戰英豪 - </span>
-                                            <span>VALORANT (LAN) 🏆 Friday G3mpire Cup 🏆 Opening whit COOLER
-                                                MASTER</span>
-                                        </div>
-                                        <div class="item-subtitle sm">
-                                            <span>G3mpire Tournaments</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <!-- 比賽結束 -->
-                            <a href="#!" class="index-item" disabled>
-                                <div class="inner-wrap">
-                                    <div class="status-tag cor" disabled>
-                                        <span>比賽已結束</span>
-                                    </div>
-                                    <div class="item-header">
-                                        <div class=" item-img-frame ratio ratio__16-9">
-                                            <img src="https://firebasestorage.googleapis.com/v0/b/battlefy-2f59d.appspot.com/o/user-imgs%2F5eba55268c90b95fffad9507%2F1597056158484.png?alt=media&token=e0f69057-9bfb-4c45-bfab-c5fb0ec25a95"
-                                                alt="">
-                                        </div>
-                                    </div>
-                                    <div class="item-body">
-                                        <div class="item-date">
-                                            <div class="ic-wrap">
-                                                <span class="icon-ic_calendar" ic></span>
-                                                <span class="date"> 07.24 (五) ~ 10.01 (四)</span>
-                                            </div>
-                                        </div>
-                                        <div class="item-title">
-                                            <span>Legends of Runeterra 符文大地傳說 - </span>
-                                            <span>TRYHARDS</span>
-                                        </div>
-                                        <div class="item-subtitle sm">
-                                            <span>RUMBLE ROYALE</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#!" class="index-item" disabled>
-                                <div class="inner-wrap">
-                                    <div class="status-tag cor" disabled>
-                                        <span>比賽已結束</span>
-                                    </div>
-                                    <div class="item-header">
-                                        <div class=" item-img-frame ratio ratio__16-9">
-                                            <img src="https://firebasestorage.googleapis.com/v0/b/battlefy-2f59d.appspot.com/o/user-imgs%2F59e6307bb667fd033d3b670d%2F1595589792367.png?alt=media&token=b3ba48a6-2761-45c9-8870-ecbee492f5ca"
-                                                alt="">
-                                        </div>
-                                    </div>
-                                    <div class="item-body">
-                                        <div class="item-date">
-                                            <div class="ic-wrap">
-                                                <span class="icon-ic_calendar" ic></span>
-                                                <span class="date"> 07.24 (五) ~ 10.01 (四)</span>
-                                            </div>
-                                        </div>
-                                        <div class="item-title">
-                                            <span>VALORANT 特戰英豪 - </span>
-                                            <span>Valour Alpha Cup #2 | Server LAS</span>
-                                        </div>
-                                        <div class="item-subtitle sm">
-                                            <span>
-                                                LatamChampionship</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#!" class="index-item" disabled>
-                                <div class="inner-wrap">
-                                    <div class="status-tag cor" disabled>
-                                        <span>比賽已結束</span>
-                                    </div>
-                                    <div class="item-header">
-                                        <div class=" item-img-frame ratio ratio__16-9">
-                                            <img src="https://firebasestorage.googleapis.com/v0/b/battlefy-2f59d.appspot.com/o/user-imgs%2F5eba55268c90b95fffad9507%2F1597056158484.png?alt=media&token=e0f69057-9bfb-4c45-bfab-c5fb0ec25a95"
-                                                alt="">
-                                        </div>
-                                    </div>
-                                    <div class="item-body">
-                                        <div class="item-date">
-                                            <div class="ic-wrap">
-                                                <span class="icon-ic_calendar" ic></span>
-                                                <span class="date"> 07.24 (五) ~ 10.01 (四)</span>
-                                            </div>
-                                        </div>
-                                        <div class="item-title">
-                                            <span>Legends of Runeterra 符文大地傳說 - </span>
-                                            <span>TRYHARDS</span>
-                                        </div>
-                                        <div class="item-subtitle sm">
-                                            <span>RUMBLE ROYALE</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#!" class="index-item" disabled>
-                                <div class="inner-wrap">
-                                    <div class="status-tag cor" disabled>
-                                        <span>比賽已結束</span>
-                                    </div>
-                                    <div class="item-header">
-                                        <div class=" item-img-frame ratio ratio__16-9">
-                                            <img src="https://firebasestorage.googleapis.com/v0/b/battlefy-2f59d.appspot.com/o/user-imgs%2F59e6307bb667fd033d3b670d%2F1595589792367.png?alt=media&token=b3ba48a6-2761-45c9-8870-ecbee492f5ca"
-                                                alt="">
-                                        </div>
-                                    </div>
-                                    <div class="item-body">
-                                        <div class="item-date">
-                                            <div class="ic-wrap">
-                                                <span class="icon-ic_calendar" ic></span>
-                                                <span class="date"> 07.24 (五) ~ 10.01 (四)</span>
-                                            </div>
-                                        </div>
-                                        <div class="item-title">
-                                            <span>VALORANT 特戰英豪 - </span>
-                                            <span>Valour Alpha Cup #2 | Server LAS</span>
-                                        </div>
-                                        <div class="item-subtitle sm">
-                                            <span>
-                                                LatamChampionship</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#!" class="index-item" disabled>
-                                <div class="inner-wrap">
-                                    <div class="status-tag cor" disabled>
-                                        <span>比賽已結束</span>
-                                    </div>
-                                    <div class="item-header">
-                                        <div class=" item-img-frame ratio ratio__16-9">
-                                            <img src="https://firebasestorage.googleapis.com/v0/b/battlefy-2f59d.appspot.com/o/user-imgs%2F5eba55268c90b95fffad9507%2F1597056158484.png?alt=media&token=e0f69057-9bfb-4c45-bfab-c5fb0ec25a95"
-                                                alt="">
-                                        </div>
-                                    </div>
-                                    <div class="item-body">
-                                        <div class="item-date">
-                                            <div class="ic-wrap">
-                                                <span class="icon-ic_calendar" ic></span>
-                                                <span class="date"> 07.24 (五) ~ 10.01 (四)</span>
-                                            </div>
-                                        </div>
-                                        <div class="item-title">
-                                            <span>Legends of Runeterra 符文大地傳說 - </span>
-                                            <span>TRYHARDS</span>
-                                        </div>
-                                        <div class="item-subtitle sm">
-                                            <span>RUMBLE ROYALE</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </section>
+    <div class="wrapper" id="app">
+        <!-- Navbar -->
+        <div class="preload-section">
+            <img src="img/preload.svg" alt="">
+            LOADING
+        </div>
+        <nav>
+            <div class="nav-wrapper container">
+                <a href="index.html" class="brand-logo" @click='page=0'>ZQARTWORK</a>
+                <ul class="right hide-on-med-and-down">
+                    <li :class='{active:page==1}'><a href="about.html" @click='page=1'>ABOUT</a></li>
+                    <li :class='{active:page==2}'><a href="works.html" @click='page=2'>WORKS</a></li>
+                    <li><a href="https://www.cakeresume.com/zqartwork">EXPERIENCE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                <a href="#" data-target="mobile-demo" class="right sidenav-trigger"><i class="fas fa-bars"></i></a>
             </div>
+        </nav>
 
-            <footer>
-                <div class="container">
-                    <div class="copyright">
-                        <span>© 2020 Taiwan Mobile all right reserved.</span>
+        <!-- Sidenav -->
+        <ul class="sidenav" id="mobile-demo">
+            <li :class='{active:page==1}'><a href="about.html" @click='page=1'>ABOUT</a></li>
+            <li :class='{active:page==2}'><a href="works.html" @click='page=2'>WORKS</a></li>
+            <li><a href="https://www.cakeresume.com/zqartwork">EXP</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+
+        <!-- 主要內容區域 -->
+        <div class="">
+            <div class="section section-index" id="index">
+                <div class="flex-wrapper">
+                    <div class="zq-pic flex-wrapper">
+                        <img src="img/official/zq-pic.png" alt="" class="lazyload">
+                    </div>
+                    <div class="bg-title">
+                        <img src="img/official/svg/logo_title.svg" alt="" class="animated fadeInRight">
+                        <div class="zq-d-content">
+                            <div class="animated fadeInLeft delay-1s">
+                                Web / APP - UI / UX Designer
+                            </div>
+                            <div class="animated fadeInLeft delay-2s">
+                                Front-end Designer <br>
+                            </div>
+                            <div class="animated fadeInLeft delay-3s">
+                                Illustrator <br>
+                            </div>
+                            <div class="animated fadeInLeft delay-4s">
+                                Graphic Designer <br>
+                            </div>
+                        </div>
+                        <div class="zq-more flex-wrapper align-start just-right animated fadeIn delay-5s"
+                            @click="page=1">MORE
+                        </div>
                     </div>
                 </div>
-            </footer>
+            </div>
         </div>
     </div>
-    <!--jQuery-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
-    <!-- FontAwesome -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
-    <!-- simplebar -->
-    <link rel="stylesheet" href="css/simplebar.css" />
-    <script src="js/simplebar.min.js"></script>
-    <script src="js/dragscroll.js"></script>
-    <!-- wow.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <!-- owlCarousel2 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <!-- owlCarousel2 progressbar -->
-    <script src="js/owlcarousel2-progressbar.js"></script>
-    <!-- custom.js -->
-    <script src="js/custom.js"></script>
 
-    <!-- JQ 掛載點 -->
+    <!-- 3.4.1 jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+    <script src="js/custom.js"></script>
     <script>
+        new Vue({
+            el: '#app',
+            data: {
+                page: 0,
+            },
+            methods: {},
+            mounted: function () {
+                const cursor = document.querySelector('.zq-cursor');
+                document.addEventListener('mousemove', e => {
+                    cursor.setAttribute('style', 'top: ' + (e.pageY - 10) + 'px; left: ' + (e
+                        .pageX - 10) + 'px;')
+                })
+            },
+        })
+    </script>
+    <script>
+        $(".lazyload").lazyload();
         $(document).ready(function () {
-            new WOW().init();
+            $(".section-index").hide();
+            setTimeout(function () {
+                $('.preload-section').fadeOut();
+                $('.section-index').fadeIn(1000);
+            }, 000);
+            $('.sidenav').sidenav({
+                edge: 'right',
+            });
         });
     </script>
-
 </body>
 
 </html>

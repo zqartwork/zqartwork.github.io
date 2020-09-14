@@ -1,6 +1,0 @@
-<svg id="ic_notice" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-  <rect id="Rectangle_90" data-name="Rectangle 90" width="32" height="32" fill="rgba(255,255,255,0)"/>
-  <g id="ic_notice-2" data-name="ic_notice" transform="translate(9 8)">
-    <path id="ic_notice-3" data-name="ic_notice" d="M14.588,12.029c-.641-.689-1.842-1.726-1.842-5.123A5.243,5.243,0,0,0,8.5,1.754V1.062a1.062,1.062,0,1,0-2.124,0v.692A5.243,5.243,0,0,0,2.127,6.906c0,3.4-1.2,4.434-1.842,5.123A1.037,1.037,0,0,0,0,12.75a1.063,1.063,0,0,0,1.066,1.063H13.809a1.063,1.063,0,0,0,1.066-1.062,1.037,1.037,0,0,0-.286-.721ZM7.437,17a2.125,2.125,0,0,0,2.124-2.125H5.313A2.125,2.125,0,0,0,7.437,17Z" transform="translate(0.001)" fill="#fff"/>
-  </g>
-</svg>
