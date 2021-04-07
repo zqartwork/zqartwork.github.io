@@ -12,7 +12,16 @@ UI Kit Presets
 ----------------
 */
 
-$font: 'Noto Sans TC', 'Inter', sans-serif;;
+$font: 'Inter', 'Noto Sans TC', sans-serif;;
+
+%hidden {
+    overflow: hidden;
+    object-position: center;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+}
 
 /*
 ----------------
@@ -23,10 +32,14 @@ Main Color Set
 $black: #000;
 $deepblue: rgb(34, 34, 59);
 $lightblue: #4A4E69;
+$lightblue50: rgba(74, 78, 105, .5);
 $graypurple: #9A8C98;
 $graypink: #C9ADA7;
+$graypink50: rgba(201, 173, 167, .5);
 $skin: #F1EDEA;
 $red: #D0705B;
 $white: #fff;
 $w50: rgba(255,255,255,.5);
 $db50: rgba(34, 34, 5,.5);
+$trans: rgba(255,255,255,0);
+$gray80: rgba(0,0,0,.2)

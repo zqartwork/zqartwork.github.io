@@ -31,7 +31,130 @@
 </head>
 
 <body>
-    <div id="app">
+    <div id="appEU">
+        <nav class="nav">
+            <div class="container">
+                <div class="nav-wrap">
+                    <div class="nav-logo">
+                        <img src="img/index/logo.svg" alt="">
+                    </div>
+                    <div class="nav-items-wrap">
+                        <a href="about.html" target="_blank" class="nav-item"><span>ABOUT</span></a>
+                        <a href="works.html" target="_blank" class="nav-item"><span>WORKS</span></a>
+                        <a href="services.html" target="_blank" class="nav-item"><span>SERVICES</span></a>
+                        <a href="contact.html" target="_blank" class="nav-item"><span>CONTACT</span></a>
+                        <div class="select_container nav-item">
+                            <div class="flex-wrapper">
+                                <div class="custom_select">
+                                    <div class="select_title">
+                                        <div class="flex-wrapper just-left">
+                                            <span class="selected">Language</span>
+                                            <i class="fas fa-caret-right select_i"></i>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" name="date" id="data_input">
+                                    <ul class="select_menu">
+                                        <li>繁體中文</li>
+                                        <li>簡體中文</li>
+                                        <li>English</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-wrap">
+                    <a href="http://" target="_blank" rel="noopener noreferrer" class="nav-icon fb"><span></span></a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer" class="nav-icon as"><span></span></a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer" class="nav-icon ins"><span></span></a>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <section id="kv">
+                <div class="container">
+                    <div class="kv-wrap">
+                        <div class="kv-txt-wrap">
+                            <div class="kv-slogan">
+                                <h1>UIUX Designer,<br>
+                                    2D Digital Artist.</h1>
+                            </div>
+                            <div class="kv-txt">
+                                <p>
+                                    A <em>cross-disciplinary designer / front-end engineer</em>. <br>
+                                    I specialize in UIUX Design, RWD Web Design, APP Design and 2D Digital painting.
+                                </p>
+                            </div>
+                            <div class="kv-btn">
+                                <a href="http://" target="_blank" rel="noopener noreferrer" class="primary-btn"><span>Connect With Me ( Messenger )</span></a>
+                            </div>
+                        </div>
+                        <img src="img/index/eve.png" alt="" class="eve">
+                    </div>
+                </div>
+            </section>
+            <section id="skill">
+                <div class="container">
+                    <div class="divi-wide"></div>
+                    <div class="skill-content-wrap">
+                        <div class="skill-item design">
+                            <div class="skill-item-inner-wrap">
+                                <div class="skill-item_title">Design / Painting</div>
+                                <div class="skill-item_img">
+                                    <img src="img/index/ps.png" alt="">
+                                    <img src="img/index/ai.png" alt="">
+                                    <img src="img/index/cps.png" alt="">
+                                    <img src="img/index/sktch.png" alt="">
+                                    <img src="img/index/xd.png" alt="">
+                                    <img src="img/index/figma.png" alt="">
+                                    <img src="img/index/zeplin.png" alt="">
+                                    <img src="img/index/protopie.png" alt="">
+                                    <img src="img/index/ae.png" alt="">
+                                    <img src="img/index/pr.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item engineering">
+                            <div class="skill-item-inner-wrap">
+                                <div class="skill-item_title">Engineering</div>
+                                <div class="skill-item_img">
+                                    <img src="img/index/html5.png" alt="">
+                                    <img src="img/index/css3.png" alt="">
+                                    <img src="img/index/js.png" alt="">
+                                    <img src="img/index/vue.png" alt="">
+                                    <img src="img/index/react.png" alt="">
+                                    <img src="img/index/jq.png" alt="">
+                                    <img src="img/index/github.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divi-wide"></div>
+                </div>
+            </section>
+            <section id="about">
+                <div class="container">
+                    <div class="about-wrap">
+                        <div class="about-img">
+                            <img src="img/index/mockup.png" alt="" class="mockup">
+                        </div>
+                        <div class="about-txt-wrap">
+                            <div class="about-txt_title">About Me</div>
+                            <div class="about-txt_txt">
+                                <p>
+                                    I graduated from National Taiwan University. I’m a passionate designer, not afraid to any challenge. <br>
+                                    Currently working as a senior user interface designer at Taiwan Mobile, responsible for the art collaboration of Riot Games in Taiwan. <br>
+                                    I used to be the art and web design of Garena Taiwan League of Legends Department. <br>
+                                    During the period, I hand-painted the YouTube video "Chronicles of the Summonor’s Rift" , whitch was viewed by more than 110,000 people. <br>
+                                    Since then, I have continued to gain insights in various fields, refined my design skills, and completed some courses online, including front-end egineering, APP design, live broadcast platform design, etc... <br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer></footer>
     </div>
     <!--jQuery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
@@ -48,6 +171,7 @@
     <script>
         $(document).ready(function() {
             new WOW().init();
+            selectCustom();
         });
     </script>
 

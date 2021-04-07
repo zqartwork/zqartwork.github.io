@@ -1,0 +1,344 @@
+html, body {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 2;
+    background-color: $skin;
+    scroll-behavior: smooth;
+}
+
+* {
+    font-size: 1.4rem;
+}
+
+a {
+    display: inline-flex;
+    align-items: center;
+    color: $deepblue;
+    text-decoration: none;
+    outline: none;
+    &:active, &:focus, &:visited {
+        color: inherit;
+    }
+}
+
+span {
+    display: inline-flex;
+    align-items: center;
+}
+
+.container {
+    width: calc(100% - 3rem);
+    max-width: 1436px;
+    margin: 0 auto;
+}
+
+// custom_select
+.select_container {
+    font-size: 1.4rem;
+}
+
+.custom_select {
+    display: inline-block;
+    background-color: $white;
+    color: $deepblue;
+    border-radius: 40px;
+    transition: all 0.2s ease;
+    position: relative;
+    width: auto;
+    text-align: center;
+    padding: 0rem 2rem 0rem 1rem;
+    outline: none;
+    cursor: pointer;
+    &:hover {
+        background: $w50;
+    }
+}
+
+.select_title {
+    cursor: pointer;
+    height: 100%;
+}
+
+.selected {
+    padding: 8px 5px 8px 15px;
+    white-space: nowrap;
+}
+
+.select_i {
+    color: $deepblue;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    margin-right: 5px;
+}
+
+.custom_select:active {
+    background-color: $w50;
+}
+
+.custom_select.active:hover,
+.custom_select.active {
+    border-radius: 2rem 2rem 0 0;
+    background-color: $w50;
+    border: none;
+}
+
+.custom_select.active .select_i {
+    transform: rotate(90deg);
+}
+
+.select_menu {
+    position: absolute;
+    background-color: $white;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    border-radius: 0 0 5px 5px;
+    overflow: hidden;
+    display: none;
+    overflow-y: auto;
+    z-index: 9;
+    padding: 0;
+    list-style: none;
+}
+
+.select_menu>li {
+    padding: .8rem 2rem;
+    cursor: pointer;
+}
+
+.select_menu>li:hover {
+    background-color: $graypink;
+}
+
+.select_menu>li:active {
+    background-color: $graypink;
+}
+
+//select custom end
+
+nav {
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    padding: 4rem 0;
+    transition: .2s;
+    .container {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+.nav-wrap, .nav-items-wrap {
+    display: inline-flex;
+    align-items: center;
+}
+.nav-item {
+    margin: 0 2.5rem;
+}
+
+.nav-icon {
+    border-radius: 100%;
+    background-color: $trans;
+    transition: .1s;
+    margin-left: 3.2rem; 
+    span {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 3.6rem;
+        width: 3.6rem;
+    }
+    &.fb {
+        span {
+            background-image: url(../img/index/fb.svg);
+        }
+    }
+    &.as {
+        span {
+            background-image: url(../img/index/as.svg);
+        }
+    }
+    &.ins {
+        span {
+            background-image: url(../img/index/ins.svg);
+        }
+    }
+    &:hover {
+        background-color: $graypink50;
+        &.fb {
+            span {
+                background-image: url(../img/index/fb-r.svg);
+            }
+        }
+        &.as {
+            span {
+                background-image: url(../img/index/as-r.svg);
+            }
+        }
+        &.ins {
+            span {
+                background-image: url(../img/index/ins-r.svg);
+            }
+        }
+    }
+}
+/*
+-----------
+Sticky Nav
+-----------
+*/
+nav.sticky {
+    width: 100%;
+    
+    border-top: 0;
+
+    background-color: $graypink50;
+    padding: 1.2rem 0;
+}
+/*
+-----------
+Section
+-----------
+*/
+
+/*
+------------
+Section KV
+------------
+*/
+#kv {
+    padding-top: 13.8rem;
+}
+.kv-wrap {
+    position: relative;
+    display: flex;
+}
+.eve {
+    position: absolute;
+    bottom: 0;
+    right: calc((120/1920)*100vw);
+    display: inline-flex;
+    width: auto;
+    height: 65rem;
+    z-index: 1;
+}
+.kv-txt-wrap {
+    width: 70%;
+    @extend %hidden;
+    border-radius: 50px;
+    background-image: url(../img/index/star-bg.jpg);
+
+    padding: calc((90/1920)*100vw) calc((100/1920)*100vw);
+    width: 100%;
+}
+.kv-slogan {
+    line-height: 1.2;
+    font-size: 90px;
+    color: $white;
+    font-weight: 900;
+}
+.kv-txt {
+    color: $white;
+    font-size: 2rem;
+    margin: 2rem 0;
+    em {
+        font-weight: 600;
+    }
+}
+.primary-btn {
+    background-color: $deepblue;
+    padding: 1.5rem 0;
+    color: $white;
+    width: 100%;
+    max-width: 65rem;
+    border-radius: 5rem;
+    justify-content: center;
+    transition: .2s;
+    &:hover {
+        background-color: $lightblue;
+    }
+}
+
+/*
+------------
+Section Skill
+------------
+*/
+section#skill {
+    margin-bottom: 10rem;
+}
+.divi-wide {
+    height: 1px;
+    width: 100%;
+    background-color: $gray80;
+    margin: 5rem 0;
+}
+
+.skill-item_title {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: $lightblue50;
+    margin-bottom: 2rem;
+}
+
+.skill-item_img {
+    img {
+        margin-right: 2rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.skill-item_txt {
+    font-weight: 400;
+    color: $lightblue50;
+}
+
+.skill-item {
+    width: calc((1/3)*100%);
+    &:nth-child(2) {
+        margin: 0 2rem;
+    }
+}
+
+.skill-content-wrap {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+}
+
+/*
+------------
+Section About
+------------
+*/
+
+section#about {
+    background-color: $deepblue;
+}
+.about-wrap {
+    display: flex;
+    width: 100%;
+}
+.about-img {
+    position: relative;
+    width: 50%;
+}
+.mockup {
+    position: absolute;
+    bottom: 5rem;
+    right: 5rem;
+    height: 100%;
+}
+.about-txt-wrap {
+    width: 50%;
+    color: $white;
+    padding: 3vw 0;
+}
+.about-txt_title {
+    font-size: 48px;
+    font-weight: 900;
+}
