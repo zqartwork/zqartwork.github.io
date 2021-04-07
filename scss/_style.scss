@@ -246,7 +246,7 @@ Section
 Section KV
 ------------
 */
-#kv {
+section:nth-child(1) {
     padding-top: 13.8rem;
 }
 .kv-wrap {
@@ -522,4 +522,56 @@ Modal
     img {
         cursor: pointer;
     }
+}
+
+/*
+------------
+WORKS
+------------
+*/
+.section-content {
+    width: 100%;
+}
+a.work-item_of {
+    width: calc((1/5)*100% - (4.8rem / 5));
+    cursor: pointer;
+    line-height: 1.5;
+    margin: .3rem;
+}
+.item-wrap {
+    width: 100%;
+    cursor: pointer;
+}
+.item-img {
+    height: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-top: 56.25%;
+    position: relative;
+
+    @extend %hidden;
+
+    object-fit: cover;
+    object-position: center;
+
+    img {
+        display: inline-flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+.item-title {
+    font-weight: 600;
+    color: $lightblue;
+    font-size: 1.6rem;
+    padding: .5rem 0 0 0;
+}
+.item-subtitle {
+    color: $lightblue50;
+    font-size: 1rem;
 }

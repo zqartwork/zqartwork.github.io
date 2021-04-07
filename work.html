@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ZQARTWORK-WORKS</title>
+    <!--google plus info-->
+    <meta itemprop="name" content="ZQARTWORK - Professional UIUX design, 2D digital artist and experienced front-end-engineer is here for you. 專業 UIUX 設計、2D美術繪製、富有經驗的前端工程師，zqartwork在此為您服務。">
+    <meta itemprop="image" content="https://zqartwork.github.io/img/index/1200x628.jpg">
+    <meta name="description" content="ZQARTWORK - Professional UIUX design, 2D digital artist and experienced front-end-engineer is here for you. 專業 UIUX 設計、2D美術繪製、富有經驗的前端工程師，zqartwork在此為您服務。" />
+    <!--FB info-->
+    <meta property="og:title" content="ZQARTWORK - Professional UIUX design, 2D digital artist and experienced front-end-engineer is here for you. 專業 UIUX 設計、2D美術繪製、富有經驗的前端工程師，zqartwork在此為您服務。" />
+    <meta property="og:site_name" content="ZQARTWORK" />
+    <meta property="og:url" content="https://zqartwork.github.io">
+    <meta property="og:image" content="https://zqartwork.github.io/img/index/1200x628.jpg">
+    <meta property="og:description" content="ZQARTWORK - Professional UIUX design, 2D digital artist and experienced front-end-engineer is here for you. 專業 UIUX 設計、2D美術繪製、富有經驗的前端工程師，zqartwork在此為您服務。">
+    <meta property="og:type" content="website" />
+    <!--Favicon-->
+    <link rel="icon" href="../img/index/favicon.ico" type="image/x-icon" />
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <!-- wow animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- owl-default-theme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- main-style -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- 英文版本 -->
+    <div id="appen">
+        <nav class="nav">
+            <div class="container">
+                <div class="nav-wrap">
+                    <div class="nav-logo">
+                        <img src="img/index/logo.svg" alt="">
+                    </div>
+                    <div class="nav-items-wrap">
+                        <a href="about.html" target="_blank" class="nav-item"><span>ABOUT</span></a>
+                        <a href="works.html" target="_blank" class="nav-item"><span>WORKS</span></a>
+                        <a href="services.html" target="_blank" class="nav-item"><span>SERVICES</span></a>
+                        <a href="contact.html" target="_blank" class="nav-item"><span>CONTACT</span></a>
+                        <div class="select_container nav-item">
+                            <div class="flex-wrapper">
+                                <div class="custom_select">
+                                    <div class="select_title">
+                                        <div class="flex-wrapper just-left">
+                                            <span class="selected">Language</span>
+                                            <i class="fas fa-caret-right select_i"></i>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" name="date" id="data_input">
+                                    <ul class="select_menu">
+                                        <li page="apptc">繁體中文</li>
+                                        <li page="appsc">简体中文</li>
+                                        <li page="appen">English</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-wrap">
+                    <a href="https://www.facebook.com/zqartwork" target="_blank" rel="noopener noreferrer" class="nav-icon fb"><span></span></a>
+                    <a href="https://zqartwork.artstation.com/" target="_blank" rel="noopener noreferrer" class="nav-icon as"><span></span></a>
+                    <a href="https://www.instagram.com/zqart.work" target="_blank" rel="noopener noreferrer" class="nav-icon ins"><span></span></a>
+                    <a href="#!" class="nav-icon ham modal-opener" tt-to="nav-mobile"><span></span></a>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <section id="ui">
+                <div class="container">
+                    <div class="section-title">UIUX</div>
+                    <div class="section-content">
+                        <div class="work-item-wrap">
+                            <a  :href="work.href" target="_blank" rel="noopener noreferrer" class="work-item_of" v-for="work in works">
+                                <div class="item-wrap">
+                                    <div class="item-header">
+                                        <div class="item-img">
+                                            <img :src="work.link" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="item-body">
+                                        <div class="item-title">{{work.title}}</div>
+                                    </div>
+                                    <div class="item-footer">
+                                        <div class="item-subtitle">{{work.time}}</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="format"></section>
+            <section id="dp"></section>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="footer-wrap">
+                    <div class="footer-copy-txt"><p>© 2021 Copyright belongs to ZQARTWORK, Inc.</p></div>
+                    <div class="footer-btn-item-wrap">
+                        <a href="https://home.gamer.com.tw/zqartwork" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>BahamutForum</span></a>
+                        <a href="https://www.plurk.com/zqartwork" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Plurk</span></a>
+                        <a href="https://github.com/zqartwork" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Github</span></a>
+                        <a href="https://www.pixiv.net/users/44069467" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Pixiv</span></a>
+                        <a href="https://www.tasker.com.tw/workroom/JgzMDL" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Tasker</span></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="nav-mobile modal">
+            <div class="modal-container">
+                <div class="modal-closer"></div>
+                <div class="modal-panel">
+                    <a href="#!" class="modal-closer_btn">
+                        <img src="img/index/closer.svg" alt="">
+                    </a>
+                    <div class="moda-content">
+                        <div class="modal-title">
+                        </div>
+                        <div class="modal-body">
+                            <div class="nav-items-wrap_mobile">
+                                <a href="about.html" target="_blank" class="nav-item"><span>ABOUT</span></a>
+                                <a href="works.html" target="_blank" class="nav-item"><span>WORKS</span></a>
+                                <a href="services.html" target="_blank" class="nav-item"><span>SERVICES</span></a>
+                                <a href="contact.html" target="_blank" class="nav-item"><span>CONTACT</span></a>
+                                <div class="select_container nav-item">
+                                    <div class="select-flex-wrapper">
+                                        <div class="custom_select">
+                                            <div class="select_title">
+                                                <div class="flex-wrapper just-left">
+                                                    <span class="selected">Language</span>
+                                                    <i class="fas fa-caret-right select_i"></i>
+                                                </div>
+                                            </div>
+                                            <input type="hidden" name="date" id="data_input">
+                                            <ul class="select_menu">
+                                                <li page="apptc">繁體中文</li>
+                                                <li page="appsc">简体中文</li>
+                                                <li page="appen">English</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 繁體中文 -->
+    <div id="apptc">
+        <nav class="nav">
+            <div class="container">
+                <div class="nav-wrap">
+                    <div class="nav-logo">
+                        <img src="img/index/logo.svg" alt="">
+                    </div>
+                    <div class="nav-items-wrap">
+                        <a href="about.html" target="_blank" class="nav-item"><span>關於</span></a>
+                        <a href="works.html" target="_blank" class="nav-item"><span>作品</span></a>
+                        <a href="services.html" target="_blank" class="nav-item"><span>服務</span></a>
+                        <a href="contact.html" target="_blank" class="nav-item"><span>聯絡</span></a>
+                        <div class="select_container nav-item">
+                            <div class="flex-wrapper">
+                                <div class="custom_select">
+                                    <div class="select_title">
+                                        <div class="flex-wrapper just-left">
+                                            <span class="selected">繁體中文</span>
+                                            <i class="fas fa-caret-right select_i"></i>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" name="date" id="data_input">
+                                    <ul class="select_menu">
+                                        <li page="apptc">繁體中文</li>
+                                        <li page="appsc">简体中文</li>
+                                        <li page="appen">English</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-wrap">
+                    <a href="https://www.facebook.com/zqartwork" target="_blank" rel="noopener noreferrer" class="nav-icon fb"><span></span></a>
+                    <a href="https://zqartwork.artstation.com/" target="_blank" rel="noopener noreferrer" class="nav-icon as"><span></span></a>
+                    <a href="https://www.instagram.com/zqart.work" target="_blank" rel="noopener noreferrer" class="nav-icon ins"><span></span></a>
+                    <a href="#!" class="nav-icon ham modal-opener" tt-to="nav-mobile"><span></span></a>
+                </div>
+            </div>
+        </nav>
+        <main>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="footer-wrap">
+                    <div class="footer-copy-txt"><p>© 2021 ZQARTWORK, Inc. 版權所有。</p></div>
+                    <div class="footer-btn-item-wrap">
+                        <a href="https://home.gamer.com.tw/zqartwork" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>巴哈姆特</span></a>
+                        <a href="https://www.plurk.com/zqartwork" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>噗浪</span></a>
+                        <a href="https://github.com/zqartwork" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Github</span></a>
+                        <a href="https://www.pixiv.net/users/44069467" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Pixiv</span></a>
+                        <a href="https://www.tasker.com.tw/workroom/JgzMDL" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Tasker外包網</span></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="nav-mobile modal">
+            <div class="modal-container">
+                <div class="modal-closer"></div>
+                <div class="modal-panel">
+                    <a href="#!" class="modal-closer_btn">
+                        <img src="img/index/closer.svg" alt="">
+                    </a>
+                    <div class="moda-content">
+                        <div class="modal-title">
+                        </div>
+                        <div class="modal-body">
+                            <div class="nav-items-wrap_mobile">
+                                <a href="about.html" target="_blank" class="nav-item"><span>關於</span></a>
+                                <a href="works.html" target="_blank" class="nav-item"><span>作品</span></a>
+                                <a href="services.html" target="_blank" class="nav-item"><span>服務</span></a>
+                                <a href="contact.html" target="_blank" class="nav-item"><span>聯絡</span></a>
+                                <div class="select_container nav-item">
+                                    <div class="select-flex-wrapper">
+                                        <div class="custom_select">
+                                            <div class="select_title">
+                                                <div class="flex-wrapper just-left">
+                                                    <span class="selected">繁體中文</span>
+                                                    <i class="fas fa-caret-right select_i"></i>
+                                                </div>
+                                            </div>
+                                            <input type="hidden" name="date" id="data_input">
+                                            <ul class="select_menu">
+                                                <li page="apptc">繁體中文</li>
+                                                <li page="appsc">简体中文</li>
+                                                <li page="appen">English</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 簡體中文 -->
+    <div id="appsc">
+        <nav class="nav">
+            <div class="container">
+                <div class="nav-wrap">
+                    <div class="nav-logo">
+                        <img src="img/index/logo.svg" alt="">
+                    </div>
+                    <div class="nav-items-wrap">
+                        <a href="about.html" target="_blank" class="nav-item"><span>关于</span></a>
+                        <a href="works.html" target="_blank" class="nav-item"><span>作品</span></a>
+                        <a href="services.html" target="_blank" class="nav-item"><span>服务</span></a>
+                        <a href="contact.html" target="_blank" class="nav-item"><span>联络</span></a>
+                        <div class="select_container nav-item">
+                            <div class="flex-wrapper">
+                                <div class="custom_select">
+                                    <div class="select_title">
+                                        <div class="flex-wrapper just-left">
+                                            <span class="selected">简体中文</span>
+                                            <i class="fas fa-caret-right select_i"></i>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" name="date" id="data_input">
+                                    <ul class="select_menu">
+                                        <li page="apptc">繁體中文</li>
+                                        <li page="appsc">简体中文</li>
+                                        <li page="appen">English</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-wrap">
+                    <a href="https://www.facebook.com/zqartwork" target="_blank" rel="noopener noreferrer" class="nav-icon fb"><span></span></a>
+                    <a href="https://zqartwork.artstation.com/" target="_blank" rel="noopener noreferrer" class="nav-icon as"><span></span></a>
+                    <a href="https://www.instagram.com/zqart.work" target="_blank" rel="noopener noreferrer" class="nav-icon ins"><span></span></a>
+                    <a href="#!" class="nav-icon ham modal-opener" tt-to="nav-mobile"><span></span></a>
+                </div>
+            </div>
+        </nav>
+        <main>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="footer-wrap">
+                    <div class="footer-copy-txt"><p>© 2021 ZQARTWORK, Inc. 版权所有。</p></div>
+                    <div class="footer-btn-item-wrap">
+                        <a href="https://home.gamer.com.tw/zqartwork" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>巴哈姆特</span></a>
+                        <a href="https://www.plurk.com/zqartwork" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>噗浪</span></a>
+                        <a href="https://github.com/zqartwork" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Github</span></a>
+                        <a href="https://www.pixiv.net/users/44069467" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Pixiv</span></a>
+                        <a href="https://www.tasker.com.tw/workroom/JgzMDL" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Tasker外包网</span></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="nav-mobile modal">
+            <div class="modal-container">
+                <div class="modal-closer"></div>
+                <div class="modal-panel">
+                    <a href="#!" class="modal-closer_btn">
+                        <img src="img/index/closer.svg" alt="">
+                    </a>
+                    <div class="moda-content">
+                        <div class="modal-title">
+                        </div>
+                        <div class="modal-body">
+                            <div class="nav-items-wrap_mobile">
+                                <a href="about.html" target="_blank" class="nav-item"><span>关于</span></a>
+                                <a href="works.html" target="_blank" class="nav-item"><span>作品</span></a>
+                                <a href="services.html" target="_blank" class="nav-item"><span>服务</span></a>
+                                <a href="contact.html" target="_blank" class="nav-item"><span>联络</span></a>
+                                <div class="select_container nav-item">
+                                    <div class="select-flex-wrapper">
+                                        <div class="custom_select">
+                                            <div class="select_title">
+                                                <div class="flex-wrapper just-left">
+                                                    <span class="selected">简体中文</span>
+                                                    <i class="fas fa-caret-right select_i"></i>
+                                                </div>
+                                            </div>
+                                            <input type="hidden" name="date" id="data_input">
+                                            <ul class="select_menu">
+                                                <li page="apptc">繁體中文</li>
+                                                <li page="appsc">简体中文</li>
+                                                <li page="appen">English</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <!-- FontAwesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <!-- wow.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- owlCarousel2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- vue.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+    <!-- custom.js -->
+    <script src="js/custom.js"></script>
+
+    <script>
+        new Vue({
+            el: '#appen',
+            data: {
+                works: [{
+                        title: 'GeForce NOW 官方網站',
+                        content: 'UI規劃、切版',
+                        time: '2020 / 4',
+                        link: 'https://static.newmobilelife.com/wp-content/uploads/2020/08/GeForce-NOW.jpg',
+                        href: 'https://gfn.taiwanmobile.com/portal/index',
+                        isRWD: true,
+                        multiBrowser: true,
+                        tt: '此產品UIUX規劃獨立完成、切版製作'
+                    },{
+                        title: '激鬥峽谷明星賽',
+                        content: 'UI規劃、切版',
+                        time: '2020 / 08',
+                        link: 'https://game.taiwanmobile.com/WildRift_202011001/img/title.png',
+                        href: 'https://game.taiwanmobile.com/WildRift_202011001/index',
+                        isRWD: true,
+                        multiBrowser: true,
+                        tt: '此產品UIUX規劃獨立完成、切版製作'
+                    },{
+                        title: '峽谷地標推塔激鬥',
+                        content: 'UI規劃、切版',
+                        time: '2020 / 05',
+                        link: 'https://game.taiwanmobile.com/WildRift_202012001/img/page-image.png',
+                        href: 'https://game.taiwanmobile.com/WildRift_202012001/index',
+                        isRWD: true,
+                        multiBrowser: true,
+                        tt: '此產品UIUX規劃獨立完成、切版製作'
+                    },{
+                        title: '符文大地傳說學院',
+                        content: 'UI規劃、切版',
+                        time: '2020 / 05',
+                        link: 'img/works/lor-academy.jpg',
+                        href: 'https://game.taiwanmobile.com/LoR/',
+                        isRWD: true,
+                        multiBrowser: true,
+                        tt: '此產品UIUX規劃獨立完成、切版製作'
+                    },{
+                        title: '倩女幽魂2x純喫茶異業合作',
+                        content: 'UI規劃、切版',
+                        time: '2019 / 05',
+                        link: 'img/works/wk_g2-puretea.png',
+                        href: 'https://zqartwork.github.io/g2-puretea/',
+                        isRWD: true,
+                        multiBrowser: true,
+                        tt: '此產品UIUX規劃獨立完成、切版製作'
+                    },{
+                        title: '山貓直播',
+                        content: 'UI規劃、切版',
+                        time: '2019 / 05',
+                        link: 'https://smlivebucket-b.oss-accelerate.aliyuncs.com/10021/h5/191/2021/03/22/f088a34c2cf64edd8a8ba3af58f4b9a1269x155..png',
+                        href: 'https://smzb.io',
+                        isRWD: true,
+                        multiBrowser: true,
+                        tt: '此產品UIUX規劃獨立完成、切版製作與同事分工'
+                    },
+                    {
+                        title: '樂動直播',
+                        content: 'UI規劃、切版',
+                        time: '2019 / 05',
+                        link: 'https://www.ldsports.uk/image/bg2.jpg',
+                        href: 'https://zqartwork.github.io/LiveStream',
+                        isRWD: true,
+                        multiBrowser: false,
+                        tt: '此產品UIUX規劃獨立完成、切版製作'
+                    },
+                    {
+                        title: '贊星直播 APP',
+                        content: 'Sports Live',
+                        time: '2019 / 05',
+                        link: 'img/works/bc.png',
+                        href: 'assets/bc.html',
+                        isRWD: false,
+                        multiBrowser: false,
+                        tt: 'APP UIUX 規劃獨立完成'
+                    },
+                    {
+                        title: '財團法人青馬影藝學院網站',
+                        content: '線上影藝教學',
+                        time: '2019 / 04',
+                        link: 'img/works/wk_qm.jpg',
+                        href: 'https://zqartwork.github.io/qing-ma.academy/',
+                        isRWD: true,
+                        multiBrowser: false,
+                        tt: 'UIUX 與 前端切版獨立完成，並且與後端PHP合作。'
+                    },
+                    {
+                        title: '學院網站個人中心',
+                        content: '線上影藝教學',
+                        time: '2019 / 04',
+                        link: 'img/works/031.jpg',
+                        href: 'https://drive.google.com/open?id=1FBEVUhuPj6rD1Ka9ItV9A16UbO4wzQyT',
+                        isRWD: false,
+                        multiBrowser: false,
+                        tt: 'UIUX 與 前端切版獨立完成，並且與後端PHP合作。'
+                    },
+                    {
+                        title: 'MSG BOX Design',
+                        content: 'MSG BOX',
+                        time: '2019 / 11',
+                        link: 'img/works/030.jpg',
+                        href: 'https://drive.google.com/file/d/1A1L9S9ago8At4Tluy798qgK7VC2lK4wu/view?usp=sharing',
+                        isRWD: false,
+                        multiBrowser: false,
+                        tt: 'UIUX 獨立完成。'
+                    },
+                    {
+                        title: '恆星網路科技公司官網',
+                        content: 'Solertech Official',
+                        time: '2019 / 06',
+                        link: 'img/works/wk_solart.jpg',
+                        href: 'http://www.solartninc.com',
+                        isRWD: true,
+                        multiBrowser: true,
+                        tt: 'UIUX 與 前端切版獨立完成，並且與後端PHP合作。'
+                    },
+                    {
+                        title: '直播平台統計管理後臺',
+                        content: 'Dashboard',
+                        time: '2019 / 07',
+                        link: 'img/works/wk_dashoboard_001.png',
+                        href: 'assets/dashboard.html',
+                        isRWD: true,
+                        multiBrowser: true,
+                        tt: 'UIUX 與 前端切版獨立完成，並且與後端PHP合作。'
+                    },
+                    {
+                        title: '特效首屏 - 浮動背景',
+                        content: '高質感事件聆聽',
+                        time: '2019 / 10',
+                        link: 'img/works/wk_pr_001.png',
+                        href: 'https://zqartwork.github.io/10MinutesProject',
+                        isRWD: true,
+                        multiBrowser: false,
+                        tt: 'UIUX 與 前端切版獨立完成。'
+                    },
+                    {
+                        title: '特效首屏 - 滾動影片',
+                        content: '高質感事件聆聽',
+                        time: '2019 / 10',
+                        link: 'img/works/wk_pr_002.png',
+                        href: 'https://zqartwork.github.io/ScrollVideo',
+                        isRWD: true,
+                        multiBrowser: false,
+                        tt: 'UIUX 與 前端切版獨立完成。'
+                    },
+                    {
+                        title: '2019 英雄聯盟 ECS 宣傳網站',
+                        content: '聯賽官方網站',
+                        time: '2018 / 11',
+                        link: 'img/works/wk_ecs.png',
+                        href: 'assets/ecs.html',
+                        isRWD: false,
+                        multiBrowser: false,
+                        tt: 'UIUX 與 前端切版獨立完成，並且與後端PHP合作。'
+                    },
+                    {
+                        title: '英雄聯盟 S8 季前活動網站',
+                        content: '開季前獎勵網站',
+                        time: '2018 / 07',
+                        link: 'img/works/wk_preseason.jpg',
+                        href: 'assets/S8preseason.html',
+                        isRWD: false,
+                        multiBrowser: false,
+                        tt: 'UIUX 與 前端切版獨立完成。'
+                    },
+
+                ],
+                dps: [{
+                        title: '【DP】可愛插畫 - 嗨嗨我是餅乾',
+                        content: 'Game GUI',
+                        time: '2020 / 04',
+                        link: 'https://scontent.ftpe3-1.fna.fbcdn.net/v/t1.0-9/93519194_681191085785706_5394741376342556672_n.jpg?_nc_cat=109&ccb=2&_nc_sid=09cbfe&_nc_ohc=mCyNUAR9YZMAX9EhO8g&_nc_ht=scontent.ftpe3-1.fna&oh=6e8cd1a83adde6768d521b93a839109b&oe=600EC8D5',
+                        href: 'https://www.instagram.com/zqart.work/',
+                        isRWD: true,
+                        multiBrowser: true,
+                        tt: 'Graphic User Interface 製作中'
+                    },{
+                        title: '【GUI】遊戲GUI物件製作',
+                        content: 'Game GUI',
+                        time: '2017 / 09',
+                        link: 'img/shrink/029.png',
+                        href: 'https://drive.google.com/open?id=1e6ilh4A7pBZyqmFRInr4riAGHJBqHLT4',
+                        isRWD: true,
+                        multiBrowser: false,
+                        tt: 'Graphic User Interface 製作中'
+                    },
+                    {
+                        title: '【GD】2017 英雄聯盟世界大賽',
+                        content: '2017 LOL World Cup',
+                        time: '2017 / 09',
+                        link: 'img/shrink/010.jpg',
+                        href: 'https://drive.google.com/file/d/1ueFK_EKnxMhDUFKoL4sEw8CnTAN1ENTf/view?usp=sharing',
+                        isRWD: true,
+                        multiBrowser: false,
+                        tt: '2017年 英雄聯盟台灣區宣傳 Banner - 白色巴龍圖素來自美國原廠，其餘皆為個人創作設計而成 (排版、配色、字體)。'
+                    },
+                    {
+                        title: '【Video】《峽谷編年史》',
+                        content: 'Animation Cooperation',
+                        time: '2018 / 08',
+                        link: 'img/shrink/017.png',
+                        href: 'https://www.youtube.com/watch?v=hDcjzhqqDZM',
+                        isRWD: true,
+                        multiBrowser: false,
+                        tt: '2018年 英雄聯盟七週年宣傳影片，純手繪各個賽季的故事，與專業動畫師合作共三週。目前觀看人數已累積至11萬9千多人，美術繪製與美術監製皆由本人擔任。'
+                    },
+                    {
+                        title: '【Video】《湯米 For Fun》',
+                        content: 'Project Director',
+                        time: '2018 / 11',
+                        link: 'img/shrink/026.jpg',
+                        href: 'https://www.youtube.com/watch?v=sKyR50DtRkg&list=PL-A8w4LzP-LdM9dD_TDFU-DFAwh2jpIBO',
+                        isRWD: true,
+                        multiBrowser: false,
+                        tt: '多位電競主播與相關電競專業人士一同前往韓國觀賞世界賽的Vlog，系列影片數集，本人擔任此頻道前期美術概念與影片監製。'
+                    },
+                    {
+                        title: '【DP】K/DA 女團',
+                        content: 'K/DA',
+                        time: '2018 / 10',
+                        link: 'img/shrink/004.jpg',
+                        href: 'https://drive.google.com/open?id=1rqS3dfz802niE0gBdR8cOXjKlSOasCt0',
+                        isRWD: false,
+                        multiBrowser: false,
+                        tt: '離開 Garena 後依舊與此公司保持合作關係，其中為協助宣傳繪製的造型美術圖，物件繪製無套用任何素材。',
+                    },
+                    {
+                        title: '【DP】健康檢查宣導動畫分鏡',
+                        content: 'Motion Graphic',
+                        time: '2018 / 08',
+                        link: 'img/shrink/027.jpg',
+                        href: 'https://drive.google.com/drive/folders/1mMEAgmV0Wo4cwNazdiRhYA0OEEQc0rx4?usp=sharing',
+                        isRWD: false,
+                        multiBrowser: false,
+                        tt: '練習作品集，提供健康檢查宣導影片分鏡建議，點擊進入後請按照順序觀看分鏡。',
+                    },
+                    {
+                        title: '【DP】鬼滅人物場景繪製',
+                        content: 'Kimetsu',
+                        time: '2019 / 10',
+                        link: 'img/shrink/025.jpg',
+                        href: 'https://drive.google.com/open?id=1jE0qxGcWvoS3jV0faDH1ZzOvfXgZmVWC',
+                        isRWD: false,
+                        multiBrowser: false,
+                        tt: '賽璐璐動漫畫風，日常電腦繪圖練習，繪製場景以及人物多角度練習。',
+                    },
+                    {
+                        title: '【GD】2017 英雄聯盟周年慶',
+                        content: '2017 LOL Aniversiry',
+                        time: '2017 / 09',
+                        link: 'img/shrink/011.jpg',
+                        href: 'https://drive.google.com/open?id=1Ugq-HxCGFBd5IUOQj65ZW_C5bQt2fZVP',
+                        isRWD: false,
+                        multiBrowser: false,
+                        tt: '2017年六週年活動網站設計與切版 ( 活動結束網站已關閉 )。',
+                    },
+                    {
+                        title: '【GD】2017 零式聖騎',
+                        content: 'Lancer Zero',
+                        time: '2017 / 08',
+                        link: 'img/shrink/019.jpg',
+                        href: 'https://drive.google.com/file/d/1NJo8F5GzRi9KVDLpwRuNVlHcFKdmaSmA/view?usp=sharing',
+                        isRWD: false,
+                        multiBrowser: false,
+                        tt: '日系風格 Slogan 美術設計 ( FF系列風格 )',
+                    },
+                    {
+                        title: '【GD】2017 七夕情人節造型',
+                        content: 'Sweet Heart',
+                        time: '2017 / 08',
+                        link: 'img/shrink/020.jpg',
+                        href: 'https://drive.google.com/file/d/1KcDTJ8DwTbrmGRHFiJwLOY86Y39bSa47/view?usp=sharing',
+                        isRWD: false,
+                        multiBrowser: false,
+                        tt: '自己用AI拉製的字體，搭配手繪浪漫裝飾。',
+                    },
+                    {
+                        title: '【GD】2018 英雄聯盟造型回歸',
+                        content: '2018 LOL Skin Return',
+                        time: '2018 / 04',
+                        link: 'img/shrink/013.png',
+                        href: 'https://drive.google.com/file/d/1m_dhXVdj4t2ZyfZKRrQbxMt6gMIaNK99/view?usp=sharing',
+                        isRWD: false,
+                        multiBrowser: false,
+                        tt: '善用工具以及繪圖能力，讓兩份完全不同時期的美術圖合為一體，配合排版以及顏色的設計，製造凜然又不失現代簡潔的氣氛。',
+                    },
+                    {
+                        title: '【GD】英雄聯盟英雄改版',
+                        content: '2017 LOL Evelyn',
+                        time: '2018 / 06',
+                        link: 'img/shrink/012.jpg',
+                        href: 'https://drive.google.com/file/d/1bzB7kNLWw7zh8WVlMNhTu5WxyBuMtmQV/view?usp=sharing',
+                        isRWD: false,
+                        multiBrowser: false,
+                        tt: '手繪字體以及搭配人物風格創造的排版、色彩、手繪素材設計。'
+                    },
+                    {
+                        title: '【GD】血月伊芙琳',
+                        content: 'Blood Moon Evelyn',
+                        time: '2018 / 05',
+                        link: 'img/shrink/022.jpg',
+                        href: 'https://drive.google.com/file/d/1a7cAQK5B7Zc5CwOGwHsJ39fv8TH8m63e/view?usp=sharing',
+                        isRWD: false,
+                        multiBrowser: false,
+                        tt: '手繪字體以及搭配人物風格創造的排版、色彩、手繪素材設計。'
+                    },
+                    {
+                        title: '【GD】英雄聯盟霸世造型',
+                        content: '2017 LOL God',
+                        time: '2018 / 01',
+                        link: 'img/shrink/014.png',
+                        href: 'https://drive.google.com/file/d/1tPKiyKNCXXvC3aKCVXed-skLGhWhBaxp/view?usp=sharing',
+                        isRWD: false,
+                        multiBrowser: false,
+                        tt: '中國風手繪字體以及搭配人物風格創造的排版、色彩、手繪素材設計。'
+                    },
+                    {
+                        title: '【GD】ㄋㄟㄋㄟ補給站',
+                        content: 'Regular Sales',
+                        time: '2018 / 04',
+                        link: 'img/shrink/021.jpg',
+                        href: 'https://drive.google.com/file/d/18znrliMtDHzKrwl0hOLZW6o2yj7RdmWq/view?usp=sharing',
+                        isRWD: false,
+                        multiBrowser: false,
+                        tt: '透過對日本SANESU食品特色觀察，配合遊戲使用族群找到共鳴，搭配日常主題以及色調合適的英雄素材，創意 Banner',
+                    },
+                    {
+                        title: '【GD】狂派機甲造型特價',
+                        content: 'Robot Sales',
+                        time: '2018 / 08',
+                        link: 'img/shrink/023.jpg',
+                        href: 'https://drive.google.com/file/d/150NfavoQ2fJkrKwZ5ShxzIp-Nz9d9Stn/view?usp=sharing',
+                        isRWD: false,
+                        multiBrowser: false,
+                        tt: '日系機甲浮誇造型 Banner 與分割框設計。',
+                    },
+                    {
+                        title: '【OFP】英雄聯盟易拉展製作',
+                        content: 'Outdoor Format Printing',
+                        time: '2018 / 02',
+                        link: 'img/shrink/015.png',
+                        href: 'https://drive.google.com/file/d/1xB0l4vnHMDJw8LA-HmW2qUQpQ6nDVlCh/view?usp=sharing',
+                        isRWD: false,
+                        multiBrowser: false,
+                        tt: '梅竹電競節攤位易拉展製作，除了角色美術圖之外都是手繪補圖製作的。',
+                    },
+                    {
+                        title: '【DP, FP】七周年系列周邊繪製',
+                        content: 'Format Printing',
+                        time: '2018 / 06',
+                        link: 'img/shrink/028.png',
+                        href: 'https://drive.google.com/open?id=14tOPFbjsvaRXmgLmZUVRShLa0kMwEgOf',
+                        isRWD: false,
+                        multiBrowser: false,
+                        tt: '七週年紋身貼紙手繪並且製作成輸出物。',
+                    },
+                    {
+                        title: '【DP, OFP】英雄聯盟大型背板製作',
+                        content: 'DP Outdoor Largr Format Printing',
+                        time: '2018 / 06',
+                        link: 'img/shrink/016.png',
+                        href: 'https://drive.google.com/file/d/1_LnKpthgfEI4gPb4YG8QzP9e-g0eifFp/view?usp=sharing',
+                        isRWD: false,
+                        multiBrowser: false,
+                        tt: '七週年外場主題繪製以及大背板輸出製作。'
+                    },
+                    {
+                        title: '【DP】自畫像',
+                        content: 'Self Portrait',
+                        time: '2017 / 11',
+                        link: 'img/shrink/001.png',
+                        href: 'https://drive.google.com/file/d/1jLozvRml0EdMkyOqZ90FQA1paa914V5p/view?usp=sharing',
+                        isRWD: false,
+                        multiBrowser: false,
+                        tt: '日常塗鴉，自畫像。',
+                    },
+
+                    {
+                        title: '【DP】星空少女',
+                        content: 'Girl from the star',
+                        time: '2019 / 06',
+                        link: 'img/shrink/002.jpg',
+                        href: 'https://drive.google.com/open?id=1Ix7MjM0kxPmLoOVWz3tpO7IhB8kWS-R3',
+                        isRWD: false,
+                        multiBrowser: false,
+                        tt: '日常塗鴉，胸前綴飾是主要的練習目標，追求真實簡單的質感。',
+                    },
+                    {
+                        title: '【DP】鬼滅之刃人物CP圖',
+                        content: 'Kimetsu',
+                        time: '2019 / 10',
+                        link: 'img/shrink/005.jpg',
+                        href: 'https://drive.google.com/open?id=1406XW3cVOp2DHtwKuxae57wCCEI7hTKY',
+                        isRWD: false,
+                        multiBrowser: false,
+                        tt: '日常塗鴉，配合近期火熱的動漫話題進行創作。',
+                    },
+
+                    {
+                        title: '【DP】粉絲專頁大頭照',
+                        content: 'ZQARTWROK',
+                        time: '2018 / 11',
+                        link: 'img/shrink/024.jpg',
+                        href: 'https://drive.google.com/open?id=1Mkrw8u29KSNb9rTdvQNgDyaXzWhfMFdt',
+                        isRWD: false,
+                        multiBrowser: false,
+                        tt: '粉專大頭照客製化，屬於每個人的動漫人物。',
+                    },
+                    {
+                        title: '【DP】粉絲專頁封面圖',
+                        content: 'ZQARTWROK',
+                        time: '2018 / 11',
+                        link: 'img/shrink/006.png',
+                        href: 'https://drive.google.com/open?id=1WZkUmZDXgBhchboA0Zh73IfLs6JdEi2F',
+                        isRWD: false,
+                        multiBrowser: false,
+                        tt: '粉專封面客製化，屬於每個人的動漫人物。',
+                    },
+                    {
+                        title: '【DP】PUBG Mobile Announce',
+                        content: 'PUBG Mobile',
+                        time: '2019 / 11',
+                        link: 'img/shrink/007.jpg',
+                        href: 'https://www.facebook.com/PUBGMOBILE.TW.OFFICIAL/photos/a.2382813948613784/2569264299968747/?type=3&theater',
+                        isRWD: false,
+                        multiBrowser: false,
+                        tt: '絕地求生 M 官方合作的公告圖。',
+                    },
+                    {
+                        title: '【DP】PUBG Mobile Contest',
+                        content: 'PUBG Mobile',
+                        time: '2019 / 10',
+                        link: 'img/shrink/008.jpg',
+                        href: 'https://www.facebook.com/PUBGMOBILE.TW.OFFICIAL/photos/a.2382813948613784/2538765773018600/?type=3&theater',
+                        isRWD: false,
+                        multiBrowser: false,
+                        tt: '絕地求生 M 官方合作的公告四格漫畫。',
+                    },
+                    {
+                        title: '【DP】PUBG Mobile Manga',
+                        content: 'PUBG Mobile',
+                        time: '2019 / 11',
+                        link: 'img/shrink/009.jpg',
+                        href: 'https://www.facebook.com/PUBGMOBILE.TW.OFFICIAL/photos/a.2382813948613784/2568294840065693/?type=3&theater',
+                        isRWD: false,
+                        multiBrowser: false,
+                        tt: '絕地求生 M 官方合作的公告漫畫。',
+                    },
+                    {
+                        title: '【DP】PUBG Mobile Map',
+                        content: 'PUBG Mobile',
+                        time: '2019 / 11',
+                        link: 'img/shrink/018.jpg',
+                        href: 'https://www.facebook.com/PUBGMOBILE.TW.OFFICIAL/photos/a.2382813948613784/2557076507854193/?type=3&theater',
+                        isRWD: false,
+                        multiBrowser: false,
+                        tt: '絕地求生 M 官方合作的公告地圖。',
+                    },
+                ],
+            },
+            methods: {
+                // toggleWorks() {
+                //     this.isWorks = !this.isWorks;
+                //     if (this.isWorks) {
+                //         $(".gallery-wrapper.wk").slideDown();
+                //         $(".fa-chevron-down.wk").css({
+                //             transition: '.2s',
+                //             transform: 'rotate(0deg)',
+                //         })
+                //     } else {
+                //         $(".gallery-wrapper.wk").slideUp();
+                //         $(".fa-chevron-down.wk").css({
+                //             transition: '.2s',
+                //             transform: 'rotate(-90deg)',
+                //         })
+                //     }
+                // },
+                // toggleDps() {
+                //     this.isDps = !this.isDps;
+                //     if (this.isDps) {
+                //         $(".gallery-wrapper.dp").slideDown();
+                //         $(".fa-chevron-down.dp").css({
+                //             transition: '.2s',
+                //             transform: 'rotate(0deg)',
+                //         })
+                //     } else {
+                //         $(".gallery-wrapper.dp").slideUp();
+                //         $(".fa-chevron-down.dp").css({
+                //             transition: '.2s',
+                //             transform: 'rotate(-90deg)',
+                //         })
+                //     }
+                // }
+            },
+        })
+    </script>
+
+    <!-- JQ 掛載點 -->
+    <script>
+        $(document).ready(function() {
+            new WOW().init();
+            selectCustom();
+        });
+    </script>
+
+</body>
+
+</html>
