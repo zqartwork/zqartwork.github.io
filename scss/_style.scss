@@ -8,6 +8,7 @@ html, body {
 
 * {
     font-size: 1.4rem;
+    cursor: default;
 }
 
 a {
@@ -16,8 +17,15 @@ a {
     color: $deepblue;
     text-decoration: none;
     outline: none;
+    cursor: pointer;
     &:active, &:focus, &:visited {
         color: inherit;
+    }
+    span {
+        cursor: pointer;
+    }
+    &:hover {
+        color: $red;
     }
 }
 
@@ -53,7 +61,12 @@ span {
         background: $w50;
     }
 }
-
+.select-flex-wrapper {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
 .select_title {
     cursor: pointer;
     height: 100%;
@@ -62,6 +75,7 @@ span {
 .selected {
     padding: 8px 5px 8px 15px;
     white-space: nowrap;
+    cursor: pointer;
 }
 
 .select_i {
@@ -123,7 +137,7 @@ nav {
     top: 0;
     z-index: 100;
     width: 100%;
-    padding: 4rem 0;
+    padding: 4rem 3rem;
     transition: .2s;
     .container {
         display: flex;
@@ -135,6 +149,9 @@ nav {
 .nav-wrap, .nav-items-wrap {
     display: inline-flex;
     align-items: center;
+}
+.nav-logo {
+    margin-right: 2.5rem;
 }
 .nav-item {
     margin: 0 2.5rem;
@@ -151,6 +168,7 @@ nav {
         background-position: center;
         height: 3.6rem;
         width: 3.6rem;
+        cursor: pointer;
     }
     &.fb {
         span {
@@ -165,6 +183,11 @@ nav {
     &.ins {
         span {
             background-image: url(../img/index/ins.svg);
+        }
+    }
+    &.ham {
+        span {
+            background-image: url(../img/index/ham.svg);
         }
     }
     &:hover {
@@ -185,6 +208,9 @@ nav {
             }
         }
     }
+    &.ham {
+        display: none;
+    }
 }
 /*
 -----------
@@ -197,13 +223,19 @@ nav.sticky {
     border-top: 0;
 
     background-color: $graypink50;
-    padding: 1.2rem 0;
+    padding: 2rem 2rem 1rem 2rem;
 }
 /*
 -----------
 Section
 -----------
 */
+.section-title {
+    font-size: 4.8rem;
+    font-weight: 900;
+    text-align: center;
+    color: $deepblue;
+}
 
 /*
 ------------
@@ -216,24 +248,26 @@ Section KV
 .kv-wrap {
     position: relative;
     display: flex;
+    background-image: url(../img/index/star-bg.jpg);
+    border-radius: 50px;
+}
+.kv-img {
+    width: calc(30% + 10rem);
+    position: relative;
 }
 .eve {
     position: absolute;
     bottom: 0;
-    right: calc((120/1920)*100vw);
+    right: 10rem;
     display: inline-flex;
     width: auto;
     height: 65rem;
     z-index: 1;
 }
 .kv-txt-wrap {
-    width: 70%;
-    @extend %hidden;
-    border-radius: 50px;
-    background-image: url(../img/index/star-bg.jpg);
-
-    padding: calc((90/1920)*100vw) calc((100/1920)*100vw);
+    width: calc(70% - 10rem);
     width: 100%;
+    padding: calc((90/1920)*100vw) calc((100/1920)*100vw);
 }
 .kv-slogan {
     line-height: 1.2;
@@ -253,13 +287,16 @@ Section KV
     background-color: $deepblue;
     padding: 1.5rem 0;
     color: $white;
-    width: 100%;
+    width: calc(100% - 3rem);
     max-width: 65rem;
     border-radius: 5rem;
     justify-content: center;
     transition: .2s;
     &:hover {
         background-color: $lightblue;
+        span {
+            color: $white;
+        }
     }
 }
 
@@ -269,7 +306,7 @@ Section Skill
 ------------
 */
 section#skill {
-    margin-bottom: 10rem;
+    margin-bottom: 15rem;
 }
 .divi-wide {
     height: 1px;
@@ -287,8 +324,7 @@ section#skill {
 
 .skill-item_img {
     img {
-        margin-right: 2rem;
-        margin-bottom: 1rem;
+        margin: 1rem;
     }
 }
 
@@ -331,7 +367,7 @@ section#about {
     position: absolute;
     bottom: 5rem;
     right: 5rem;
-    height: 100%;
+    height: 110%;
 }
 .about-txt-wrap {
     width: 50%;
@@ -341,4 +377,145 @@ section#about {
 .about-txt_title {
     font-size: 48px;
     font-weight: 900;
+}
+
+/*
+------------
+Section Works
+------------
+*/
+section#works {
+    background-color: $graypurple;
+    padding: 5rem 0;
+    text-align: center;
+}
+.works-items-wrap {
+    display: flex;
+    margin: 3rem 0;
+}
+.work-item {
+    position: relative;
+    width: calc((1/6)*100%);
+    height: 0px;
+    padding-top: calc(56.25% * (1/6));
+    opacity: .5;
+    transition: .2s;
+    cursor: pointer;
+
+    @extend %hidden;
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+/*
+------------
+Footer
+------------
+*/
+footer {
+    background-color: $black;
+    color: $skin;
+    padding: 5vw 0;
+    a {
+        color: $skin;
+    }
+}
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-btn-item {
+    margin: 0 0 0 1rem;
+    &:hover {
+        color:$graypurple;
+    }
+}
+
+/*
+------------
+Modal
+------------
+*/
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    
+    z-index: 100;
+     p {
+         line-height: 2;
+     }
+}
+.modal-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-closer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-panel {
+    position: relative;
+    padding: 32px;
+    background-color: $skin;
+    z-index: 1;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 400px;
+    &.alert {
+        max-width: 550px;
+    }
+}
+.modal-title {
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+.modal-body {
+    width:100%;
+}
+.modal-footer {
+    text-align: center;
+    margin-top: 10px;
+    .primary-btn {
+        margin: 0;
+    }
+}
+.nav-items-wrap_mobile {
+    .nav-item {
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+        padding: 2rem 0;
+    }
+}
+.modal-closer_btn {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    img {
+        cursor: pointer;
+    }
 }

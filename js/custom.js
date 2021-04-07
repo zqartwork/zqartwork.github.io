@@ -54,3 +54,28 @@ $(document).ready(function() {
         stickyNav();
     });
 });
+/*
+------
+Class Version TT
+------
+*/
+$('.modal-opener').click(function(){
+    let tt = $(this).attr('tt-to');
+    console.log(tt)
+    $('.' + tt).show();
+    $('body').css({
+        'max-height': '100vh',
+        'max-width': '100vw',
+        'overflow': 'hidden',
+        // 'position': 'fixed'
+    })
+})
+$('.modal-closer, .modal-closer_btn').click(function(){
+    $(this).parents('.modal').hide();
+    $('body').css({
+        'max-height': 'auto',
+        'max-width': 'auto',
+        'overflow': 'auto',
+        'position': 'relative'
+    })
+})
