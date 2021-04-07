@@ -5,121 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta property="og:image" content="https://i.imgur.com/mtLaUxx.png">
-    <meta property="og:description" content="結合電腦插畫繪圖、專業UIUX設計與前端開發人員">
     <title>ZQARTWORK</title>
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-
-    <!-- 基礎歸零設置 -->
+    <!--google plus info-->
+    <meta itemprop="name" content="ZQARTWORK - Professional UIUX design, 2D digital artist and experienced front-end-engineer is here for you. 專業 UIUX 設計、2D美術繪製、富有經驗的前端工程師，zqartwork在此為您服務。">
+    <meta itemprop="image" content="https://zqartwork.github.io/img/index/1200x628.jpg">
+    <meta name="description" content="ZQARTWORK - Professional UIUX design, 2D digital artist and experienced front-end-engineer is here for you. 專業 UIUX 設計、2D美術繪製、富有經驗的前端工程師，zqartwork在此為您服務。" />
+    <!--FB info-->
+    <meta property="og:title" content="ZQARTWORK - Professional UIUX design, 2D digital artist and experienced front-end-engineer is here for you. 專業 UIUX 設計、2D美術繪製、富有經驗的前端工程師，zqartwork在此為您服務。" />
+    <meta property="og:site_name" content="ZQARTWORK" />
+    <meta property="og:url" content="https://zqartwork.github.io">
+    <meta property="og:image" content="https://zqartwork.github.io/img/index/1200x628.jpg">
+    <meta property="og:description" content="ZQARTWORK - Professional UIUX design, 2D digital artist and experienced front-end-engineer is here for you. 專業 UIUX 設計、2D美術繪製、富有經驗的前端工程師，zqartwork在此為您服務。">
+    <meta property="og:type" content="website" />
+    <!--Favicon-->
+    <link rel="icon" href="https://zqartwork.github.io/img/index/favicon.ico" type="image/x-icon" />
+    <!--CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <!-- materialize -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- fontawesome -->
-    <script src="https://kit.fontawesome.com/3530f29c86.js" crossorigin="anonymous"></script>
-    <!-- owlCarousel -->
+    <!-- wow animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- owl-default-theme -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <!-- 自訂設置 -->
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- main-style -->
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-    <div class="wrapper" id="app">
-        <!-- Navbar -->
-        <div class="preload-section">
-            <img src="img/preload.svg" alt="">
-            LOADING
-        </div>
-        <nav>
-            <div class="nav-wrapper container">
-                <a href="index.html" class="brand-logo" @click='page=0'>ZQARTWORK</a>
-                <ul class="right hide-on-med-and-down">
-                    <li :class='{active:page==1}'><a href="about.html" @click='page=1'>ABOUT</a></li>
-                    <li :class='{active:page==2}'><a href="works.html" @click='page=2'>WORKS</a></li>
-                    <li><a href="https://www.cakeresume.com/zqartwork">EXPERIENCE</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
-                <a href="#" data-target="mobile-demo" class="right sidenav-trigger"><i class="fas fa-bars"></i></a>
-            </div>
-        </nav>
-
-        <!-- Sidenav -->
-        <ul class="sidenav" id="mobile-demo">
-            <li :class='{active:page==1}'><a href="about.html" @click='page=1'>ABOUT</a></li>
-            <li :class='{active:page==2}'><a href="works.html" @click='page=2'>WORKS</a></li>
-            <li><a href="https://www.cakeresume.com/zqartwork">EXP</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-
-        <!-- 主要內容區域 -->
-        <div class="">
-            <div class="section section-index" id="index">
-                <div class="flex-wrapper">
-                    <div class="zq-pic flex-wrapper">
-                        <img src="img/official/zq-pic.png" alt="" class="lazyload">
-                    </div>
-                    <div class="bg-title">
-                        <img src="img/official/svg/logo_title.svg" alt="" class="animated fadeInRight">
-                        <div class="zq-d-content">
-                            <div class="animated fadeInLeft delay-1s">
-                                Web / APP - UI / UX Designer
-                            </div>
-                            <div class="animated fadeInLeft delay-2s">
-                                Front-end Designer <br>
-                            </div>
-                            <div class="animated fadeInLeft delay-3s">
-                                Illustrator <br>
-                            </div>
-                            <div class="animated fadeInLeft delay-4s">
-                                Graphic Designer <br>
-                            </div>
-                        </div>
-                        <div class="zq-more flex-wrapper align-start just-right animated fadeIn delay-5s"
-                            @click="page=1">MORE
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div id="app">
     </div>
-
-    <!-- 3.4.1 jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <!-- FontAwesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <!-- wow.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- owlCarousel2 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+    <!-- custom.js -->
     <script src="js/custom.js"></script>
+
+    <!-- JQ 掛載點 -->
     <script>
-        new Vue({
-            el: '#app',
-            data: {
-                page: 0,
-            },
-            methods: {},
-            mounted: function () {
-                const cursor = document.querySelector('.zq-cursor');
-                document.addEventListener('mousemove', e => {
-                    cursor.setAttribute('style', 'top: ' + (e.pageY - 10) + 'px; left: ' + (e
-                        .pageX - 10) + 'px;')
-                })
-            },
-        })
-    </script>
-    <script>
-        $(".lazyload").lazyload();
-        $(document).ready(function () {
-            $(".section-index").hide();
-            setTimeout(function () {
-                $('.preload-section').fadeOut();
-                $('.section-index').fadeIn(1000);
-            }, 000);
-            $('.sidenav').sidenav({
-                edge: 'right',
-            });
+        $(document).ready(function() {
+            new WOW().init();
         });
     </script>
+
 </body>
 
 </html>

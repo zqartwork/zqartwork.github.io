@@ -1,0 +1,8 @@
+@import "kit";
+@import "style";
+@import "rwd";
+
+html, body, * {
+    box-sizing: border-box;
+    font-family: $font;
+}
