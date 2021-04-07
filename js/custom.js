@@ -25,6 +25,8 @@ let selectCustom = function() {
     csMenuOpt.click(function() {
         $(this).parents('.custom_select').find('.selected').text($(this).text());
         $(this).parents('.custom_select').find('#data_input').attr('value', $(this).attr('id'));
+        $('#' + $(this).attr('page')).show()
+        $('#' + $(this).attr('page')).siblings().hide()
     })
 };
 /*
