@@ -19,7 +19,7 @@ a {
     outline: none;
     cursor: pointer;
     &:active, &:focus, &:visited {
-        color: inherit;
+        color: $white;
     }
     span {
         cursor: pointer;
