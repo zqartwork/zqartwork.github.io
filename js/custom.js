@@ -81,3 +81,42 @@ $('.modal-closer, .modal-closer_btn').click(function(){
         'position': 'relative'
     })
 })
+
+/*
+-----------
+Scroll Top
+-----------
+*/
+let scrollTopFc = function() {
+    var scrollTop = $(".scrollTop");
+    $(window).scroll(function() {
+        var topPos = $(this).scrollTop();
+        if (topPos > 100) {
+        $(scrollTop).css("opacity", "1");
+
+        } else {
+        $(scrollTop).css("opacity", "0");
+        }
+    }); 
+
+    //Click event to scroll to top
+    $(scrollTop).click(function() {
+        $('html, body').animate({
+        scrollTop: 0
+        }, 800);
+        return false;
+    }); 
+}
+
+/*
+------------
+Switch Tab
+------------
+*/
+
+let switchTab = function(){
+    $('.switcher').click(function(){
+        $('#' + $(this).attr('sw-to')).addClass('active')
+        $('#' + $(this).attr('sw-to')).siblings().removeClass('active')
+    })
+}
