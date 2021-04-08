@@ -28,6 +28,10 @@ a {
     }
 }
 
+img {
+    cursor: inherit;
+}
+
 span {
     display: inline-flex;
     align-items: center;
@@ -156,9 +160,16 @@ nav {
 }
 .nav-logo {
     margin-right: 2.5rem;
+    cursor: pointer;
+    img {
+        cursor: pointer;
+    }
 }
 .nav-item {
     margin: 0 2.5rem;
+    &:active, &:focus, &:visited {
+        color: $deepblue;
+    }
 }
 
 .nav-icon {
