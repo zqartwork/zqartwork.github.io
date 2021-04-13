@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ZQARTWORK</title>
+    <!--google plus info-->
+    <meta itemprop="name" content="ZQARTWORK - Professional UIUX design, 2D digital artist and experienced front-end-engineer is here for you. 專業 UIUX 設計、2D美術繪製、富有經驗的前端工程師，zqartwork在此為您服務。">
+    <meta itemprop="image" content="https://zqartwork.github.io/img/index/1200x628.jpg">
+    <meta name="description" content="ZQARTWORK - Professional UIUX design, 2D digital artist and experienced front-end-engineer is here for you. 專業 UIUX 設計、2D美術繪製、富有經驗的前端工程師，zqartwork在此為您服務。" />
+    <!--FB info-->
+    <meta property="og:title" content="ZQARTWORK - Professional UIUX design, 2D digital artist and experienced front-end-engineer is here for you. 專業 UIUX 設計、2D美術繪製、富有經驗的前端工程師，zqartwork在此為您服務。" />
+    <meta property="og:site_name" content="ZQARTWORK" />
+    <meta property="og:url" content="https://zqartwork.github.io">
+    <meta property="og:image" content="https://zqartwork.github.io/img/index/1200x628.jpg">
+    <meta property="og:description" content="ZQARTWORK - Professional UIUX design, 2D digital artist and experienced front-end-engineer is here for you. 專業 UIUX 設計、2D美術繪製、富有經驗的前端工程師，zqartwork在此為您服務。">
+    <meta property="og:type" content="website" />
+    <!--Favicon-->
+    <link rel="icon" href="../../img/index/favicon.ico" type="image/x-icon" />
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <!-- wow animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- owl-default-theme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- main-style -->
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <!-- 英文版本 -->
+    <div id="appen">
+        <div id="gt" class="scrollTop">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+        <nav class="nav">
+            <div class="container">
+                <div class="nav-wrap">
+                    <a href="../index.html" class="nav-logo">
+                        <img src="../img/index/logo.svg" alt="">
+                    </a>
+                    <div class="nav-items-wrap">
+                        <a href="../about.html" target="_blank" class="nav-item"><span>ABOUT</span></a>
+                        <a href="../works.html" target="_blank" class="nav-item"><span>WORKS</span></a>
+                        <a href="../services.html" target="_blank" class="nav-item"><span>SERVICES</span></a>
+                        <a href="../contact.html" target="_blank" class="nav-item"><span>CONTACT</span></a>
+                        <div class="select_container nav-item">
+                            <div class="flex-wrapper">
+                                <div class="custom_select">
+                                    <div class="select_title">
+                                        <div class="flex-wrapper just-left">
+                                            <span class="selected">Language</span>
+                                            <i class="fas fa-caret-right select_i"></i>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" name="date" id="data_input">
+                                    <ul class="select_menu">
+                                        <li page="apptc">繁體中文</li>
+                                        <li page="appsc">简体中文</li>
+                                        <li page="appen">English</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-wrap">
+                    <a href="https://www.facebook.com/zqartwork" target="_blank" rel="noopener noreferrer" class="nav-icon fb"><span></span></a>
+                    <a href="https://zqartwork.artstation.com/" target="_blank" rel="noopener noreferrer" class="nav-icon as"><span></span></a>
+                    <a href="https://www.instagram.com/zqart.work" target="_blank" rel="noopener noreferrer" class="nav-icon ins"><span></span></a>
+                    <a href="#!" class="nav-icon ham modal-opener" tt-to="nav-mobile"><span></span></a>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <section id="project001">
+                <div class="container">
+                    <div class="project-wrap">
+                        <div class="project-content">
+                            <div class="project-title">
+                                <div class="sub"><span>Project Title</span></div>
+                                <h1>iCan - VIP Easter Campaign Site</h1>
+                                <img :src="this.pageThumb" alt="" class="page-thumb">
+                            </div>
+                            <div class="project-desc">
+                                <div class="sub"><span>Project Description</span></div>
+                                <p>Used Adobe AI to create all items in this site, the topic is searching Easter Eggs in a play ground, this website is reserved by iCan so it can't be display here.</p>
+                            </div>
+                        </div>
+                        <div class="gallery-title sub"><span>Work Thumb</span></div>
+                        <div class="gallery-wrap">
+                            <a href="#!" class="modal-opener g-item" v-for="pageImg in pageImgs" :tt-to="pageImg.modalId">
+                                <img :src="pageImg.imgUrl" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="../works.html" class="primary-btn"><span>View Other Works</span></a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="footer-wrap">
+                    <div class="footer-copy-txt"><p>© 2021 Copyright belongs to ZQARTWORK, Inc.</p></div>
+                    <div class="footer-btn-item-wrap">
+                        <a href="https://home.gamer.com.tw/zqartwork" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>BahamutForum</span></a>
+                        <a href="https://www.plurk.com/zqartwork" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Plurk</span></a>
+                        <a href="https://github.com/zqartwork" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Github</span></a>
+                        <a href="https://www.pixiv.net/users/44069467" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Pixiv</span></a>
+                        <a href="https://www.tasker.com.tw/workroom/JgzMDL" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Tasker</span></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="nav-mobile modal">
+            <div class="modal-container">
+                <div class="modal-closer"></div>
+                <div class="modal-panel">
+                    <a href="#!" class="modal-closer_btn">
+                        <img src="../img/index/closer.svg" alt="">
+                    </a>
+                    <div class="modal-content">
+                        <div class="modal-title">
+                        </div>
+                        <div class="modal-body">
+                            <div class="nav-items-wrap_mobile">
+                                <a href="../about.html" target="_blank" class="nav-item"><span>ABOUT</span></a>
+                                <a href="../works.html" target="_blank" class="nav-item"><span>WORKS</span></a>
+                                <a href="../services.html" target="_blank" class="nav-item"><span>SERVICES</span></a>
+                                <a href="../contact.html" target="_blank" class="nav-item"><span>CONTACT</span></a>
+                                <div class="select_container nav-item">
+                                    <div class="select-flex-wrapper">
+                                        <div class="custom_select">
+                                            <div class="select_title">
+                                                <div class="flex-wrapper just-left">
+                                                    <span class="selected">Language</span>
+                                                    <i class="fas fa-caret-right select_i"></i>
+                                                </div>
+                                            </div>
+                                            <input type="hidden" name="date" id="data_input">
+                                            <ul class="select_menu">
+                                                <li page="apptc">繁體中文</li>
+                                                <li page="appsc">简体中文</li>
+                                                <li page="appen">English</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal g-modal" v-for="pageImg in pageImgs" :class="pageImg.modalId">
+            <div class="modal-container">
+                <div class="modal-closer"></div>
+                <div class="modal-panel">
+                    <a href="#!" class="modal-closer_btn">
+                        <img src="../img/index/closer.svg" alt="">
+                    </a>
+                    <div class="modal-content">
+                        <div class="modal-title">
+                            <span>{{pageImg.modalTitle}}</span>
+                        </div>
+                        <div class="modal-body">
+                            <a :href="pageImg.imgUrl" target="_blank" rel="noopener noreferrer">
+                                <img :src="pageImg.imgUrl" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 繁體中文 -->
+    <div id="apptc">
+        <div id="gt" class="scrollTop">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+        <nav class="nav">
+            <div class="container">
+                <div class="nav-wrap">
+                    <div class="nav-logo">
+                        <img src="../img/index/logo.svg" alt="">
+                    </div>
+                    <div class="nav-items-wrap">
+                        <a href="../about.html" target="_blank" class="nav-item"><span>關於</span></a>
+                        <a href="../works.html" target="_blank" class="nav-item"><span>作品</span></a>
+                        <a href="../services.html" target="_blank" class="nav-item"><span>服務</span></a>
+                        <a href="../contact.html" target="_blank" class="nav-item"><span>聯絡</span></a>
+                        <div class="select_container nav-item">
+                            <div class="flex-wrapper">
+                                <div class="custom_select">
+                                    <div class="select_title">
+                                        <div class="flex-wrapper just-left">
+                                            <span class="selected">繁體中文</span>
+                                            <i class="fas fa-caret-right select_i"></i>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" name="date" id="data_input">
+                                    <ul class="select_menu">
+                                        <li page="apptc">繁體中文</li>
+                                        <li page="appsc">简体中文</li>
+                                        <li page="appen">English</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-wrap">
+                    <a href="https://www.facebook.com/zqartwork" target="_blank" rel="noopener noreferrer" class="nav-icon fb"><span></span></a>
+                    <a href="https://zqartwork.artstation.com/" target="_blank" rel="noopener noreferrer" class="nav-icon as"><span></span></a>
+                    <a href="https://www.instagram.com/zqart.work" target="_blank" rel="noopener noreferrer" class="nav-icon ins"><span></span></a>
+                    <a href="#!" class="nav-icon ham modal-opener" tt-to="nav-mobile"><span></span></a>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <section id="project001">
+                <div class="container">
+                    <div class="project-wrap">
+
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="footer-wrap">
+                    <div class="footer-copy-txt"><p>© 2021 ZQARTWORK, Inc. 版權所有。</p></div>
+                    <div class="footer-btn-item-wrap">
+                        <a href="https://home.gamer.com.tw/zqartwork" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>巴哈姆特</span></a>
+                        <a href="https://www.plurk.com/zqartwork" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>噗浪</span></a>
+                        <a href="https://github.com/zqartwork" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Github</span></a>
+                        <a href="https://www.pixiv.net/users/44069467" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Pixiv</span></a>
+                        <a href="https://www.tasker.com.tw/workroom/JgzMDL" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Tasker外包網</span></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="nav-mobile modal">
+            <div class="modal-container">
+                <div class="modal-closer"></div>
+                <div class="modal-panel">
+                    <a href="#!" class="modal-closer_btn">
+                        <img src="../img/index/closer.svg" alt="">
+                    </a>
+                    <div class="modal-content">
+                        <div class="modal-title">
+                        </div>
+                        <div class="modal-body">
+                            <div class="nav-items-wrap_mobile">
+                                <a href="../about.html" target="_blank" class="nav-item"><span>關於</span></a>
+                                <a href="../works.html" target="_blank" class="nav-item"><span>作品</span></a>
+                                <a href="../services.html" target="_blank" class="nav-item"><span>服務</span></a>
+                                <a href="../contact.html" target="_blank" class="nav-item"><span>聯絡</span></a>
+                                <div class="select_container nav-item">
+                                    <div class="select-flex-wrapper">
+                                        <div class="custom_select">
+                                            <div class="select_title">
+                                                <div class="flex-wrapper just-left">
+                                                    <span class="selected">繁體中文</span>
+                                                    <i class="fas fa-caret-right select_i"></i>
+                                                </div>
+                                            </div>
+                                            <input type="hidden" name="date" id="data_input">
+                                            <ul class="select_menu">
+                                                <li page="apptc">繁體中文</li>
+                                                <li page="appsc">简体中文</li>
+                                                <li page="appen">English</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 簡體中文 -->
+    <div id="appsc">
+        <div id="gt" class="scrollTop">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+        <nav class="nav">
+            <div class="container">
+                <div class="nav-wrap">
+                    <div class="nav-logo">
+                        <img src="../img/index/logo.svg" alt="">
+                    </div>
+                    <div class="nav-items-wrap">
+                        <a href="../about.html" target="_blank" class="nav-item"><span>关于</span></a>
+                        <a href="../works.html" target="_blank" class="nav-item"><span>作品</span></a>
+                        <a href="../services.html" target="_blank" class="nav-item"><span>服务</span></a>
+                        <a href="../contact.html" target="_blank" class="nav-item"><span>联络</span></a>
+                        <div class="select_container nav-item">
+                            <div class="flex-wrapper">
+                                <div class="custom_select">
+                                    <div class="select_title">
+                                        <div class="flex-wrapper just-left">
+                                            <span class="selected">简体中文</span>
+                                            <i class="fas fa-caret-right select_i"></i>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" name="date" id="data_input">
+                                    <ul class="select_menu">
+                                        <li page="apptc">繁體中文</li>
+                                        <li page="appsc">简体中文</li>
+                                        <li page="appen">English</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-wrap">
+                    <a href="https://www.facebook.com/zqartwork" target="_blank" rel="noopener noreferrer" class="nav-icon fb"><span></span></a>
+                    <a href="https://zqartwork.artstation.com/" target="_blank" rel="noopener noreferrer" class="nav-icon as"><span></span></a>
+                    <a href="https://www.instagram.com/zqart.work" target="_blank" rel="noopener noreferrer" class="nav-icon ins"><span></span></a>
+                    <a href="#!" class="nav-icon ham modal-opener" tt-to="nav-mobile"><span></span></a>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <section id="project001">
+                <div class="container">
+                    <div class="project-wrap">
+
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="footer-wrap">
+                    <div class="footer-copy-txt"><p>© 2021 ZQARTWORK, Inc. 版权所有。</p></div>
+                    <div class="footer-btn-item-wrap">
+                        <a href="https://home.gamer.com.tw/zqartwork" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>巴哈姆特</span></a>
+                        <a href="https://www.plurk.com/zqartwork" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>噗浪</span></a>
+                        <a href="https://github.com/zqartwork" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Github</span></a>
+                        <a href="https://www.pixiv.net/users/44069467" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Pixiv</span></a>
+                        <a href="https://www.tasker.com.tw/workroom/JgzMDL" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Tasker外包网</span></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="nav-mobile modal">
+            <div class="modal-container">
+                <div class="modal-closer"></div>
+                <div class="modal-panel">
+                    <a href="#!" class="modal-closer_btn">
+                        <img src="../img/index/closer.svg" alt="">
+                    </a>
+                    <div class="modal-content">
+                        <div class="modal-title">
+                        </div>
+                        <div class="modal-body">
+                            <div class="nav-items-wrap_mobile">
+                                <a href="../about.html" target="_blank" class="nav-item"><span>关于</span></a>
+                                <a href="../works.html" target="_blank" class="nav-item"><span>作品</span></a>
+                                <a href="../services.html" target="_blank" class="nav-item"><span>服务</span></a>
+                                <a href="../contact.html" target="_blank" class="nav-item"><span>联络</span></a>
+                                <div class="select_container nav-item">
+                                    <div class="select-flex-wrapper">
+                                        <div class="custom_select">
+                                            <div class="select_title">
+                                                <div class="flex-wrapper just-left">
+                                                    <span class="selected">简体中文</span>
+                                                    <i class="fas fa-caret-right select_i"></i>
+                                                </div>
+                                            </div>
+                                            <input type="hidden" name="date" id="data_input">
+                                            <ul class="select_menu">
+                                                <li page="apptc">繁體中文</li>
+                                                <li page="appsc">简体中文</li>
+                                                <li page="appen">English</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <!-- FontAwesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <!-- wow.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- owlCarousel2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- vue.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+    <!-- custom.js -->
+    <script src="../js/custom.js"></script>
+    <!-- JQ 掛載點 -->
+    <script>
+        $(document).ready(function() {
+            new WOW().init();
+            selectCustom();
+            scrollTopFc();
+            switchTab();
+            scrollSpy();
+            ttFc();
+        });
+    </script>
+    <script>
+        new Vue({
+            el: '#appen',
+            data: {
+                pageThumb: '../img/works/page-001/018.jpg',
+                pageImgs: [
+                    {
+                        modalTitle: '首頁',
+                        modalId: "img001",
+                        imgUrl: "../img/works/page-001/001.jpg"
+                    },{
+                        modalId: "img003",
+                        imgUrl: "../img/works/page-001/003.jpg"
+                    },{
+                        modalId: "img004",
+                        imgUrl: "../img/works/page-001/004.jpg"
+                    },{
+                        modalId: "img005",
+                        imgUrl: "../img/works/page-001/005.jpg"
+                    },{
+                        modalId: "img006",
+                        imgUrl: "../img/works/page-001/006.jpg"
+                    },{
+                        modalId: "img007",
+                        imgUrl: "../img/works/page-001/007.jpg"
+                    },{
+                        modalId: "img008",
+                        imgUrl: "../img/works/page-001/008.jpg"
+                    },{
+                        modalId: "img009",
+                        imgUrl: "../img/works/page-001/009.jpg"
+                    },{
+                        modalId: "img010",
+                        imgUrl: "../img/works/page-001/010.jpg"
+                    },{
+                        modalId: "img011",
+                        imgUrl: "../img/works/page-001/011.jpg"
+                    },{
+                        modalId: "img012",
+                        imgUrl: "../img/works/page-001/012.jpg"
+                    },{
+                        modalId: "img013",
+                        imgUrl: "../img/works/page-001/014.jpg"
+                    },{
+                        modalId: "img015",
+                        imgUrl: "../img/works/page-001/015.jpg"
+                    },{
+                        modalId: "img016",
+                        imgUrl: "../img/works/page-001/016.jpg"
+                    },{
+                        modalId: "img017",
+                        imgUrl: "../img/works/page-001/017.jpg"
+                    },
+                ],
+            },
+            methods: {
+                
+            },
+        })
+    </script>
+    
+</body>
+
+</html>

@@ -61,26 +61,28 @@ $(document).ready(function() {
 Class Version TT
 ------
 */
-$('.modal-opener').click(function(){
-    let tt = $(this).attr('tt-to');
-    console.log(tt)
-    $('.' + tt).show();
-    $('body').css({
-        'max-height': '100vh',
-        'max-width': '100vw',
-        'overflow': 'hidden',
-        // 'position': 'fixed'
+let ttFc = function(){
+    $('.modal-opener').click(function(){
+        let tt = $(this).attr('tt-to');
+        console.log(tt)
+        $('.' + tt).show();
+        $('body').css({
+            'max-height': '100vh',
+            'max-width': '100vw',
+            'overflow': 'hidden',
+            // 'position': 'fixed'
+        })
     })
-})
-$('.modal-closer, .modal-closer_btn').click(function(){
-    $(this).parents('.modal').hide();
-    $('body').css({
-        'max-height': 'auto',
-        'max-width': 'auto',
-        'overflow': 'auto',
-        'position': 'relative'
+    $('.modal-closer, .modal-closer_btn').click(function(){
+        $(this).parents('.modal').hide();
+        $('body').css({
+            'max-height': 'auto',
+            'max-width': 'auto',
+            'overflow': 'auto',
+            'position': 'relative'
+        })
     })
-})
+}
 
 /*
 -----------
@@ -119,4 +121,55 @@ let switchTab = function(){
         $('#' + $(this).attr('sw-to')).addClass('active')
         $('#' + $(this).attr('sw-to')).siblings().removeClass('active')
     })
+}
+
+/*
+------------
+Scroll Spy
+------------
+*/
+
+let scrollSpy = function(){
+  
+        var link = $('.section-anchor-nav-tab');
+        var alink = $('.anchor');
+        
+        // Move to specific section when click on menu link
+        link.on('click', function(e) {
+          var target = $($(this).attr('href'));
+          $('html, body').animate({
+            scrollTop: target.offset().top - 100
+          }, 600);
+          $(this).addClass('active');
+          e.preventDefault();
+        });
+        alink.on('click', function(e) {
+            var target = $($(this).attr('href'));
+            $('html, body').animate({
+              scrollTop: target.offset().top - 100
+            }, 600);
+            $(this).addClass('active');
+            e.preventDefault();
+          });
+        
+        // Run the scrNav when scroll
+        $(window).on('scroll', function(){
+          scrNav();
+        });
+        
+        // scrNav function 
+        // Change active dot according to the active section in the window
+        function scrNav() {
+          var sTop = $(window).scrollTop();
+          $('section').each(function() {
+            var id = $(this).attr('id'),
+                offset = $(this).offset().top-1,
+                height = $(this).height();
+            if(sTop >= offset && sTop < offset + height) {
+              link.removeClass('active');
+              $('#navbar').find('[data-scroll="' + id + '"]').addClass('active');
+            }
+          });
+        }
+        scrNav();
 }
