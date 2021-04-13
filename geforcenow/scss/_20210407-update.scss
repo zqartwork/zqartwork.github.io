@@ -1,0 +1,568 @@
+// Index Reform
+#key-visual-content {
+    position: relative;
+    width: 100%;
+    height: auto;
+    left: 0px;
+}
+/*
+-----
+首頻Slogan
+-----
+*/
+#key-visual-text {
+    position: relative;
+    width: 1025px;
+    margin: 0 auto;
+}
+#the-power-to-play-h1 {
+    position: absolute;
+    width: 100%;
+    max-width: 480px;
+    top: -50px;
+    right: unset;
+    left: -8vw;
+    font-family: $zh;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    text-align: right;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 108px;
+    padding-bottom: 30px;
+    user-select: none;
+}
+#key-visual-text .button {
+    position: absolute;
+    font-family: $zh;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #76b900;
+    float: right;
+    /* display: none; */
+    white-space: nowrap;
+}
+#button-join {
+    width: auto;
+    top: 320px;
+    right: 800px;
+
+    cursor: pointer;
+    z-index: 9;
+}
+.tpt-left {
+    text-align: left;
+}
+.tpt-mid {
+    text-align: center;
+    font-size: 36px;
+}
+/*
+------
+多邊形特區
+------
+*/
+#hexagons {
+    position: relative;
+    width: 0px;
+    height: 750px;
+    top: 0px;
+    left: 0px;
+    margin: 0 auto;
+}
+.hex-lg {
+    width: 688px;
+    height: 688px;
+}
+.hex-m1 {
+    width: 520px;
+    height: 520px;
+}
+.hex-md {
+    width: 448px;
+    height: 448px;
+}
+.hex-sm {
+    width: 352px;
+    height: 352px;
+}
+.hex-xs {
+    width: 448px;
+    height: 448px;
+}
+// 多邊形1
+#hexagon-1 {
+    position: absolute;
+    top: 290px;
+    left: 140px;
+}
+#hex-1-shadow {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url(https://www.nvidia.com/content/dam/en-zz/Solutions/gfn/webassets/overview/kv/fg-content-hex1-shadow.png);
+    pointer-events: none;
+    background-position: center center;
+    background-size: cover;
+}
+#gfn-video-clip-1 {
+    position: absolute;
+    width: 272px;
+    height: 272px;
+    object-fit: contain;
+    object-position: center bottom;
+    top: 88px;
+    left: 87px;
+    opacity: 1;
+    -webkit-clip-path: polygon(
+        204px 18.22px,
+        68px 18.22px,
+        0px 136px,
+        68px 253.78px,
+        204px 253.78px,
+        272px 136px,
+        204px 18.22px
+    );
+    clip-path: polygon(
+        204px 18.22px,
+        68px 18.22px,
+        0px 136px,
+        68px 253.78px,
+        204px 253.78px,
+        272px 136px,
+        204px 18.22px
+    );
+    /* clip-path: url(#gfn-video-msk-1-LDU); */
+    margin: 0;
+    pointer-events: none;
+}
+#hex-1-crop {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url(../img/fg-content-hex1-crop.png);
+    pointer-events: none;
+    background-position: center center;
+    background-size: cover;
+}
+#c1 {
+    position: absolute;
+    top: 88px;
+    left: 86px;
+    margin: 0 auto;
+    width: 272px;
+    height: 272px;
+    z-index: 0;
+    visibility: hidden;
+}
+#hex-1-stroke-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url(https://www.nvidia.com/content/dam/en-zz/Solutions/gfn/webassets/overview/kv/fg-content-hex1-stroke-overlay.png);
+    opacity: 0.5;
+    pointer-events: none;
+    background-position: center center;
+    background-size: cover;
+}
+#hex-1-flares-add {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url(https://www.nvidia.com/content/dam/en-zz/Solutions/gfn/webassets/overview/kv/fg-content-hex1-flares-add.png);
+    pointer-events: none;
+    background-position: center center;
+    background-size: cover;
+}
+
+// 多邊形2
+#hexagon-2 {
+    position: absolute;
+    z-index: 2;
+    left: -310px;
+    top: 63px;
+}
+#hex-2-shadow {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url(https://www.nvidia.com/content/dam/en-zz/Solutions/gfn/webassets/overview/kv/fg-content-hex2-shadow.png);
+    pointer-events: none;
+    background-position: center center;
+    background-size: cover;
+}
+#hex-2-crop {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url(../img/fg-content-hex2-crop.png);
+    pointer-events: none;
+    background-position: center center;
+    background-size: cover;
+}
+#gfn-video-clip-2 {
+    position: absolute;
+    width: 525px;
+    height: 525px;
+    object-fit: cover;
+    object-position: center center;
+    top: 82px;
+    left: 82px;
+    opacity: 1;
+    -webkit-clip-path: polygon(
+        393.8px 35.2px,
+        131.2px 35.2px,
+        0px 262.5px,
+        131.2px 489.8px,
+        393.8px 489.8px,
+        525px 262.5px,
+        393.8px 35.2px
+    );
+    clip-path: url(#gfn-video-msk-2-LDU);
+    margin: 0;
+    pointer-events: none;
+}
+#c2 {
+    position: absolute;
+    top: 80px;
+    left: 82px;
+    margin: 0 auto;
+    width: 525px;
+    height: 525px;
+    z-index: 0;
+    visibility: hidden;
+}
+#hex-2-stroke-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url(https://www.nvidia.com/content/dam/en-zz/Solutions/gfn/webassets/overview/kv/fg-content-hex2-stroke-overlay.png);
+    opacity: 0.5;
+    pointer-events: none;
+    background-position: center center;
+    background-size: cover;
+}
+#hex-2-flares-add {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url(https://www.nvidia.com/content/dam/en-zz/Solutions/gfn/webassets/overview/kv/fg-content-hex2-flares-add.png);
+    pointer-events: none;
+    background-position: center center;
+    background-size: cover;
+}
+
+// 多邊形3
+#hexagon-3 {
+    position: absolute;
+    top: -60px;
+    left: 60px;
+}
+#hex-3-shadow {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url(https://www.nvidia.com/content/dam/en-zz/Solutions/gfn/webassets/overview/kv/fg-content-hex3-shadow.png);
+    pointer-events: none;
+    background-position: center center;
+    background-size: cover;
+}
+#hex-3-crop {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url(../img/fg-content-hex3-crop.png);
+    pointer-events: none;
+    background-position: center center;
+    background-size: cover;
+}
+#gfn-video-clip-3 {
+    position: absolute;
+    width: 178px;
+    height: 178px;
+    object-fit: contain;
+    object-position: center bottom;
+    top: 88px;
+    left: 88px;
+    opacity: 1;
+    -webkit-clip-path: polygon(132px 11px, 44px 11px, 0px 88px, 44px 166px, 132px 166px, 178px 88px, 132px 11px);
+    clip-path: polygon(132px 11px, 44px 11px, 0px 88px, 44px 166px, 132px 166px, 178px 88px, 132px 11px);
+    /* clip-path: url(#gfn-video-msk-3-LDU); */
+    margin: 0;
+    pointer-events: none;
+}
+#c3 {
+    position: absolute;
+    top: 87.5px;
+    left: 87.5px;
+    margin: 0 auto;
+    width: 180px;
+    height: 180px;
+    z-index: 0;
+    visibility: hidden;
+}
+#hex-3-stroke-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url(https://www.nvidia.com/content/dam/en-zz/Solutions/gfn/webassets/overview/kv/fg-content-hex3-stroke-overlay.png);
+    opacity: 0.5;
+    pointer-events: none;
+    background-position: center center;
+    background-size: cover;
+}
+#hex-3-flares-add {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url(https://www.nvidia.com/content/dam/en-zz/Solutions/gfn/webassets/overview/kv/fg-content-hex3-flares-add.png);
+    pointer-events: none;
+    background-position: center center;
+    background-size: cover;
+}
+
+// 多邊形4
+#hexagon-4 {
+    position: absolute;
+    top: 50px;
+    left: 160px;
+}
+#hex-4-shadow {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url(https://www.nvidia.com/content/dam/en-zz/Solutions/gfn/webassets/overview/kv/fg-content-hex4-shadow.png);
+    pointer-events: none;
+    background-position: center center;
+    background-size: cover;
+}
+#hex-4-crop {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url(../img/fg-content-hex4-crop.png);
+    pointer-events: none;
+    background-position: center center;
+    background-size: cover;
+    background-position: center center;
+    background-size: cover;
+}
+#gfn-video-clip-4 {
+    position: absolute;
+    width: 274px;
+    height: 274px;
+    object-fit: cover;
+    object-position: center;
+    top: 87px;
+    left: 87px;
+    opacity: 1;
+    -webkit-clip-path: polygon(
+        205.5px 18.36px,
+        68.5px 18.36px,
+        0px 137px,
+        68.5px 255.65px,
+        205.5px 255.65px,
+        274px 137px,
+        205.5px 18.36px
+    );
+    clip-path: polygon(
+        205.5px 18.36px,
+        68.5px 18.36px,
+        0px 137px,
+        68.5px 255.65px,
+        205.5px 255.65px,
+        274px 137px,
+        205.5px 18.36px
+    );
+    /* clip-path: url(#gfn-video-msk-4-LDU); */
+    margin: 0;
+    pointer-events: none;
+}
+#c4 {
+    position: absolute;
+    top: 86px;
+    left: 86px;
+    margin: 0 auto;
+    width: 274px;
+    height: 274px;
+    z-index: 0;
+    visibility: hidden;
+}
+#hex-4-stroke-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url(https://www.nvidia.com/content/dam/en-zz/Solutions/gfn/webassets/overview/kv/fg-content-hex4-stroke-overlay.png);
+    opacity: 0.5;
+    pointer-events: none;
+    background-position: center center;
+    background-size: cover;
+}
+#hex-4-flares-add {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url(https://www.nvidia.com/content/dam/en-zz/Solutions/gfn/webassets/overview/kv/fg-content-hex4-flares-add.png);
+    pointer-events: none;
+    background-position: center center;
+    background-size: cover;
+}
+// 多邊形5
+#hexagon-5 {
+    position: absolute;
+    z-index: 1;
+    top: 305px;
+    left: -540px;
+}
+#hex-5-shadow {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url(../img/fg-content-hex5-shadow.png);
+    pointer-events: none;
+    background-position: center center;
+    background-size: cover;
+}
+#hex-5-crop {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url(../img/fg-content-hex5-crop-wolfenstein.png);
+    pointer-events: none;
+    background-position: center center;
+    background-size: cover;
+    background-position: center center;
+    background-size: cover;
+}
+#hex-5-stroke-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url(https://www.nvidia.com/content/dam/en-zz/Solutions/gfn/webassets/overview/kv/fg-content-hex5-stroke-overlay.png);
+    opacity: 0.5;
+    pointer-events: none;
+    background-position: center center;
+    background-size: cover;
+}
+#hex-5-flares-add {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url(https://www.nvidia.com/content/dam/en-zz/Solutions/gfn/webassets/overview/kv/fg-content-hex5-flares-add.png);
+    pointer-events: none;
+    background-position: center center;
+    background-size: cover;
+}
+
+@media(max-width: 1024px) {
+    .section1 {
+        height: calc((700/1024)*100vw);
+    }
+    #hexagons {
+        position: relative;
+        width:  0px;
+        height: 450px;
+        margin: 0 auto;
+        top: 0px;
+        left: 0px;
+    }
+    .hex-m1 {
+        width: 31.25vw;
+        height: 31.25vw;
+    }
+    .hex-lg {
+        width: 48.33vw;
+        height: 48.33vw;
+    }
+    .hex-sm {
+        width: 24.7vw;
+        height: 24.7vw;
+    }
+    .hex-md {
+        width: 32.7vw;
+        height: 32.7vw;
+    }
+    .hex-xs {
+        width: 32.52vw;
+        height: 32.52vw;
+    }
+    #hexagon-1 {
+        left: calc((170/1024)*100vw);
+        top: calc((240/1024)*100vw);
+    }
+    #hexagon-2 {
+        top: calc((63/1024)*100vw);
+        left: calc((-170/1024)*100vw);
+    }
+    #hexagon-3 {
+        display: block;
+        top:  calc((-30/1024)*100vw);
+        left: calc((95/1024)*100vw);
+    }
+    #hexagon-4 {
+        top: calc((50/1024)*100vw);
+        left: calc((165/1024)*100vw);
+    }
+    #hexagon-5 {
+        top: calc((240/1024)*100vw);
+        left: calc((-340/1024)*100vw);
+    }
+    #key-visual-text {
+        position: relative;
+        width: calc((640/1024)*100vw);
+        margin: 0 auto;
+    }
+    #the-power-to-play-h1 {
+        padding-top: 3vw;
+        right: unset;
+        top: calc((0/1024)*100vw);
+        left: -8vw;
+        font-size: calc((32/1024)*100vw);
+    }
+    .tpt-left {
+        text-align: left;
+    }
+    .tpt-right {
+        text-align: left;
+    }
+    .tpt-mid {
+        text-align: left;
+        font-size: calc((32/1024)*100vw);
+    }
+    #button-join {
+        top: calc((180/1024)*100vw);
+        right: unset;
+        left: calc((-100/1024)*100vw);
+        span {
+            font-size: calc((24/1024)*100vw);
+        }
+    }
+}
+@media(max-width: 768px) {
+    
+    #button-join {
+        span {
+            font-size: 16px;
+        }
+        .en {
+            display: none;
+        }
+    }
+    
+}
+@media (max-width: 650px) {
+    #the-power-to-play-h1 {
+        padding: 0;
+    }
+}
+@media (max-width: 640px) {
+    section#powerplay {
+        padding: 0;
+    }
+    #key-visual-content {
+        top: 1.5rem;
+    }
+}

@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>最新消息 - Geforce NOW x 台灣大哥大</title>
+    <!--google plus info-->
+    <meta itemprop="name" content="Geforce NOW x 台灣大哥大 - 跳脫設備的束縛，盡情遊戲">
+    <meta itemprop="image" content="[網頁縮圖_1200x628]">
+    <meta name="description" content="由台灣大哥大技術支持的 Geforce NOW，攜手引領5G新時代的來臨！" />
+    <!--FB info-->
+    <meta property="og:title" content="Geforce NOW x 台灣大哥大 - 跳脫設備的束縛，盡情遊戲" />
+    <meta property="og:site_name" content="Geforce NOW x 台灣大哥大" />
+    <meta property="og:url" content="[網頁網址_URL]">
+    <meta property="og:image" content="[網頁縮圖_1200x628]">
+    <meta property="og:description" content="由台灣大哥大技術支持的 Geforce NOW，攜手引領5G新時代的來臨！">
+    <meta property="og:type" content="website" />
+    <!--Favicon-->
+    <link rel="icon" href="https://www.taiwanmobile.com/bp-include/Y19/img/ico/favicon.ico?v=20190613"
+        type="image/x-icon" />
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="fonts/geforce.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/update.css">
+</head>
+
+<body>
+    <div id="app">
+        <div id="gt" class="scrollTop">
+            <a href=""><i class="fas fa-chevron-up"></i></a>
+        </div>
+        <div class="wrapper">
+            <!-- 主選單 -->
+            <nav>
+                <!-- logo -->
+                <a href="index.html" class="logo-wrap">
+                    <img src="img/logo.svg" alt="">
+                </a>
+                <!-- nav-item -->
+                <div class="nav-items-wrap">
+                    <ul class="web-menu">
+                        <a href="#">
+                            <li id="nav-icon2">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </li>
+                        </a>
+                        <a href="news-list.html">
+                            <li class="nav-item active">最新消息</li>
+                        </a>
+                        <a href="games-list.html">
+                            <li class="nav-item">遊戲列表</li>
+                        </a>
+                        <a href="pricing.html">
+                            <li class="nav-item">會員方案</li>
+                        </a>
+                        <a href="system-require.html">
+                            <li class="nav-item">系統需求</li>
+                        </a>
+                        <a href="qa.html">
+                            <li class="nav-item">常見問題</li>
+                        </a>
+                        <a href="quickstart.html">
+                            <li class="nav-item">快速入門</li>
+                        </a>
+                        <a href="download.html">
+                            <li class="nav-item">軟體下載</li>
+                        </a>
+                        <!-- 登入前 -->
+                        <!-- <a href="#!">
+                            <li class="primary-btn login-btn">
+                                <span>註冊｜登入</span>
+                            </li>
+                        </a> -->
+                        <!-- 登入後 -->
+                        <a href="#" tt-to="accountOption" class="account-center-opener-wrap">
+                            <div class="option-wrap">
+                                <li class="primary-btn account-center-opener">
+                                    <div class="ic-wrap">
+                                        <img src="img/ic_account_white.svg" alt="">
+                                        <span>UserName</span>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </li>
+                                <ul id="accountOption">
+                                    <a href="admin-account.html">
+                                        <li class="option-link nav-item">會員中心</li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="option-link ic-wrap nav-item">
+                                            <i class="fas fa-power-off"></i>
+                                            <span>登出</span>
+                                        </li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </a>
+                    </ul>
+                    <ul class="m-menu">
+                        <a href="news-list.html">
+                            <li class="nav-item">最新消息</li>
+                        </a>
+                        <a href="games-list.html">
+                            <li class="nav-item">遊戲列表</li>
+                        </a>
+                        <a href="pricing.html">
+                            <li class="nav-item">會員方案</li>
+                        </a>
+                        <a href="system-require.html">
+                            <li class="nav-item">系統需求</li>
+                        </a>
+                        <a href="qa.html">
+                            <li class="nav-item">常見問題</li>
+                        </a>
+                        <a href="quickstart.html">
+                            <li class="nav-item">快速入門</li>
+                        </a>
+                        <a href="download.html">
+                            <li class="nav-item">軟體下載</li>
+                        </a>
+                    </ul>
+                </div>
+            </nav>
+            <!-- 系統需求 -->
+            <section class="section" id="newsList">
+                <div class="section-title wow fadeInUp">
+                    <span class="en">最新消息</span>
+                </div>
+                <div class="section-anchor news-list">
+                    <div class="section-anchor-nav">
+                        <a class="type-nav-tab active " nv-target="#ALL"> 
+                            <div class="ic-wrap">
+                                <span>全部消息</span>
+                            </div> 
+                        </a>
+                        <a class="type-nav-tab" nv-target="#SP"> 
+                            <div class="ic-wrap">
+                                <span>特別資訊</span>
+                                <span class="brick type1"></span>
+                            </div> 
+                        </a>
+                        <a class="type-nav-tab" nv-target="#AC"> 
+                            <div class="ic-wrap">
+                                <span>活動快訊</span>
+                                <span class="brick type2"></span>
+                            </div> 
+                        </a>
+                        <a class="type-nav-tab" nv-target="#GIF"> 
+                            <div class="ic-wrap">
+                                <span>遊戲情報</span>
+                                <span class="brick type3"></span>
+                            </div> 
+                        </a>
+                    </div>
+                </div>
+
+                <div class="news-list display-section">
+                    <ul class="type-section active" id="ALL">
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type1">特別資訊</span>
+                                <span class="sub">2021.04.09</span>
+                                <span class="state new">NEW</span><br>
+                                <a href="https://gfn.taiwanmobile.com/portal/news/article/31" class="news-title">
+                                    系統維護通知！
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type1">特別資訊</span>
+                                <span class="sub">2021.04.07</span>
+                                <span class="state new">NEW</span><br>
+                                <a href="https://gfn.taiwanmobile.com/portal/news/article/30" class="news-title">
+                                    優惠倒數！GeForce NOW Premium白金方案年訂
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type2">活動快訊</span>
+                                <span class="sub">2021.04.07</span>
+                                <span class="state new">NEW</span><br>
+                                <a href="https://gfn.taiwanmobile.com/portal/news/article/29" class="news-title">
+                                    myfone 購物x GeForce NOW 優惠碼活動
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type3">遊戲情報</span>
+                                <span class="sub">2021.03.XX</span>
+                                <span class="state new">NEW</span><br>
+                                <a href="https://gfn.taiwanmobile.com/portal/news/article/28" class="news-title">
+                                    GFN週報 – 快來參加 GFN 星期四特賣活動
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type3">遊戲情報</span>
+                                <span class="sub">2021.03.XX</span>
+                                <span class="state new">NEW</span><br>
+                                <a href="https://gfn.taiwanmobile.com/portal/news/article/27" class="news-title">
+                                    GFN週報 –  GeForce NOW 持續優化會員遊戲體驗
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type3">遊戲情報</span>
+                                <span class="sub">2021.03.19</span>
+                                <span class="state new">NEW</span><br>
+                                <a href="https://gfn.taiwanmobile.com/portal/news/article/26" class="news-title">
+                                    GFN週報 – 將針對《巫師》系列的 GOG 版本提供更多支援服務
+                                </a>
+                            </div>
+                        </li>
+                        <!-- 20210330 新增新聞 -->
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type2">活動快訊</span>
+                                <span class="sub">2021.03.30</span>
+                                <span class="state new">NEW</span>
+                                <br>
+                                <a href="https://gfn.taiwanmobile.com/portal/news/article/25" class="news-title">
+                                    【指定寬頻用戶優惠】免費體驗前 30 天 GeForce NOW Premium 白金方案
+                                </a>
+                            </div>
+                        </li>
+                        <!-- - -->
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type3">遊戲情報</span>
+                                <span class="sub">2021.03.XX</span>
+                                <span class="state new">NEW</span><br>
+                                <a href="https://gfn.taiwanmobile.com/portal/news/article/24" class="news-title">
+                                    GFN 週報 — 21 款遊戲將在三月加入 GeForce NOW
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type3">遊戲情報</span>
+                                <span class="sub">2021.03.XX</span>
+                                <span class="state new">NEW</span><br>
+                                <a href="https://gfn.taiwanmobile.com/portal/news/article/23" class="news-title">
+                                    本週的 GFN 週報，玩家們可欣賞《先遣戰士》的演示內容與其他十一款遊戲
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type3">遊戲情報</span>
+                                <span class="sub">2021.03.XX</span>
+                                <span class="state new">NEW</span><br>
+                                <a href="https://gfn.taiwanmobile.com/portal/news/article/22" class="news-title">
+                                    無可限量：GFN 週報 慶祝獨立遊戲開發的突破性進展 加入《Valheim》、《Terraria》和更多作品
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type2">活動快訊</span>
+                                <span class="sub">2021.02.23</span>
+                                <span class="state na">na</span><br>
+                                <a href="https://gfn.taiwanmobile.com/portal/news/article/21" class="news-title">
+                                    GeForce NOW x 哈哈活力站期間限定網咖體驗區 
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type1">特別資訊</span>
+                                <span class="sub">2021.02.18</span>
+                                <span class="state na">na</span><br>
+                                <a href="https://gfn.taiwanmobile.com/portal/news/article/20" class="news-title">
+                                    GeForce NOW 現正支援 Chrome Browser遊玩！
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type3">遊戲情報</span>
+                                <span class="sub">2021.02.09</span>
+                                <span class="state na">na</span><br>
+                                <a href="https://gfn.taiwanmobile.com/portal/news/article/19" class="news-title">
+                                    《CODE2040》 GeForce NOW大肆暢玩
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type2">活動快訊</span>
+                                <span class="sub">2021.01.28</span>
+                                <span class="state na">na</span>
+                                <br>
+                                <a href="https://gfn.taiwanmobile.com/portal/news/article/18" class="news-title">
+                                    台北電玩展 x GeForce NOW 體驗雲端遊戲平台的魅力
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type2">活動快訊</span>
+                                <span class="sub">2021.01.26</span>
+                                <span class="state na">na</span>
+                                <br>
+                                <a href="https://gfn.taiwanmobile.com/portal/news/article/17" class="news-title">
+                                    GeForce NOW 雲遊新年抽大獎 Macbook Air 等你拿！
+                                </a>
+                            </div>
+                        </li>
+                        <!-- <li>
+                            <div class="news-title-wrap">
+                                <span class="type type3">遊戲情報</span>
+                                <span class="sub">2021.01.21</span>
+                                <span class="state na">na</span>
+                                <br>
+                                <a href="https://gfn.taiwanmobile.com/portal/news/article/16" class="news-title">
+                                    《三國群英傳8》 GeForce NOW 大肆暢玩
+                                </a>
+                            </div>
+                        </li> -->
+                        <!-- 10條分隔線 -->
+                        <!-- <li>
+                            <div class="news-title-wrap">
+                                <span class="type type1">特別資訊</span>
+                                <span class="sub">2021.01.14</span>
+                                <span class="state na">na</span>
+                                <br>
+                                <a href="https://gfn.taiwanmobile.com/portal/news/article/15" class="news-title">
+                                    GeForce NOW 支援 iOS SAFARI，大肆暢玩你的 PC 遊戲！
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type2">活動快訊</span>
+                                <span class="sub">2020.12.29</span>
+                                <span class="state na">na</span>
+                                <br>
+                                <a href="https://gfn.taiwanmobile.com/portal/news/article/14" class="news-title">
+                                    【指定寬頻用戶優惠】免費體驗前 30 天 GeForce NOW Premium 白金方案
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type3">遊戲情報</span>
+                                <span class="sub">2020.12.17</span>
+                                <span class="state na">na</span>
+                                <br>
+                                <a href="https://gfn.taiwanmobile.com/portal/news/article/13" class="news-title">
+                                    最新3A遊戲大作 GeForce NOW大肆暢玩
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type3">遊戲情報</span>
+                                <span class="sub">2020.12.10</span>
+                                <span class="state na">na</span>
+                                <br>
+                                <a href="https://gfn.taiwanmobile.com/portal/news/article/12" class="news-title">
+                                    GeForce NOW 同慶 THE STEAM GAME FESTIVAL
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type2">活動快訊</span>
+                                <span class="sub">2020.11.10</span>
+                                <span class="state na">N/A</span>
+                                <br>
+                                <a href="https://gfn.taiwanmobile.com/portal/news/article/11" class="news-title">
+                                    買《電馭叛客2077》PC 實體盒裝版送 GeForce NOW 免費體驗優惠碼！
+                                </a>
+                            </div>
+                        </li> -->
+                        <!-- 15條分隔線 -->
+                        <!-- <li>
+                            <div class="news-title-wrap">
+                                <span class="type type1">特別資訊</span>
+                                <span class="sub">2020.11.02</span>
+                                <span class="state na">N/A</span>
+                                <br>
+                                <a href="https://gfn.taiwanmobile.com/portal/news/article/10" class="news-title">
+                                    GeForce NOW 正式上線！
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type2">活動快訊</span>
+                                <span class="sub">2020.11.02</span>
+                                <span class="state na">N/A</span>
+                                <br>
+                                <a href="https://gfn.taiwanmobile.com/portal/news/article/9" class="news-title">
+                                    【極速率領勝利II】成為寬頻指定方案用戶，即贈 GeForce NOW Premium白金方案優惠碼！
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type2">活動快訊</span>
+                                <span class="sub">2020.10.15</span>
+                                <span class="state na">N/A</span>
+                                <br>
+                                <a href="news/news-article-1015_01.html" class="news-title">
+                                    只要你是ROG Phone系列用戶，將可獲得 GeForce NOW 邀請碼！
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type2">活動快訊</span>
+                                <span class="sub">2020.10.06</span>
+                                <span class="state na">N/A</span>
+                                <br>
+                                <a href="news/news-article-1006_01.html" class="news-title">
+                                    【公測限定】第二波GeForce NOW邀請碼贈送活動
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type2">活動快訊</span>
+                                <span class="sub">2020.10.06</span>
+                                <span class="state na">N/A</span>
+                                <br>
+                                <a href="news/news-article-1006_01.html" class="news-title">
+                                    【雲遊黑色沙漠】加入 GeForce NOW 即可獲得《黑色沙漠》專屬虛寶包
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type2">活動快訊</span>
+                                <span class="sub">2020.09.02</span>
+                                <span class="state na">N/A</span>
+                                <br>
+                                <a href="news/news-article-0929_01.html" class="news-title">
+                                    【極速率領勝利】成為寬頻合作業者指定方案用戶，即贈 GeForce NOW 邀請碼體驗方案
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type2">活動快訊</span>
+                                <span class="sub">2020.09.02</span>
+                                <span class="state na">N/A</span>
+                                <br>
+                                <a href="news/news-article-0824_02.html" class="news-title">
+                                    【超能補給】至momo購物網買指定桌機或筆電，送GeForce NOW 邀請碼 &《超能競地》專屬虛寶包
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type2">活動快訊</span>
+                                <span class="sub">2020.08.24</span>
+                                <span class="state na">N/A</span>
+                                <br>
+                                <a href="news/news-article-0824_02.html" class="news-title">
+                                     加入GeForce NOW聯盟Taiwan Mobile 雲端遊戲平台 即可獲得《超能競地》專屬虛寶包
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type1">特別資訊</span>
+                                <span class="sub">2020.08.24</span>
+                                <span class="state na">N/A</span>
+                                <br>
+                                <a href="news/news-article-0824_01.html" class="news-title">
+                                    台灣大 5G 用戶 8/24 搶先體驗 GeForce NOW！
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type1">特別資訊</span>
+                                <span class="sub">2020.06.30</span>
+                                <span class="state na">N/A</span>
+                                <br>
+                                <a href="news/news-article-0630_01.html" class="news-title">
+                                    用 5G 能所不能，台灣大 5G 開台，7/1 零時正式上線！
+                                </a>
+                            </div>
+                        </li> -->
+                        <div class="pagination-wrap">
+                            <ul>
+                                <!-- 如果無法往前或往後請選擇disabled性質，或者直接隱藏。 -->
+                                <li><a href="#!" class="nv pagination disabled"><span> < </span></a></li>
+                                <li><a href="#!" class="nv pagination"><span>1</span></a></li>
+                                <li><a href="#!" class="nv pagination"><span>2</span></a></li>
+                                <li><a href="#!" class="nv pagination"><span>3</span></a></li>
+                                <li><a href="#!" class="nv pagination"><span>4</span></a></li>
+                                <li><a href="#!" class="nv pagination"><span>5</span></a></li>
+                                <li><a href="#!" class="nv pagination"><span>6</span></a></li>
+                                <li><a href="#!" class="nv pagination"><span>7</span></a></li>
+                                <li><a href="#!" class="nv pagination"><span>8</span></a></li>
+                                <li><a href="#!" class="nv pagination"><span>9</span></a></li>
+                                <li><a href="#!" class="nv pagination"><span>10</span></a></li>
+                                <li><a href="#!" class="nv pagination"><span> > </span></a></li>
+                            </ul>
+                        </div>
+                    </ul>
+                    <ul class="type-section" id="SP">
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type1">特別資訊</span>
+                                <span class="sub">2021.02.18</span>
+                                <span class="state na">na</span><br>
+                                <a href="https://gfn.taiwanmobile.com/portal/news/article/20" class="news-title">
+                                    GeForce NOW 現正支援 Chrome Browser遊玩！
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type1">特別資訊</span>
+                                <span class="sub">2021.01.14</span>
+                                <span class="state na">na</span>
+                                <br>
+                                <a href="https://gfn.taiwanmobile.com/portal/news/article/15" class="news-title">
+                                    GeForce NOW 支援 iOS SAFARI，大肆暢玩你的 PC 遊戲！
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type1">特別資訊</span>
+                                <span class="sub">2020.11.02</span>
+                                <span class="state na">N/A</span>
+                                <br>
+                                <a href="https://gfn.taiwanmobile.com/portal/news/article/10" class="news-title">
+                                    GeForce NOW 正式上線！
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type1">特別資訊</span>
+                                <span class="sub">2020.08.24</span>
+                                <span class="state na">N/A</span>
+                                <br>
+                                <a href="news/news-article-0824_01.html" class="news-title">
+                                    台灣大 5G 用戶 8/24 搶先體驗 GeForce NOW！
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <!-- 20200819 新增新聞性質 -->
+                                <span class="type type1">特別資訊</span>
+                                <!-- 20200819 新增新聞性質 -->
+                                <span class="sub">2020.06.30</span>
+                                <span class="state na">N/A</span>
+                                <br>
+                                <a href="news/news-article-0630_01.html" class="news-title">
+                                    用 5G 能所不能，台灣大 5G 開台，7/1 零時正式上線！
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="type-section" id="AC">
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type2">活動快訊</span>
+                                <span class="sub">2021.03.30</span>
+                                <span class="state new">NEW</span>
+                                <br>
+                                <a href="https://gfn.taiwanmobile.com/portal/news/article/25" class="news-title">
+                                    【指定寬頻用戶優惠】免費體驗前 30 天 GeForce NOW Premium 白金方案
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type2">活動快訊</span>
+                                <span class="sub">2021.02.23</span>
+                                <span class="state na">na</span><br>
+                                <a href="https://gfn.taiwanmobile.com/portal/news/article/21" class="news-title">
+                                    GeForce NOW x 哈哈活力站期間限定網咖體驗區 
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type2">活動快訊</span>
+                                <span class="sub">2021.01.28</span>
+                                <span class="state na">na</span>
+                                <br>
+                                <a href="https://gfn.taiwanmobile.com/portal/news/article/18" class="news-title">
+                                    台北電玩展 x GeForce NOW 體驗雲端遊戲平台的魅力
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type2">活動快訊</span>
+                                <span class="sub">2021.01.26</span>
+                                <span class="state na">na</span>
+                                <br>
+                                <a href="https://gfn.taiwanmobile.com/portal/news/article/17" class="news-title">
+                                    GeForce NOW 雲遊新年抽大獎 Macbook Air 等你拿！
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type2">活動快訊</span>
+                                <span class="sub">2020.12.29</span>
+                                <span class="state na">na</span>
+                                <br>
+                                <a href="https://gfn.taiwanmobile.com/portal/news/article/14" class="news-title">
+                                    【指定寬頻用戶優惠】免費體驗前 30 天 GeForce NOW Premium 白金方案
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type2">活動快訊</span>
+                                <span class="sub">2020.11.10</span>
+                                <span class="state na">N/A</span>
+                                <br>
+                                <a href="https://gfn.taiwanmobile.com/portal/news/article/11" class="news-title">
+                                    買《電馭叛客2077》PC 實體盒裝版送 GeForce NOW 免費體驗優惠碼！
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type2">活動快訊</span>
+                                <span class="sub">2020.11.02</span>
+                                <span class="state na">N/A</span>
+                                <br>
+                                <a href="https://gfn.taiwanmobile.com/portal/news/article/9" class="news-title">
+                                    【極速率領勝利II】成為寬頻指定方案用戶，即贈 GeForce NOW Premium白金方案優惠碼！
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type2">活動快訊</span>
+                                <span class="sub">2020.10.15</span>
+                                <span class="state na">N/A</span>
+                                <br>
+                                <a href="news/news-article-1015_01.html" class="news-title">
+                                    只要你是ROG Phone系列用戶，將可獲得 GeForce NOW 邀請碼！
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type2">活動快訊</span>
+                                <span class="sub">2020.10.06</span>
+                                <span class="state na">N/A</span>
+                                <br>
+                                <a href="news/news-article-1006_01.html" class="news-title">
+                                    【公測限定】第二波GeForce NOW邀請碼贈送活動
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type2">活動快訊</span>
+                                <span class="sub">2020.10.06</span>
+                                <span class="state na">N/A</span>
+                                <br>
+                                <a href="news/news-article-1006_01.html" class="news-title">
+                                    【雲遊黑色沙漠】加入 GeForce NOW 即可獲得《黑色沙漠》專屬虛寶包
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type2">活動快訊</span>
+                                <span class="sub">2020.09.02</span>
+                                <span class="state na">N/A</span>
+                                <br>
+                                <a href="news/news-article-0929_01.html" class="news-title">
+                                    【極速率領勝利】成為寬頻合作業者指定方案用戶，即贈 GeForce NOW 邀請碼體驗方案
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type2">活動快訊</span>
+                                <span class="sub">2020.09.02</span>
+                                <span class="state na">N/A</span>
+                                <br>
+                                <a href="news/news-article-0824_02.html" class="news-title">
+                                    【超能補給】至momo購物網買指定桌機或筆電，送GeForce NOW 邀請碼 &《超能競地》專屬虛寶包
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type2">活動快訊</span>
+                                <span class="sub">2020.08.24</span>
+                                <span class="state na">N/A</span>
+                                <br>
+                                <a href="news/news-article-0824_02.html" class="news-title">
+                                     加入GeForce NOW聯盟Taiwan Mobile 雲端遊戲平台 即可獲得《超能競地》專屬虛寶包
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="type-section" id="GIF">
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type3">遊戲情報</span>
+                                <span class="sub">2021.03.XX</span>
+                                <span class="state new">NEW</span><br>
+                                <a href="https://gfn.taiwanmobile.com/portal/news/article/24" class="news-title">
+                                    GFN 週報 — 21 款遊戲將在三月加入 GeForce NOW
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type3">遊戲情報</span>
+                                <span class="sub">2021.03.XX</span>
+                                <span class="state new">NEW</span><br>
+                                <a href="https://gfn.taiwanmobile.com/portal/news/article/23" class="news-title">
+                                    本週的 GFN 週報，玩家們可欣賞《先遣戰士》的演示內容與其他十一款遊戲
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type3">遊戲情報</span>
+                                <span class="sub">2021.03.XX</span>
+                                <span class="state new">NEW</span><br>
+                                <a href="https://gfn.taiwanmobile.com/portal/news/article/22" class="news-title">
+                                    無可限量：GFN 週報 慶祝獨立遊戲開發的突破性進展 加入《Valheim》、《Terraria》和更多作品
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type3">遊戲情報</span>
+                                <span class="sub">2021.02.09</span>
+                                <span class="state na">na</span><br>
+                                <a href="https://gfn.taiwanmobile.com/portal/news/article/19" class="news-title">
+                                    《CODE2040》 GeForce NOW大肆暢玩
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type3">遊戲情報</span>
+                                <span class="sub">2021.01.21</span>
+                                <span class="state na">na</span>
+                                <br>
+                                <a href="https://gfn.taiwanmobile.com/portal/news/article/16" class="news-title">
+                                    《三國群英傳8》 GeForce NOW 大肆暢玩
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type3">遊戲情報</span>
+                                <span class="sub">2020.12.17</span>
+                                <span class="state na">na</span>
+                                <br>
+                                <a href="https://gfn.taiwanmobile.com/portal/news/article/13" class="news-title">
+                                    最新3A遊戲大作 GeForce NOW大肆暢玩
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="news-title-wrap">
+                                <span class="type type3">遊戲情報</span>
+                                <span class="sub">2020.12.10</span>
+                                <span class="state na">na</span>
+                                <br>
+                                <a href="https://gfn.taiwanmobile.com/portal/news/article/12" class="news-title">
+                                    GeForce NOW 同慶 THE STEAM GAME FESTIVAL
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- 下方額外連結 -->
+            <section class="section8" id="preFooter">
+                <div class="container">
+                    <div class="option-item-wrap">
+                        <div class="item wow fadeInUp">
+                            <div class="ic-wrap">
+                                <div class="ic-img system"></div>
+                                <div class="item-body">
+                                    <div class="tt">系統需求</div>
+                                    <a href="system-require.html" class="more">
+                                        <span class="txt">了解更多</span>
+                                        <i class="fas fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item wow fadeInUp">
+                            <div class="ic-wrap">
+                                <div class="ic-img faq"></div>
+                                <div class="item-body">
+                                    <div class="tt">常見問題</div>
+                                    <a href="qa.html" class="more">
+                                        <span class="txt">了解更多</span>
+                                        <i class="fas fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item wow fadeInUp">
+                            <div class="ic-wrap">
+                                <div class="ic-img service"></div>
+                                <div class="item-body">
+                                    <div class="tt">服務條款</div>
+                                    <a href="#" class="more">
+                                        <span class="txt">了解更多</span>
+                                        <i class="fas fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divi-wide"></div>
+                <div class="multi-item-wrap">
+                    <div class="multi-item wow fadeInRight">
+                        <div class="title">關於 <span class="en">About</span></div>
+                        <div class="divi"></div>
+                        <div class="multi-link-wrap">
+                            <div class="col">
+                                <a href="privacy.html" target="_blank" class="multi-link">隱私權政策</a>
+                                <a href="termsofuse.html" class="multi-link">使用者條款</a>
+                                <a href="" class="multi-link">合作洽談</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="multi-item wow fadeInRight">
+                        <div class="title">客戶服務 <span class="en">Service</span></div>
+                        <div class="divi"></div>
+                        <div class="multi-link-wrap">
+                            <div class="col">
+                                <a href="qa.html" class="multi-link">常見問答</a>
+                                <a href="" class="multi-link">快速入門</a>
+                                <a href="download.html" class="multi-link">軟體下載</a>
+                            </div>
+                            <div class="col">
+                                <a href="system-require.html" class="multi-link">系統需求</a>
+                                <a href="admin-question.html" class="multi-link">我要發問</a>
+                                <a href="pricing.html" class="multi-link">會員方案</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 頁尾 -->
+            <footer>
+                <div class="container">
+                    <div class="footer-nav">
+                        <div class="logo-nav wow fadeInLeft">
+                            <a href="index.html" class="logo">
+                                <img src="img/logo-white.svg" alt="">
+                            </a>
+                            <a href="games-list.html" class="footer-link">遊戲列表</a>
+                            <a href="pricing.html" class="footer-link">會員方案</a>
+                            <a href="system-require.html" class="footer-link">系統需求</a>
+                            <a href="qa.html" class="footer-link">常見問題</a>
+                            <a href="#!" class="footer-link">快速入門</a>
+                            <a href="download.html" class="footer-link">軟體下載</a>
+                        </div>
+                        <div class="social-media wow fadeInRight">
+                            <a href="" class="social-ic">
+                                <img src="img/fb.svg" alt="">
+                            </a>
+                            <a href="" class="social-ic">
+                                <img src="img/twitch.svg" alt="">
+                            </a>
+                            <a href="" class="social-ic">
+                                <img src="img/twitter.svg" alt="">
+                            </a>
+                            <a href="" class="social-ic">
+                                <img src="img/youtube.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="divi-wide g60"></div>
+                    <div class="copy-right wow fadeInUp">
+                        <div class="line1">台灣大哥大版權所有© 2020 TaiwanMobile all rights reserved.</div>
+                        <div class="line2">© 2020 NVIDIA Corporation. All rights reserved.</div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!--script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <!-- simplebar -->
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <!-- JQ 掛載點 -->
+    <script>
+        $(document).ready(function () {
+            wow = new WOW({
+                boxClass: 'wow', // default
+                animateClass: 'fadeInLeftShort', // default
+                offset: 0, // default
+                mobile: true, // default
+                live: true // default
+            })
+            new WOW().init();
+            if ($(window).width() < 500) {
+                $('.step-item-wrap .item').addClass('stop')
+            }
+            
+            $('#nav-icon2').click(function () {
+                $(this).toggleClass('open');
+                // 20200819 更新小版會員中心面板顯示問題
+                $('.account-center-opener').toggleClass('open');
+                $('#accountOption').toggleClass('open');
+            });
+
+            $('#nav-icon2').click(function () {
+                $('.m-menu').slideToggle();
+            })
+            $(window).resize(function () {
+                if ($(this).width() > 1024) {
+                    $('.m-menu').slideUp();
+                    $('nav .primary-btn').removeClass('open');
+                    $('#nav-icon2').removeClass('open');
+                }
+            })
+            var scrollTop = $(".scrollTop");
+
+            $(window).scroll(function () {
+                var topPos = $(this).scrollTop();
+                if (topPos > 100) {
+                    $(scrollTop).css("opacity", "1");
+
+                } else {
+                    $(scrollTop).css("opacity", "0");
+                }
+
+            });
+            //Click event to scroll to top
+            $(scrollTop).click(function () {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 800);
+                return false;
+            });
+        });
+    </script>
+
+</body>
+
+</html>

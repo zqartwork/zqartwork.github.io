@@ -1,0 +1,80 @@
+.sm-card-item {
+    &[game="apex"] {
+        background-color: rgb(189, 179, 165);
+        .card-body h1 span {
+            background-color: rgba(189, 179, 165, 0.7);
+        }
+    }
+    &[game="destiny2"] {
+        background-color: rgb(43, 67, 103);
+        .card-body h1 span {
+            background-color: rgba(43, 67, 103, 0.7);
+        }
+    }
+    &[game="warframe"] {
+        background-color: rgb(29, 80, 97);
+        .card-body h1 span {
+            background-color: rgba(29, 80, 97, 0.7);
+        }
+    }
+    &[game="hyperscape"] {
+        background-color: rgb(20, 83, 82);
+        .card-body h1 span {
+            background-color: rgba(20, 83, 82, 0.7);
+        }
+    }
+    &[game="immortals-fenyx-rising"] {
+        background-color: rgb(75, 75, 85);
+        .card-body h1 span {
+            background-color: rgba(75, 75, 85, 0.7);
+        }
+    }
+    &[game="cuphead"] {
+        background-color: rgb(94, 77, 62);
+        .card-body h1 span {
+            background-color: rgba(94, 77, 62, 0.7);
+        }
+    }
+    &[game="assassins-creed-valhalla"] {
+        background-color: rgb(100, 105, 124);
+        .card-body h1 span {
+            background-color: rgba(100, 105, 124, 0.7);
+        }
+    }
+    &[game="cyberpunk2077"] {
+        background-color: rgb(71, 155, 181);
+        .card-body h1 span {
+            background-color: rgba(71, 155, 181, 0.7);
+        }
+    }
+    &[game="ark-survival-evolved"] {
+        background-color: rgb(53, 66, 57);
+        .card-body h1 span {
+            background-color: rgba(53, 66, 57, 0.7);
+        }
+    }
+    &[game="black-dessert"] {
+        background-color: rgb(73, 83, 97);
+        .card-body h1 span {
+            background-color: rgba(73, 83, 97, 0.7);
+        }
+    }
+    &[game="tctd2"] {
+        background-color: rgb(189, 179, 165);
+        .card-body h1 span {
+            background-color: rgba(189, 179, 165, 0.7);
+        }
+    }
+    &[game="tcr6"] {
+        background-color: rgb(43, 67, 103);
+        .card-body h1 span {
+            background-color: rgba(43, 67, 103, 0.7);
+        }
+    }
+    &[game="assassins-creed-odyssy"] {
+        background-color: rgb(29, 80, 97);
+        .card-body h1 span {
+            background-color: rgba(29, 80, 97, 0.7);
+        }
+    }
+}

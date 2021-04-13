@@ -1,0 +1,33 @@
+.section-panel {
+    max-width: 800px;
+}
+.section-panel-nav {
+    flex-wrap: wrap;
+}
+.section-panel-nav-tab {
+    width: auto;
+    max-width: unset;
+    padding: 0 1rem;
+    &.sm {
+        padding: 0;
+        margin: 0;
+        color: $nv;
+        cursor: pointer;
+        width: auto;
+        height: auto;
+        line-height: 1;
+        border: 0;
+        &:hover {
+            color: $nv-hover;
+            background-color: $trans;
+        }
+    }
+}
+.download-item-wrap .ic-img.cb {
+    background-image: url(../img/cb-icon.svg);
+    width: 145px;
+    height: 102px;
+}
+.download-item-wrap .ic-title {
+    font-size: 24px;
+}

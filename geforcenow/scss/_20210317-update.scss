@@ -1,0 +1,132 @@
+// 最新消息分類列表優化
+a.type-nav-tab {
+    cursor: pointer;
+    color: $nv;
+    padding: .55rem 1rem;
+    display: inline-flex;
+    align-items: center;
+
+    &:visited,&:active {
+        color: $nv;
+    }
+    &.active {
+        color: $white;
+    }
+    .brick {
+        display: inline-flex;
+        height: 5px;
+        width: 5px;
+        margin-left: 10px;
+
+        &.type1{
+            background-color: $blue;
+        }
+        &.type2{
+            background-color: $twm;
+        }
+        &.type3{
+            background-color: $pink;
+        }
+    }
+}
+.display-section {
+    border: none;
+    background-color: $black;
+    padding-top: 1rem;
+}
+.state {
+    min-width: 35px;
+}
+.news-list.section-anchor {
+    margin-bottom: 1rem;
+}
+.type-section {
+    display: none;
+    &.active {
+        display: block;
+    }
+    .type {
+        min-width: 64px;
+        width: 64px;
+        white-space: nowrap;
+        &.type1{
+            color: $blue;
+        }
+        &.type2{
+            color: $twm
+        }
+        &.type3{
+            color: $pink
+        }
+    }
+}
+#captionForGFN {
+    .type1{
+        color: $blue !important;
+    }
+    .type2{
+        color: $twm !important
+    }
+    .type3{
+        color: $pink !important
+    }
+}
+.news-title-wrap {
+    text-align: left;
+}
+.display-section.news-list ul li {
+    margin: 15px auto;
+    font-size: 16px;
+}
+.display-section.news-list ul li a.news-title {
+    max-width: 100%;
+}
+.display-section.news-list .pagination-wrap {
+    ul {
+        display: inline-flex;
+        li {
+            margin: 2rem .3rem 0 .3rem;
+            a.pagination {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                padding: .3rem .8rem;
+                border: 1px solid $nv;
+                font-size: 14px;
+
+                &:hover {
+                    background-color: $nv;
+                    color: $white !important
+                }
+
+                &.disabled {
+                    border-color: $gray60;
+                    color: $gray60 !important;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 768px) {
+    .display-section {
+        padding: 1rem;
+    }
+    .display-section.news-list ul li {
+        margin: 20px auto;
+        max-width: calc(100% - 20px);
+        font-size: 14px;
+    }
+    .pricing-title .en, .section-title .en {
+        font-size: 20px;
+    }
+    .section-anchor-nav-tab {
+        font-size: 16px;
+        margin: 1rem 1rem .5rem 1rem;
+    }
+    .divi-wide.g60 {
+        margin: 2rem auto;
+    }
+    .qa-title {
+        font-size: 20px;
+    }
+}

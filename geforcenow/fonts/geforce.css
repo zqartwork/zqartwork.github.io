@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'GeForce';
+    src: url('https://www.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/geforce_bold-webfont.eot'),
+    url('https://www.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/geforce_bold-webfont.woff') format('woff');
+    
+    font-weight: bold;
+    font-style: normal;
+}
+

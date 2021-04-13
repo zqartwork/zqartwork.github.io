@@ -1,0 +1,45 @@
+.lg-card {
+    .modal-panel {
+        .modal-bg {
+            &[game="apex"] {
+                background-image: url(../img/games-list-index-img/apex-legends-lg.jpg);
+            }
+            &[game="destiny2"] {
+                background-image: url(../img/games-list-index-img/destiny2-lg.jpg);
+            }
+            &[game="warframe"] {
+                background-image: url(../img/games-list-index-img/warframe-lg.jpg);
+            }
+            &[game="hyperscape"] {
+                background-image: url(../img/games-list-index-img/hyperscape-lg.jpg);
+            }
+            &[game="immortals-fenyx-rising"] {
+                background-image: url(../img/games-list-index-img/immortals-fenyx-rising-lg.jpg);
+            }
+            &[game="cuphead"] {
+                background-image: url(../img/games-list-index-img/cuphead-lg.jpg);
+            }
+            &[game="assassins-creed-valhalla"] {
+                background-image: url(../img/games-list-index-img/assassins-creed-valhalla-lg.jpg);
+            }
+            &[game="cyberpunk2077"] {
+                background-image: url(../img/games-list-index-img/cyberpunk2077-lg.jpg);
+            }
+            &[game="ark-survival-evolved"] {
+                background-image: url(../img/games-list-index-img/ark-survival-evolved-lg.jpg);
+            }
+            &[game="black-dessert"] {
+                background-image: url(../img/games-list-index-img/black-dessert-lg.jpg);
+            }
+            &[game="tctd2"] {
+                background-image: url(../img/games-list-index-img/tctd2-lg.jpg);
+            }
+            &[game="tcr6"] {
+                background-image: url(../img/games-list-index-img/tcr6-lg.jpg);
+            }
+            &[game="assassins-creed-odyssy"] {
+                background-image: url(../img/games-list-index-img/assassins-creed-odyssy-lg.jpg);
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+//All UI Kits Settings
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto&display=swap');
+
+$white: #fff;
+$ef: #efefef;
+$gray40: #999;
+$gray56: #707070;
+$gray60: #666;
+$gray67: #555555;
+$gray73: #444;
+$gray80: #333;
+$gray87: #222;
+$dark: #1a1a1a;
+$black: #000;
+$nv: #76B900;
+$nv-hover: rgb(105, 166, 12);
+$twm: #F68428;
+$twm-hover: rgb(214, 117, 37);
+$blue: #28c6f6;
+$pink: #f6286d;
+$zh: 'Noto Sans TC';
+$en: 'GeForce';
+$red:#FF0000;
+$trans: rgba(0,0,0,0);
+$half: rgba(0, 0, 0, 0.5);
+
+.nv{
+    color: $nv !important;
+    font-weight: 500;
+}
+
+@keyframes fadeInLeftShort {
+    from {
+      opacity: 0;
+      transform: translateX(-5px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  .fadeInLeftShort {
+      animation-name: fadeInLeftShort;
+  }
