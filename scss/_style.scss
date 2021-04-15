@@ -190,39 +190,39 @@ nav {
     }
     &.fb {
         span {
-            background-image: url(../img/index/fb.svg);
+            background-image: url(https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/index/fb.svg);
         }
     }
     &.as {
         span {
-            background-image: url(../img/index/as.svg);
+            background-image: url(https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/index/as.svg);
         }
     }
     &.ins {
         span {
-            background-image: url(../img/index/ins.svg);
+            background-image: url(https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/index/ins.svg);
         }
     }
     &.ham {
         span {
-            background-image: url(../img/index/ham.svg);
+            background-image: url(https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/index/ham.svg);
         }
     }
     &:hover {
         background-color: $graypink50;
         &.fb {
             span {
-                background-image: url(../img/index/fb-r.svg);
+                background-image: url(https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/index/fb-r.svg);
             }
         }
         &.as {
             span {
-                background-image: url(../img/index/as-r.svg);
+                background-image: url(https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/index/as-r.svg);
             }
         }
         &.ins {
             span {
-                background-image: url(../img/index/ins-r.svg);
+                background-image: url(https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/index/ins-r.svg);
             }
         }
     }
@@ -289,7 +289,7 @@ Section KV
 .kv-wrap {
     position: relative;
     display: flex;
-    background-image: url(../img/index/star-bg.jpg);
+    background-image: url(https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/star-bg.jpg);
     border-radius: 50px;
 }
 .kv-img {
