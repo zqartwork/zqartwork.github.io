@@ -31,587 +31,170 @@
 </head>
 
 <body>
-    <!-- 英文版本 -->
-    <div id="appen">
-        <div id="gt" class="scrollTop">
-            <i class="fas fa-chevron-up"></i>
-        </div>
-        <nav class="nav">
-            <div class="container">
-                <div class="nav-wrap">
-                    <a href="index.html" class="nav-logo">
-                        <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/logo.svg" alt="">
-                    </a>
-                    <div class="nav-items-wrap">
-                        <a href="#about" target="_blank" class="nav-item anchor"><span>ABOUT</span></a>
-                        <a href="works.html" target="_blank" class="nav-item"><span>WORKS</span></a>
-                        <a href="services.html" target="_blank" class="nav-item"><span>SERVICES</span></a>
-                        <a href="contact.html" target="_blank" class="nav-item"><span>CONTACT</span></a>
-                        <div class="select_container nav-item">
-                            <div class="flex-wrapper">
-                                <div class="custom_select">
-                                    <div class="select_title">
-                                        <div class="flex-wrapper just-left">
-                                            <span class="selected">Language</span>
-                                            <i class="fas fa-caret-right select_i"></i>
-                                        </div>
-                                    </div>
-                                    <input type="hidden" name="date" id="data_input">
-                                    <ul class="select_menu">
-                                        <li page="apptc">繁體中文</li>
-                                        <li page="appsc">简体中文</li>
-                                        <li page="appen">English</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="nav-wrap">
-                    <a href="https://www.facebook.com/zqartwork" target="_blank" rel="noopener noreferrer" class="nav-icon fb"><span></span></a>
-                    <a href="https://zqartwork.artstation.com/" target="_blank" rel="noopener noreferrer" class="nav-icon as"><span></span></a>
-                    <a href="https://www.instagram.com/zqart.work" target="_blank" rel="noopener noreferrer" class="nav-icon ins"><span></span></a>
-                    <a href="#!" class="nav-icon ham modal-opener" tt-to="nav-mobile"><span></span></a>
-                </div>
+    <div id="app">
+        <div v-for="pageInfo in pageInfos" :id="pageInfo.type">
+            <div id="gt" class="scrollTop">
+                <i class="fas fa-chevron-up"></i>
             </div>
-        </nav>
-        <main>
-            <section id="kv">
+            <nav class="nav">
                 <div class="container">
-                    <div class="kv-wrap">
-                        <div class="kv-txt-wrap">
-                            <div class="kv-slogan">
-                                <h1>UIUX Designer,<br>
-                                    2D Digital Artist.</h1>
-                            </div>
-                            <div class="kv-txt">
-                                <p>
-                                    A <em>cross-disciplinary designer / front-end engineer</em>. <br>
-                                    I specialize in UIUX Design, RWD Web Design, APP Design and 2D Digital painting.
-                                </p>
-                            </div>
-                            <div class="kv-btn">
-                                <a href="https://www.facebook.com/messages/t/259971927907626" target="_blank" rel="noopener noreferrer" class="primary-btn"><span>Connect With Me ( Messenger )</span></a>
-                            </div>
-                        </div>
-                        <div class="kv-img">
-                            <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/eve.png" alt="" class="eve">
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="skill">
-                <div class="container">
-                    <div class="divi-wide"></div>
-                    <div class="skill-content-wrap">
-                        <div class="skill-item design">
-                            <div class="skill-item-inner-wrap">
-                                <div class="skill-item_title">Design / Painting</div>
-                                <div class="skill-item_img">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/ps.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/ai.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/cps.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/sktch.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/xd.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/figma.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/zeplin.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/protopie.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/ae.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/pr.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item engineering">
-                            <div class="skill-item-inner-wrap">
-                                <div class="skill-item_title">Engineering</div>
-                                <div class="skill-item_img">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/html5.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/css3.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/js.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/vue.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/react.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/jq.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/github.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="divi-wide"></div>
-                </div>
-            </section>
-            <section id="about">
-                <div class="container">
-                    <div class="about-wrap">
-                        <div class="about-img">
-                            <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/mockup.png" alt="" class="mockup">
-                        </div>
-                        <div class="about-txt-wrap">
-                            <div class="about-txt_title">About Me</div>
-                            <div class="about-txt_txt">
-                                <p>
-                                    I graduated from National Taiwan University. I’m a passionate designer, not afraid to any challenge. <br>
-                                    Currently working as a senior user interface designer at Taiwan Mobile, responsible for the art collaboration of Riot Games in Taiwan. <br>
-                                    I used to be the art and web design of Garena Taiwan League of Legends Department. <br>
-                                    During the period, I hand-painted the YouTube video "Chronicles of the Summonor’s Rift" , whitch was viewed by more than 110,000 people. <br>
-                                    Since then, I have continued to gain insights in various fields, refined my design skills, and completed some courses online, including front-end egineering, APP design, live broadcast platform design, etc... <br>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="works">
-                <div class="section-title">WORKS</div>
-                <div class="works-items-wrap">
-                    <a href="https://gfn.taiwanmobile.com/portal/index" target="_blank" rel="noopener noreferrer" class="work-item"><img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/id-gfn.jpg" alt=""></a>
-                    <a href="https://game.taiwanmobile.com/HoG/home" target="_blank" rel="noopener noreferrer" class="work-item"><img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/id-hog.jpg" alt=""></a>
-                    <a href="https://game.taiwanmobile.com/WildRift_202012001/index" target="_blank" rel="noopener noreferrer" class="work-item"><img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/id-wr-push.jpg" alt=""></a>
-                    <a href="https://zqartwork.github.io/VIPLottery2020NewYear/" target="_blank" rel="noopener noreferrer" class="work-item"><img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/id-ican-lot.jpg" alt=""></a>
-                    <a href="https://zqartwork.github.io/iCanVIPSection/" target="_blank" rel="noopener noreferrer" class="work-item"><img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/id-ican-vip.jpg" alt=""></a>
-                    <a href="https://game.taiwanmobile.com/LoR/" target="_blank" rel="noopener noreferrer" class="work-item"><img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/id-lor-academy.jpg" alt=""></a>
-                </div>
-                <a href="works.html" target="_blank" rel="noopener noreferrer" class="primary-btn"><span>View All My Works</span></a>
-            </section>
-        </main>
-        <footer>
-            <div class="container">
-                <div class="footer-wrap">
-                    <div class="footer-copy-txt"><p>© 2021 Copyright belongs to ZQARTWORK, Inc.</p></div>
-                    <div class="footer-btn-item-wrap">
-                        <a href="https://home.gamer.com.tw/zqartwork" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>BahamutForum</span></a>
-                        <a href="https://www.plurk.com/zqartwork" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Plurk</span></a>
-                        <a href="https://github.com/zqartwork" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Github</span></a>
-                        <a href="https://www.pixiv.net/users/44069467" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Pixiv</span></a>
-                        <a href="https://www.tasker.com.tw/workroom/JgzMDL" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Tasker</span></a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <div class="nav-mobile modal">
-            <div class="modal-container">
-                <div class="modal-closer"></div>
-                <div class="modal-panel">
-                    <a href="#!" class="modal-closer_btn">
-                        <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/closer.svg" alt="">
-                    </a>
-                    <div class="modal-content">
-                        <div class="modal-title">
-                        </div>
-                        <div class="modal-body">
-                            <div class="nav-items-wrap_mobile">
-                                <a href="#about" target="_blank" class="nav-item anchor"><span>ABOUT</span></a>
-                                <a href="works.html" target="_blank" class="nav-item"><span>WORKS</span></a>
-                                <a href="services.html" target="_blank" class="nav-item"><span>SERVICES</span></a>
-                                <a href="contact.html" target="_blank" class="nav-item"><span>CONTACT</span></a>
-                                <div class="select_container nav-item">
-                                    <div class="select-flex-wrapper">
-                                        <div class="custom_select">
-                                            <div class="select_title">
-                                                <div class="flex-wrapper just-left">
-                                                    <span class="selected">Language</span>
-                                                    <i class="fas fa-caret-right select_i"></i>
-                                                </div>
+                    <div class="nav-wrap">
+                        <a href="index.html" class="nav-logo">
+                            <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/logo.svg" alt="">
+                        </a>
+                        <div class="nav-items-wrap">
+                            <a v-for="nav in pageInfo.navs" :href="nav.navLink" target="_blank" class="nav-item anchor"><span>{{nav.navName}}</span></a>
+                            <div class="select_container nav-item">
+                                <div class="flex-wrapper">
+                                    <div class="custom_select">
+                                        <div class="select_title">
+                                            <div class="flex-wrapper just-left">
+                                                <span class="selected">{{pageInfo.lang}}</span>
+                                                <i class="fas fa-caret-right select_i"></i>
                                             </div>
-                                            <input type="hidden" name="date" id="data_input">
-                                            <ul class="select_menu">
-                                                <li page="apptc">繁體中文</li>
-                                                <li page="appsc">简体中文</li>
-                                                <li page="appen">English</li>
-                                            </ul>
                                         </div>
+                                        <input type="hidden" name="date" id="data_input">
+                                        <ul class="select_menu">
+                                            <li page="apptc">繁體中文</li>
+                                            <li page="appsc">简体中文</li>
+                                            <li page="appen">English</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- 繁體中文 -->
-    <div id="apptc">
-        <div id="gt" class="scrollTop">
-            <i class="fas fa-chevron-up"></i>
-        </div>
-        <nav class="nav">
-            <div class="container">
-                <div class="nav-wrap">
-                    <div class="nav-logo">
-                        <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/logo.svg" alt="">
+                    <div class="nav-wrap">
+                        <a href="https://www.facebook.com/zqartwork" target="_blank" rel="noopener noreferrer" class="nav-icon fb"><span></span></a>
+                        <a href="https://zqartwork.artstation.com/" target="_blank" rel="noopener noreferrer" class="nav-icon as"><span></span></a>
+                        <a href="https://www.instagram.com/zqart.work" target="_blank" rel="noopener noreferrer" class="nav-icon ins"><span></span></a>
+                        <a href="#!" class="nav-icon ham modal-opener" tt-to="nav-mobile"><span></span></a>
                     </div>
-                    <div class="nav-items-wrap">
-                        <a href="#about" target="_blank" class="nav-item anchor"><span>關於</span></a>
-                        <a href="works.html" target="_blank" class="nav-item"><span>作品</span></a>
-                        <a href="services.html" target="_blank" class="nav-item"><span>服務</span></a>
-                        <a href="contact.html" target="_blank" class="nav-item"><span>聯絡</span></a>
-                        <div class="select_container nav-item">
-                            <div class="flex-wrapper">
-                                <div class="custom_select">
-                                    <div class="select_title">
-                                        <div class="flex-wrapper just-left">
-                                            <span class="selected">繁體中文</span>
-                                            <i class="fas fa-caret-right select_i"></i>
-                                        </div>
+                </div>
+            </nav>
+            <main>
+                <section id="kv">
+                    <div class="container">
+                        <div class="kv-wrap">
+                            <div class="kv-txt-wrap">
+                                <div class="kv-slogan">
+                                    <h1 v-html="pageInfo.kvSlogan">{{pageInfo.kvSlogan}}</h1>
+                                </div>
+                                <div class="kv-txt">
+                                    <p v-html="pageInfo.kvTxt">
+                                        {{pageInfo.kvTxt}}
+                                    </p>
+                                </div>
+                                <div class="kv-btn">
+                                    <a href="mailto:zqartworkofficial@gmail.com" target="_blank" rel="noopener noreferrer" class="primary-btn"><span>{{pageInfo.kvBtn}}</span></a>
+                                </div>
+                            </div>
+                            <div class="kv-img">
+                                <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/eve.png" alt="" class="eve">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="skill">
+                    <div class="container">
+                        <div class="divi-wide"></div>
+                        <div class="skill-content-wrap">
+                            <div class="skill-item design">
+                                <div class="skill-item-inner-wrap">
+                                    <div class="skill-item_title">{{pageInfo.skillItemTitles[0].title}}</div>
+                                    <div class="skill-item_img">
+                                        <img v-for="pic in pageInfo.skillItemTitles[0].pics" :src="pic.link" alt="">
                                     </div>
-                                    <input type="hidden" name="date" id="data_input">
-                                    <ul class="select_menu">
-                                        <li page="apptc">繁體中文</li>
-                                        <li page="appsc">简体中文</li>
-                                        <li page="appen">English</li>
-                                    </ul>
+                                </div>
+                            </div>
+                            <div class="skill-item engineer">
+                                <div class="skill-item-inner-wrap">
+                                    <div class="skill-item_title">{{pageInfo.skillItemTitles[1].title}}</div>
+                                    <div class="skill-item_img">
+                                        <img v-for="pic in pageInfo.skillItemTitles[1].pics" :src="pic.link" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divi-wide"></div>
+                    </div>
+                </section>
+                <section id="about">
+                    <div class="container">
+                        <div class="about-wrap">
+                            <div class="about-img">
+                                <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/mockup.png" alt="" class="mockup">
+                            </div>
+                            <div class="about-txt-wrap">
+                                <div class="about-txt_title">{{pageInfo.aboutMe}}</div>
+                                <div class="about-txt_txt">
+                                    <p v-html="pageInfo.absoutMeTxt">
+                                        {{pageInfo.absoutMeTxt}}
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="nav-wrap">
-                    <a href="https://www.facebook.com/zqartwork" target="_blank" rel="noopener noreferrer" class="nav-icon fb"><span></span></a>
-                    <a href="https://zqartwork.artstation.com/" target="_blank" rel="noopener noreferrer" class="nav-icon as"><span></span></a>
-                    <a href="https://www.instagram.com/zqart.work" target="_blank" rel="noopener noreferrer" class="nav-icon ins"><span></span></a>
-                    <a href="#!" class="nav-icon ham modal-opener" tt-to="nav-mobile"><span></span></a>
-                </div>
-            </div>
-        </nav>
-        <main>
-            <section id="kv">
+                </section>
+                <section id="works">
+                    <div class="section-title">{{pageInfo.worksIndex}}</div>
+                    <div class="works-items-wrap">
+                        <a href="https://gfn.taiwanmobile.com/portal/index" target="_blank" rel="noopener noreferrer" class="work-item"><img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/id-gfn.jpg" alt=""></a>
+                        <a href="https://game.taiwanmobile.com/HoG/home" target="_blank" rel="noopener noreferrer" class="work-item"><img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/id-hog.jpg" alt=""></a>
+                        <a href="https://game.taiwanmobile.com/WildRift_202012001/index" target="_blank" rel="noopener noreferrer" class="work-item"><img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/id-wr-push.jpg" alt=""></a>
+                        <a href="https://zqartwork.github.io/VIPLottery2020NewYear/" target="_blank" rel="noopener noreferrer" class="work-item"><img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/id-ican-lot.jpg" alt=""></a>
+                        <a href="https://zqartwork.github.io/iCanVIPSection/" target="_blank" rel="noopener noreferrer" class="work-item"><img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/id-ican-vip.jpg" alt=""></a>
+                        <a href="https://game.taiwanmobile.com/LoR/" target="_blank" rel="noopener noreferrer" class="work-item"><img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/id-lor-academy.jpg" alt=""></a>
+                    </div>
+                    <a href="works.html" target="_blank" rel="noopener noreferrer" class="primary-btn"><span>{{pageInfo.worksIndexTxt}}</span></a>
+                </section>
+            </main>
+            <footer>
                 <div class="container">
-                    <div class="kv-wrap">
-                        <div class="kv-txt-wrap">
-                            <div class="kv-slogan">
-                                <h1>UIUX 設計師,<br>
-                                    2D 數位插畫家</h1>
-                            </div>
-                            <div class="kv-txt">
-                                <p>
-                                    我是一位 <em>跨領域設計師 / 前端工程師</em>. <br>
-                                    專精於使用者體驗與設計、網頁與APP設計以及2D美術插畫繪製。
-                                </p>
-                            </div>
-                            <div class="kv-btn">
-                                <a href="https://www.facebook.com/messages/t/259971927907626" target="_blank" rel="noopener noreferrer" class="primary-btn"><span>與我聯絡 ( Messenger )</span></a>
-                            </div>
-                        </div>
-                        <div class="kv-img">
-                            <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/eve.png" alt="" class="eve">
+                    <div class="footer-wrap">
+                        <div class="footer-copy-txt"><p>© 2021 Copyright belongs to ZQARTWORK, Inc.</p></div>
+                        <div class="footer-btn-item-wrap">
+                            <a href="https://home.gamer.com.tw/zqartwork" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>BahamutForum</span></a>
+                            <a href="https://www.plurk.com/zqartwork" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Plurk</span></a>
+                            <a href="https://github.com/zqartwork" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Github</span></a>
+                            <a href="https://www.pixiv.net/users/44069467" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Pixiv</span></a>
+                            <a href="https://www.tasker.com.tw/workroom/JgzMDL" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Tasker</span></a>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section id="skill">
-                <div class="container">
-                    <div class="divi-wide"></div>
-                    <div class="skill-content-wrap">
-                        <div class="skill-item design">
-                            <div class="skill-item-inner-wrap">
-                                <div class="skill-item_title">設計 / 繪圖</div>
-                                <div class="skill-item_img">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/ps.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/ai.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/cps.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/sktch.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/xd.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/figma.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/zeplin.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/protopie.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/ae.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/pr.png" alt="">
-                                </div>
+            </footer>
+            <div class="nav-mobile modal">
+                <div class="modal-container">
+                    <div class="modal-closer"></div>
+                    <div class="modal-panel">
+                        <a href="#!" class="modal-closer_btn">
+                            <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/closer.svg" alt="">
+                        </a>
+                        <div class="modal-content">
+                            <div class="modal-title">
                             </div>
-                        </div>
-                        <div class="skill-item engineering">
-                            <div class="skill-item-inner-wrap">
-                                <div class="skill-item_title">前端工程</div>
-                                <div class="skill-item_img">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/html5.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/css3.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/js.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/vue.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/react.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/jq.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/github.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="divi-wide"></div>
-                </div>
-            </section>
-            <section id="about">
-                <div class="container">
-                    <div class="about-wrap">
-                        <div class="about-img">
-                            <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/mockup.png" alt="" class="mockup">
-                        </div>
-                        <div class="about-txt-wrap">
-                            <div class="about-txt_title">關於我</div>
-                            <div class="about-txt_txt">
-                                <p>
-                                    我畢業自 國立台灣大學，是一位熱情且充滿動力的設計師，不害怕困難與逆境。 <br>
-                                    目前就職於 台灣大哥大 數位雲遊戲部門，負責台灣區 Riot Games 遊戲設計與合作，GeForce NOW 與 House of Gamers 主設計師。 <br>
-                                    曾任台灣區 英雄聯盟 設計師、網頁設計以及平面設計師。 <br>
-                                    任職期間手繪出超過11萬人次觀看的 Youtube 熱門影片《峽谷編年史》。<br>
-                                    除了遊戲領域的設計工作之外，我還嘗試與直播平台、體育平台、影音藝術領域合作，並且有近一年的前端工程經驗，使用 Vue 框架架設直播平台。
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="works">
-                <div class="section-title">作品</div>
-                <div class="works-items-wrap">
-                    <a href="https://gfn.taiwanmobile.com/portal/index" target="_blank" rel="noopener noreferrer" class="work-item"><img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/id-gfn.jpg" alt=""></a>
-                    <a href="https://game.taiwanmobile.com/HoG/home" target="_blank" rel="noopener noreferrer" class="work-item"><img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/id-hog.jpg" alt=""></a>
-                    <a href="https://game.taiwanmobile.com/WildRift_202012001/index" target="_blank" rel="noopener noreferrer" class="work-item"><img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/id-wr-push.jpg" alt=""></a>
-                    <a href="https://zqartwork.github.io/VIPLottery2020NewYear/" target="_blank" rel="noopener noreferrer" class="work-item"><img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/id-ican-lot.jpg" alt=""></a>
-                    <a href="https://zqartwork.github.io/iCanVIPSection/" target="_blank" rel="noopener noreferrer" class="work-item"><img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/id-ican-vip.jpg" alt=""></a>
-                    <a href="https://game.taiwanmobile.com/LoR/" target="_blank" rel="noopener noreferrer" class="work-item"><img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/id-lor-academy.jpg" alt=""></a>
-                </div>
-                <a href="works.html" target="_blank" rel="noopener noreferrer" class="primary-btn"><span>查看所有作品</span></a>
-            </section>
-        </main>
-        <footer>
-            <div class="container">
-                <div class="footer-wrap">
-                    <div class="footer-copy-txt"><p>© 2021 ZQARTWORK, Inc. 版權所有。</p></div>
-                    <div class="footer-btn-item-wrap">
-                        <a href="https://home.gamer.com.tw/zqartwork" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>巴哈姆特</span></a>
-                        <a href="https://www.plurk.com/zqartwork" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>噗浪</span></a>
-                        <a href="https://github.com/zqartwork" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Github</span></a>
-                        <a href="https://www.pixiv.net/users/44069467" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Pixiv</span></a>
-                        <a href="https://www.tasker.com.tw/workroom/JgzMDL" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Tasker外包網</span></a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <div class="nav-mobile modal">
-            <div class="modal-container">
-                <div class="modal-closer"></div>
-                <div class="modal-panel">
-                    <a href="#!" class="modal-closer_btn">
-                        <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/closer.svg" alt="">
-                    </a>
-                    <div class="modal-content">
-                        <div class="modal-title">
-                        </div>
-                        <div class="modal-body">
-                            <div class="nav-items-wrap_mobile">
-                                <a href="#about" target="_blank" class="nav-item anchor"><span>關於</span></a>
-                                <a href="works.html" target="_blank" class="nav-item"><span>作品</span></a>
-                                <a href="services.html" target="_blank" class="nav-item"><span>服務</span></a>
-                                <a href="contact.html" target="_blank" class="nav-item"><span>聯絡</span></a>
-                                <div class="select_container nav-item">
-                                    <div class="select-flex-wrapper">
-                                        <div class="custom_select">
-                                            <div class="select_title">
-                                                <div class="flex-wrapper just-left">
-                                                    <span class="selected">繁體中文</span>
-                                                    <i class="fas fa-caret-right select_i"></i>
+                            <div class="modal-body">
+                                <div class="nav-items-wrap_mobile">
+                                    <a href="#about" target="_blank" class="nav-item anchor"><span>ABOUT</span></a>
+                                    <a href="works.html" target="_blank" class="nav-item"><span>WORKS</span></a>
+                                    <a href="services.html" target="_blank" class="nav-item"><span>SERVICES</span></a>
+                                    <a href="contact.html" target="_blank" class="nav-item"><span>CONTACT</span></a>
+                                    <div class="select_container nav-item">
+                                        <div class="select-flex-wrapper">
+                                            <div class="custom_select">
+                                                <div class="select_title">
+                                                    <div class="flex-wrapper just-left">
+                                                        <span class="selected">Language</span>
+                                                        <i class="fas fa-caret-right select_i"></i>
+                                                    </div>
                                                 </div>
+                                                <input type="hidden" name="date" id="data_input">
+                                                <ul class="select_menu">
+                                                    <li page="apptc">繁體中文</li>
+                                                    <li page="appsc">简体中文</li>
+                                                    <li page="appen">English</li>
+                                                </ul>
                                             </div>
-                                            <input type="hidden" name="date" id="data_input">
-                                            <ul class="select_menu">
-                                                <li page="apptc">繁體中文</li>
-                                                <li page="appsc">简体中文</li>
-                                                <li page="appen">English</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- 簡體中文 -->
-    <div id="appsc">
-        <div id="gt" class="scrollTop">
-            <i class="fas fa-chevron-up"></i>
-        </div>
-        <nav class="nav">
-            <div class="container">
-                <div class="nav-wrap">
-                    <div class="nav-logo">
-                        <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/logo.svg" alt="">
-                    </div>
-                    <div class="nav-items-wrap">
-                        <a href="#about" target="_blank" class="nav-item anchor"><span>关于</span></a>
-                        <a href="works.html" target="_blank" class="nav-item"><span>作品</span></a>
-                        <a href="services.html" target="_blank" class="nav-item"><span>服务</span></a>
-                        <a href="contact.html" target="_blank" class="nav-item"><span>联络</span></a>
-                        <div class="select_container nav-item">
-                            <div class="flex-wrapper">
-                                <div class="custom_select">
-                                    <div class="select_title">
-                                        <div class="flex-wrapper just-left">
-                                            <span class="selected">简体中文</span>
-                                            <i class="fas fa-caret-right select_i"></i>
-                                        </div>
-                                    </div>
-                                    <input type="hidden" name="date" id="data_input">
-                                    <ul class="select_menu">
-                                        <li page="apptc">繁體中文</li>
-                                        <li page="appsc">简体中文</li>
-                                        <li page="appen">English</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="nav-wrap">
-                    <a href="https://www.facebook.com/zqartwork" target="_blank" rel="noopener noreferrer" class="nav-icon fb"><span></span></a>
-                    <a href="https://zqartwork.artstation.com/" target="_blank" rel="noopener noreferrer" class="nav-icon as"><span></span></a>
-                    <a href="https://www.instagram.com/zqart.work" target="_blank" rel="noopener noreferrer" class="nav-icon ins"><span></span></a>
-                    <a href="#!" class="nav-icon ham modal-opener" tt-to="nav-mobile"><span></span></a>
-                </div>
-            </div>
-        </nav>
-        <main>
-            <section id="kv">
-                <div class="container">
-                    <div class="kv-wrap">
-                        <div class="kv-txt-wrap">
-                            <div class="kv-slogan">
-                                <h1>UIUX 设计师,<br>
-                                    2D 数位插画家</h1>
-                            </div>
-                            <div class="kv-txt">
-                                <p>
-                                    我是一位 <em>跨领域设计师 / 前端工程师</em>. <br>
-                                    专精于使用者体验与设计、网页与APP设计以及2D美术插画绘制。
-                                </p>
-                            </div>
-                            <div class="kv-btn">
-                                <a href="https://www.facebook.com/messages/t/259971927907626" target="_blank" rel="noopener noreferrer" class="primary-btn"><span>与我联络 ( Messenger )</span></a>
-                            </div>
-                        </div>
-                        <div class="kv-img">
-                            <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/eve.png" alt="" class="eve">
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="skill">
-                <div class="container">
-                    <div class="divi-wide"></div>
-                    <div class="skill-content-wrap">
-                        <div class="skill-item design">
-                            <div class="skill-item-inner-wrap">
-                                <div class="skill-item_title">设计 / 绘图</div>
-                                <div class="skill-item_img">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/ps.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/ai.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/cps.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/sktch.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/xd.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/figma.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/zeplin.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/protopie.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/ae.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/pr.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill-item engineering">
-                            <div class="skill-item-inner-wrap">
-                                <div class="skill-item_title">前端工程</div>
-                                <div class="skill-item_img">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/html5.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/css3.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/js.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/vue.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/react.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/jq.png" alt="">
-                                    <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/github.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="divi-wide"></div>
-                </div>
-            </section>
-            <section id="about">
-                <div class="container">
-                    <div class="about-wrap">
-                        <div class="about-img">
-                            <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/mockup.png" alt="" class="mockup">
-                        </div>
-                        <div class="about-txt-wrap">
-                            <div class="about-txt_title">关于我</div>
-                            <div class="about-txt_txt">
-                                <p>
-                                    我毕业自 国立台湾大学，是一位热情且充满动力的设计师，不害怕困难与逆境。 <br>
-                                    目前就职于 台湾大哥大 数位云游戏部门，负责台湾区 Riot Games 游戏设计与合作，GeForce NOW 与 House of Gamers 主设计师。 <br>
-                                    曾任台湾区 英雄联盟 设计师、网页设计以及平面设计师。 <br>
-                                    任职期间手绘出超过11万人次观看的 Youtube 热门影片《峡谷编年史》。 <br>
-                                    除了游戏领域的设计工作之外，我还尝试与直播平台、体育平台、影音艺术领域合作，并且有近一年的前端工程经验，使用 Vue 框架架设直播平台。
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="works">
-                <div class="section-title">作品</div>
-                <div class="works-items-wrap">
-                    <a href="https://gfn.taiwanmobile.com/portal/index" target="_blank" rel="noopener noreferrer" class="work-item"><img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/id-gfn.jpg" alt=""></a>
-                    <a href="https://game.taiwanmobile.com/HoG/home" target="_blank" rel="noopener noreferrer" class="work-item"><img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/id-hog.jpg" alt=""></a>
-                    <a href="https://game.taiwanmobile.com/WildRift_202012001/index" target="_blank" rel="noopener noreferrer" class="work-item"><img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/id-wr-push.jpg" alt=""></a>
-                    <a href="https://zqartwork.github.io/VIPLottery2020NewYear/" target="_blank" rel="noopener noreferrer" class="work-item"><img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/id-ican.jpg" alt=""></a>
-                    <a href="https://zqartwork.github.io/iCanVIPSection/" target="_blank" rel="noopener noreferrer" class="work-item"><img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/id-ican-vip.jpg" alt=""></a>
-                    <a href="https://game.taiwanmobile.com/LoR/" target="_blank" rel="noopener noreferrer" class="work-item"><img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/id-lor-academy.jpg" alt=""></a>
-                </div>
-                <a href="works.html" target="_blank" rel="noopener noreferrer" class="primary-btn"><span>查看所有作品</span></a>
-            </section>
-        </main>
-        <footer>
-            <div class="container">
-                <div class="footer-wrap">
-                    <div class="footer-copy-txt"><p>© 2021 ZQARTWORK, Inc. 版权所有。</p></div>
-                    <div class="footer-btn-item-wrap">
-                        <a href="https://home.gamer.com.tw/zqartwork" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>巴哈姆特</span></a>
-                        <a href="https://www.plurk.com/zqartwork" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>噗浪</span></a>
-                        <a href="https://github.com/zqartwork" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Github</span></a>
-                        <a href="https://www.pixiv.net/users/44069467" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Pixiv</span></a>
-                        <a href="https://www.tasker.com.tw/workroom/JgzMDL" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Tasker外包网</span></a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <div class="nav-mobile modal">
-            <div class="modal-container">
-                <div class="modal-closer"></div>
-                <div class="modal-panel">
-                    <a href="#!" class="modal-closer_btn">
-                        <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/closer.svg" alt="">
-                    </a>
-                    <div class="modal-content">
-                        <div class="modal-title">
-                        </div>
-                        <div class="modal-body">
-                            <div class="nav-items-wrap_mobile">
-                                <a href="#about" target="_blank" class="nav-item anchor"><span>关于</span></a>
-                                <a href="works.html" target="_blank" class="nav-item"><span>作品</span></a>
-                                <a href="services.html" target="_blank" class="nav-item"><span>服务</span></a>
-                                <a href="contact.html" target="_blank" class="nav-item"><span>联络</span></a>
-                                <div class="select_container nav-item">
-                                    <div class="select-flex-wrapper">
-                                        <div class="custom_select">
-                                            <div class="select_title">
-                                                <div class="flex-wrapper just-left">
-                                                    <span class="selected">简体中文</span>
-                                                    <i class="fas fa-caret-right select_i"></i>
-                                                </div>
-                                            </div>
-                                            <input type="hidden" name="date" id="data_input">
-                                            <ul class="select_menu">
-                                                <li page="apptc">繁體中文</li>
-                                                <li page="appsc">简体中文</li>
-                                                <li page="appen">English</li>
-                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -623,6 +206,7 @@
         </div>
     </div>
     
+    
     <!--jQuery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
     <!-- FontAwesome -->
@@ -631,6 +215,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <!-- owlCarousel2 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- vue.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
     <!-- custom.js -->
     <script src="js/custom.js"></script>
 
@@ -643,6 +229,362 @@
             scrollSpy();
             ttFc();
         });
+    </script>
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                pageType: '',
+                pageInfos:[
+                    {
+                        type: 'appen',
+                        navs: [
+                            {
+                                navName: 'ABOUT',
+                                navLink: '#about',
+                            },
+                            {
+                                navName: 'WORKS',
+                                navLink: 'works.html',
+                            },
+                            {
+                                navName: 'SERVICES',  
+                                navLink: 'services.html',
+                            },
+                            {
+                                navName: 'CONTACT',  
+                                navLink: 'contact.html',
+                            },
+                        ],
+                        lang: 'Language',
+                        kvSlogan: `UIUX Designer,<br>2D Digital Artist.`,
+                        kvTxt: `A <em>cross-disciplinary designer / front-end engineer</em>. <br>
+                                    I specialize in UIUX Design, RWD Web Design, APP Design and 2D Digital painting.`,
+                        kvBtn: "Connect With Me ( Email )",
+                        skillItemTitles: [
+                            {
+                                title: 'Design / Painting',
+                                pics: [
+                                        {
+                                            link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/ps.png'
+                                        },
+                                        {
+                                            link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/ai.png'
+                                        },
+                                        {
+                                            link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/cps.png'
+                                        },
+                                        {
+                                            link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/sktch.png'
+                                        },
+                                        {
+                                            link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/xd.png'
+                                        },
+                                        {
+                                            link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/figma.png'
+                                        },
+                                        {
+                                            link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/zeplin.png'
+                                        },
+                                        {
+                                            link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/protopie.png'
+                                        },
+                                        {
+                                            link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/ae.png'
+                                        },
+                                        {
+                                            link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/pr.png'
+                                        },
+                                    ]
+                            },
+                            {
+                                title: 'Engineering',
+                                pics: [
+                                    {
+                                        link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/html5.png'
+                                    },
+                                    {
+                                        link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/css3.png'
+                                    },
+                                    {
+                                        link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/js.png'
+                                    },
+                                    {
+                                        link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/vue.png'
+                                    },
+                                    {
+                                        link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/react.png'
+                                    },
+                                    {
+                                        link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/jq.png'
+                                    },
+                                    {
+                                        link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/github.png'
+                                    },
+                                ]
+                            }
+                        ],
+                        aboutMe: 'About Me',
+                        absoutMeTxt: `I graduated from National Taiwan University. I’m a passionate designer, not afraid to any challenge. <br>
+                                        Currently working as a senior user interface designer at Taiwan Mobile, responsible for the art collaboration of Riot Games in Taiwan. <br>
+                                        I used to be the art and web design of Garena Taiwan League of Legends Department. <br>
+                                        During the period, I hand-painted the YouTube video "Chronicles of the Summonor’s Rift" , whitch was viewed by more than 110,000 people. <br>
+                                        Since then, I have continued to gain insights in various fields, refined my design skills, and completed some courses online, including front-end egineering, APP design, live broadcast platform design, etc... <br>`,
+                        worksIndex: 'Works',
+                        worksIndexTxt: 'View All My Works',
+                        footerItem: [
+                            {
+                                footerItemName: 'BahamutForum'
+                            },
+                            {
+                                footerItemName: 'Plurk'
+                            },
+                            {
+                                footerItemName: 'Github'
+                            },
+                            {
+                                footerItemName: 'Pixiv'
+                            },
+                            {
+                                footerItemName: 'Tasker'
+                            },
+                        ]
+                    },
+                    {
+                        type: 'apptc',
+                        navs: [
+                            {
+                                navName: '關於本人',  
+                                navLink: '#about',
+                            },
+                            {
+                                navName: '作品藝廊' , 
+                                navLink: 'works.html',
+                            },
+                            {
+                                navName: '服務項目' , 
+                                navLink: 'services.html',
+                            },
+                            {
+                                navName: '立即聯絡' , 
+                                navLink: 'contact.html',
+                            },
+                        ],
+                        lang: '請選擇語言',
+                        kvSlogan: `UIUX 設計師，<br>2D 數位插畫家.`,
+                        kvTxt: `我是 <em>跨領域設計師 / 前端工程師</em>. <br>專精設計網頁、APP，以及2D插畫。`,
+                        kvBtn: "立刻聯絡我 ( Email )",
+                        skillItemTitles: [
+                            {
+                                title: '設計 / 繪圖',
+                                pics: [
+                                    {
+                                        link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/ps.png'
+                                    },
+                                    {
+                                        link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/ai.png'
+                                    },
+                                    {
+                                        link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/cps.png'
+                                    },
+                                    {
+                                        link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/sktch.png'
+                                    },
+                                    {
+                                        link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/xd.png'
+                                    },
+                                    {
+                                        link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/figma.png'
+                                    },
+                                    {
+                                        link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/zeplin.png'
+                                    },
+                                    {
+                                        link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/protopie.png'
+                                    },
+                                    {
+                                        link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/ae.png'
+                                    },
+                                    {
+                                        link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/pr.png'
+                                    },
+                                ]
+                            },
+                            {
+                                title: '前端工程',
+                                pics: [
+                                    {
+                                        link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/html5.png'
+                                    },
+                                    {
+                                        link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/css3.png'
+                                    },
+                                    {
+                                        link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/js.png'
+                                    },
+                                    {
+                                        link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/vue.png'
+                                    },
+                                    {
+                                        link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/react.png'
+                                    },
+                                    {
+                                        link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/jq.png'
+                                    },
+                                    {
+                                        link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/github.png'
+                                    },
+                                ]
+                            }
+                        ],
+                        aboutMe: '關於本人',
+                        absoutMeTxt: `我畢業於國立台灣大學。 是一位充滿熱情的設計師，不懼怕任何挑戰。 <br>
+                                        目前在台灣大哥大擔任高級使用者界面設計師，負責台灣Riot Games的美術合作。 <br>
+                                        我曾經是台灣Garena英雄聯盟部的美術和網頁設計。 <br>
+                                        在此期間，我手繪了YouTube視頻《峽谷編年史》，高達11萬點閱。 <br>
+                                        從那時起，我在各個領域磨練，提高設計技巧，並線上完成了專業Adobe課程，此外包括前端工程，APP設計，直播平台設計等。<br>`,
+                        worksIndex: '作品藝廊',
+                        worksIndexTxt: '查看我所有的作品',
+                        footerItem: [
+                            {
+                                footerItemName: '巴哈姆特'
+                            },
+                            {
+                                footerItemName: '噗浪'
+                            },
+                            {
+                                footerItemName: 'Github'
+                            },
+                            {
+                                footerItemName: 'P站'
+                            },
+                            {
+                                footerItemName: 'Tasker出任務'
+                            },
+                        ]
+                    },
+                    {
+                        type: 'appsc',
+                        navs: [
+                            {
+                                navName: '关于本人'  ,
+                                navLink: '#about',
+                            },
+                            {
+                                navName: '作品艺廊'  ,
+                                navLink: 'works.html',
+                            },
+                            {
+                                navName: '服务项目'  ,
+                                navLink: 'setvices.html',
+                            },
+                            {
+                                navName: '立即联络'  ,
+                                navLink: 'contact.html',
+                            },
+                        ],
+                        lang: '请选择语言',
+                        kvSlogan: `UIUX 设计师，<br>2D数位插画家`,
+                        kvTxt: `我是 <em>跨领域设计师 / 前端程序师</em>. <br>专精于网页、APP设计与2D插画绘制`,
+                        kvBtn: "立即联络我 ( Email ) ",
+                        skillItemTitles: [
+                            {
+                                title: '设计 / 绘图',
+                                pics: [
+                                    {
+                                        link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/ps.png'
+                                    },
+                                    {
+                                        link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/ai.png'
+                                    },
+                                    {
+                                        link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/cps.png'
+                                    },
+                                    {
+                                        link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/sktch.png'
+                                    },
+                                    {
+                                        link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/xd.png'
+                                    },
+                                    {
+                                        link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/figma.png'
+                                    },
+                                    {
+                                        link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/zeplin.png'
+                                    },
+                                    {
+                                        link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/protopie.png'
+                                    },
+                                    {
+                                        link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/ae.png'
+                                    },
+                                    {
+                                        link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/pr.png'
+                                    },
+                                ]
+                            },
+                            {
+                                title: '前端工程',
+                                pics: [
+                                    {
+                                        link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/html5.png'
+                                    },
+                                    {
+                                        link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/css3.png'
+                                    },
+                                    {
+                                        link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/js.png'
+                                    },
+                                    {
+                                        link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/vue.png'
+                                    },
+                                    {
+                                        link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/react.png'
+                                    },
+                                    {
+                                        link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/jq.png'
+                                    },
+                                    {
+                                        link: 'https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/github.png'
+                                    },
+                                ]
+                            }
+                        ],
+                        aboutMe: '关于本人',
+                        absoutMeTxt: `我毕业于国立台湾大学。是一位充满热情的设计师，不惧怕任何挑战。 <br>
+                                        目前在台湾大哥大担任高级使用者界面设计师，负责台湾Riot Games的美术合作。 <br>
+                                        我曾经是台湾Garena英雄联盟部的美术和网页设计。 <br>
+                                        在此期间，我手绘了YouTube视频《峡谷编年史》，高达11万点阅。 <br>
+                                        从那时起，我在各个领域磨练，提高设计技巧，并线上完成了专业Adobe课程，此外包括前端工程，APP设计，直播平台设计等。 <br>`,
+                        worksIndex: '作品艺廊',
+                        worksIndexTxt: '查看我所有的作品',
+                        footerItem: [
+                            {
+                                footerItemName: '巴哈姆特'
+                            },
+                            {
+                                footerItemName: '噗浪'
+                            },
+                            {
+                                footerItemName: 'Github'
+                            },
+                            {
+                                footerItemName: 'P站'
+                            },
+                            {
+                                footerItemName: 'Tasker出任务'
+                            },
+                        ]
+                    }
+
+                ]
+            },
+            methods: {
+                
+            }
+            
+        })
     </script>
 
 </body>
