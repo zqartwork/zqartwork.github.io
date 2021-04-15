@@ -190,39 +190,39 @@ nav {
     }
     &.fb {
         span {
-            background-image: url(https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/index/fb.svg);
+            background-image: url(https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/fb.svg);
         }
     }
     &.as {
         span {
-            background-image: url(https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/index/as.svg);
+            background-image: url(https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/as.svg);
         }
     }
     &.ins {
         span {
-            background-image: url(https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/index/ins.svg);
+            background-image: url(https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/ins.svg);
         }
     }
     &.ham {
         span {
-            background-image: url(https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/index/ham.svg);
+            background-image: url(https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/ham.svg);
         }
     }
     &:hover {
         background-color: $graypink50;
         &.fb {
             span {
-                background-image: url(https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/index/fb-r.svg);
+                background-image: url(https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/fb-r.svg);
             }
         }
         &.as {
             span {
-                background-image: url(https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/index/as-r.svg);
+                background-image: url(https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/as-r.svg);
             }
         }
         &.ins {
             span {
-                background-image: url(https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/index/ins-r.svg);
+                background-image: url(https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/ins-r.svg);
             }
         }
     }
