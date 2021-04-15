@@ -23,7 +23,9 @@ let selectCustom = function() {
         $(this).children('.select_menu').slideUp(300);
     })
     csMenuOpt.click(function() {
-        $(this).parents('.custom_select').find('.selected').text($(this).text());
+        setTimeout(function(){
+            $(this).parents('.custom_select').find('.selected').text($(this).text());
+        },100)
         $(this).parents('.custom_select').find('#data_input').attr('value', $(this).attr('page'));
         console.log($(this).parents('.custom_select').find('#data_input').attr('value'))
         $('#' + $(this).parents('.custom_select').find('#data_input').attr('value')).show()
