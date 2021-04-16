@@ -31,8 +31,9 @@
 </head>
 
 <body>
-    <!-- 英文版本 -->
-    <div id="appen">
+    <div id="app">
+        <!-- 英文版本 -->
+    <div v-for="pageInfo in pageInfos" :id="pageInfo.type">
         <div id="gt" class="scrollTop">
             <i class="fas fa-chevron-up"></i>
         </div>
@@ -43,16 +44,13 @@
                         <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/logo.svg" alt="">
                     </a>
                     <div class="nav-items-wrap">
-                        <a href="about.html" target="_blank" class="nav-item"><span>ABOUT</span></a>
-                        <a href="works.html" target="_blank" class="nav-item"><span>WORKS</span></a>
-                        <a href="services.html" target="_blank" class="nav-item"><span>SERVICES</span></a>
-                        <a href="contact.html" target="_blank" class="nav-item"><span>CONTACT</span></a>
+                        <a v-for="nav in pageInfo.navs" :href="nav.navLink" class="nav-item anchor"><span>{{nav.navName}}</span></a>
                         <div class="select_container nav-item">
                             <div class="flex-wrapper">
                                 <div class="custom_select">
                                     <div class="select_title">
                                         <div class="flex-wrapper just-left">
-                                            <span class="selected">Language</span>
+                                            <span class="selected">{{pageInfo.lang}}</span>
                                             <i class="fas fa-caret-right select_i"></i>
                                         </div>
                                     </div>
@@ -140,7 +138,7 @@
                     <div class="section-title">Digital Paintings</div>
                     <div class="section-content">
                         <div class="work-item-wrap">
-                            <a  :href="dp.href" target="_blank" rel="noopener noreferrer" class="work-item_of" v-for="dp in dps">
+                            <a  :href="dp.href" target="_blank" rel="noopener noreferrer" class="work-item_of" v-for="dp in dps" >
                                 <div class="item-wrap">
                                     <div class="item-header">
                                         <div class="item-img">
@@ -185,16 +183,13 @@
                         </div>
                         <div class="modal-body">
                             <div class="nav-items-wrap_mobile">
-                                <a href="about.html" target="_blank" class="nav-item"><span>ABOUT</span></a>
-                                <a href="works.html" target="_blank" class="nav-item"><span>WORKS</span></a>
-                                <a href="services.html" target="_blank" class="nav-item"><span>SERVICES</span></a>
-                                <a href="contact.html" target="_blank" class="nav-item"><span>CONTACT</span></a>
+                                <a v-for="nav in pageInfo.navs" :href="nav.navLink" class="nav-item anchor"><span>{{nav.navName}}</span></a>
                                 <div class="select_container nav-item">
                                     <div class="select-flex-wrapper">
                                         <div class="custom_select">
                                             <div class="select_title">
                                                 <div class="flex-wrapper just-left">
-                                                    <span class="selected">Language</span>
+                                                    <span class="selected">{{pageInfo.lang}}</span>
                                                     <i class="fas fa-caret-right select_i"></i>
                                                 </div>
                                             </div>
@@ -214,203 +209,7 @@
             </div>
         </div>
     </div>
-    <!-- 繁體中文 -->
-    <div id="apptc">
-        <nav class="nav">
-            <div class="container">
-                <div class="nav-wrap">
-                    <div class="nav-logo">
-                        <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/logo.svg" alt="">
-                    </div>
-                    <div class="nav-items-wrap">
-                        <a href="about.html" target="_blank" class="nav-item"><span>關於</span></a>
-                        <a href="works.html" target="_blank" class="nav-item"><span>作品</span></a>
-                        <a href="services.html" target="_blank" class="nav-item"><span>服務</span></a>
-                        <a href="contact.html" target="_blank" class="nav-item"><span>聯絡</span></a>
-                        <div class="select_container nav-item">
-                            <div class="flex-wrapper">
-                                <div class="custom_select">
-                                    <div class="select_title">
-                                        <div class="flex-wrapper just-left">
-                                            <span class="selected">繁體中文</span>
-                                            <i class="fas fa-caret-right select_i"></i>
-                                        </div>
-                                    </div>
-                                    <input type="hidden" name="date" id="data_input">
-                                    <ul class="select_menu">
-                                        <li page="apptc">繁體中文</li>
-                                        <li page="appsc">简体中文</li>
-                                        <li page="appen">English</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="nav-wrap">
-                    <a href="https://www.facebook.com/zqartwork" target="_blank" rel="noopener noreferrer" class="nav-icon fb"><span></span></a>
-                    <a href="https://zqartwork.artstation.com/" target="_blank" rel="noopener noreferrer" class="nav-icon as"><span></span></a>
-                    <a href="https://www.instagram.com/zqart.work" target="_blank" rel="noopener noreferrer" class="nav-icon ins"><span></span></a>
-                    <a href="#!" class="nav-icon ham modal-opener" tt-to="nav-mobile"><span></span></a>
-                </div>
-            </div>
-        </nav>
-        <main>
-        </main>
-        <footer>
-            <div class="container">
-                <div class="footer-wrap">
-                    <div class="footer-copy-txt"><p>© 2021 ZQARTWORK, Inc. 版權所有。</p></div>
-                    <div class="footer-btn-item-wrap">
-                        <a href="https://home.gamer.com.tw/zqartwork" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>巴哈姆特</span></a>
-                        <a href="https://www.plurk.com/zqartwork" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>噗浪</span></a>
-                        <a href="https://github.com/zqartwork" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Github</span></a>
-                        <a href="https://www.pixiv.net/users/44069467" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Pixiv</span></a>
-                        <a href="https://www.tasker.com.tw/workroom/JgzMDL" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Tasker外包網</span></a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <div class="nav-mobile modal">
-            <div class="modal-container">
-                <div class="modal-closer"></div>
-                <div class="modal-panel">
-                    <a href="#!" class="modal-closer_btn">
-                        <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/closer.svg" alt="">
-                    </a>
-                    <div class="modal-content">
-                        <div class="modal-title">
-                        </div>
-                        <div class="modal-body">
-                            <div class="nav-items-wrap_mobile">
-                                <a href="about.html" target="_blank" class="nav-item"><span>關於</span></a>
-                                <a href="works.html" target="_blank" class="nav-item"><span>作品</span></a>
-                                <a href="services.html" target="_blank" class="nav-item"><span>服務</span></a>
-                                <a href="contact.html" target="_blank" class="nav-item"><span>聯絡</span></a>
-                                <div class="select_container nav-item">
-                                    <div class="select-flex-wrapper">
-                                        <div class="custom_select">
-                                            <div class="select_title">
-                                                <div class="flex-wrapper just-left">
-                                                    <span class="selected">繁體中文</span>
-                                                    <i class="fas fa-caret-right select_i"></i>
-                                                </div>
-                                            </div>
-                                            <input type="hidden" name="date" id="data_input">
-                                            <ul class="select_menu">
-                                                <li page="apptc">繁體中文</li>
-                                                <li page="appsc">简体中文</li>
-                                                <li page="appen">English</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- 簡體中文 -->
-    <div id="appsc">
-        <nav class="nav">
-            <div class="container">
-                <div class="nav-wrap">
-                    <div class="nav-logo">
-                        <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/logo.svg" alt="">
-                    </div>
-                    <div class="nav-items-wrap">
-                        <a href="about.html" target="_blank" class="nav-item"><span>关于</span></a>
-                        <a href="works.html" target="_blank" class="nav-item"><span>作品</span></a>
-                        <a href="services.html" target="_blank" class="nav-item"><span>服务</span></a>
-                        <a href="contact.html" target="_blank" class="nav-item"><span>联络</span></a>
-                        <div class="select_container nav-item">
-                            <div class="flex-wrapper">
-                                <div class="custom_select">
-                                    <div class="select_title">
-                                        <div class="flex-wrapper just-left">
-                                            <span class="selected">简体中文</span>
-                                            <i class="fas fa-caret-right select_i"></i>
-                                        </div>
-                                    </div>
-                                    <input type="hidden" name="date" id="data_input">
-                                    <ul class="select_menu">
-                                        <li page="apptc">繁體中文</li>
-                                        <li page="appsc">简体中文</li>
-                                        <li page="appen">English</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="nav-wrap">
-                    <a href="https://www.facebook.com/zqartwork" target="_blank" rel="noopener noreferrer" class="nav-icon fb"><span></span></a>
-                    <a href="https://zqartwork.artstation.com/" target="_blank" rel="noopener noreferrer" class="nav-icon as"><span></span></a>
-                    <a href="https://www.instagram.com/zqart.work" target="_blank" rel="noopener noreferrer" class="nav-icon ins"><span></span></a>
-                    <a href="#!" class="nav-icon ham modal-opener" tt-to="nav-mobile"><span></span></a>
-                </div>
-            </div>
-        </nav>
-        <main>
-        </main>
-        <footer>
-            <div class="container">
-                <div class="footer-wrap">
-                    <div class="footer-copy-txt"><p>© 2021 ZQARTWORK, Inc. 版权所有。</p></div>
-                    <div class="footer-btn-item-wrap">
-                        <a href="https://home.gamer.com.tw/zqartwork" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>巴哈姆特</span></a>
-                        <a href="https://www.plurk.com/zqartwork" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>噗浪</span></a>
-                        <a href="https://github.com/zqartwork" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Github</span></a>
-                        <a href="https://www.pixiv.net/users/44069467" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Pixiv</span></a>
-                        <a href="https://www.tasker.com.tw/workroom/JgzMDL" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Tasker外包网</span></a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <div class="nav-mobile modal">
-            <div class="modal-container">
-                <div class="modal-closer"></div>
-                <div class="modal-panel">
-                    <a href="#!" class="modal-closer_btn">
-                        <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/closer.svg" alt="">
-                    </a>
-                    <div class="modal-content">
-                        <div class="modal-title">
-                        </div>
-                        <div class="modal-body">
-                            <div class="nav-items-wrap_mobile">
-                                <a href="about.html" target="_blank" class="nav-item"><span>关于</span></a>
-                                <a href="works.html" target="_blank" class="nav-item"><span>作品</span></a>
-                                <a href="services.html" target="_blank" class="nav-item"><span>服务</span></a>
-                                <a href="contact.html" target="_blank" class="nav-item"><span>联络</span></a>
-                                <div class="select_container nav-item">
-                                    <div class="select-flex-wrapper">
-                                        <div class="custom_select">
-                                            <div class="select_title">
-                                                <div class="flex-wrapper just-left">
-                                                    <span class="selected">简体中文</span>
-                                                    <i class="fas fa-caret-right select_i"></i>
-                                                </div>
-                                            </div>
-                                            <input type="hidden" name="date" id="data_input">
-                                            <ul class="select_menu">
-                                                <li id="tc" page="apptc">繁體中文</li>
-                                                <li id="sc" page="appsc">简体中文</li>
-                                                <li id="en" page="appen">English</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
+    </div>    
     <!--jQuery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
     <!-- FontAwesome -->
@@ -426,7 +225,7 @@
 
     <script>
         new Vue({
-            el: '#appen',
+            el: '#app',
             data: {
                 works: [
                     // {
@@ -879,6 +678,128 @@
                         tt: '絕地求生 M 官方合作的公告地圖 ',
                     },
                 ],
+                pageInfos:[
+                    // 英文版
+                    {
+                        type: 'appen',
+                        navs: [
+                            {
+                                navName: 'ABOUT',
+                                navLink: 'index.html#about',
+                            },
+                            {
+                                navName: 'WORKS',
+                                navLink: 'works.html',
+                            },
+                            {
+                                navName: 'SERVICES',  
+                                navLink: 'services.html',
+                            },
+                            {
+                                navName: 'CONTACT',  
+                                navLink: 'contact.html',
+                            },
+                        ],
+                        lang: 'Language',
+                        footerItem: [
+                            {
+                                footerItemName: 'BahamutForum'
+                            },
+                            {
+                                footerItemName: 'Plurk'
+                            },
+                            {
+                                footerItemName: 'Github'
+                            },
+                            {
+                                footerItemName: 'Pixiv'
+                            },
+                            {
+                                footerItemName: 'Tasker'
+                            },
+                        ]
+                    },
+                    // 繁中版
+                    {
+                        type: 'apptc',
+                        navs: [
+                            {
+                                navName: '關於本人',  
+                                navLink: 'index.html#about',
+                            },
+                            {
+                                navName: '作品藝廊' , 
+                                navLink: 'works.html',
+                            },
+                            {
+                                navName: '服務項目' , 
+                                navLink: 'services.html',
+                            },
+                            {
+                                navName: '立即聯絡' , 
+                                navLink: 'contact.html',
+                            },
+                        ],
+                        lang: '請選擇語言',
+                        footerItem: [
+                            {
+                                footerItemName: '巴哈姆特'
+                            },
+                            {
+                                footerItemName: '噗浪'
+                            },
+                            {
+                                footerItemName: 'Github'
+                            },
+                            {
+                                footerItemName: 'P站'
+                            },
+                            {
+                                footerItemName: 'Tasker出任務'
+                            },
+                        ]
+                    },
+                    // 簡中版
+                    {
+                        type: 'appsc',
+                        navs: [
+                            {
+                                navName: '关于本人'  ,
+                                navLink: 'index.html#about',
+                            },
+                            {
+                                navName: '作品艺廊'  ,
+                                navLink: 'works.html',
+                            },
+                            {
+                                navName: '服务项目'  ,
+                                navLink: 'setvices.html',
+                            },
+                            {
+                                navName: '立即联络'  ,
+                                navLink: 'contact.html',
+                            },
+                        ],
+                        lang: '请选择语言',
+                        footerItem: [
+                            {
+                                footerItemName: '巴哈姆特'
+                            },
+                            {
+                                footerItemName: '噗浪'
+                            },
+                            {
+                                footerItemName: 'Github'
+                            },
+                            {
+                                footerItemName: 'P站'
+                            },
+                            {
+                                footerItemName: 'Tasker出任务'
+                            },
+                        ]
+                    }
+                ]
             },
             methods: {
                 // toggleWorks() {
