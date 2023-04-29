@@ -289,7 +289,8 @@ Section KV
 .kv-wrap {
     position: relative;
     display: flex;
-    background-image: url(https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/star-bg.jpg);
+    background-image: url(../img/banners.jpeg);
+    background-size: cover;
     border-radius: 50px;
 }
 .kv-img {
