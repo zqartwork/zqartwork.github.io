@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ZQARTWORK-WORKS</title>
+    <!--google plus info-->
+    <meta itemprop="name" content="ZQARTWORK - Professional UIUX design, 2D digital artist and experienced front-end-engineer is here for you. 專業 UIUX 設計、2D美術繪製、富有經驗的前端工程師，zqartwork在此為您服務。">
+    <meta itemprop="image" content="https://zqartwork.github.io/img/index/1200x628.jpg">
+    <meta name="description" content="ZQARTWORK - Professional UIUX design, 2D digital artist and experienced front-end-engineer is here for you. 專業 UIUX 設計、2D美術繪製、富有經驗的前端工程師，zqartwork在此為您服務。" />
+    <!--FB info-->
+    <meta property="og:title" content="ZQARTWORK - Professional UIUX design, 2D digital artist and experienced front-end-engineer is here for you. 專業 UIUX 設計、2D美術繪製、富有經驗的前端工程師，zqartwork在此為您服務。" />
+    <meta property="og:site_name" content="ZQARTWORK" />
+    <meta property="og:url" content="https://zqartwork.github.io">
+    <meta property="og:image" content="https://zqartwork.github.io/img/index/1200x628.jpg">
+    <meta property="og:description" content="ZQARTWORK - Professional UIUX design, 2D digital artist and experienced front-end-engineer is here for you. 專業 UIUX 設計、2D美術繪製、富有經驗的前端工程師，zqartwork在此為您服務。">
+    <meta property="og:type" content="website" />
+    <!--Favicon-->
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/favicon.ico" type="image/x-icon" />
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <!-- wow animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- owl-default-theme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- main-style -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YSG3QHZDWB"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-YSG3QHZDWB');
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-W3B3589');</script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+    <div id="app">
+        <!-- 英文版本 -->
+    <div v-for="pageInfo in pageInfos" :id="pageInfo.type">
+        <div id="gt" class="scrollTop">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+        <nav class="nav">
+            <div class="container">
+                <div class="nav-wrap">
+                    <a href="index.html" class="nav-logo">
+                        <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/logo.svg" alt="">
+                    </a>
+                    <div class="nav-items-wrap">
+                        <a v-for="nav in pageInfo.navs" :href="nav.navLink" class="nav-item anchor"><span>{{nav.navName}}</span></a>
+                        <div class="select_container nav-item">
+                            <div class="flex-wrapper">
+                                <div class="custom_select">
+                                    <div class="select_title">
+                                        <div class="flex-wrapper just-left">
+                                            <span class="selected">{{pageInfo.lang}}</span>
+                                            <i class="fas fa-caret-right select_i"></i>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" name="date" id="data_input">
+                                    <ul class="select_menu">
+                                        <li page="apptc">繁體中文</li>
+                                        <li page="appsc">简体中文</li>
+                                        <li page="appen">English</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-wrap">
+                    <a href="https://www.facebook.com/zqartwork" target="_blank" rel="noopener noreferrer" class="nav-icon fb"><span></span></a>
+                    <a href="https://zqartwork.artstation.com/" target="_blank" rel="noopener noreferrer" class="nav-icon as"><span></span></a>
+                    <a href="https://www.instagram.com/zqart.work" target="_blank" rel="noopener noreferrer" class="nav-icon ins"><span></span></a>
+                    <a href="#!" class="nav-icon ham modal-opener" tt-to="nav-mobile"><span></span></a>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <section class="side-switcher-part">
+                <p style="text-align: center; justify-content: center; width: 100%;">FOR BREAD_CC USES :)</p>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="footer-wrap">
+                    <div class="footer-copy-txt"><p>© 2021 Copyright belongs to ZQARTWORK, Inc.</p></div>
+                    <div class="footer-btn-item-wrap">
+                        <a href="https://home.gamer.com.tw/zqartwork" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>BahamutForum</span></a>
+                        <a href="https://www.plurk.com/zqartwork" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Plurk</span></a>
+                        <a href="https://github.com/zqartwork" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Github</span></a>
+                        <a href="https://www.pixiv.net/users/44069467" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Pixiv</span></a>
+                        <a href="https://www.tasker.com.tw/workroom/JgzMDL" target="_blank" rel="noopener noreferrer" class="footer-btn-item"><span>Tasker</span></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="nav-mobile modal">
+            <div class="modal-container">
+                <div class="modal-closer"></div>
+                <div class="modal-panel">
+                    <a href="#!" class="modal-closer_btn">
+                        <img src="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/closer.svg" alt="">
+                    </a>
+                    <div class="modal-content">
+                        <div class="modal-title">
+                        </div>
+                        <div class="modal-body">
+                            <div class="nav-items-wrap_mobile">
+                                <a v-for="nav in pageInfo.navs" :href="nav.navLink" class="nav-item anchor"><span>{{nav.navName}}</span></a>
+                                <div class="select_container nav-item">
+                                    <div class="select-flex-wrapper">
+                                        <div class="custom_select">
+                                            <div class="select_title">
+                                                <div class="flex-wrapper just-left">
+                                                    <span class="selected">{{pageInfo.lang}}</span>
+                                                    <i class="fas fa-caret-right select_i"></i>
+                                                </div>
+                                            </div>
+                                            <input type="hidden" name="date" id="data_input">
+                                            <ul class="select_menu">
+                                                <li page="apptc">繁體中文</li>
+                                                <li page="appsc">简体中文</li>
+                                                <li page="appen">English</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>    
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <!-- FontAwesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <!-- wow.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- owlCarousel2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- vue.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+    <!-- custom.js -->
+    <script src="js/custom.js"></script>
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                
+                pageInfos:[
+                    // 英文版
+                    {
+                        type: 'appen',
+                        navs: [
+                            {
+                                navName: 'ABOUT',
+                                navLink: '#about',
+                            },
+                            {
+                                navName: 'WORKS',
+                                navLink: 'works.html',
+                            },
+                            {
+                                navName: 'SERVICES',  
+                                navLink: 'services.html',
+                            },
+                            {
+                                navName: 'CONTACT',  
+                                navLink: 'contact.html',
+                            },
+                            {
+                                navName: 'BREAD_CC',  
+                                navLink: 'breadcc.html',
+                            },
+                        ],
+                        lang: 'Language',
+                        footerItem: [
+                            {
+                                footerItemName: 'BahamutForum'
+                            },
+                            {
+                                footerItemName: 'Plurk'
+                            },
+                            {
+                                footerItemName: 'Github'
+                            },
+                            {
+                                footerItemName: 'Pixiv'
+                            },
+                            {
+                                footerItemName: 'Tasker'
+                            },
+                        ]
+                    },
+                    // 繁中版
+                    {
+                        type: 'apptc',
+                        navs: [
+                            {
+                                navName: '關於本人',  
+                                navLink: 'index.html#about',
+                            },
+                            {
+                                navName: '作品藝廊' , 
+                                navLink: 'works.html',
+                            },
+                            {
+                                navName: '服務項目' , 
+                                navLink: 'services.html',
+                            },
+                            {
+                                navName: '立即聯絡' , 
+                                navLink: 'contact.html',
+                            },
+                        ],
+                        lang: '請選擇語言',
+                        footerItem: [
+                            {
+                                footerItemName: '巴哈姆特'
+                            },
+                            {
+                                footerItemName: '噗浪'
+                            },
+                            {
+                                footerItemName: 'Github'
+                            },
+                            {
+                                footerItemName: 'P站'
+                            },
+                            {
+                                footerItemName: 'Tasker出任務'
+                            },
+                        ]
+                    },
+                    // 簡中版
+                    {
+                        type: 'appsc',
+                        navs: [
+                            {
+                                navName: '关于本人'  ,
+                                navLink: 'index.html#about',
+                            },
+                            {
+                                navName: '作品艺廊'  ,
+                                navLink: 'works.html',
+                            },
+                            {
+                                navName: '服务项目'  ,
+                                navLink: 'setvices.html',
+                            },
+                            {
+                                navName: '立即联络'  ,
+                                navLink: 'contact.html',
+                            },
+                        ],
+                        lang: '请选择语言',
+                        footerItem: [
+                            {
+                                footerItemName: '巴哈姆特'
+                            },
+                            {
+                                footerItemName: '噗浪'
+                            },
+                            {
+                                footerItemName: 'Github'
+                            },
+                            {
+                                footerItemName: 'P站'
+                            },
+                            {
+                                footerItemName: 'Tasker出任务'
+                            },
+                        ]
+                    }
+                ]
+            },
+            methods: {
+                // toggleWorks() {
+                //     this.isWorks = !this.isWorks;
+                //     if (this.isWorks) {
+                //         $(".gallery-wrapper.wk").slideDown();
+                //         $(".fa-chevron-down.wk").css({
+                //             transition: '.2s',
+                //             transform: 'rotate(0deg)',
+                //         })
+                //     } else {
+                //         $(".gallery-wrapper.wk").slideUp();
+                //         $(".fa-chevron-down.wk").css({
+                //             transition: '.2s',
+                //             transform: 'rotate(-90deg)',
+                //         })
+                //     }
+                // },
+                // toggleDps() {
+                //     this.isDps = !this.isDps;
+                //     if (this.isDps) {
+                //         $(".gallery-wrapper.dp").slideDown();
+                //         $(".fa-chevron-down.dp").css({
+                //             transition: '.2s',
+                //             transform: 'rotate(0deg)',
+                //         })
+                //     } else {
+                //         $(".gallery-wrapper.dp").slideUp();
+                //         $(".fa-chevron-down.dp").css({
+                //             transition: '.2s',
+                //             transform: 'rotate(-90deg)',
+                //         })
+                //     }
+                // }
+            },
+        })
+    </script>
+
+    <!-- JQ 掛載點 -->
+    <script>
+        $(document).ready(function() {
+            new WOW().init();
+            selectCustom();
+            scrollTopFc();
+            switchTab();
+            scrollSpy();
+            ttFc();
+        });
+    </script>
+
+</body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3B3589"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+</html>
