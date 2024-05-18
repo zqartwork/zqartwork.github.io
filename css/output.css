@@ -646,6 +646,14 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.flex-row{
+  flex-direction: row;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
 .items-center{
   align-items: center;
 }
@@ -660,6 +668,10 @@ video {
 
 .gap-10{
   gap: 2.5rem;
+}
+
+.gap-2{
+  gap: 0.5rem;
 }
 
 .overflow-auto{
