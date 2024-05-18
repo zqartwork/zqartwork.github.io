@@ -238,7 +238,7 @@ footer div {
     @apply opacity-100;
     transition-duration : .5s;  
 }
-.gap-2{
+.skill-item_img{
     gap: 0.5rem;
   }
 
