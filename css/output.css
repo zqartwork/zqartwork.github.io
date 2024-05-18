@@ -626,16 +626,8 @@ video {
   width: 100%;
 }
 
-.min-w-\[70px\]{
-  min-width: 70px;
-}
-
 .max-w-\[500px\]{
   max-width: 500px;
-}
-
-.flex-1{
-  flex: 1 1 0%;
 }
 
 .grid-flow-row{
@@ -644,10 +636,6 @@ video {
 
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.flex-row{
-  flex-direction: row;
 }
 
 .flex-col{
@@ -1248,6 +1236,10 @@ footer div {
 .ig-part:hover .ig-mask{
   opacity: 1;
   transition-duration : .5s;
+}
+
+.gap-2{
+  gap: 0.5rem;
 }
 
 @media(min-width: 1640px) {

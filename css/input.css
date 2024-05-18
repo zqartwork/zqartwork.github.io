@@ -238,6 +238,9 @@ footer div {
     @apply opacity-100;
     transition-duration : .5s;  
 }
+.gap-2{
+    gap: 0.5rem;
+  }
 
 @media(min-width: 1640px) {
     .mockup1 {
