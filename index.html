@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ZQARTWORK</title>
+    <!--google plus info-->
+    <meta itemprop="name" content="ZQARTWORK - Professional UIUX design, 2D digital artist and experienced front-end-engineer is here for you. 專業 UIUX 設計、2D美術繪製、富有經驗的前端工程師，zqartwork在此為您服務。">
+    <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/zqartwork/zqartworkImage/img/webThumb.jpg">
+    <meta name="description" content="ZQARTWORK - Professional UIUX design, 2D digital artist and experienced front-end-engineer is here for you. 專業 UIUX 設計、2D美術繪製、富有經驗的前端工程師，zqartwork在此為您服務。" />
+    <!--FB info-->
+    <meta property="og:title" content="ZQARTWORK - Professional UIUX design, 2D digital artist and experienced front-end-engineer is here for you. 專業 UIUX 設計、2D美術繪製、富有經驗的前端工程師，zqartwork在此為您服務。" />
+    <meta property="og:site_name" content="ZQARTWORK" />
+    <meta property="og:url" content="https://zqartwork.github.io">
+    <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zqartwork/zqartworkImage/img/webThumb.jpg">
+    <meta property="og:description" content="ZQARTWORK - Professional UIUX design, 2D digital artist and experienced front-end-engineer is here for you. 專業 UIUX 設計、2D美術繪製、富有經驗的前端工程師，zqartwork在此為您服務。">
+    <meta property="og:type" content="website" />
+    <!--Favicon-->
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/favicon.ico" type="image/x-icon" />
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <!-- wow animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- owl-default-theme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- main-style -->
+    <link rel="stylesheet" href="css/output.css">
+</head>
+
+<body>
+        <div class="">
+            <div class="pre-loader">
+                <div class="loader"></div>
+                <div class="loader-bg"></div>
+            </div>
+            <div class="loader-content">
+                <div class="count"><p>0</p></div>
+                <div class="copy"><p class="ml16">ZQARTWORK</p></div>
+            </div>
+            <div class="loader-2"></div>
+        </div>
+        <div class="site-content">
+            <nav class="flex justify-between items-center">
+                <div class="logo pr-4">
+                    <a href=""><img src="img/logo.svg" alt="" class="logo"></a>
+                </div>
+                <div class="links">
+                    <a href="about.html" class="hover:text-wyay-primary">ABOUT</a>
+                    <a href="works.html">WORKS</a>
+                    <a href="contact.html">CONTACT</a>
+                </div>
+            </nav>
+            <div class="header">
+                <h1>Z</h1>
+                <h1>Q</h1>
+                <h1>A</h1>
+                <h1>R</h1>
+                <h1>T</h1>
+                <h1>W</h1>
+                <h1>O</h1>
+                <h1>R</h1>
+                <h1>K</h1>
+            </div>
+
+            <footer>
+                <div class="footer-copy">
+                    <p>
+                        Chan-Ching Liang<br>
+                        2D Artist / UIUX Designer / Front-end Dev from Taiwan. <br>
+                        <span class="text-xs"> 梁占青，來自台灣，美術 / UIUX設計師 / 前端開發者。</span>
+                    </p>
+                </div>
+                <div class="footer-nav">
+                    <div class="img"><a href="https://game.taiwanmobile.com/HoG/home" class="w-full h-full block"></a></div>
+                    <div class="img"><a href="https://gfn.taiwanmobile.com/portal/index" class="w-full h-full block"></a></div>
+                </div>
+            </footer>
+        </div>
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <!-- FontAwesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <!-- simplebar -->
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+    <!-- wow.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- owlCarousel2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <!-- custom.js -->
+    <script src="js/custom.js"></script>
+
+    <!-- JQ 掛載點 -->
+    <script>
+        $(document).ready(function() {
+            new WOW().init();
+        });
+
+        let startLoader = function() {
+            let counterElement = document.querySelector('.count p');
+            let currentValue = 0;
+
+            function updateCounter() {
+                if(currentValue < 100) {
+                    let increment = Math.floor(Math.random() * 10) + 1;
+                    currentValue = Math.min(currentValue + increment, 100);
+                    counterElement.textContent = currentValue;
+
+                    let delay = Math.floor(Math.random() + 200) + 50;
+                    setTimeout(updateCounter, delay);
+                }
+            }
+
+            updateCounter();
+        }
+
+        startLoader();
+        gsap.to('.count', { opacity: 0, delay: 3.5, duration: 0.5 });
+
+        let textWrapper = document.querySelector('.ml16');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({loop: false})
+            .add({
+                targets: '.ml16 .letter',
+                translateY: [-100, 0],
+                easing: "easeOutExpo",
+                duration: 1500,
+                delay: (el, i) => 30 * i
+            })
+            .add({
+                targets: '.ml16 .letter',
+                translateY: [0, 100],
+                easing: "easeOutExpo",
+                duration: 3000,
+                delay: (el, i) => 2000 + 30 * i
+            }) 
+
+        gsap.to(".pre-loader", {
+            scale: 0.5,
+            ease: "power4.inOut",
+            duration: 2,
+            delay: 3
+        })
+        gsap.to(".loader", {
+            height: "0",
+            ease: "power4.inOut",
+            duration: 1.5,
+            delay: 3.75
+        })
+        gsap.to(".loader-bg", {
+            height: "0",
+            ease: "power4.inOut",
+            duration: 1.5,
+            delay: 4
+        })
+        gsap.to(".loader-2", {
+            clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
+            ease: "power4.inOut",
+            duration: 1.5,
+            delay: 3.5
+        })
+        gsap.to(".header h1", {
+            y: -80,
+            ease: "power4.inOut",
+            duration: 1.5,
+            delay: 3.75,
+            stagger: 0.05,
+        })
+        gsap.to(".img", {
+            clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+            ease: "power4.inOut",
+            duration: 1.5,
+            delay: 4.5,
+            stagger: 0.25
+        })
+        gsap.to(".site-content", {
+            zIndex: 0,
+            duration: 1.5,
+            delay: 4.6,
+            stagger: 0.3
+        })
+    </script>
+
+</body>
+
+</html>

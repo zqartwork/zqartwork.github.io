@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sedan+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --wyay-primary: #4a5368;
+}
+
+html,body,*{
+    -webkit-box-sizing:border-box;box-sizing:border-box;font-family:"Prompt",'Josefin Sans',"Noto Sans TC","Roboto";
+    font-size: 14px;
+}
+html, body {
+    @apply w-screen h-screen max-w-[100vw] max-h-[100vh] overflow-hidden;
+    font-family: "Josefin Sans";
+}
+
+.app-container {
+    @apply relative w-full h-full
+}
+
+.pre-loader {
+    @apply fixed top-0 w-full h-full;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.loader {
+    @apply absolute top-0 w-full h-full bg-black text-white flex justify-center items-center;
+}
+.loader-content {
+    @apply absolute top-[50%] left-[50%] flex w-[450px]  text-white;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.count {
+    flex: 2;
+    line-height: 1;
+    padding: 0 1em;
+    @apply text-right
+}
+.copy {
+    flex: 6;
+    font-family: "Prompt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.ml16 {
+    @apply overflow-hidden
+}
+
+.ml16 .letter {
+    @apply inline-block;
+    line-height: 1em;
+}
+
+.loader-bg {
+    @apply absolute block top-0 w-full h-full;
+    z-index: -1;
+    background-color: #4a5368;
+}
+.loader-2 {
+    @apply absolute top-0 w-full h-full;
+    background: url('../img/wyay-kv2.png') no-repeat 50% 50%;
+    background-size: cover;
+    z-index: -1;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.site-content {
+    @apply relative;
+    z-index: -2;
+}
+nav {
+    @apply w-full p-[2em] flex z-10 relative
+}
+nav.mq {
+    @apply fixed
+}
+a {
+    @apply text-black;
+}
+nav div {
+    flex: 1;
+}
+.links {
+    @apply flex justify-end gap-[2em] md:gap-[5em];
+
+}
+.site-content.reveal {
+    z-index: 0;
+}
+
+.links a:hover {
+    @apply text-[--wyay-primary]
+}
+.header {
+    @apply flex p-[1em] pt-20 md:pt-10;
+}
+.header h1 {
+    flex:1;
+    font-size: 15vw;
+    font-family: "Prompt";
+    text-transform: uppercase;
+    line-height: 1;
+    @apply relative text-center justify-center items-center;
+}
+footer {
+    @apply fixed bottom-0 w-full flex items-end p-[2em];
+}
+footer div {
+    flex: 1;
+}
+.footer-copy p {
+    width: 50%;
+}
+.footer-nav {
+    @apply flex gap-[2em] justify-end;
+}
+.img {
+    width: 225px;
+    height: 225px;
+    clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+}
+.img:nth-child(1) {
+    background: url('https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/id-hog.jpg') no-repeat 50% 50%;
+    background-size: cover;
+}
+.img:nth-child(2) {
+    background: url('https://cdn.jsdelivr.net/gh/zqartwork/Pic/img/work/gfn.jpg') no-repeat 50% 50%;
+    background-size: cover;
+}
+.logo {
+    @apply max-w-[65px] max-h-[65px]
+}
+.cursor {
+    @apply absolute top-0 left-0 text-6xl;
+    z-index: 1000;
+}
+.mbimg img {
+    @apply w-full h-full object-cover;
+}
+.marquee-container {
+    @apply w-screen h-screen overflow-hidden;
+}
+.overlay {
+    @apply absolute top-0 left-0 w-full h-full overflow-hidden z-0;
+}
+.marquee-wrapper {
+    @apply absolute top-0 left-0 w-full h-full bg-white;
+    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+}
+.marquee-wrapper.t-1 {
+    clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
+}
+.marquee-wrapper h1 {
+    @apply absolute top-[50%] left-[-100%] translate-x-[-50%] text-center uppercase w-full whitespace-nowrap;
+    font-size: 240px;
+    font-weight: 400;
+    font-family: "Prompt";
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    0% { transform: translate(0%, -50%); }
+    50% { transform: translate(-5%, -50%); }
+    50.5% { transform: translate(-5%, -50%); }
+    100% { transform: translate(0%, -50%); }
+}
+
+.modal {
+    @apply absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[800px] h-[410px];
+}
+
+.modal-images {
+    @apply w-full h-full;
+}
+.role {
+    margin: 5px 0;
+}
+.mbimg {
+    @apply absolute w-full h-full;
+    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+}
+.mbimg#t-1 {
+    clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
+}
+.info {
+    position: relative;
+    padding-top: calc(100vh - 150px);
+    z-index: 1;
+    text-align: center
+}
+.name {
+    font-weight: 700;
+    font-size: 24px;
+}
+.t-1 {
+    @apply bg-[#b3bcc5];
+}
+.t-2 {
+    @apply bg-[#76b900];
+}
+.t-3 {
+    @apply bg-[#e2e2e2];
+}
+.t-4 {
+    @apply bg-[#d8cfd8];
+}
+.t-5 {
+    @apply bg-[#ccbfb7];
+}
+.t-6 {
+    @apply bg-[#dfd8df];
+}
+
+.intro {
+    font-family: "Josefin Sans", "Noto Sans TC";
+    height: calc( 100vh - 113px);
+}
+.mockup1 {
+    bottom: calc(50vh - 250px);
+}
+.gomask {
+    @apply bg-[rgba(0,0,0,.6)] absolute top-0 left-0 z-10 text-white w-full h-full justify-center items-center opacity-0 flex;
+    transition-duration : .1s;  
+}
+.img-wrap:hover .gomask{
+    @apply  opacity-100
+}
+.ig-mask {
+    transition-duration : .1s;  
+}
+.ig-part:hover .ig-mask {
+    @apply opacity-100;
+    transition-duration : .5s;  
+}
+
+@media(min-width: 1640px) {
+    .mockup1 {
+        opacity: 100%;
+    }
+}
+@media(max-width: 900px) {
+    footer {
+        flex-direction: column;
+        gap: 2em;
+    }
+    .footer-copy p {
+        @apply w-full;
+    }
+    .footer-nav {
+        @apply w-full;
+    }
+    .modal {
+        height: 33%;
+        width: 100%;
+    }
+    .modal-images {
+        width: 100%;
+        height: 100%;
+    }
+    .mbimg {
+        width: 100%;
+        height: 100%;
+    }
+    .info {
+        position: relative;
+        padding-top: calc(100vh - 230px);
+
+        z-index: 1;
+        text-align: center
+    }
+    /* 把選擇題變成填空題了 */
+}
+
+@media (max-width: 768px) {
+    .mockup1 {
+        bottom: 3rem;
+        right: calc(50vw - 120px);
+        width: 240px;
+    }
+}
+@media (max-width: 465px) {
+    .mockup1 {
+        opacity: 100%;
+    }
+}
